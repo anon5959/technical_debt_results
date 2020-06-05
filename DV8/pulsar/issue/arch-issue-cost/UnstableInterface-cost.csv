@@ -1,0 +1,15 @@
+IssueType,Issue Size,#Changes,Tot Loc changed
+UnstableInterface1,68.0,1324.0,63442.0
+UnstableInterface2,62.0,1284.0,62807.0
+UnstableInterface3,60.0,1229.0,39753.0
+UnstableInterface4,45.0,1121.0,58810.0
+UnstableInterface5,38.0,507.0,9629.0
+UnstableInterface6,37.0,595.0,34291.0
+UnstableInterface7,31.0,795.0,22590.0
+UnstableInterface8,26.0,646.0,20743.0
+UnstableInterface9,22.0,517.0,24831.0
+UnstableInterface10,21.0,634.0,24126.0
+UnstableInterface11,19.0,560.0,33622.0
+UnstableInterface12,16.0,197.0,4055.0
+
+UnstableInterface-All,165.0,2209.0,81803.0

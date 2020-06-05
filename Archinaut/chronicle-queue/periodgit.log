@@ -1,0 +1,2236 @@
+[ae3206ec8] teamcity_hft 2020-05-14 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[bb53c788d] teamcity_hft 2020-05-14 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[3e649b51b] teamcity_hft 2020-05-14 [maven-release-plugin] prepare release chronicle-queue-5.19.16
+2	2	pom.xml
+
+[95f10fba0] teamcity_hft 2020-05-14 Updating to bom version 2.19.151
+[2fa377567] teamcity_hft 2020-05-14 Updating to bom version 2.19.151
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[d4e18c075] Rob Austin 2020-05-14 https://github.com/OpenHFT/Chronicle-Queue/issues/670 ignored test
+2	5	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+[2413a64a1] Rob Austin 2020-05-14 added stress test
+90	0	src/test/java/net/openhft/chronicle/queue/impl/single/CheckIndicesTest.java
+
+[ce605a645] Rob Austin 2020-05-14 improved logging of lock on the table store file. Retrying
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+4	2	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+[60836188d] Jerry Shea 2020-05-14 doco
+3	3	README.adoc
+
+[80c74dac1] Dmitry Pisklov 2020-05-13 Add writeBytes for metadata
+10	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[6e7515538] teamcity_hft 2020-05-12 Reverting back to bom version 2.19-SNAPSHOT
+[db546f783] teamcity_hft 2020-05-12 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[9e5ab214f] teamcity_hft 2020-05-12 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[7333e85f8] teamcity_hft 2020-05-12 [maven-release-plugin] prepare release chronicle-queue-5.19.15
+2	2	pom.xml
+
+[b7ce5eece] teamcity_hft 2020-05-12 Updating to bom version 2.19.144
+[281d6cbd5] Rob Austin 2020-05-12 Merge remote-tracking branch 'origin/master'
+[2251a9f34] Rob Austin 2020-05-12 added @Ignore
+2	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+2	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+
+[bc37cbdb2] teamcity_hft 2020-05-12 Updating to bom version 2.19.144
+[37467226d] teamcity_hft 2020-05-12 Updating to bom version 2.19.144
+[1658b929d] Rob Austin 2020-05-12 removed debug logging
+3	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+[72137d45a] teamcity_hft 2020-05-12 Updating to bom version 2.19.144
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[0a052176d] Rob Austin 2020-05-12 fixed flaky test DocumentOrderingTest
+3	2	src/main/java/net/openhft/chronicle/queue/impl/WireStorePool.java
+5	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+4	0	src/test/java/net/openhft/chronicle/queue/impl/single/DocumentOrderingTest.java
+
+[76c4b857f] Rob Austin 2020-05-12 Merge remote-tracking branch 'origin/master'
+[87c7488ed] Rob Austin 2020-05-12 added -> Failed to shrink file as it no-longer existing
+4	0	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+
+[56c9c772c] Jerry Shea 2020-05-12 refactor PretoucherTest* to make use of separate JVM per test class
+56	0	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherDontWriteTest.java
+63	0	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherEarlyCycleTest.java
+3	67	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+[9326d895c] Rob Austin 2020-05-12 fixed flakey test - see https://teamcity.chronicle.software/buildConfiguration/OpenHFT_ChronicleQueue4_Snapshot/408583?mode=builds
+16	12	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+[c7b257d33] Rob Austin 2020-05-12 removed commented out code
+1	4	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+[50bfb08b7] Rob Austin 2020-05-12 changed test to use unique temp directory because it was reported as flaky by teamcity ( was not able to reproduce the issue locally ) - see https://teamcity.chronicle.software/buildConfiguration/OpenHFT_ChronicleQueue4_Snapshot/408523?buildTab=tests&filterText=net.openhft.chronicle.queue.impl.single&pager.currentPage=1
+3	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+4	2	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+3	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+20	14	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+[284c58133] Rob Austin 2020-05-11 improved cleanupJob
+11	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[a257570fe] Per Minborg 2020-05-11 Fix problem with closer never being executed
+8	25	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[9d2b855c7] Per Minborg 2020-05-11 Protect against NPE, Fix #668
+12	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[812c0df2f] Per Minborg 2020-05-11 Catch close action exceptions, Fix #666
+6	2	src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+
+[1a76b9a33] Per Minborg 2020-05-11 Protect from NPE, Fix #667
+11	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[9a2777121] teamcity_hft 2020-05-07 Reverting back to bom version 2.19-SNAPSHOT
+[bc452c38d] teamcity_hft 2020-05-07 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[c2da613d9] teamcity_hft 2020-05-07 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[fee2c9248] teamcity_hft 2020-05-07 [maven-release-plugin] prepare release chronicle-queue-5.19.14
+2	2	pom.xml
+
+[b3275a1b4] teamcity_hft 2020-05-07 Updating to bom version 2.19.136
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[253b49997] Per Minborg 2020-05-06 Fix reference count issue, Fix #664
+147	136	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+6	1	src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+
+[aa667494f] Rob Austin 2020-05-06 added     * @see <a>https://github.com/OpenHFT/Chronicle-Queue/issues/664</a>
+4	0	src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+
+[f354ada56] Rob Austin 2020-05-06 net.openhft.chronicle.queue.CloserJobRefCountOnCloseTest added failing test net.openhft.chronicle.queue.CloserJobRefCountOnCloseTest
+17	0	src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+
+[406494fb8] teamcity_hft 2020-05-05 Reverting back to bom version 2.19-SNAPSHOT
+[5bb68e81f] teamcity_hft 2020-05-05 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[176350eaa] teamcity_hft 2020-05-05 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[5683992b7] teamcity_hft 2020-05-05 [maven-release-plugin] prepare release chronicle-queue-5.19.13
+2	2	pom.xml
+
+[8b6a5b4fd] teamcity_hft 2020-05-05 Updating to bom version 2.19.129
+[c4c947066] teamcity_hft 2020-05-05 Updating to bom version 2.19.129
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[df5779426] Peter Lawrey 2020-05-04 Add a benchmark for large messages.
+66	0	src/test/java/net/openhft/chronicle/queue/bench/ByteArrayJLBHBenchmark.java
+107	0	src/test/java/net/openhft/chronicle/queue/bench/QueueLargeMessageJLBHBenchmark.java
+
+[14afb257e] Jerry Shea 2020-05-04 misc tidy
+3	4	src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+0	1	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+0	2	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+0	1	src/main/java/net/openhft/chronicle/queue/service/ServiceWrapperBuilder.java
+1	1	src/main/java/net/openhft/chronicle/queue/util/FileState.java
+5	6	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/DocumentOrderingTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+3	3	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManagerMBean.java
+
+[35dffe148] Jerry Shea 2020-05-04 less code #663
+1	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[ab3a31aa0] Jerry Shea 2020-05-04 Make strongAppenders take precedence over "chronicle.queue.release.weakRef.resource" #663
+4	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[2484a6915] teamcity_hft 2020-05-03 Publishing javadoc for chronicle-queue:5.19.13-SNAPSHOT
+89	59	apidocs/allclasses-frame.html
+89	59	apidocs/allclasses-noframe.html
+112	156	apidocs/constant-values.html
+43	19	apidocs/deprecated-list.html
+27	18	apidocs/help-doc.html
+1454	841	apidocs/index-all.html
+9	8	apidocs/index.html
+273	0	apidocs/net/openhft/chronicle/queue/BenchmarkMain.html
+355	0	apidocs/net/openhft/chronicle/queue/BufferMode.html
+385	0	apidocs/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.html
+1036	0	apidocs/net/openhft/chronicle/queue/ChronicleQueue.html
+385	0	apidocs/net/openhft/chronicle/queue/ChronicleReaderMain.html
+236	0	apidocs/net/openhft/chronicle/queue/CycleCalculator.html
+353	0	apidocs/net/openhft/chronicle/queue/DefaultCycleCalculator.html
+316	0	apidocs/net/openhft/chronicle/queue/DumpQueueMain.html
+525	0	apidocs/net/openhft/chronicle/queue/ExcerptAppender.html
+272	0	apidocs/net/openhft/chronicle/queue/ExcerptCommon.html
+692	0	apidocs/net/openhft/chronicle/queue/ExcerptTailer.html
+313	0	apidocs/net/openhft/chronicle/queue/JDBCComponent.html
+280	0	apidocs/net/openhft/chronicle/queue/JDBCResult.html
+324	0	apidocs/net/openhft/chronicle/queue/JDBCService.html
+244	0	apidocs/net/openhft/chronicle/queue/JDBCStatement.html
+558	0	apidocs/net/openhft/chronicle/queue/NoMessageHistory.html
+323	0	apidocs/net/openhft/chronicle/queue/PretouchHandler.html
+359	0	apidocs/net/openhft/chronicle/queue/QueueOffsetSpec.Type.html
+379	0	apidocs/net/openhft/chronicle/queue/QueueOffsetSpec.html
+273	0	apidocs/net/openhft/chronicle/queue/QueueUnlockMain.html
+419	0	apidocs/net/openhft/chronicle/queue/RollCycle.html
+776	0	apidocs/net/openhft/chronicle/queue/RollCycles.html
+388	0	apidocs/net/openhft/chronicle/queue/RollDetails.html
+368	0	apidocs/net/openhft/chronicle/queue/TailerDirection.html
+379	0	apidocs/net/openhft/chronicle/queue/TailerState.html
+391	0	apidocs/net/openhft/chronicle/queue/backed/map/QueueBackedMaps.html
+318	0	apidocs/net/openhft/chronicle/queue/backed/map/QueueEvents.html
+126	0	apidocs/net/openhft/chronicle/queue/backed/map/class-use/QueueBackedMaps.html
+182	0	apidocs/net/openhft/chronicle/queue/backed/map/class-use/QueueEvents.html
+25	0	apidocs/net/openhft/chronicle/queue/backed/map/package-frame.html
+161	0	apidocs/net/openhft/chronicle/queue/backed/map/package-summary.html
+147	0	apidocs/net/openhft/chronicle/queue/backed/map/package-tree.html
+159	0	apidocs/net/openhft/chronicle/queue/backed/map/package-use.html
+267	0	apidocs/net/openhft/chronicle/queue/batch/BatchAppender.html
+292	0	apidocs/net/openhft/chronicle/queue/batch/BatchAppenderNative.html
+195	0	apidocs/net/openhft/chronicle/queue/batch/class-use/BatchAppender.html
+126	0	apidocs/net/openhft/chronicle/queue/batch/class-use/BatchAppenderNative.html
+25	0	apidocs/net/openhft/chronicle/queue/batch/package-frame.html
+161	0	apidocs/net/openhft/chronicle/queue/batch/package-summary.html
+143	0	apidocs/net/openhft/chronicle/queue/batch/package-tree.html
+182	0	apidocs/net/openhft/chronicle/queue/batch/package-use.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/BenchmarkMain.html
+240	0	apidocs/net/openhft/chronicle/queue/class-use/BufferMode.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/ChronicleHistoryReaderMain.html
+343	0	apidocs/net/openhft/chronicle/queue/class-use/ChronicleQueue.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/ChronicleReaderMain.html
+188	0	apidocs/net/openhft/chronicle/queue/class-use/CycleCalculator.html
+175	0	apidocs/net/openhft/chronicle/queue/class-use/DefaultCycleCalculator.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/DumpQueueMain.html
+219	0	apidocs/net/openhft/chronicle/queue/class-use/ExcerptAppender.html
+214	0	apidocs/net/openhft/chronicle/queue/class-use/ExcerptCommon.html
+311	0	apidocs/net/openhft/chronicle/queue/class-use/ExcerptTailer.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCComponent.html
+178	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCResult.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCService.html
+179	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCStatement.html
+175	0	apidocs/net/openhft/chronicle/queue/class-use/NoMessageHistory.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/PretouchHandler.html
+175	0	apidocs/net/openhft/chronicle/queue/class-use/QueueOffsetSpec.Type.html
+201	0	apidocs/net/openhft/chronicle/queue/class-use/QueueOffsetSpec.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/QueueUnlockMain.html
+301	0	apidocs/net/openhft/chronicle/queue/class-use/RollCycle.html
+188	0	apidocs/net/openhft/chronicle/queue/class-use/RollCycles.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/RollDetails.html
+275	0	apidocs/net/openhft/chronicle/queue/class-use/TailerDirection.html
+203	0	apidocs/net/openhft/chronicle/queue/class-use/TailerState.html
+333	0	apidocs/net/openhft/chronicle/queue/impl/CommonStore.html
+255	0	apidocs/net/openhft/chronicle/queue/impl/ExcerptContext.html
+535	0	apidocs/net/openhft/chronicle/queue/impl/RollingChronicleQueue.html
+297	0	apidocs/net/openhft/chronicle/queue/impl/RollingResourcesCache.Resource.html
+374	0	apidocs/net/openhft/chronicle/queue/impl/RollingResourcesCache.html
+245	0	apidocs/net/openhft/chronicle/queue/impl/StoreFileListener.html
+235	0	apidocs/net/openhft/chronicle/queue/impl/StoreReleasable.html
+379	0	apidocs/net/openhft/chronicle/queue/impl/TableStore.html
+508	0	apidocs/net/openhft/chronicle/queue/impl/WireStore.html
+200	0	apidocs/net/openhft/chronicle/queue/impl/WireStoreFactory.html
+361	0	apidocs/net/openhft/chronicle/queue/impl/WireStorePool.html
+284	0	apidocs/net/openhft/chronicle/queue/impl/WireStoreSupplier.html
+248	0	apidocs/net/openhft/chronicle/queue/impl/class-use/CommonStore.html
+255	0	apidocs/net/openhft/chronicle/queue/impl/class-use/ExcerptContext.html
+166	0	apidocs/net/openhft/chronicle/queue/impl/class-use/RollingChronicleQueue.html
+168	0	apidocs/net/openhft/chronicle/queue/impl/class-use/RollingResourcesCache.Resource.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/class-use/RollingResourcesCache.html
+206	0	apidocs/net/openhft/chronicle/queue/impl/class-use/StoreFileListener.html
+201	0	apidocs/net/openhft/chronicle/queue/impl/class-use/StoreReleasable.html
+305	0	apidocs/net/openhft/chronicle/queue/impl/class-use/TableStore.html
+224	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStore.html
+166	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStoreFactory.html
+167	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStorePool.html
+167	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStoreSupplier.html
+35	0	apidocs/net/openhft/chronicle/queue/impl/package-frame.html
+199	0	apidocs/net/openhft/chronicle/queue/impl/package-summary.html
+228	0	apidocs/net/openhft/chronicle/queue/impl/package-tree.html
+245	0	apidocs/net/openhft/chronicle/queue/impl/package-use.html
+406	0	apidocs/net/openhft/chronicle/queue/impl/single/BinarySearch.html
+302	0	apidocs/net/openhft/chronicle/queue/impl/single/DirectoryListing.html
+489	0	apidocs/net/openhft/chronicle/queue/impl/single/MetaDataField.html
+375	0	apidocs/net/openhft/chronicle/queue/impl/single/MetaDataKeys.html
+342	0	apidocs/net/openhft/chronicle/queue/impl/single/NoopQueueLock.html
+336	0	apidocs/net/openhft/chronicle/queue/impl/single/PrecreatedFiles.html
+324	0	apidocs/net/openhft/chronicle/queue/impl/single/Pretoucher.html
+378	0	apidocs/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.html
+265	0	apidocs/net/openhft/chronicle/queue/impl/single/QueueLock.html
+327	0	apidocs/net/openhft/chronicle/queue/impl/single/ReadOnlyWriteLock.html
+244	0	apidocs/net/openhft/chronicle/queue/impl/single/ReferenceCountedCache.html
+359	0	apidocs/net/openhft/chronicle/queue/impl/single/SCQMeta.html
+367	0	apidocs/net/openhft/chronicle/queue/impl/single/ScanResult.html
+1507	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.html
+1990	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.html
+230	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.InternalAppender.html
+986	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.StoreTailer.html
+266	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.html
+841	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.html
+398	0	apidocs/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.html
+372	0	apidocs/net/openhft/chronicle/queue/impl/single/TSQueueLock.html
+361	0	apidocs/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.html
+277	0	apidocs/net/openhft/chronicle/queue/impl/single/WriteLock.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/BinarySearch.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/DirectoryListing.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/MetaDataField.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/MetaDataKeys.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/NoopQueueLock.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/PrecreatedFiles.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/Pretoucher.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/QueueFileShrinkManager.html
+207	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/QueueLock.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/ReadOnlyWriteLock.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/ReferenceCountedCache.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SCQMeta.html
+219	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/ScanResult.html
+231	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueue.html
+501	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueBuilder.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueExcerpts.InternalAppender.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueExcerpts.StoreTailer.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueExcerpts.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueStore.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/StoreComponentReferenceHandler.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/TSQueueLock.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/TableStoreWriteLock.html
+170	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/WriteLock.html
+49	0	apidocs/net/openhft/chronicle/queue/impl/single/package-frame.html
+264	0	apidocs/net/openhft/chronicle/queue/impl/single/package-summary.html
+191	0	apidocs/net/openhft/chronicle/queue/impl/single/package-tree.html
+233	0	apidocs/net/openhft/chronicle/queue/impl/single/package-use.html
+417	0	apidocs/net/openhft/chronicle/queue/impl/table/AbstractTSQueueLock.html
+412	0	apidocs/net/openhft/chronicle/queue/impl/table/Metadata.NoMeta.html
+289	0	apidocs/net/openhft/chronicle/queue/impl/table/Metadata.html
+593	0	apidocs/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.html
+407	0	apidocs/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.html
+639	0	apidocs/net/openhft/chronicle/queue/impl/table/SingleTableStore.html
+172	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/AbstractTSQueueLock.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/Metadata.NoMeta.html
+278	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/Metadata.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/ReadonlyTableStore.html
+195	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/SingleTableBuilder.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/SingleTableStore.html
+32	0	apidocs/net/openhft/chronicle/queue/impl/table/package-frame.html
+186	0	apidocs/net/openhft/chronicle/queue/impl/table/package-summary.html
+180	0	apidocs/net/openhft/chronicle/queue/impl/table/package-tree.html
+206	0	apidocs/net/openhft/chronicle/queue/impl/table/package-use.html
+273	0	apidocs/net/openhft/chronicle/queue/jitter/QueuePingPongMain.html
+126	0	apidocs/net/openhft/chronicle/queue/jitter/class-use/QueuePingPongMain.html
+21	0	apidocs/net/openhft/chronicle/queue/jitter/package-frame.html
+144	0	apidocs/net/openhft/chronicle/queue/jitter/package-summary.html
+139	0	apidocs/net/openhft/chronicle/queue/jitter/package-tree.html
+126	0	apidocs/net/openhft/chronicle/queue/jitter/package-use.html
+51	0	apidocs/net/openhft/chronicle/queue/package-frame.html
+280	0	apidocs/net/openhft/chronicle/queue/package-summary.html
+215	0	apidocs/net/openhft/chronicle/queue/package-tree.html
+347	0	apidocs/net/openhft/chronicle/queue/package-use.html
+664	0	apidocs/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.html
+461	0	apidocs/net/openhft/chronicle/queue/reader/ChronicleReader.html
+249	0	apidocs/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.html
+310	0	apidocs/net/openhft/chronicle/queue/reader/DummyMethodReaderQueueEntryHandler.html
+310	0	apidocs/net/openhft/chronicle/queue/reader/MessageToTextQueueEntryHandler.html
+310	0	apidocs/net/openhft/chronicle/queue/reader/MethodReaderQueueEntryHandler.html
+243	0	apidocs/net/openhft/chronicle/queue/reader/QueueEntryHandler.html
+230	0	apidocs/net/openhft/chronicle/queue/reader/class-use/ChronicleHistoryReader.html
+242	0	apidocs/net/openhft/chronicle/queue/reader/class-use/ChronicleReader.html
+166	0	apidocs/net/openhft/chronicle/queue/reader/class-use/ChronicleReaderPlugin.html
+126	0	apidocs/net/openhft/chronicle/queue/reader/class-use/DummyMethodReaderQueueEntryHandler.html
+126	0	apidocs/net/openhft/chronicle/queue/reader/class-use/MessageToTextQueueEntryHandler.html
+126	0	apidocs/net/openhft/chronicle/queue/reader/class-use/MethodReaderQueueEntryHandler.html
+189	0	apidocs/net/openhft/chronicle/queue/reader/class-use/QueueEntryHandler.html
+30	0	apidocs/net/openhft/chronicle/queue/reader/package-frame.html
+181	0	apidocs/net/openhft/chronicle/queue/reader/package-summary.html
+157	0	apidocs/net/openhft/chronicle/queue/reader/package-tree.html
+192	0	apidocs/net/openhft/chronicle/queue/reader/package-use.html
+425	0	apidocs/net/openhft/chronicle/queue/service/EventLoopServiceWrapper.html
+252	0	apidocs/net/openhft/chronicle/queue/service/ServiceWrapper.html
+555	0	apidocs/net/openhft/chronicle/queue/service/ServiceWrapperBuilder.html
+126	0	apidocs/net/openhft/chronicle/queue/service/class-use/EventLoopServiceWrapper.html
+179	0	apidocs/net/openhft/chronicle/queue/service/class-use/ServiceWrapper.html
+208	0	apidocs/net/openhft/chronicle/queue/service/class-use/ServiceWrapperBuilder.html
+26	0	apidocs/net/openhft/chronicle/queue/service/package-frame.html
+163	0	apidocs/net/openhft/chronicle/queue/service/package-summary.html
+156	0	apidocs/net/openhft/chronicle/queue/service/package-tree.html
+162	0	apidocs/net/openhft/chronicle/queue/service/package-use.html
+367	0	apidocs/net/openhft/chronicle/queue/util/FileState.html
+368	0	apidocs/net/openhft/chronicle/queue/util/FileUtil.html
+181	0	apidocs/net/openhft/chronicle/queue/util/class-use/FileState.html
+126	0	apidocs/net/openhft/chronicle/queue/util/class-use/FileUtil.html
+25	0	apidocs/net/openhft/chronicle/queue/util/package-frame.html
+161	0	apidocs/net/openhft/chronicle/queue/util/package-summary.html
+151	0	apidocs/net/openhft/chronicle/queue/util/package-tree.html
+159	0	apidocs/net/openhft/chronicle/queue/util/package-use.html
+16	8	apidocs/overview-frame.html
+58	21	apidocs/overview-summary.html
+218	2900	apidocs/overview-tree.html
+10	3	apidocs/package-list
+221	121	apidocs/stylesheet.css
+
+[3f10e135e] Rob Austin 2020-05-01 we should reset the pauser after a timeout exception
+2	0	src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+
+[15c6566b3] Dmitry Pisklov 2020-04-28 Cleanup
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/ClientWiredExcerptAppenderStateless.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/ClientWiredExcerptTailerStateless.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/QueueAppenderResponse.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/QueueTailerResponse.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/Compression.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/Excerpts.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/DirectChronicleQueue.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/SingleAppender.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/SingleTailer.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/WireUtil.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/GenerateData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/OffHeapGenerateData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/OffHeapReplayData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/OffHeapTestData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/ReplayData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/TestData.java
+1	3	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/simple/WriterMain.java
+2	4	src/main/java/net/openhft/chronicle/queue/BufferMode.java
+1	3	src/main/java/net/openhft/chronicle/queue/JDBCResult.java
+1	3	src/main/java/net/openhft/chronicle/queue/JDBCService.java
+1	3	src/main/java/net/openhft/chronicle/queue/JDBCStatement.java
+1	3	src/main/java/net/openhft/chronicle/queue/NoMessageHistory.java
+1	3	src/main/java/net/openhft/chronicle/queue/TailerState.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/ExcerptContext.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/StoreFileListener.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataKeys.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/ScanResult.java
+1	3	src/main/java/net/openhft/chronicle/queue/service/EventLoopServiceWrapper.java
+1	3	src/main/java/net/openhft/chronicle/queue/service/ServiceWrapper.java
+1	3	src/main/java/net/openhft/chronicle/queue/service/ServiceWrapperBuilder.java
+1	3	src/test/java/net/openhft/chronicle/queue/CountingJDBCResult.java
+1	3	src/test/java/net/openhft/chronicle/queue/JDBCServiceTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/MessageReaderWriterTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/MethodReaderObjectReuseTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/ReadmeTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/RunLargeQueueMain.java
+1	3	src/test/java/net/openhft/chronicle/queue/TestAppenderThreadSafe.java
+2	4	src/test/java/net/openhft/chronicle/queue/WriteReadTextTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/MarketDataListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/Order.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderIdea.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderIdeaListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderManager.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderManagerTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/Side.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/SidedMarketDataCombiner.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/SidedMarketDataListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/SidedPrice.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/TopOfBookPrice.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloReplier.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloWorld.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloWorldImpl.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloWorldTest.java
+
+[f8fdd00e8] Dmitry Pisklov 2020-04-28 Remaining fixes for #658 and documentation update
+65	61	README.adoc
+4	6	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+13	17	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+88	55	src/test/java/net/openhft/chronicle/queue/bench/QueueContendedWritesJLBHBenchmark.java
+16	1	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+
+[9593205e5] Dmitry Pisklov 2020-04-27 Leftovers
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[6d196931d] Dmitry Pisklov 2020-04-27 Reduce footprint for doublebuffering - #658
+4	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[28c8aec68] Dmitry Pisklov 2020-04-27 Added double buffering for contended appends - fixes #658
+99	6	README.adoc
+2	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+32	6	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+40	16	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+151	0	src/test/java/net/openhft/chronicle/queue/bench/QueueContendedWritesJLBHBenchmark.java
+
+[260b0f5a6] Rob Austin 2020-04-27 ignored tests https://github.com/OpenHFT/Chronicle-Queue/issues/660
+4	0	src/test/java/net/openhft/chronicle/queue/reader/ChronicleMethodReaderTest.java
+
+[8e4d7a5a2] Peter Lawrey 2020-04-27 Extend argument to enable MethodReader support to specify an interface to use for decode messages in a queue to support custom DTOs and @MethodIds, closes https://github.com/OpenHFT/Chronicle-Queue/issues/659
+41	12	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+12	0	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+[277358806] Peter Lawrey 2020-04-27 Revert "enhance ChronicleReader"
+14	54	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+0	10	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+[987cf793d] Peter Lawrey 2020-04-27 Extend argument to enable MethodReader support to specify an interface to use for decode messages in a queue to support custom DTOs and @MethodIds, closes https://github.com/OpenHFT/Chronicle-Queue/issues/659
+1	5	README.adoc
+
+[6ceee4a48] Peter Lawrey 2020-04-27 Merge remote-tracking branch 'origin/master'
+[818d9e90f] Peter Lawrey 2020-04-27 Extend argument to enable MethodReader support to specify an interface to use for decode messages in a queue to support custom DTOs and @MethodIds, closes https://github.com/OpenHFT/Chronicle-Queue/issues/659
+1	1	src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+55	16	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+36	0	src/main/java/net/openhft/chronicle/queue/reader/DummyMethodReaderQueueEntryHandler.java
+16	17	src/main/java/net/openhft/chronicle/queue/reader/MethodReaderQueueEntryHandler.java
+269	0	src/test/java/net/openhft/chronicle/queue/reader/ChronicleMethodReaderTest.java
+11	9	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+[f1ba2b46f] Dmitry Pisklov 2020-04-24 Update root pom
+1	1	benchmarks/pom.xml
+1	1	chronicle-sandbox/pom.xml
+1	1	chronicle-test/pom.xml
+1	1	load-harness/pom.xml
+7	12	pom.xml
+
+[fd1803e71] teamcity_hft 2020-04-23 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[455aba613] teamcity_hft 2020-04-23 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[bd77f4cf3] teamcity_hft 2020-04-23 [maven-release-plugin] prepare release chronicle-queue-5.19.12
+2	2	pom.xml
+
+[672729e0e] teamcity_hft 2020-04-23 Updating to bom version 2.19.117
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[9c59c41bf] Dmitry Pisklov 2020-04-22 Prevent writing to the sink queue - fixes ChronicleEnterprise/Chronicle-Queue-Enterprise#77
+25	23	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[7cd797ca7] Dmitry Pisklov 2020-04-22 Merge remote-tracking branch 'origin/master'
+[864aed574] Dmitry Pisklov 2020-04-22 Rename net.openhft.chronicle.network.cluster.ConnectionStrategy to avoid duplicated class name with net.openhft.chronicle.network.ConnectionStrategy, fixes OpenHFT/Chronicle-Network#63
+0	3	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/BytesRingBufferTest.java
+0	3	src/main/java/net/openhft/chronicle/queue/impl/single/BinarySearch.java
+0	3	src/test/java/net/openhft/chronicle/queue/CreateAtIndexTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/LastIndexAppendedTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/IndexTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/MultiThreadedRollTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/TestBinarySearch.java
+
+[db2c8fd0c] teamcity_hft 2020-04-22 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[862de4bfc] teamcity_hft 2020-04-22 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[924d38d3e] teamcity_hft 2020-04-22 [maven-release-plugin] prepare release chronicle-queue-5.19.11
+2	2	pom.xml
+
+[eea16a99c] teamcity_hft 2020-04-22 Updating to bom version 2.19.114
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[05669ed2b] Dmitry Pisklov 2020-04-22 Cleanup
+0	30	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[0f76724f7] Dmitry Pisklov 2020-04-21 Merge remote-tracking branch 'origin/master'
+[c805613ce] Dmitry Pisklov 2020-04-21 Fix the alignment to not be part of the message written (and read) - as part of fixing the ARM support, to fix OpenHFT/Chronicle-Queue#656
+2	1	src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+0	19	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+2	0	src/main/java/net/openhft/chronicle/queue/impl/WireStore.java
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+0	38	src/main/java/net/openhft/chronicle/queue/impl/single/QueueInspector.java
+4	7	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+2	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+14	42	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+21	4	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+28	21	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+322	312	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+2	6	src/test/java/net/openhft/chronicle/queue/ThreadedQueueTest.java
+478	477	src/test/java/net/openhft/chronicle/queue/WriteBytesTest.java
+64	176	src/test/java/net/openhft/chronicle/queue/impl/RollingChronicleQueueTest.java
+0	78	src/test/java/net/openhft/chronicle/queue/impl/single/QueueInspectorTest.java
+125	258	src/test/java/net/openhft/chronicle/queue/impl/single/RollingCycleTest.java
+266	308	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormat2Test.java
+2	4	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormatTest.java
+2	3	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilderTest.java
+51	63	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[0b773c3c6] teamcity_hft 2020-04-21 Reverting back to bom version 2.19-SNAPSHOT
+[4d0ee247b] teamcity_hft 2020-04-21 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[b7a145605] teamcity_hft 2020-04-21 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[73ee4b4f2] teamcity_hft 2020-04-21 [maven-release-plugin] prepare release chronicle-queue-5.19.10
+2	2	pom.xml
+
+[30e12d999] teamcity_hft 2020-04-21 Updating to bom version 2.19.108
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[1a1cbd99d] teamcity_hft 2020-04-21 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[75c60bc5b] teamcity_hft 2020-04-21 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[61d872917] teamcity_hft 2020-04-21 [maven-release-plugin] prepare release chronicle-queue-5.19.9
+2	2	pom.xml
+
+[666aa8eea] teamcity_hft 2020-04-21 Updating to bom version 2.19.105
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[b770b9906] Jerry Shea 2020-04-21 comment
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+[e16772b22] Jerry Shea 2020-04-21 Don't lock the queue if you can't write
+4	2	src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+
+[603dd3901] Jerry Shea 2020-04-21 Allow pretoucher to be read only #657 PretoucherTest was broken so introduce a horrible hack
+17	12	src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+78	13	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+[de28c57b0] Dmitry Pisklov 2020-04-20 Delete incorrect test case - there's no more incomplete headers possible in the CQ file
+0	35	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleTest.java
+
+[f04dd7f69] Dmitry Pisklov 2020-04-20 Fix ARM alignment - #656
+5	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+1	0	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+
+[32e8c72fc] Rob Austin 2020-04-16 changed from to direction == BACKWARD to direction != FORWARD
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+1	0	src/test/java/net/openhft/chronicle/queue/ThreadedQueueTest.java
+
+[0bdf67581] Rob Austin 2020-04-16 fixed #653 by calling reading document if EOF
+16	9	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[264bbf3af] Dmitry Pisklov 2020-04-14 Merge pull request #654 from dkhamitov/print-help-not-just-usage
+[1b8b8fb47] dkhamitov 2020-04-13 Make help printed by default (no args) for CLI tools
+16	8	src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+16	7	src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+
+[972fd0944] teamcity_hft 2020-04-13 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[9485f91c0] teamcity_hft 2020-04-13 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[669b1e07e] teamcity_hft 2020-04-13 [maven-release-plugin] prepare release chronicle-queue-5.19.8
+2	2	pom.xml
+
+[9e6fd61c8] teamcity_hft 2020-04-13 Updating to bom version 2.19.96
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[8ffab47e8] Rob Austin 2020-04-13 fixed https://github.com/OpenHFT/Chronicle-Queue/issues/653
+4	0	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+4	6	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+8	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+55	20	src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+
+[834d9bd0c] teamcity_hft 2020-04-02 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[5dd7fe4d6] teamcity_hft 2020-04-02 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[facadde7c] teamcity_hft 2020-04-02 [maven-release-plugin] prepare release chronicle-queue-5.19.7
+2	2	pom.xml
+
+[96fd98eac] teamcity_hft 2020-04-02 Updating to bom version 2.19.68
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[d4cf3faa2] Peter Lawrey 2020-04-02 Remove a tag which makes no sense.
+0	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+
+[5330e6de0] teamcity_hft 2020-04-02 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[24ac8a845] teamcity_hft 2020-04-02 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[6673d62a9] teamcity_hft 2020-04-02 [maven-release-plugin] prepare release chronicle-queue-5.19.6
+2	2	pom.xml
+
+[374c700eb] teamcity_hft 2020-04-02 Updating to bom version 2.19.65
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[a4c6cae7e] Dmitry Pisklov 2020-03-31 May be fix flaky test
+12	17	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+[e1e7cf884] Rob Austin 2020-03-30 reverted back to  <chronicle.datagrid.version>2.19.4-SNAPSHOT</chronicle.datagrid.version> and added a test to queue
+31	0	src/test/java/net/openhft/chronicle/queue/ValueStringArray.java
+42	0	src/test/java/net/openhft/chronicle/queue/ValueStringArrayTest.java
+
+[b1dd5ff05] teamcity_hft 2020-03-30 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[d319dbe7d] teamcity_hft 2020-03-30 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[a162c70e2] teamcity_hft 2020-03-30 [maven-release-plugin] prepare release chronicle-queue-5.19.5
+2	2	pom.xml
+
+[801cf649f] teamcity_hft 2020-03-30 Updating to bom version 2.19.48
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[89e335f4e] Rob Austin 2020-03-30 fixed https://github.com/OpenHFT/Chronicle-Queue/issues/651
+2	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+12	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+96	4	src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+
+[1da21dddc] Dmitry Pisklov 2020-03-27 Merge remote-tracking branch 'origin/master'
+[032f2e5d0] Dmitry Pisklov 2020-03-27 Update nexus to use HTTPS
+2	2	load-harness/pom.xml
+1	1	pom.xml
+
+[942a5a522] Rob Austin 2020-03-27 change to only create the file if we get an FileNotFoundException
+22	16	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[abab67ce6] Rob Austin 2020-03-27 creates all the directories
+2	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[d7dcf84e0] Rob Austin 2020-03-27 chagned logging to ->                  Jvm.warn().on(getClass(), "unable to create a file at " + path.getAbsolutePath(), ex);
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[8e39912d7] Rob Austin 2020-03-27 Merge remote-tracking branch 'origin/master'
+[c38aa50c1] Rob Austin 2020-03-27 pretoucher to create the directory if it does not exist
+16	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[f2ee70466] teamcity_hft 2020-03-27 Reverting back to bom version 2.19-SNAPSHOT
+[4e09022ae] teamcity_hft 2020-03-27 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[64e2f018c] teamcity_hft 2020-03-27 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[95acd5868] teamcity_hft 2020-03-27 [maven-release-plugin] prepare release chronicle-queue-5.19.4
+2	2	pom.xml
+
+[bd5ccc00a] teamcity_hft 2020-03-27 Updating to bom version 2.19.45
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[97593f893] Rob Austin 2020-03-26 fixed file not found issue in pretoucher
+12	8	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[9ac55822f] Rob Austin 2020-03-26 Merge remote-tracking branch 'origin/master'
+[6b812f401] Dmitry Pisklov 2020-03-26 Update doco
+24	0	README.adoc
+
+[00b7109a3] Rob Austin 2020-03-26 Merge remote-tracking branch 'origin/master'
+[08940bc08] teamcity_hft 2020-03-25 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[38ede0d7f] teamcity_hft 2020-03-25 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[caaf65cd7] teamcity_hft 2020-03-25 [maven-release-plugin] prepare release chronicle-queue-5.19.3
+2	2	pom.xml
+
+[ddb2943c0] teamcity_hft 2020-03-25 Updating to bom version 2.19.43
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[8d6fb4df6] Rob Austin 2020-03-24 improved javadoc
+5	1	src/main/java/net/openhft/chronicle/queue/BufferMode.java
+3	1	src/main/java/net/openhft/chronicle/queue/RollCycle.java
+4	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/RollingChronicleQueue.java
+12	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[feee2af50] Rob Austin 2020-03-24 ignored on windows net.openhft.chronicle.queue.impl.single.EofMarkerOnEmptyQueueTest.shouldRecoverFromEmptyQueueOnRoll
+3	0	src/test/java/net/openhft/chronicle/queue/impl/single/EofMarkerOnEmptyQueueTest.java
+
+[b9f9d2687] Rob Austin 2020-03-24 https://github.com/ChronicleEnterprise/Chronicle-Services/issues/149 fixed NPE
+6	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[9a979b077] Rob Austin 2020-03-24 https://github.com/ChronicleEnterprise/Chronicle-Services/issues/149 found further places where we move the index but don't set the `address`
+16	10	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[5a0b8d30c] Rob Austin 2020-03-24 https://github.com/ChronicleEnterprise/Chronicle-Services/issues/149 peekDocument was not taking account of move to index, more changes to follow shortly
+16	10	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+82	0	src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+
+[be0a9f45f] Rob Austin 2020-03-23 ignored as this is a stress test
+1	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+
+[4b956b67c] Rob Austin 2020-03-23 ignore pretocher on windows
+3	2	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[72e56a299] Rob Austin 2020-03-23 removed test
+0	34	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+[43c7ce547] Rob Austin 2020-03-23 updated docs
+1	1	README.adoc
+
+[b285565b8] Rob Austin 2020-03-23 added -"( unless you are writing bytes )""
+1	1	README.adoc
+
+[e8172f54e] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+1	1	README.adoc
+
+[7a4ea83ce] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+2	2	README.adoc
+
+[011dd3b8d] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+4	3	README.adoc
+
+[840a5c9ca] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+15	18	README.adoc
+
+[53ec9b257] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+2	2	README.adoc
+
+[20fc2d917] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+5	1	README.adoc
+
+[66d20298f] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+8	0	README.adoc
+
+[0d81475b3] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+29	1	README.adoc
+
+[77d110f36] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+1	1	README.adoc
+
+[6f645c152] Rob Austin 2020-03-23 added "==== Padding ensured data is cache line aligned"
+17	0	README.adoc
+
+[ae7a566a2] Rob Austin 2020-03-23 fixed and removed tests
+0	4	src/main/java/net/openhft/chronicle/queue/reader/StringEventsMethodWriter.java
+0	93	src/test/java/net/openhft/chronicle/queue/FsFullReadTest.java
+0	73	src/test/java/net/openhft/chronicle/queue/FsFullWriteTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+[f9e55fc84] Rob Austin 2020-03-23 removed @Ignore
+4	0	src/main/java/net/openhft/chronicle/queue/reader/StringEventsMethodWriter.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+4	2	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+0	6	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+0	2	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[4353a6056] Rob Austin 2020-03-23 removed @Ignore
+0	1	src/test/java/net/openhft/chronicle/queue/FsFullWriteTest.java
+
+[9c39478e5] Rob Austin 2020-03-23 removed @Ignore
+0	1	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[850e0a2d6] Rob Austin 2020-03-23 removed @Ignore
+2	3	src/test/java/net/openhft/chronicle/queue/JDBCServiceTest.java
+
+[ed125c5e4] Rob Austin 2020-03-23 aded jitter to docs
+51	0	README.adoc
+
+[ce47a5e6b] Dmitry Pisklov 2020-03-19 Merge pull request #649 from JanStureNielsen/master
+[12f0a9a8f] Jan Nielsen 2020-03-19 Polish -- remove unused imports.
+0	1	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+0	1	src/test/java/net/openhft/chronicle/queue/QueueReadForwardSkippingACycleBiggerThanADayTest.java
+0	11	src/test/java/net/openhft/chronicle/queue/cleanup/CleanupUnusedQueueFilesTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+0	4	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherListener.java
+0	1	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherMain.java
+
+[446c02be3] Jerry Shea 2020-03-05 doco
+1	1	README.adoc
+
+[a5bd6ad07] Jerry Shea 2020-03-05 remove broken link
+0	2	README.adoc
+
+[32c2d85b6] Peter Lawrey 2020-03-04 Move to .19 releases
+1	0	pom.xml
+
+[4e5d8093a] Peter Lawrey 2020-03-04 Move to .19 releases
+1	1	benchmarks/pom.xml
+2	3	chronicle-sandbox/pom.xml
+2	3	chronicle-test/pom.xml
+1	2	load-harness/pom.xml
+1	3	pom.xml
+
+[b16d634ac] teamcity_hft 2020-03-03 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[3fc399473] teamcity_hft 2020-03-03 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[f663b2be5] teamcity_hft 2020-03-03 [maven-release-plugin] prepare release chronicle-queue-5.19.2
+2	2	pom.xml
+
+[c0c43bdc6] teamcity_hft 2020-03-03 Updating to bom version 2.19.12
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[366a1312f] Dmitry Pisklov 2020-03-03 Fix test and release file handles
+8	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+1	0	src/test/java/net/openhft/chronicle/queue/impl/single/StuckQueueTest.java
+
+[779fe0a2e] Dmitry Pisklov 2020-03-03 Fix the issue with pretoucher precreating files and then causing EOF to not be written - fixes #647
+8	2	src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+26	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+21	22	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+5	6	src/test/java/net/openhft/chronicle/queue/impl/single/EofMarkerOnEmptyQueueTest.java
+
+[8d4541668] Dmitry Pisklov 2020-03-03 Cleanup
+4	4	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+3	5	src/main/java/net/openhft/chronicle/queue/impl/single/DirectoryListing.java
+0	10	src/main/java/net/openhft/chronicle/queue/impl/single/FileSystemDirectoryListing.java
+3	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+0	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+16	22	src/main/java/net/openhft/chronicle/queue/impl/single/TableDirectoryListing.java
+1	1	src/test/java/net/openhft/chronicle/queue/TestDeleteQueueFile.java
+
+[cf01f2a7d] Dmitry Pisklov 2020-03-02 Make test fail
+3	3	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[a4b4ede29] Rob Austin 2020-03-02 updated test
+0	2	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[a160d8fc9] Rob Austin 2020-03-02 https://github.com/OpenHFT/Chronicle-Queue/issues/647 added failing test
+74	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[cb4b68780] Rob Austin 2020-03-02 Merge remote-tracking branch 'origin/master'
+[d44963f5a] Rob Austin 2020-03-02 minor change
+4	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[2c0d3325d] teamcity_hft 2020-02-27 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[bd0807a0e] teamcity_hft 2020-02-27 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[7a0115d2e] teamcity_hft 2020-02-27 [maven-release-plugin] prepare release chronicle-queue-5.19.1
+2	2	pom.xml
+
+[12b83c28b] teamcity_hft 2020-02-27 Updating to bom version 2.19.6
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[624026f89] Jerry Shea 2020-02-26 Improve TableStoreWriteLock diagnosis message
+3	1	src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+
+[ad0929778] teamcity_hft 2020-02-24 Reverting back to bom version 2.19-SNAPSHOT
+[3fa412add] teamcity_hft 2020-02-24 Reverting back to bom version 2.19-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[610365c04] teamcity_hft 2020-02-24 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[cf1a1816f] teamcity_hft 2020-02-24 [maven-release-plugin] prepare release chronicle-queue-5.19.0
+2	2	pom.xml
+
+[684dbb00d] teamcity_hft 2020-02-24 Updating to bom version 2.19.0
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[0ccf73a17] teamcity_hft 2020-02-24 Updating to bom version 2.17.600
+[021b68f36] teamcity_hft 2020-02-24 Updating to bom version 2.17.600
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[7c0dd9caa] Dmitry Pisklov 2020-02-24 Move to 2.19 bom
+2	2	pom.xml
+
+[0d4ba1996] Dmitry Pisklov 2020-02-24 Move to X.19 branch
+1	1	pom.xml
+
+[df57eae31] Rob Austin 2020-02-19 fixed https://github.com/OpenHFT/Chronicle-Queue/issues/643
+0	2	README.adoc
+
+[7d1c151c4] Dmitry Pisklov 2020-02-13 Downgrade warn to debug - fixes #641
+1	4	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+[93adcf6dc] Jerry Shea 2020-02-10 doco
+2	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+
+[a5dcf9bfa] teamcity_hft 2020-02-06 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[dbd7cd910] teamcity_hft 2020-02-06 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[c7c56f446] teamcity_hft 2020-02-06 [maven-release-plugin] prepare release chronicle-queue-5.17.43
+2	2	pom.xml
+
+[bd0ef6323] teamcity_hft 2020-02-06 Updating to bom version 2.17.584
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[95e9d2be8] teamcity_hft 2020-02-05 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[07d1ec76d] teamcity_hft 2020-02-05 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[f520196dc] teamcity_hft 2020-02-05 [maven-release-plugin] prepare release chronicle-queue-5.17.42
+2	2	pom.xml
+
+[857e69bf8] teamcity_hft 2020-02-05 Updating to bom version 2.17.574
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[205f63d30] teamcity_hft 2020-02-03 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[3d9e52a6e] teamcity_hft 2020-02-03 [maven-release-plugin] prepare release chronicle-queue-5.17.41
+2	2	pom.xml
+
+[153107cac] Rob Austin 2020-02-03 rolled to       <dependency>                           <groupId>net.openhft</groupId>                           <artifactId>chronicle-bom</artifactId>                           <version>2.17.562</version>                           <type>pom</type>                           <scope>import</scope>                       </dependency>
+1	1	pom.xml
+
+[9042b334d] Jerry Shea 2020-02-02 temp ignore some tests
+3	0	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[12d8157b3] Jerry Shea 2020-02-02 Ensure default EventGroup allows replication priority by default (this thread is lazy anyway)
+2	1	docs/ring_buffer.adoc
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[d19198a99] hft-team-city 2020-01-31 Reverting back to bom version 2.17-SNAPSHOT
+[ae3438b32] hft-team-city 2020-01-31 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[fdb798415] hft-team-city 2020-01-31 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[d188cccef] hft-team-city 2020-01-31 [maven-release-plugin] prepare release chronicle-queue-5.17.40
+2	2	pom.xml
+
+[273222d1f] hft-team-city 2020-01-31 Updating to bom version 2.17.562
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[f354a1c48] Jerry Shea 2020-01-30 doco
+5	0	docs/ring_buffer.adoc
+
+[4067de8b8] Jerry Shea 2020-01-30 fix ring buffer capacity default
+2	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[0a563a0f9] teamcity_hft 2020-01-20 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[7e287525a] teamcity_hft 2020-01-20 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[4cbf6a9ee] teamcity_hft 2020-01-20 [maven-release-plugin] prepare release chronicle-queue-5.17.39
+2	2	pom.xml
+
+[2d45ad434] teamcity_hft 2020-01-20 Updating to bom version 2.17.544
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[9ddc43ae5] Dmitry Pisklov 2020-01-16 Make QueueLock reentrant and improve owning thread check
+16	15	src/main/java/net/openhft/chronicle/queue/impl/single/TSQueueLock.java
+
+[ce9194827] Dmitry Pisklov 2020-01-14 Improve tests cleanup
+30	27	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+1	0	src/test/java/net/openhft/chronicle/queue/MoveToWrongIndexThenToEndTest.java
+
+[edd6769e1] teamcity_hft 2020-01-14 Reverting back to bom version 2.17-SNAPSHOT
+[6005eb8b3] teamcity_hft 2020-01-14 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[1e0d67238] teamcity_hft 2020-01-14 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[f272067cb] teamcity_hft 2020-01-14 [maven-release-plugin] prepare release chronicle-queue-5.17.38
+2	2	pom.xml
+
+[d18963ceb] teamcity_hft 2020-01-14 Updating to bom version 2.17.542
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[5f121827d] Dmitry Pisklov 2020-01-14 Bump queue
+30	31	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[ab2491d20] Jerry Shea 2020-01-14 tidy doco
+1	4	docs/ring_buffer.adoc
+
+[13ab40ecc] teamcity_hft 2020-01-13 Updating to bom version 2.17.540
+[36abb149e] Peter Lawrey 2020-01-13 Merge remote-tracking branch 'origin/master'
+[64d200273] Peter Lawrey 2020-01-13 Move to new chunks eagerly instead of lazily with the pretoucher, closes https://github.com/ChronicleEnterprise/Chronicle-FIX/issues/391
+7	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+29	29	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherStateTest.java
+
+[cd4916873] teamcity_hft 2020-01-13 Updating to bom version 2.17.540
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[4f2fca00c] Peter Lawrey 2020-01-13 Move to new chunks eagerly instead of lazily with the pretoucher, closes https://github.com/ChronicleEnterprise/Chronicle-FIX/issues/391
+1	1	src/main/java/net/openhft/chronicle/queue/PretouchHandler.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+
+[225a8af0a] teamcity_hft 2020-01-11 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[422bbd1df] teamcity_hft 2020-01-11 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[280fde6f2] teamcity_hft 2020-01-11 [maven-release-plugin] prepare release chronicle-queue-5.17.37
+2	2	pom.xml
+
+[e76b3cce3] teamcity_hft 2020-01-11 Updating to bom version 2.17.536
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[34329d2c5] Peter Lawrey 2020-01-11 Make the pretoucher touch further ahead for long delays on new chunks.
+7	1	src/main/java/net/openhft/chronicle/queue/PretouchHandler.java
+
+[f35755b80] Peter Lawrey 2020-01-11 Make the pretoucher touch further ahead for long delays on new chunks.
+53	57	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherStateTest.java
+
+[cfdd77e24] Peter Lawrey 2020-01-11 Make the pretoucher touch further ahead for long delays on new chunks.
+3	2	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+
+[cecb7360d] teamcity_hft 2020-01-11 Reverting back to bom version 2.17-SNAPSHOT
+[b6d72e8ec] teamcity_hft 2020-01-11 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[f9fa6da3f] teamcity_hft 2020-01-11 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[29be40a8f] teamcity_hft 2020-01-11 [maven-release-plugin] prepare release chronicle-queue-5.17.36
+2	2	pom.xml
+
+[5fca57512] teamcity_hft 2020-01-11 Updating to bom version 2.17.533
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[25ebc900e] Peter Lawrey 2020-01-11 Make the PretoucherState.headRoom configurable and 1 MB by default, closes https://github.com/ChronicleEnterprise/Chronicle-FIX/issues/391
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+
+[611bd834b] teamcity_hft 2020-01-08 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[2040f5e09] teamcity_hft 2020-01-08 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[e7fe875dd] teamcity_hft 2020-01-08 [maven-release-plugin] prepare release chronicle-queue-5.17.35
+2	2	pom.xml
+
+[3b64e1054] teamcity_hft 2020-01-08 Updating to bom version 2.17.531
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[18708f7e0] Rob Austin 2020-01-08 added net.openhft.chronicle.queue.ChronicleQueueIndexTest.testIndexQueue
+48	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[308c7dff7] Rob Austin 2020-01-08 Merge remote-tracking branch 'origin/master'
+[3b75efc12] Rob Austin 2020-01-08 changed to     setCycle2(lastCycle, false);
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[d6114c358] teamcity_hft 2020-01-08 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[60e65ad68] teamcity_hft 2020-01-08 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[afca4b146] teamcity_hft 2020-01-08 [maven-release-plugin] prepare release chronicle-queue-5.17.34
+2	2	pom.xml
+
+[2f8b82c8c] teamcity_hft 2020-01-08 Updating to bom version 2.17.529
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[5b12a26cb] Rob Austin 2020-01-08 improved comment
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[7ce115cb8] Rob Austin 2020-01-08 simplified to  setCycle(lastCycle); becuase rolling as well was causing test to fail
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[b1eebebec] Rob Austin 2020-01-08 fixed https://github.com/OpenHFT/Chronicle-Queue/issues/639
+12	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+83	42	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[870cdafeb] Rob Austin 2020-01-07 revertBack
+8	8	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[f4efb09b8] Rob Austin 2020-01-03 added java doc and fix the test
+3	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+7	8	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[2b245017b] Rob Austin 2020-01-03 Merge remote-tracking branch 'origin/master'
+[eefe31c18] Rob Austin 2020-01-03 https://github.com/OpenHFT/Chronicle-Queue/issues/639 added failing test
+58	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+[5407c3d7c] Jerry Shea 2019-12-19 friendlier output for ChronicleReaderMain descendants
+2	3	src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+
+[9b29a3454] Per-Åke Minborg 2019-12-18 Add command line invocation of removable roll file candidates
+11	0	docs/managing_roll_files_directly.adoc
+18	0	src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+
+[a4fb49e7f] Per-Åke Minborg 2019-12-18 Expect UnsupportedOperationException rather than NPE
+2	2	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[29efd33ad] Per-Åke Minborg 2019-12-18 Fix issue with exception not being thrown on Windows
+9	0	src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+12	0	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[83a35db21] Per-Åke Minborg 2019-12-18 Add assumption on tests not on windows and rename test names
+8	3	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[3d4ce596e] Per-Åke Minborg 2019-12-17 Fix typos in doc
+6	6	docs/managing_roll_files_directly.adoc
+
+[1cd6ff10d] Per-Åke Minborg 2019-12-17 Add FileUtil class for direct file management, Fix #636
+87	0	docs/managing_roll_files_directly.adoc
+5	0	src/main/java/net/openhft/chronicle/queue/util/FileState.java
+151	0	src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+166	0	src/test/java/net/openhft/chronicle/queue/cleanup/CleanupUnusedQueueFilesTest.java
+173	0	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+[7beb14b74] Peter Lawrey 2019-12-16 tidy
+0	35	src/test/java/net/openhft/chronicle/queue/ProxyTest.java
+
+[b761fda51] teamcity_hft 2019-12-13 Reverting back to bom version 2.17-SNAPSHOT
+[a9cb75a37] teamcity_hft 2019-12-13 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[f67f7205b] teamcity_hft 2019-12-13 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[64488da55] teamcity_hft 2019-12-13 [maven-release-plugin] prepare release chronicle-queue-5.17.33
+2	2	pom.xml
+
+[21c98064a] teamcity_hft 2019-12-13 Updating to bom version 2.17.506
+[b191e7398] teamcity_hft 2019-12-13 Updating to bom version 2.17.506
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[2e4b9da1a] Peter Lawrey 2019-12-13 Reverting back to bom version 2.17-SNAPSHOT
+[e61b06b25] Peter Lawrey 2019-12-13 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[eee1ad450] Peter Lawrey 2019-12-13 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[706f62353] Peter Lawrey 2019-12-13 [maven-release-plugin] prepare release chronicle-queue-5.17.32
+2	2	pom.xml
+
+[23fa60414] Peter Lawrey 2019-12-13 Updating to bom version 2.17.503
+[fbab6eeec] teamcity_hft 2019-12-13 Updating to bom version 2.17.503
+1	1	pom.xml
+
+[89d53ba26] Peter Lawrey 2019-12-13 Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+1	1	pom.xml
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[3d9618aa7] teamcity_hft 2019-12-13 Updating to bom version 2.17.503
+1	1	pom.xml
+
+[6d8e08e92] Peter Lawrey 2019-12-13 Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+1	1	pom.xml
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+2	2	src/test/java/net/openhft/chronicle/queue/Stackoveflow52274284Test.java
+
+[310af3a16] Peter Lawrey 2019-12-13 Merge remote-tracking branch 'origin/master'
+[f2fbf93bd] Peter Lawrey 2019-12-13 Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+3	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[2998bec9d] teamcity_hft 2019-12-13 Updating to bom version 2.17.503
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[f278ab9ec] Peter Lawrey 2019-12-13 Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+8	4	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[683c50fdd] Peter Lawrey 2019-12-13 Strange issue where if an address is reused memory mapping soon after first being used, the CPU thinks the memory is ivalid when it is valid as a dump of /proc/self/maps shows. For now adding just a 1 ms pause is enough to avoid this. Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+23	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[530b9b322] teamcity_hft 2019-12-13 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[779cf250c] teamcity_hft 2019-12-13 [maven-release-plugin] prepare release chronicle-queue-5.17.31
+2	2	pom.xml
+
+[f1d7786ee] teamcity_hft 2019-12-13 Updating to bom version 2.17.502
+[d25239692] teamcity_hft 2019-12-13 Updating to bom version 2.17.502
+[ac112bc14] teamcity_hft 2019-12-13 Updating to bom version 2.17.502
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[601d026b6] Jerry Shea 2019-12-13 enhance ChronicleReader
+3	2	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+10	0	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+[0fd44f8b7] Jerry Shea 2019-12-13 protected ChronicleReader.applyFiltersAndLog
+1	1	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+
+[df093df05] Dmitry Pisklov 2019-12-11 Add possibility to skip table store when dumping the queue
+8	6	src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+
+[1dabcb948] Peter Lawrey 2019-12-09 Added support for setting thread affinity using a description, closes https://github.com/OpenHFT/Java-Thread-Affinity/issues/54
+4	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[1eb0675dd] teamcity_hft 2019-12-04 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[d60f72a98] teamcity_hft 2019-12-04 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[b7233bf6d] teamcity_hft 2019-12-04 [maven-release-plugin] prepare release chronicle-queue-5.17.30
+2	2	pom.xml
+
+[57d1d439a] teamcity_hft 2019-12-04 Updating to bom version 2.17.481
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[cb7efc558] Peter Lawrey 2019-12-04 Fix a bug in Threads.forEachThread
+1	1	pom.xml
+
+[f34d26a9a] teamcity_hft 2019-12-04 Updating to bom version 2.17.480
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[86a81ddc6] Rob Austin 2019-12-04 Merge pull request #634 from minborg/master
+[410b95447] Rob Austin 2019-12-04 Merge branch 'master' into master
+[c9ce5b333] Per-Åke Minborg 2019-12-04 Add JavaDoc for RollCycle::defaultIndexSpacing
+15	0	src/main/java/net/openhft/chronicle/queue/RollCycle.java
+
+[1e9af663c] Rob Austin 2019-12-04 Merge remote-tracking branch 'origin/master'
+[71c5038b7] Rob Austin 2019-12-04 created RollCycles.all() to prevent modifaction of the shared array.
+7	1	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[512e49376] Per-Åke Minborg 2019-12-04 Improve JavaDoc for ExcerptCommon
+15	1	src/main/java/net/openhft/chronicle/queue/ExcerptCommon.java
+
+[5b62c6dc7] Per-Åke Minborg 2019-12-04 Improve JavaDoc for RollCycle
+56	0	src/main/java/net/openhft/chronicle/queue/RollCycle.java
+
+[08ab9bebf] Per-Åke Minborg 2019-12-04 RollCycles: Make properties private and remove redundant main method
+7	13	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+
+[b67abc986] Peter Lawrey 2019-12-04 Split AbstractMarshallable into SelfDescribingMarshallable and BytesInBinaryMarshallable, closes https://github.com/OpenHFT/Chronicle-Wire/issues/151
+4	3	README.adoc
+7	4	docs/BigDataAndChronicleQueue.adoc
+1	1	load-harness/src/main/java/net/openhft/load/messages/EightyByteMessage.java
+1	1	load-harness/src/main/java/net/openhft/load/messages/Sizer.java
+2	2	src/main/java/net/openhft/chronicle/queue/RollDetails.java
+
+[d0df69ca4] Peter Lawrey 2019-12-04 Ignore flakey test.
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+[c6ef3d900] Peter Lawrey 2019-12-04 Tidy
+0	20	README.adoc
+
+[4699ac504] teamcity_hft 2019-12-04 Updating to bom version 2.17.478
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[7863eb3eb] Peter Lawrey 2019-12-04 Split AbstractMarshallable into SelfDecribingMarshallable and BytesInBinaryMarshallable, closes https://github.com/OpenHFT/Chronicle-Wire/issues/151
+5	5	src/test/java/net/openhft/chronicle/queue/DtoBytesMarshallableTest.java
+4	4	src/test/java/net/openhft/chronicle/queue/MessageReaderWriterTest.java
+3	3	src/test/java/net/openhft/chronicle/queue/MethodReaderObjectReuseTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/ProxyTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormat2Test.java
+3	3	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/impl/single/TestBinarySearch.java
+3	3	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+2	2	src/test/java/net/openhft/chronicle/queue/impl/single/pretoucher/PretoucherSoakTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/Order.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/OrderIdea.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/SidedPrice.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/TopOfBookPrice.java
+
+[fd5641f53] Jerry Shea 2019-12-04 Dump a StackTrace when when SingleTableStore.doWith*Lock times out #633
+22	28	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+[6095e3860] Dmitry Pisklov 2019-12-03 Merge pull request #632 from minborg/master
+[2ccbc0834] Per-Åke Minborg 2019-12-03 Improve JavaDocs for ChronicleQueue
+204	34	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+
+[2326a98b7] Per-Åke Minborg 2019-12-03 Improve JavaDoc for ExcerptAppender further
+10	2	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+
+[15553789e] Per-Åke Minborg 2019-12-03 Improve JavaDoc for ExcerptTailer
+102	29	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+
+[20feb92e2] Per-Åke Minborg 2019-12-03 Improve JacaDocs for ExcerptAppender
+24	1	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+
+[9a9fae551] Jerry Shea 2019-12-03 Update FAQ.adoc
+1	1	docs/FAQ.adoc
+
+[9c600db0d] Jerry Shea 2019-12-03 Update faq
+3	1	docs/FAQ.adoc
+
+[b51acecde] Jerry Shea 2019-12-03 Update FAQ.adoc
+12	0	docs/FAQ.adoc
+
+[2b4518852] Per-Åke Minborg 2019-12-02 Merge pull request #1 from OpenHFT/master
+[998071339] Rob Austin 2019-12-02 Merge pull request #631 from minborg/master
+[7a1a48892] Per-Åke Minborg 2019-12-02 Improve JavaDocs for ExcerptAppender
+46	8	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+
+[b0516d575] Per-Åke Minborg 2019-12-02 Update README.adoc, fix typos
+37	36	README.adoc
+
+[1562fc346] teamcity_hft 2019-12-02 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[1ba6a1891] teamcity_hft 2019-12-02 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[b70f53fce] teamcity_hft 2019-12-02 [maven-release-plugin] prepare release chronicle-queue-5.17.29
+2	2	pom.xml
+
+[28aee5ae5] teamcity_hft 2019-12-02 Updating to bom version 2.17.469
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[3c4737a00] Peter Lawrey 2019-11-28 Fix Javadoc and restructure services
+0	5	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+5	2	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+1	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/batch/BatchAppender.java
+10	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+1	1	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+[3a2e32526] Peter Lawrey 2019-11-26 third-party-bom -> 3.6.15
+1	1	benchmarks/pom.xml
+1	1	chronicle-sandbox/pom.xml
+1	1	chronicle-test/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[072bdf5cc] Peter K Lawrey 2019-11-25 Update README.adoc
+1	1	README.adoc
+
+[95e9699ac] Peter Lawrey 2019-11-15 Reduce the overhead of using asserts with queue.
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+6	8	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+3	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+
+[326e2751e] Jerry Shea 2019-11-10 de-flake RollCycleMultiThreadStressReadOnlyTest
+3	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+[5d4fd08ef] Jerry Shea 2019-11-10 new MT stress test writing with shared ChronicleQueue object
+4	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+4	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+24	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+32	20	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+[fc2179ccb] Dmitry Pisklov 2019-11-08 Merge remote-tracking branch 'origin/master'
+[500d198bd] Dmitry Pisklov 2019-11-08 Update JLBH deps
+6	0	pom.xml
+
+[a48beda4d] neil-clifford 2019-11-07 Update pretoucher.adoc
+2	2	docs/pretoucher.adoc
+
+[2275fc515] neil-clifford 2019-11-07 Update pretoucher.adoc
+3	3	docs/pretoucher.adoc
+
+[17cc88f59] neil-clifford 2019-11-07 Create pretoucher.adoc
+25	0	docs/pretoucher.adoc
+
+[535440877] neil-clifford 2019-11-07 Add files via upload
+-	-	docs/images/pretoucher_test.png
+
+[75841e7c2] teamcity_hft 2019-11-06 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[27b6865a4] teamcity_hft 2019-11-06 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[96765feb2] teamcity_hft 2019-11-06 [maven-release-plugin] prepare release chronicle-queue-5.17.28
+2	2	pom.xml
+
+[a9d70f771] teamcity_hft 2019-11-06 Updating to bom version 2.17.426
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[575103958] Dmitry Pisklov 2019-11-05 Fixes #627
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[4542a76a0] teamcity_hft 2019-11-05 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[30f0bf6fa] teamcity_hft 2019-11-05 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[8ca1f33c5] teamcity_hft 2019-11-05 [maven-release-plugin] prepare release chronicle-queue-5.17.27
+2	2	pom.xml
+
+[c16509892] teamcity_hft 2019-11-05 Updating to bom version 2.17.425
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[bcc11e688] Rob Austin 2019-10-23 Update README.adoc
+1	1	README.adoc
+
+[5a79b786d] Rob Austin 2019-10-23 Update README.adoc
+10	6	README.adoc
+
+[0dda765e7] Rob Austin 2019-10-23 Update README.adoc
+2	2	README.adoc
+
+[312c881ea] Rob Austin 2019-10-23 Update README.adoc
+10	7	README.adoc
+
+[b4ee96858] Rob Austin 2019-10-23 Update README.adoc
+2	2	README.adoc
+
+[fb6c598f9] Rob Austin 2019-10-23 Update README.adoc
+3	2	README.adoc
+
+[fb47ef89e] Rob Austin 2019-10-23 Update README.adoc
+64	0	README.adoc
+
+[c91276c9a] Dmitry Pisklov 2019-10-22 Merge remote-tracking branch 'origin/master'
+[f3d209f9a] Dmitry Pisklov 2019-10-22 Remove System.out.println
+2	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+
+[41a81757a] teamcity_hft 2019-10-22 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[6551de93c] teamcity_hft 2019-10-22 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[522792509] teamcity_hft 2019-10-22 [maven-release-plugin] prepare release chronicle-queue-5.17.26
+2	2	pom.xml
+
+[a6440350b] teamcity_hft 2019-10-22 Updating to bom version 2.17.411
+[dcb923f4c] Peter Lawrey 2019-10-22 Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/MessageHistoryTest.java
+
+[3d00bda49] Peter Lawrey 2019-10-22 Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/MessageHistoryTest.java
+
+[1da8a91a2] Peter Lawrey 2019-10-22 Merge remote-tracking branch 'origin/master'
+[08d01d902] Peter Lawrey 2019-10-22 Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+34	8	src/test/java/net/openhft/chronicle/queue/impl/single/MessageHistoryTest.java
+
+[236529d40] teamcity_hft 2019-10-22 Updating to bom version 2.17.411
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[2c69bf7b5] Peter Lawrey 2019-10-22 Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+4	4	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+22	25	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+
+[8910a20bc] Rob Austin 2019-10-22 added test for -> net.openhft.chronicle.queue.impl.single.TestMethodWriterWithThreads
+140	0	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+
+[fdf0f3db9] neil-clifford 2019-10-18 Update FAQ.adoc
+3	3	docs/FAQ.adoc
+
+[d0c6cfcbd] neil-clifford 2019-10-17 Update FAQ.adoc
+1	0	docs/FAQ.adoc
+
+[33f49fa58] neil-clifford 2019-10-17 Update FAQ.adoc
+59	35	docs/FAQ.adoc
+
+[eca605f91] Jerry Shea 2019-10-16 doco
+9	9	docs/ring_buffer.adoc
+
+[40e9557b7] Rob Austin 2019-10-16 Update ring_buffer.adoc
+0	6	docs/ring_buffer.adoc
+
+[8b02aa80c] Rob Austin 2019-10-16 Update ring_buffer.adoc
+3	3	docs/ring_buffer.adoc
+
+[5e63982a8] teamcity_hft 2019-10-11 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[237a63ae6] teamcity_hft 2019-10-11 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[61f14aaf3] teamcity_hft 2019-10-11 [maven-release-plugin] prepare release chronicle-queue-5.17.25
+2	2	pom.xml
+
+[3ecdf0c84] teamcity_hft 2019-10-11 Updating to bom version 2.17.402
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[bf46e9030] Peter Lawrey 2019-10-11 Ensure the correct roll cycle is selected if wrong format is used in the build, closes https://github.com/OpenHFT/Chronicle-Queue/issues/624
+15	15	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+5	3	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+20	10	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormatTest.java
+12	9	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[56cfd149b] Rob Austin 2019-10-11 added test https://github.com/OpenHFT/Chronicle-Queue/issues/624
+170	153	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[b07044ff3] Jerry Shea 2019-10-10 change log to debug #622
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[089bdca7d] Dmitry Pisklov 2019-10-08 Merge pull request #621 from coderit-srl/bug/chronicle-queue-620
+[c75a4c9c3] Giovanni Condello 2019-10-10 Fix RollingResourcesCache#toLong to support length > ONE_DAY_IN_MILLIS, closes https://github.com/OpenHFT/Chronicle-Queue/issues/620
+6	1	src/main/java/net/openhft/chronicle/queue/impl/RollingResourcesCache.java
+83	0	src/test/java/net/openhft/chronicle/queue/QueueReadForwardSkippingACycleBiggerThanADayTest.java
+85	0	src/test/java/net/openhft/chronicle/queue/harness/WeeklyRollCycle.java
+18	1	src/test/java/net/openhft/chronicle/queue/impl/RollingResourcesCacheTest.java
+
+[5ef3fbb2a] teamcity_hft 2019-10-03 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[2fdd6ad40] teamcity_hft 2019-10-03 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[697abe9db] teamcity_hft 2019-10-03 [maven-release-plugin] prepare release chronicle-queue-5.17.24
+2	2	pom.xml
+
+[040d7f8e1] teamcity_hft 2019-10-03 Updating to bom version 2.17.394
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[a19b97b34] Dmitry Pisklov 2019-10-01 Fix rolling cycles backwards - fixes #619
+3	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+73	0	src/test/java/net/openhft/chronicle/queue/QueueReadBackwardsTest.java
+
+[58efa343f] Jerry Shea 2019-10-01 revert 3rd party bom
+1	1	pom.xml
+
+[233a237b5] Jerry Shea 2019-10-01 replication doco
+40	2	docs/replication.adoc
+3	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[600381fc3] Jerry Shea 2019-10-01 bump 3rd party bom to get correct org.jetbrains annotations version
+1	1	pom.xml
+
+[ec2b127fa] Jerry Shea 2019-10-01 doco
+1	1	docs/replication.adoc
+
+[c7ee438ab] Peter Lawrey 2019-09-25 Fixed StreamingDataInput.read(byte[], offset, length) was ignoring the offset, closes https://github.com/OpenHFT/Chronicle-Map/issues/183
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[ad811daf8] teamcity_hft 2019-09-25 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[a35abd981] teamcity_hft 2019-09-25 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[7e7b610b2] teamcity_hft 2019-09-25 [maven-release-plugin] prepare release chronicle-queue-5.17.23
+2	2	pom.xml
+
+[71e3238c1] teamcity_hft 2019-09-25 Updating to bom version 2.17.386
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[58f7c6896] Peter Lawrey 2019-09-23 Merge remote-tracking branch 'origin/master'
+[4df2e2299] Peter Lawrey 2019-09-23 Fix an issue where writingDocument wasn't resetting everything, closes https://github.com/ChronicleEnterprise/Chronicle-Map-Enterprise/issues/16
+1	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+52	30	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+1	0	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+
+[742773375] Jerry Shea 2019-09-22 turn off read only test for Windows
+3	3	src/test/java/net/openhft/chronicle/queue/ReadWriteTest.java
+
+[87379a0bf] Jerry Shea 2019-09-21 doco repair
+2	1	README.adoc
+
+[d8c7005ee] Peter Lawrey 2019-09-20 Simplified support for Marshallable and BytesMarshallable, https://github.com/OpenHFT/Chronicle-Map/issues/196
+0	439	src/test/java/net/openhft/chronicle/queue/impl/single/NotCompleteTest.java
+
+[73a0f7f50] Peter Lawrey 2019-09-20 Simplified support for Marshallable and BytesMarshallable, https://github.com/OpenHFT/Chronicle-Map/issues/196
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[4a064918d] Jerry Shea 2019-09-17 bump third party bom
+1	1	pom.xml
+
+[f4e460fee] teamcity_hft 2019-09-17 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[e1614f57b] teamcity_hft 2019-09-17 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[bd90858bf] teamcity_hft 2019-09-17 [maven-release-plugin] prepare release chronicle-queue-5.17.22
+3	4	pom.xml
+
+[85db07866] teamcity_hft 2019-09-17 Updating to bom version 2.17.379
+[de920ae94] teamcity_hft 2019-09-17 Updating to bom version 2.17.379
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[bd28088bd] Jerry Shea 2019-09-17 Force readOnly(true) if metadata.cq4t is read only #618
+4	0	src/main/java/net/openhft/chronicle/queue/impl/TableStore.java
+7	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+5	0	src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+18	1	src/test/java/net/openhft/chronicle/queue/ReadWriteTest.java
+
+[4baaa9be4] Jerry Shea 2019-09-08 latest 3rd party pom
+1	1	pom.xml
+
+[83e00b082] Peter Lawrey 2019-09-06 Make the tools.jar only included if present.
+26	1	pom.xml
+
+[a3246aaa3] teamcity_hft 2019-09-03 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[b09c6b0fc] teamcity_hft 2019-09-03 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[37fc6b976] teamcity_hft 2019-09-03 [maven-release-plugin] prepare release chronicle-queue-5.17.21
+2	2	pom.xml
+
+[3ecb689fe] teamcity_hft 2019-09-03 Updating to bom version 2.17.367
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[c68f371a0] Peter Lawrey 2019-09-03 Fix for default method.
+7	0	src/main/java/net/openhft/chronicle/queue/backed/map/QueueBackedMaps.java
+0	6	src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+
+[e5f74c5cb] Peter Lawrey 2019-09-03 Fix for windows
+2	1	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+
+[48d136791] Peter Lawrey 2019-09-03 Test was flaky with file shrinking enabled.
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollingCycleTest.java
+
+[ee5fb2fe0] Peter Lawrey 2019-09-03 Test was flaky with file shrinking enabled.
+13	9	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+20	19	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+6	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+347	325	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+3	3	src/test/java/net/openhft/chronicle/queue/impl/single/RollingCycleTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[5e5b53962] Peter Lawrey 2019-09-03 Test was flaky depending on when it was run.
+1	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+315	18	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+
+[566af1e92] Peter Lawrey 2019-09-03 Fix up version dependencies.
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+1	1	src/main/java/net/openhft/chronicle/queue/NoMessageHistory.java
+
+[07cc1157a] teamcity_hft 2019-09-02 Updating to bom version 2.17.364
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[74a0b3393] Peter Lawrey 2019-08-30 Added support the pathId to be derived from the MessageHistory, closes https://github.com/ChronicleEnterprise/Chronicle-Queue-Enterprise/issues/68
+6	0	src/main/java/net/openhft/chronicle/queue/NoMessageHistory.java
+52	0	src/main/java/net/openhft/chronicle/queue/backed/map/QueueBackedMaps.java
+41	0	src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+
+[3174663a0] Peter Lawrey 2019-08-30 Added support for striding when scanning backwards, closes https://github.com/OpenHFT/Chronicle-Queue/issues/617
+3	0	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+12	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/TailerDirection.java
+15	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+63	0	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+
+[f64a6accb] Peter Lawrey 2019-08-28 Added support for dynamic discovery of files, https://github.com/OpenHFT/Chronicle-Core/issues/88
+7	0	pom.xml
+3	0	src/main/java/net/openhft/chronicle/queue/impl/CommonStore.java
+12	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+8	0	src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+12	2	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+1	3	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+6	2	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherListener.java
+8	2	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherMain.java
+
+[950918e00] teamcity_hft 2019-08-27 Reverting back to bom version 2.17-SNAPSHOT
+[7c8be7b5f] teamcity_hft 2019-08-27 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[26a08e9b9] teamcity_hft 2019-08-27 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[990729705] teamcity_hft 2019-08-27 [maven-release-plugin] prepare release chronicle-queue-5.17.20
+2	2	pom.xml
+
+[86b180098] teamcity_hft 2019-08-27 Updating to bom version 2.17.357
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[9dc5b6da3] Rob Austin 2019-08-27 fixed https://github.com/OpenHFT/Chronicle-Queue/issues/616
+9	13	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+[816f70778] teamcity_hft 2019-08-27 Reverting back to bom version 2.17-SNAPSHOT
+[83eec887c] teamcity_hft 2019-08-27 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[15c61cdd2] teamcity_hft 2019-08-27 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[106c65a5b] teamcity_hft 2019-08-27 [maven-release-plugin] prepare release chronicle-queue-5.17.19
+2	2	pom.xml
+
+[6928e98a9] teamcity_hft 2019-08-27 Updating to bom version 2.17.355
+[cfc1cdf8b] teamcity_hft 2019-08-27 Updating to bom version 2.17.355
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[ca3fdec3c] Rob Austin 2019-08-27 Merge remote-tracking branch 'origin/master'
+[c4503f091] Rob Austin 2019-08-27 fixed https://github.com/OpenHFT/Chronicle-Queue/issues/616
+14	8	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+[9b52172a6] Peter Lawrey 2019-08-24 Added support for dynamic discovery of files, https://github.com/OpenHFT/Chronicle-Core/issues/88
+2	0	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+1	0	src/main/java/net/openhft/chronicle/queue/impl/CommonStore.java
+2	0	src/main/java/net/openhft/chronicle/queue/impl/WireStore.java
+19	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+14	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+44	6	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+5	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManagerMBean.java
+
+[ababdb8f4] Peter Lawrey 2019-08-24 Added support for dynamic discovery of files, https://github.com/OpenHFT/Chronicle-Core/issues/88
+42	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+11	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManagerMBean.java
+53	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherListener.java
+23	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherMain.java
+
+[35c1ddf44] Peter Lawrey 2019-08-22 Activate pre-java9 via a profile for better post Java8 support.
+19	4	chronicle-test/pom.xml
+
+[94b0c9736] Jerry Shea 2019-08-22 SingleChronicleQueueBuilder.ringBufferReopenReader
+14	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[a9489b013] Dmitry Pisklov 2019-08-21 Fix readme - fixes #615
+2	2	README.adoc
+
+[d196d2f41] Jerry Shea 2019-08-21 SingleChronicleQueueBuilder.drainerPriority
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[7a919ec31] Jerry Shea 2019-08-21 SingleChronicleQueueBuilder.drainerPriority
+15	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[05e4bd528] teamcity_hft 2019-08-19 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[9d21262b3] teamcity_hft 2019-08-19 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[3390d3080] teamcity_hft 2019-08-19 [maven-release-plugin] prepare release chronicle-queue-5.17.18
+2	2	pom.xml
+
+[cb9e8a7ab] teamcity_hft 2019-08-19 Updating to bom version 2.17.350
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[b572969cb] Rob Austin 2019-08-19 added CHECK_INDEX to stop the slow assertion check of index checking, being done when you are running code with -ea
+5	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+[a7a12390d] Jerry Shea 2019-08-16 update doco
+4	2	README.adoc
+
+[ae6655d0b] Peter Lawrey 2019-08-15 Reduce redundant newlines
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/QueueWireHandler.java
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/SingleTailer.java
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/ringbuffer/BytesRingBuffer.java
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/ringbuffer/ZippedDocumentAppender.java
+0	1	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/BytesRingBufferTest.java
+0	1	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/impl/SingleChronicleQueueTest.java
+0	1	load-harness/src/main/java/net/openhft/load/Publisher.java
+0	1	load-harness/src/main/java/net/openhft/load/PublisherMain.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/BinarySearch.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQMeta.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+0	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+0	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+0	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+0	1	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+0	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueuePeekDocumentTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+0	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTwoThreads.java
+0	1	src/test/java/net/openhft/chronicle/queue/CycleNotFoundTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/DirectoryUtils.java
+0	4	src/test/java/net/openhft/chronicle/queue/DtoBytesMarshallableTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/MappedFileSafeLimitTooSmallTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/MarshallableTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/MoveToWrongIndexThenToEndTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/ProxyTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/TestDeleteQueueFile.java
+0	1	src/test/java/net/openhft/chronicle/queue/VisibilityOfMessagesBetweenTailorsAndAppenderTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/bench/BatchAppenderNativeTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/EofMarkerOnEmptyQueueTest.java
+0	4	src/test/java/net/openhft/chronicle/queue/impl/single/NotCompleteTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormatTest.java
+0	20	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/StuckQueueTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/TestBinarySearch.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/TestTailAfterRoll.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/ToEndTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/jitter/QueueReadJitterMain.java
+0	1	src/test/java/net/openhft/chronicle/queue/micros/OrderManagerTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReaderTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/reader/RollEOFTest.java
+
+[96a881388] Peter Lawrey 2019-08-15 Remove <p/>
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+
+[2aee503c6] Peter Lawrey 2019-08-14 Restructure to add a Guarded model (and test model for the guarded jar), https://github.com/ChronicleEnterprise/Chronicle-Map-Enterprise/issues/14
+3	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[f4074a343] Peter Lawrey 2019-08-13 Deduce redundant newlines
+0	1	src/test/java/net/openhft/chronicle/queue/CreateAtIndexTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[b9286921a] teamcity_hft 2019-08-08 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[3a6ead6d8] teamcity_hft 2019-08-08 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[1caba12c8] teamcity_hft 2019-08-08 [maven-release-plugin] prepare release chronicle-queue-5.17.17
+2	2	pom.xml
+
+[bb3c4034d] teamcity_hft 2019-08-08 Updating to bom version 2.17.308
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[48970dc7e] Peter Lawrey 2019-08-08 Merge remote-tracking branch 'origin/master'
+[67ec97648] Peter Lawrey 2019-08-08 Make shutdowns cleaner
+12	8	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+
+[e211000a2] Rob Austin 2019-08-08 Update README.adoc
+1	1	README.adoc
+
+[f1ffd7978] Rob Austin 2019-08-08 Update README.adoc
+1	1	README.adoc
+
+[fc1bd3f6b] Rob Austin 2019-08-08 Update README.adoc
+1	1	README.adoc
+
+[5d7c41041] Peter Lawrey 2019-08-07 Improved DEBUG logging.
+9	16	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+
+[dfa5e199f] Peter Lawrey 2019-08-07 Correct some typos.
+1	1	MigratingToV4.adoc
+1	1	README.adoc
+2	2	docs/FAQ.adoc
+1	1	docs/How_it_works.adoc
+2	2	docs/encryption.adoc
+4	4	docs/queue-replication-message-protocol-overview.adoc
+14	17	src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+0	28	src/main/java/net/openhft/chronicle/queue/impl/single/NoDocumentContext.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/ReferenceCountedCache.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQMeta.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+8	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+1	6	src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+5	5	src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+1	3	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+
+[52e2f3877] Peter Lawrey 2019-08-06 Avoid an accessor method by using package local
+3	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+[6b6224b09] rogersimmons 2019-07-30 Merge remote-tracking branch 'origin/master'
+[90db4e6bf] rogersimmons 2019-07-30 Updated documentation
+-	-	images/cq-vs-cqz.png
+
+[13ef533d6] Rob Austin 2019-07-30 Update performance.adoc
+1	1	docs/performance.adoc
+
+[3d9e8be71] Rob Austin 2019-07-30 Update performance.adoc
+2	2	docs/performance.adoc
+
+[5f2164762] rogersimmons 2019-07-30 Merge remote-tracking branch 'origin/master'
+[cc2756740] rogersimmons 2019-07-30 Updated documentation
+1	1	README.adoc
+
+[3fe5d3154] Rob Austin 2019-07-30 Update performance.adoc
+2	2	docs/performance.adoc
+
+[c4d80d4a0] Rob Austin 2019-07-30 Update performance.adoc
+2	2	docs/performance.adoc
+
+[57502a7a1] rogersimmons 2019-07-30 Merge remote-tracking branch 'origin/master'
+[454b61d38] rogersimmons 2019-07-30 Updated documentation
+7	0	docs/performance.adoc
+-	-	images/cq-vs-cqz-java.png
+-	-	images/cq-vs-cqz.png
+
+[23370fe8a] Rob Austin 2019-07-30 Update README.adoc
+1	1	README.adoc
+
+[039a12107] rogersimmons 2019-07-30 Update documentation
+1	0	README.adoc
+1	1	docs/performance.adoc
+-	-	images/cqz-performance-java.png
+-	-	images/cqz-performance.png
+
+[7165ec76e] rogersimmons 2019-07-30 Updated documentation
+1	0	README.adoc
+47	0	docs/performance.adoc
+-	-	images/cq-performance-java.png
+-	-	images/cq-performance.png
+-	-	images/cqz-performance-java.png
+-	-	images/cqz-performance.png
+
+[57b6336b5] teamcity_hft 2019-07-23 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[f16a9935d] teamcity_hft 2019-07-23 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[00a1720a5] teamcity_hft 2019-07-23 [maven-release-plugin] prepare release chronicle-queue-5.17.16
+2	2	pom.xml
+
+[7e265f6ba] teamcity_hft 2019-07-23 Updating to bom version 2.17.281
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[17730eb75] Rob Austin 2019-07-22 Update README.adoc
+0	1	README.adoc
+
+[32b561b89] Jerry Shea 2019-07-22 ringBufferForceCreateReader
+15	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[3066e6117] teamcity_hft 2019-07-19 Reverting back to bom version 2.17-SNAPSHOT
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[0dd8fc05d] teamcity_hft 2019-07-19 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[2bb8d12c5] teamcity_hft 2019-07-19 [maven-release-plugin] prepare release chronicle-queue-5.17.15
+2	2	pom.xml
+
+[c12ba6989] teamcity_hft 2019-07-19 Updating to bom version 2.17.275
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[aad64dc5e] Dmitry Pisklov 2019-07-18 Merge remote-tracking branch 'origin/master'
+[21d5794fa] Dmitry Pisklov 2019-07-18 Fix package name
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/Monitor.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/PeriodicUpdateEventHandler.java
+2	4	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/PretoucherSoakTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/ValidFields.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/Validatable.java
+
+[49c7f2835] Jerry Shea 2019-07-18 fix ring buffer tests with safer default value
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[b22a9967b] Jerry Shea 2019-07-18 ringBufferPauser
+15	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[6ac1fa096] Jerry Shea 2019-07-15 Fixed tailer.readAfterReplicaAcknowledged(true) #613
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+34	1	src/test/java/net/openhft/chronicle/queue/LastAcknowledgedTest.java
+
+[75a85fc52] Jerry Shea 2019-06-30 javadoc and test
+6	0	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+16	0	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilderTest.java
+
+[8160ed5bc] jerryshea 2019-07-12 doco for ring buffer
+24	4	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[d4280888e] Peter Lawrey 2019-07-10 Add benchmarks for queue
+18	13	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/LatencyDistributionMain.java
+41	3	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+75	57	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/ThroughputMain.java
+
+[80a411426] Peter Lawrey 2019-06-27 Benchmark module for Chronicle-Queue
+1	1	benchmarks/pom.xml
+
+[303fee1ae] Peter Lawrey 2019-06-27 Add a stand alone benchmark JAR for queue
+2	2	benchmarks/pom.xml
+
+[618dd1a7e] Peter Lawrey 2019-06-27 Benchmark module for Chronicle-Queue
+4	4	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/LatencyDistributionMain.java
+14	3	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+
+[6f04a6bf8] Peter Lawrey 2019-06-27 Benchmark module for Chronicle-Queue
+6	2	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+
+[f02d6d2a8] Peter Lawrey 2019-06-27 Benchmark module for Chronicle-Queue
+1	1	benchmarks/pom.xml
+283	0	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/LatencyDistributionMain.java
+8	101	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+120	0	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/ThroughputMain.java
+
+[9cdcb5524] Peter Lawrey 2019-06-26 Merge remote-tracking branch 'origin/master'
+[9aecb6cf7] Peter Lawrey 2019-06-26 Add a stand alone benchmark JAR for queue
+125	0	benchmarks/pom.xml
+113	0	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+
+[4fb402f94] neil-clifford 2019-06-20 Update FAQ.adoc
+4	0	docs/FAQ.adoc
+
+[a8d7272e3] Rob Austin 2019-06-14 reverted bad commit
+0	38	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[2b20996e1] Rob Austin 2019-06-13 Update LICENSE
+197	10	LICENSE
+
+[321401126] Rob Austin 2019-06-13 Rename LICENSE.adoc to LICENSE
+1	1	LICENSE.adoc => LICENSE
+
+[6ad0ea7ad] Rob Austin 2019-06-12 added support for multiple currencies
+38	0	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+[878fdf062] Dmitry Pisklov 2019-06-10 Fixed #611
+1	1	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+1	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+107	0	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/ChronicleQueueMethodsWithoutParameters.java
+
+[1fc4b35e9] Dmitry Pisklov 2019-06-05 Update README.adoc
+14	14	README.adoc
+
+[ff402b225] rogersimmons 2019-06-03 Coordinate read-only access to metadata file https://github.com/OpenHFT/Chronicle-Queue/issues/607
+7	1	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+25	0	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+[519a7a9ef] teamcity_hft 2019-05-30 Reverting back to bom version 2.17-SNAPSHOT
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[77660ddf6] teamcity_hft 2019-05-30 [maven-release-plugin] prepare for next development iteration
+2	2	pom.xml
+
+[e2efc35b5] teamcity_hft 2019-05-30 [maven-release-plugin] prepare release chronicle-queue-5.17.14
+2	2	pom.xml
+
+[e363fba40] teamcity_hft 2019-05-30 Updating to bom version 2.17.250
+[b4c5fc6aa] teamcity_hft 2019-05-30 Updating to bom version 2.17.250
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+[a448bac69] Jerry Shea 2019-05-28 ringBufferReaderCanDrain param to make CQE ring buffer draining more predictable
+13	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+[2efe12540] Jerry Shea 2019-05-24 prevent garbage from auto-boxing in LOG.debug
+2	1	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java

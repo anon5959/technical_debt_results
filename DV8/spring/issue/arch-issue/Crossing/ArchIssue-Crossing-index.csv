@@ -1,0 +1,3 @@
+Index,Size,Fan-in,Fan-out,CrossingCenter
+Crossing1,10,5,5,spring-web/src/main/java/org/springframework/http/codec/support/BaseDefaultCodecs.java,
+

@@ -1,0 +1,6 @@
+RootIndex,LeadingFile,Size,Coverage,CoverUpto
+root 1, core.src.main.java.hudson.Util_java, 170, 0.164706, 0.451613 
+root 2, core.src.main.java.hudson.model.Descriptor_java, 183, 0.131148, 0.612903 
+root 3, core.src.main.java.jenkins.util.SystemProperties_java, 109, 0.201835, 0.741935 
+root 4, core.src.main.java.hudson.model.Run_java, 117, 0.085470, 0.790323 
+root 5, core.src.main.java.hudson.ExtensionList_java, 145, 0.131034, 0.838710 

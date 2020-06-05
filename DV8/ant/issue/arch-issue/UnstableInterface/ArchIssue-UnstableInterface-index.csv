@@ -1,0 +1,4 @@
+Index,Size,UnstableInterface
+UnstableInterface1,66,src.main.org.apache.tools.ant.util.FileUtils_java
+UnstableInterface2,45,src.main.org.apache.tools.ant.Project_java
+

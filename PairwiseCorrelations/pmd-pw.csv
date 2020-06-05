@@ -1,0 +1,325 @@
+designite-Complexity,designite-Size,95.42367786132318
+git-Revisions,designite-Size,18.490275970788637
+git-Revisions,designite-Complexity,20.903601832746315
+designite-Design Smells,designite-Size,17.263501284100684
+designite-Design Smells,designite-Complexity,18.5433611258021
+designite-Design Smells,git-Revisions,11.706509363351309
+archinaut-Dependent Partners,designite-Size,8.96262971559389
+archinaut-Dependent Partners,designite-Complexity,10.856947224181033
+archinaut-Dependent Partners,git-Revisions,27.854190370618593
+archinaut-Dependent Partners,designite-Design Smells,0.01184181875279194
+archinaut-Depends on Partners,designite-Size,48.26892139983973
+archinaut-Depends on Partners,designite-Complexity,57.82504746531144
+archinaut-Depends on Partners,git-Revisions,23.65149374769713
+archinaut-Depends on Partners,designite-Design Smells,12.905189456085084
+archinaut-Depends on Partners,archinaut-Dependent Partners,6.936664351381099
+archinaut-Total Dependencies,designite-Size,29.146790543343165
+archinaut-Total Dependencies,designite-Complexity,35.021072986213845
+archinaut-Total Dependencies,git-Revisions,34.608062041414364
+archinaut-Total Dependencies,designite-Design Smells,5.7270085992629784
+archinaut-Total Dependencies,archinaut-Dependent Partners,89.70575938380753
+archinaut-Total Dependencies,archinaut-Depends on Partners,50.30750566296521
+archinaut-CoChange Partners,designite-Size,-17.22172636951701
+archinaut-CoChange Partners,designite-Complexity,-13.793596123723734
+archinaut-CoChange Partners,git-Revisions,44.95322805283113
+archinaut-CoChange Partners,designite-Design Smells,26.361354426424942
+archinaut-CoChange Partners,archinaut-Dependent Partners,8.126763171071797
+archinaut-CoChange Partners,archinaut-Depends on Partners,-6.033939810231207
+archinaut-CoChange Partners,archinaut-Total Dependencies,4.367535961550203
+archinaut-Bug Commits,designite-Size,2.2072433679585184
+archinaut-Bug Commits,designite-Complexity,1.8884980741286146
+archinaut-Bug Commits,git-Revisions,0.4242597504632217
+archinaut-Bug Commits,designite-Design Smells,-0.7845992520514343
+archinaut-Bug Commits,archinaut-Dependent Partners,-1.1435142035637658
+archinaut-Bug Commits,archinaut-Depends on Partners,2.9702268832348935
+archinaut-Bug Commits,archinaut-Total Dependencies,0.3250930430236991
+archinaut-Bug Commits,archinaut-CoChange Partners,-2.534917955927171
+miner-Refactoring operations,designite-Size,14.521764953911106
+miner-Refactoring operations,designite-Complexity,24.235915439435363
+miner-Refactoring operations,git-Revisions,6.929373269849598
+miner-Refactoring operations,designite-Design Smells,7.276512802900953
+miner-Refactoring operations,archinaut-Dependent Partners,7.213486852027934
+miner-Refactoring operations,archinaut-Depends on Partners,46.046635624971174
+miner-Refactoring operations,archinaut-Total Dependencies,26.647026784848805
+miner-Refactoring operations,archinaut-CoChange Partners,11.314928577230928
+miner-Refactoring operations,archinaut-Bug Commits,0.47585104912445714
+git-Churn,designite-Size,47.27152541393433
+git-Churn,designite-Complexity,55.921229876189486
+git-Churn,git-Revisions,59.922802452209936
+git-Churn,designite-Design Smells,10.643503196407833
+git-Churn,archinaut-Dependent Partners,18.67684426785616
+git-Churn,archinaut-Depends on Partners,46.01186205551711
+git-Churn,archinaut-Total Dependencies,36.56266758378193
+git-Churn,archinaut-CoChange Partners,10.87508738058471
+git-Churn,archinaut-Bug Commits,-0.5404030994671188
+git-Churn,miner-Refactoring operations,38.80955978895037
+dv8-TotalIssues,designite-Size,17.596142115399125
+dv8-TotalIssues,designite-Complexity,18.155678232688025
+dv8-TotalIssues,git-Revisions,70.13216572542692
+dv8-TotalIssues,designite-Design Smells,9.115157053693038
+dv8-TotalIssues,archinaut-Dependent Partners,26.0994400618338
+dv8-TotalIssues,archinaut-Depends on Partners,18.98495758233049
+dv8-TotalIssues,archinaut-Total Dependencies,31.02068467215136
+dv8-TotalIssues,archinaut-CoChange Partners,54.019362280489645
+dv8-TotalIssues,archinaut-Bug Commits,-1.0229821338029168
+dv8-TotalIssues,miner-Refactoring operations,4.727018182597162
+dv8-TotalIssues,git-Churn,33.92905370567453
+dv8-Clique,designite-Size,16.4309557221511
+dv8-Clique,designite-Complexity,14.128262481200766
+dv8-Clique,git-Revisions,13.33223635735874
+dv8-Clique,designite-Design Smells,19.651133665364686
+dv8-Clique,archinaut-Dependent Partners,3.9228746599232234
+dv8-Clique,archinaut-Depends on Partners,6.8118794399683695
+dv8-Clique,archinaut-Total Dependencies,6.416033113213694
+dv8-Clique,archinaut-CoChange Partners,-4.42363344040734
+dv8-Clique,archinaut-Bug Commits,-1.4447772348868282
+dv8-Clique,miner-Refactoring operations,-0.0538624494542615
+dv8-Clique,git-Churn,12.08024376743817
+dv8-Clique,dv8-TotalIssues,27.599051020110863
+dv8-Crossing,designite-Size,12.728041771410034
+dv8-Crossing,designite-Complexity,14.096043232473846
+dv8-Crossing,git-Revisions,62.05310177777845
+dv8-Crossing,designite-Design Smells,15.9634909637887
+dv8-Crossing,archinaut-Dependent Partners,17.676486954233027
+dv8-Crossing,archinaut-Depends on Partners,17.927580875030255
+dv8-Crossing,archinaut-Total Dependencies,23.255234370098204
+dv8-Crossing,archinaut-CoChange Partners,50.00621477921796
+dv8-Crossing,archinaut-Bug Commits,-1.489489087760353
+dv8-Crossing,miner-Refactoring operations,6.633415294085405
+dv8-Crossing,git-Churn,32.88271237414311
+dv8-Crossing,dv8-TotalIssues,71.87765020074366
+dv8-Crossing,dv8-Clique,17.105969403223593
+dv8-IsCenter,designite-Size,5.268093749778512
+dv8-IsCenter,designite-Complexity,9.267383787139085
+dv8-IsCenter,git-Revisions,44.830955033153174
+dv8-IsCenter,designite-Design Smells,14.529506896483548
+dv8-IsCenter,archinaut-Dependent Partners,22.02441919821009
+dv8-IsCenter,archinaut-Depends on Partners,17.738432532830423
+dv8-IsCenter,archinaut-Total Dependencies,26.93818732021265
+dv8-IsCenter,archinaut-CoChange Partners,16.704764844633647
+dv8-IsCenter,archinaut-Bug Commits,-0.4163145494191417
+dv8-IsCenter,miner-Refactoring operations,15.44164341112381
+dv8-IsCenter,git-Churn,25.18711050882304
+dv8-IsCenter,dv8-TotalIssues,38.879936714395505
+dv8-IsCenter,dv8-Clique,19.098353693991694
+dv8-IsCenter,dv8-Crossing,47.14884617886685
+dv8-ModularityViolation,designite-Size,-2.2322140126785888
+dv8-ModularityViolation,designite-Complexity,0.49566960589723286
+dv8-ModularityViolation,git-Revisions,61.43511160723699
+dv8-ModularityViolation,designite-Design Smells,-3.1087400997357872
+dv8-ModularityViolation,archinaut-Dependent Partners,17.119381390369494
+dv8-ModularityViolation,archinaut-Depends on Partners,3.769517056835049
+dv8-ModularityViolation,archinaut-Total Dependencies,16.500848552658823
+dv8-ModularityViolation,archinaut-CoChange Partners,59.622432245901955
+dv8-ModularityViolation,archinaut-Bug Commits,-2.4994687459542066
+dv8-ModularityViolation,miner-Refactoring operations,4.055307869503614
+dv8-ModularityViolation,git-Churn,24.087129955812
+dv8-ModularityViolation,dv8-TotalIssues,85.01825116021273
+dv8-ModularityViolation,dv8-Clique,8.12717409094829
+dv8-ModularityViolation,dv8-Crossing,52.220050556961105
+dv8-ModularityViolation,dv8-IsCenter,28.353250574734428
+dv8-PackageCycle,designite-Size,24.820423810100987
+dv8-PackageCycle,designite-Complexity,18.250095860769658
+dv8-PackageCycle,git-Revisions,28.227718007309367
+dv8-PackageCycle,designite-Design Smells,5.094614712018113
+dv8-PackageCycle,archinaut-Dependent Partners,27.90705897494631
+dv8-PackageCycle,archinaut-Depends on Partners,7.179507968786335
+dv8-PackageCycle,archinaut-Total Dependencies,27.35709210828816
+dv8-PackageCycle,archinaut-CoChange Partners,-1.459570899774329
+dv8-PackageCycle,archinaut-Bug Commits,-2.518322234296217
+dv8-PackageCycle,miner-Refactoring operations,0.9955602962868404
+dv8-PackageCycle,git-Churn,20.442321519927045
+dv8-PackageCycle,dv8-TotalIssues,44.68691398474359
+dv8-PackageCycle,dv8-Clique,32.88870549214958
+dv8-PackageCycle,dv8-Crossing,18.708718417757936
+dv8-PackageCycle,dv8-IsCenter,22.117221301755567
+dv8-PackageCycle,dv8-ModularityViolation,21.329064042749994
+dv8-UnhealthyInheritance,designite-Size,35.13352887866197
+dv8-UnhealthyInheritance,designite-Complexity,35.22232395217296
+dv8-UnhealthyInheritance,git-Revisions,22.972738150740945
+dv8-UnhealthyInheritance,designite-Design Smells,5.928705451569944
+dv8-UnhealthyInheritance,archinaut-Dependent Partners,8.601922597466746
+dv8-UnhealthyInheritance,archinaut-Depends on Partners,37.16395299054251
+dv8-UnhealthyInheritance,archinaut-Total Dependencies,23.915012794862825
+dv8-UnhealthyInheritance,archinaut-CoChange Partners,-9.024508863214859
+dv8-UnhealthyInheritance,archinaut-Bug Commits,4.872899075329259
+dv8-UnhealthyInheritance,miner-Refactoring operations,1.1978160872106143
+dv8-UnhealthyInheritance,git-Churn,17.849323006740274
+dv8-UnhealthyInheritance,dv8-TotalIssues,47.94830352483358
+dv8-UnhealthyInheritance,dv8-Clique,15.787212472585846
+dv8-UnhealthyInheritance,dv8-Crossing,25.587935622568438
+dv8-UnhealthyInheritance,dv8-IsCenter,14.355567535546236
+dv8-UnhealthyInheritance,dv8-ModularityViolation,11.801579546285767
+dv8-UnhealthyInheritance,dv8-PackageCycle,9.943030530513889
+dv8-UnstableInterface,designite-Size,-7.974467370077044
+dv8-UnstableInterface,designite-Complexity,-5.2894227659105635
+dv8-UnstableInterface,git-Revisions,63.47031641068641
+dv8-UnstableInterface,designite-Design Smells,10.340637668787728
+dv8-UnstableInterface,archinaut-Dependent Partners,21.94272982727795
+dv8-UnstableInterface,archinaut-Depends on Partners,-1.3550691976943063
+dv8-UnstableInterface,archinaut-Total Dependencies,18.40936490682817
+dv8-UnstableInterface,archinaut-CoChange Partners,82.17425825748272
+dv8-UnstableInterface,archinaut-Bug Commits,-2.4067464936427805
+dv8-UnstableInterface,miner-Refactoring operations,4.309047530518174
+dv8-UnstableInterface,git-Churn,22.718255561667362
+dv8-UnstableInterface,dv8-TotalIssues,80.76267503517064
+dv8-UnstableInterface,dv8-Clique,3.6824139820010435
+dv8-UnstableInterface,dv8-Crossing,63.64216100845553
+dv8-UnstableInterface,dv8-IsCenter,26.16122306235124
+dv8-UnstableInterface,dv8-ModularityViolation,84.42393632192532
+dv8-UnstableInterface,dv8-PackageCycle,15.02580777696631
+dv8-UnstableInterface,dv8-UnhealthyInheritance,4.222993111654656
+dv8-isUnstableInterface,designite-Size,4.56424804812539
+dv8-isUnstableInterface,designite-Complexity,8.07746997387612
+dv8-isUnstableInterface,git-Revisions,27.783405943145418
+dv8-isUnstableInterface,designite-Design Smells,10.554240956636582
+dv8-isUnstableInterface,archinaut-Dependent Partners,31.1267315610969
+dv8-isUnstableInterface,archinaut-Depends on Partners,8.823435087065622
+dv8-isUnstableInterface,archinaut-Total Dependencies,30.87461744687628
+dv8-isUnstableInterface,archinaut-CoChange Partners,10.304864762309398
+dv8-isUnstableInterface,archinaut-Bug Commits,-0.3647968768197754
+dv8-isUnstableInterface,miner-Refactoring operations,17.907076740444104
+dv8-isUnstableInterface,git-Churn,18.1308191608517
+dv8-isUnstableInterface,dv8-TotalIssues,21.295567171581897
+dv8-isUnstableInterface,dv8-Clique,3.112011962479271
+dv8-isUnstableInterface,dv8-Crossing,22.950730577855243
+dv8-isUnstableInterface,dv8-IsCenter,43.4636526455783
+dv8-isUnstableInterface,dv8-ModularityViolation,13.192318250764668
+dv8-isUnstableInterface,dv8-PackageCycle,10.654502708335102
+dv8-isUnstableInterface,dv8-UnhealthyInheritance,11.218831783219473
+dv8-isUnstableInterface,dv8-UnstableInterface,18.39473556313457
+dv8-PresentInIssues,designite-Size,9.352562595745555
+dv8-PresentInIssues,designite-Complexity,11.664905381659969
+dv8-PresentInIssues,git-Revisions,58.14389678928122
+dv8-PresentInIssues,designite-Design Smells,23.757822647972084
+dv8-PresentInIssues,archinaut-Dependent Partners,19.288883659520373
+dv8-PresentInIssues,archinaut-Depends on Partners,16.65298206753274
+dv8-PresentInIssues,archinaut-Total Dependencies,24.087478563985805
+dv8-PresentInIssues,archinaut-CoChange Partners,65.15231648649262
+dv8-PresentInIssues,archinaut-Bug Commits,-3.0082898498004016
+dv8-PresentInIssues,miner-Refactoring operations,9.12971791903489
+dv8-PresentInIssues,git-Churn,28.53986197673785
+dv8-PresentInIssues,dv8-TotalIssues,81.91206941867173
+dv8-PresentInIssues,dv8-Clique,36.456728121935384
+dv8-PresentInIssues,dv8-Crossing,57.67119822263237
+dv8-PresentInIssues,dv8-IsCenter,24.911623939951696
+dv8-PresentInIssues,dv8-ModularityViolation,66.54861497362549
+dv8-PresentInIssues,dv8-PackageCycle,37.58023398099934
+dv8-PresentInIssues,dv8-UnhealthyInheritance,34.390404384287045
+dv8-PresentInIssues,dv8-UnstableInterface,72.5858629761385
+dv8-PresentInIssues,dv8-isUnstableInterface,14.805364052580822
+sq-SqIssues,designite-Size,55.625077781507635
+sq-SqIssues,designite-Complexity,49.61212415445503
+sq-SqIssues,git-Revisions,19.687566717588485
+sq-SqIssues,designite-Design Smells,6.269523532507229
+sq-SqIssues,archinaut-Dependent Partners,12.776966518578881
+sq-SqIssues,archinaut-Depends on Partners,22.164878381925615
+sq-SqIssues,archinaut-Total Dependencies,20.88767618716024
+sq-SqIssues,archinaut-CoChange Partners,-3.738216171139393
+sq-SqIssues,archinaut-Bug Commits,1.9432118089954382
+sq-SqIssues,miner-Refactoring operations,0.9874290197918406
+sq-SqIssues,git-Churn,18.320831351553547
+sq-SqIssues,dv8-TotalIssues,29.40150006445059
+sq-SqIssues,dv8-Clique,12.984446532877888
+sq-SqIssues,dv8-Crossing,20.424965391000125
+sq-SqIssues,dv8-IsCenter,7.1136435042075785
+sq-SqIssues,dv8-ModularityViolation,14.46362576724671
+sq-SqIssues,dv8-PackageCycle,21.997367416584982
+sq-SqIssues,dv8-UnhealthyInheritance,35.31090618343452
+sq-SqIssues,dv8-UnstableInterface,6.72403780763427
+sq-SqIssues,dv8-isUnstableInterface,8.010997130162135
+sq-SqIssues,dv8-PresentInIssues,16.41663758141931
+sq-SqCodeSmells,designite-Size,51.91223478699336
+sq-SqCodeSmells,designite-Complexity,46.5633584384793
+sq-SqCodeSmells,git-Revisions,18.82472307266574
+sq-SqCodeSmells,designite-Design Smells,5.43476886105667
+sq-SqCodeSmells,archinaut-Dependent Partners,13.341846827863895
+sq-SqCodeSmells,archinaut-Depends on Partners,21.264198803964817
+sq-SqCodeSmells,archinaut-Total Dependencies,20.97806501139679
+sq-SqCodeSmells,archinaut-CoChange Partners,-2.8401987936489825
+sq-SqCodeSmells,archinaut-Bug Commits,2.1931303591390248
+sq-SqCodeSmells,miner-Refactoring operations,0.9486207063988503
+sq-SqCodeSmells,git-Churn,16.615771384815083
+sq-SqCodeSmells,dv8-TotalIssues,29.251351592734427
+sq-SqCodeSmells,dv8-Clique,11.872332682490034
+sq-SqCodeSmells,dv8-Crossing,18.82491688535746
+sq-SqCodeSmells,dv8-IsCenter,7.802462136086195
+sq-SqCodeSmells,dv8-ModularityViolation,15.309031541591207
+sq-SqCodeSmells,dv8-PackageCycle,21.207840882933564
+sq-SqCodeSmells,dv8-UnhealthyInheritance,34.89911751183487
+sq-SqCodeSmells,dv8-UnstableInterface,7.298966474059136
+sq-SqCodeSmells,dv8-isUnstableInterface,8.376719740010872
+sq-SqCodeSmells,dv8-PresentInIssues,17.24188359595866
+sq-SqCodeSmells,sq-SqIssues,98.94282281940694
+sq-SqBugs,designite-Size,34.48375808277513
+sq-SqBugs,designite-Complexity,32.38033130999918
+sq-SqBugs,git-Revisions,22.566514120905268
+sq-SqBugs,designite-Design Smells,3.889362916661765
+sq-SqBugs,archinaut-Dependent Partners,3.2075264556741963
+sq-SqBugs,archinaut-Depends on Partners,16.85006174277414
+sq-SqBugs,archinaut-Total Dependencies,10.243026739402486
+sq-SqBugs,archinaut-CoChange Partners,-1.6308584357262998
+sq-SqBugs,archinaut-Bug Commits,-0.41000508066886787
+sq-SqBugs,miner-Refactoring operations,0.18715222646342777
+sq-SqBugs,git-Churn,26.100565125751096
+sq-SqBugs,dv8-TotalIssues,20.97743026578603
+sq-SqBugs,dv8-Clique,9.23938702070349
+sq-SqBugs,dv8-Crossing,33.023952133570525
+sq-SqBugs,dv8-IsCenter,-0.7844962056021905
+sq-SqBugs,dv8-ModularityViolation,7.570543743042089
+sq-SqBugs,dv8-PackageCycle,13.58261161605283
+sq-SqBugs,dv8-UnhealthyInheritance,19.30446886712215
+sq-SqBugs,dv8-UnstableInterface,6.372755750906981
+sq-SqBugs,dv8-isUnstableInterface,1.0522770388937919
+sq-SqBugs,dv8-PresentInIssues,6.294693792360024
+sq-SqBugs,sq-SqIssues,28.175536867378863
+sq-SqBugs,sq-SqCodeSmells,19.27177634985323
+sq-SqVulnerabilities,designite-Size,28.540958807520987
+sq-SqVulnerabilities,designite-Complexity,22.291279486562836
+sq-SqVulnerabilities,git-Revisions,-1.5120141140090901
+sq-SqVulnerabilities,designite-Design Smells,10.990589963755166
+sq-SqVulnerabilities,archinaut-Dependent Partners,0.1658954284733035
+sq-SqVulnerabilities,archinaut-Depends on Partners,3.8661385857039696
+sq-SqVulnerabilities,archinaut-Total Dependencies,1.856344829406813
+sq-SqVulnerabilities,archinaut-CoChange Partners,-5.842492741154747
+sq-SqVulnerabilities,archinaut-Bug Commits,-0.5130253046469706
+sq-SqVulnerabilities,miner-Refactoring operations,0.10810669745215974
+sq-SqVulnerabilities,git-Churn,0.33804140149409395
+sq-SqVulnerabilities,dv8-TotalIssues,0.4535486220413059
+sq-SqVulnerabilities,dv8-Clique,7.034167073277126
+sq-SqVulnerabilities,dv8-Crossing,-2.0572023184489905
+sq-SqVulnerabilities,dv8-IsCenter,-0.9816132137116179
+sq-SqVulnerabilities,dv8-ModularityViolation,-3.2528800155385187
+sq-SqVulnerabilities,dv8-PackageCycle,5.224589664993479
+sq-SqVulnerabilities,dv8-UnhealthyInheritance,5.068451661490858
+sq-SqVulnerabilities,dv8-UnstableInterface,-4.232226333721438
+sq-SqVulnerabilities,dv8-isUnstableInterface,0.865386298105285
+sq-SqVulnerabilities,dv8-PresentInIssues,-0.9266856553523264
+sq-SqVulnerabilities,sq-SqIssues,29.86293917991593
+sq-SqVulnerabilities,sq-SqCodeSmells,21.004862040017514
+sq-SqVulnerabilities,sq-SqBugs,2.911998495369363
+sq-SqSecuritySpots,designite-Size,12.939735404441102
+sq-SqSecuritySpots,designite-Complexity,9.89612354660565
+sq-SqSecuritySpots,git-Revisions,-0.3297806609780654
+sq-SqSecuritySpots,designite-Design Smells,-4.25362480578396
+sq-SqSecuritySpots,archinaut-Dependent Partners,-1.7061821484191015
+sq-SqSecuritySpots,archinaut-Depends on Partners,3.098029099584136
+sq-SqSecuritySpots,archinaut-Total Dependencies,-0.10574888869939655
+sq-SqSecuritySpots,archinaut-CoChange Partners,-5.854799177323272
+sq-SqSecuritySpots,archinaut-Bug Commits,-0.567918852578694
+sq-SqSecuritySpots,miner-Refactoring operations,1.0926991075887145
+sq-SqSecuritySpots,git-Churn,3.040300664966074
+sq-SqSecuritySpots,dv8-TotalIssues,-2.6478845944184917
+sq-SqSecuritySpots,dv8-Clique,4.399156502704991
+sq-SqSecuritySpots,dv8-Crossing,-3.562529082481452
+sq-SqSecuritySpots,dv8-IsCenter,-1.0866455220777549
+sq-SqSecuritySpots,dv8-ModularityViolation,-5.857451374322606
+sq-SqSecuritySpots,dv8-PackageCycle,4.158361115418996
+sq-SqSecuritySpots,dv8-UnhealthyInheritance,2.4730215798996804
+sq-SqSecuritySpots,dv8-UnstableInterface,-5.7175570305868675
+sq-SqSecuritySpots,dv8-isUnstableInterface,-0.9521764089610011
+sq-SqSecuritySpots,dv8-PresentInIssues,-5.325205263923607
+sq-SqSecuritySpots,sq-SqIssues,22.167489312530787
+sq-SqSecuritySpots,sq-SqCodeSmells,16.03110375624071
+sq-SqSecuritySpots,sq-SqBugs,5.467269430528879
+sq-SqSecuritySpots,sq-SqVulnerabilities,5.14513610028395

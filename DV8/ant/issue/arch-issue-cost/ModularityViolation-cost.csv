@@ -1,0 +1,18 @@
+IssueType,Issue Size,#Changes,Tot Loc changed
+ModularityViolation1,76.0,312.0,2708.0
+ModularityViolation2,62.0,273.0,3402.0
+ModularityViolation3,50.0,207.0,1319.0
+ModularityViolation4,46.0,215.0,2324.0
+ModularityViolation5,43.0,195.0,1438.0
+ModularityViolation6,35.0,150.0,1713.0
+ModularityViolation7,29.0,133.0,1012.0
+ModularityViolation8,11.0,60.0,472.0
+ModularityViolation9,4.0,14.0,102.0
+ModularityViolation10,4.0,13.0,3589.0
+ModularityViolation11,3.0,17.0,829.0
+ModularityViolation12,3.0,17.0,450.0
+ModularityViolation13,2.0,6.0,44.0
+ModularityViolation14,2.0,7.0,61.0
+ModularityViolation15,2.0,6.0,90.0
+
+ModularityViolation-All,148.0,592.0,9340.0

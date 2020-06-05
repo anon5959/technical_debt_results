@@ -1,0 +1,6 @@
+Index,Size,Fan-in,Fan-out,CrossingCenter
+Crossing1,22,6,15,library.core.src.main.java.com.google.android.exoplayer2.SimpleExoPlayer_java,
+Crossing2,19,14,4,library.core.src.main.java.com.google.android.exoplayer2.BaseRenderer_java,
+Crossing3,12,7,6,library.core.src.main.java.com.google.android.exoplayer2.ExoPlayer_java,
+Crossing4,10,4,5,library.core.src.main.java.com.google.android.exoplayer2.analytics.AnalyticsCollector_java,
+

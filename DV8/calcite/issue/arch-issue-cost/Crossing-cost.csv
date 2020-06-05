@@ -1,0 +1,7 @@
+IssueType,Issue Size,#Bug Commits,Tot Loc bug changed,#Changes,Tot Loc changed
+Crossing1,25.0,9.0,101.0,268.0,7703.0
+Crossing2,16.0,7.0,264.0,188.0,5844.0
+Crossing3,16.0,0.0,0.0,164.0,4177.0
+Crossing4,8.0,0.0,0.0,41.0,2109.0
+
+Crossing-All,61.0,16.0,365.0,595.0,18567.0

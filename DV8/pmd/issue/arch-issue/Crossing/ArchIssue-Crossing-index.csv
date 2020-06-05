@@ -1,0 +1,15 @@
+Index,Size,Fan-in,Fan-out,CrossingCenter
+Crossing1,131,130,127,pmd-scala.src.main.java.net.sourceforge.pmd.lang.scala.ast.ScalaParserVisitor_java,
+Crossing2,54,48,5,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.AbstractJavaNode_java,
+Crossing3,21,14,11,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTVariableDeclaratorId_java,
+Crossing4,19,14,4,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTExpression_java,
+Crossing5,17,9,7,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTMethodDeclaration_java,
+Crossing6,16,11,4,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTType_java,
+Crossing7,13,8,5,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTCompilationUnit_java,
+Crossing8,13,8,5,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTClassOrInterfaceType_java,
+Crossing9,12,4,8,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTClassOrInterfaceDeclaration_java,
+Crossing10,12,4,7,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.rule.AbstractJavaRule_java,
+Crossing11,11,4,7,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTFieldDeclaration_java,
+Crossing12,11,6,5,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTFormalParameter_java,
+Crossing13,9,5,4,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTLocalVariableDeclaration_java,
+

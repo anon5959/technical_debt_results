@@ -1,0 +1,9 @@
+IssueType,Issue Size,#Bug Commits,Tot Loc bug changed,#Changes,Tot Loc changed
+PackageCycle1,34.0,3.0,33.0,161.0,2514.0
+PackageCycle2,22.0,2.0,25.0,119.0,1751.0
+PackageCycle3,12.0,2.0,25.0,69.0,835.0
+PackageCycle4,10.0,0.0,0.0,17.0,368.0
+PackageCycle5,7.0,0.0,0.0,15.0,176.0
+PackageCycle6,6.0,0.0,0.0,30.0,715.0
+
+PackageCycle-All,59.0,3.0,33.0,202.0,3039.0

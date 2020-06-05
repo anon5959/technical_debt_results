@@ -1,0 +1,25 @@
+IssueType,Issue Size,#Bug Commits,Tot Loc bug changed,#Changes,Tot Loc changed
+ModularityViolation1,69.0,71.0,520.0,511.0,4840.0
+ModularityViolation2,65.0,61.0,732.0,552.0,5495.0
+ModularityViolation3,59.0,55.0,648.0,459.0,5048.0
+ModularityViolation4,54.0,51.0,577.0,439.0,4331.0
+ModularityViolation5,48.0,43.0,487.0,416.0,3801.0
+ModularityViolation6,46.0,38.0,475.0,414.0,3971.0
+ModularityViolation7,43.0,28.0,300.0,318.0,3776.0
+ModularityViolation8,42.0,38.0,509.0,398.0,3992.0
+ModularityViolation9,41.0,58.0,676.0,335.0,3273.0
+ModularityViolation10,40.0,42.0,496.0,378.0,4157.0
+ModularityViolation11,35.0,21.0,235.0,271.0,2810.0
+ModularityViolation12,23.0,23.0,244.0,209.0,2267.0
+ModularityViolation13,19.0,18.0,391.0,172.0,1767.0
+ModularityViolation14,14.0,18.0,291.0,116.0,1084.0
+ModularityViolation15,14.0,25.0,236.0,160.0,1597.0
+ModularityViolation16,13.0,29.0,365.0,198.0,2707.0
+ModularityViolation17,11.0,22.0,265.0,152.0,1664.0
+ModularityViolation18,9.0,2.0,4.0,47.0,405.0
+ModularityViolation19,3.0,2.0,4.0,22.0,243.0
+ModularityViolation20,2.0,0.0,0.0,7.0,46.0
+ModularityViolation21,2.0,2.0,10.0,8.0,56.0
+ModularityViolation22,2.0,0.0,0.0,8.0,49.0
+
+ModularityViolation-All,152.0,130.0,1333.0,1089.0,11057.0

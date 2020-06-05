@@ -1,0 +1,5 @@
+Index,Size,UnstableInterface
+UnstableInterface1,28,src.org.jgroups.protocols.TP_java
+UnstableInterface2,18,src.org.jgroups.util.Util_java
+UnstableInterface3,16,src.org.jgroups.stack.Protocol_java
+

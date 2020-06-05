@@ -1,0 +1,8 @@
+Type,#Instances,#DistinctFiles
+UnstableInterface,9,106
+UnhealthyInheritance,79,325
+Clique,19,60
+ModularityViolation,66,294
+Crossing,4,43
+PackageCycle,50,398
+Total,227,583

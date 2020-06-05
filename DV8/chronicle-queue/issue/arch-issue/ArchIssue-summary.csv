@@ -1,0 +1,6 @@
+Type,#Instances,#DistinctFiles
+UnhealthyInheritance,8,30
+Clique,5,22
+ModularityViolation,1,2
+PackageCycle,6,59
+Total,20,79

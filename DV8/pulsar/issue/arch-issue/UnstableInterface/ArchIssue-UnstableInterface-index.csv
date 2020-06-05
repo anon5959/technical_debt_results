@@ -1,0 +1,14 @@
+Index,Size,UnstableInterface
+UnstableInterface1,68,pulsar-broker.src.main.java.org.apache.pulsar.broker.service.persistent.PersistentTopic_java
+UnstableInterface2,62,pulsar-broker-common.src.main.java.org.apache.pulsar.broker.ServiceConfiguration_java
+UnstableInterface3,60,pulsar-broker.src.main.java.org.apache.pulsar.broker.service.BrokerService_java
+UnstableInterface4,45,pulsar-broker.src.main.java.org.apache.pulsar.broker.service.Topic_java
+UnstableInterface5,38,pulsar-client.src.main.java.org.apache.pulsar.client.impl.PulsarClientImpl_java
+UnstableInterface6,37,pulsar-common.src.main.java.org.apache.pulsar.common.protocol.Commands_java
+UnstableInterface7,31,pulsar-common.src.main.java.org.apache.pulsar.common.policies.data.Policies_java
+UnstableInterface8,26,pulsar-broker.src.main.java.org.apache.pulsar.broker.PulsarService_java
+UnstableInterface9,22,pulsar-broker.src.main.java.org.apache.pulsar.broker.namespace.NamespaceService_java
+UnstableInterface10,21,pulsar-broker.src.main.java.org.apache.pulsar.broker.admin.AdminResource_java
+UnstableInterface11,19,pulsar-common.src.main.java.org.apache.pulsar.common.api.proto.PulsarApi_java
+UnstableInterface12,16,pulsar-client-api.src.main.java.org.apache.pulsar.client.api.Schema_java
+

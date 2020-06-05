@@ -1,0 +1,6 @@
+Index,Size,Fan-in,Fan-out,CrossingCenter
+Crossing1,25,17,9,core.src.main.java.org.apache.calcite.tools.RelBuilder_java,
+Crossing2,16,8,7,core.src.main.java.org.apache.calcite.util.BuiltInMethod_java,
+Crossing3,16,5,11,core.src.main.java.org.apache.calcite.sql.fun.SqlStdOperatorTable_java,
+Crossing4,8,5,4,elasticsearch.src.main.java.org.apache.calcite.adapter.elasticsearch.ElasticsearchTable_java,
+

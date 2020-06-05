@@ -1,0 +1,5 @@
+IssueType,Issue Size,#Changes,Tot Loc changed
+UnstableInterface1,66.0,304.0,2546.0
+UnstableInterface2,45.0,212.0,1825.0
+
+UnstableInterface-All,66.0,304.0,2546.0

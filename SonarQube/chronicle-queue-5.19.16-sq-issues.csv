@@ -1,0 +1,409 @@
+IssueId,IssueKee,IssueType,RuleId,Severity,Message,FileName
+62871,AXIlWMmLOPE4MZK-QGiS,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/AppenderFileHandleLeakTest.java
+62872,AXIlWMmLOPE4MZK-QGiT,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/AppenderFileHandleLeakTest.java
+62873,AXIlWMmLOPE4MZK-QGiU,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/AppenderFileHandleLeakTest.java
+62874,AXIlWMn1OPE4MZK-QGiV,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/CheckIndicesTest.java
+62875,AXIlWMoPOPE4MZK-QGiW,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleTest.java
+62876,AXIlWMoPOPE4MZK-QGiX,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleTest.java
+62877,AXIlWMoPOPE4MZK-QGiY,CodeSmell,1527,CRITICAL,Remove this assertion.,src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleTest.java
+62878,AXIlWMopOPE4MZK-QGiZ,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+62879,AXIlWMo8OPE4MZK-QGia,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+62880,AXIlWMo8OPE4MZK-QGib,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+62881,AXIlWMpNOPE4MZK-QGic,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/impl/single/WriteBytesTest.java
+62882,AXIlWMpNOPE4MZK-QGid,CodeSmell,1554,MINOR,"Remove this unused ""TemporaryFolder"".",src/test/java/net/openhft/chronicle/queue/impl/single/WriteBytesTest.java
+62883,AXIlWMp2OPE4MZK-QGie,CodeSmell,1523,BLOCKER,Add some tests to this class.,src/test/java/net/openhft/chronicle/queue/impl/single/pretoucher/PretoucherSoakTest.java
+62884,AXIlWMqOOPE4MZK-QGif,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+62885,AXIlWMqPOPE4MZK-QGig,CodeSmell,1870,MAJOR,"Swap these 2 arguments so they are in the correct order: expected value, actual value.",src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+62886,AXIlWMqPOPE4MZK-QGih,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+62887,AXIlWMraOPE4MZK-QGii,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilderTest.java
+62888,AXIlWMsNOPE4MZK-QGij,CodeSmell,1870,MAJOR,"Swap these 2 arguments so they are in the correct order: expected value, actual value.",src/test/java/net/openhft/chronicle/queue/impl/single/TestTailAfterRoll.java
+62889,AXIlWMsuOPE4MZK-QGik,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+62890,AXIlWMu_OPE4MZK-QGil,CodeSmell,1553,MAJOR,"Remove this use of ""Thread.sleep()"".",src/test/java/net/openhft/chronicle/queue/jitter/QueueWriteJitterMain.java
+62891,AXIlWMwfOPE4MZK-QGim,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/VisibilityOfMessagesBetweenTailorsAndAppenderTest.java
+62892,AXIlWMyHOPE4MZK-QGin,CodeSmell,1554,MINOR,"Remove this unused ""TemporaryFolder"".",src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+62893,AXIlWMyzOPE4MZK-QGio,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+62894,AXIlWMzXOPE4MZK-QGip,CodeSmell,1857,BLOCKER,Add at least one assertion to this test case.,src/test/java/net/openhft/chronicle/queue/SingleChroniclePerfMain.java
+62895,AXIlWMzqOPE4MZK-QGiq,CodeSmell,1870,MAJOR,"Swap these 2 arguments so they are in the correct order: expected value, actual value.",src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+62896,AXIlWM0bOPE4MZK-QGir,Vulnerability,1601,MINOR,"Make this ""public static RUN_SYNCHRONOUSLY"" field final",src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62897,AXIlWM0bOPE4MZK-QGis,Vulnerability,1601,MINOR,"Make this ""public static DISABLE_QUEUE_FILE_SHRINKING"" field final",src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62898,AXIlWM0bOPE4MZK-QGit,CodeSmell,1712,MAJOR,Use the built-in formatting to construct this argument.,src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62899,AXIlWM0bOPE4MZK-QGiu,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62900,AXIlWM0bOPE4MZK-QGiv,Vulnerability,1640,MINOR,Make RUN_SYNCHRONOUSLY a static final constant or non-public and provide accessors if needed.,src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62901,AXIlWM0bOPE4MZK-QGiw,Vulnerability,1640,MINOR,Make DISABLE_QUEUE_FILE_SHRINKING a static final constant or non-public and provide accessors if needed.,src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62902,AXIlWM0bOPE4MZK-QGix,CodeSmell,1777,MINOR,"Rename this field ""RUN_SYNCHRONOUSLY"" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62903,AXIlWM0bOPE4MZK-QGiy,CodeSmell,1777,MINOR,"Rename this field ""DISABLE_QUEUE_FILE_SHRINKING"" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62904,AXIlWM0bOPE4MZK-QGiz,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62905,AXIlWM0bOPE4MZK-QGi0,CodeSmell,1768,MAJOR,Format specifiers should be used instead of string concatenation.,src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+62906,AXIlWM0wOPE4MZK-QGi1,Bug,1572,MAJOR,"Call ""remove()"" on ""lockedByCurrentThread"".",src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+62907,AXIlWM0wOPE4MZK-QGi2,Bug,1739,MAJOR,"Move this ""assert"" side effect to another statement.",src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+62908,AXIlWM0wOPE4MZK-QGi3,Bug,1739,MAJOR,"Move this ""assert"" side effect to another statement.",src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+62909,AXIlWM1EOPE4MZK-QGi4,CodeSmell,524,MAJOR,2 duplicated blocks of code must be removed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62910,AXIlWM1EOPE4MZK-QGi5,Bug,1696,MINOR,"This method's return value is marked ""org.jetbrains.annotations.NotNull"" but null is returned.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62911,AXIlWM1EOPE4MZK-QGi6,CodeSmell,1457,CRITICAL,"Define a constant instead of duplicating this literal ""Queue is closed"" 3 times.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62912,AXIlWM1EOPE4MZK-QGi7,CodeSmell,1477,MINOR,Extract this nested code block into a method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62913,AXIlWM1EOPE4MZK-QGi8,CodeSmell,1477,MINOR,Extract this nested code block into a method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62914,AXIlWM1EOPE4MZK-QGi9,CodeSmell,1477,MINOR,Extract this nested code block into a method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62915,AXIlWM1EOPE4MZK-QGi-,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62916,AXIlWM1EOPE4MZK-QGi_,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62917,AXIlWM1EOPE4MZK-QGjA,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""long"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62918,AXIlWM1EOPE4MZK-QGjB,CodeSmell,1712,MAJOR,Invoke method(s) only conditionally.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62919,AXIlWM1EOPE4MZK-QGjC,CodeSmell,1712,MAJOR,Use the built-in formatting to construct this argument.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62920,AXIlWM1EOPE4MZK-QGjD,CodeSmell,1524,MAJOR,Define and throw a dedicated exception instead of using a generic one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62921,AXIlWM1EOPE4MZK-QGjE,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62922,AXIlWM1EOPE4MZK-QGjF,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62923,AXIlWM1EOPE4MZK-QGjG,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62924,AXIlWM1EOPE4MZK-QGjH,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62925,AXIlWM1EOPE4MZK-QGjI,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62926,AXIlWM1EOPE4MZK-QGjJ,CodeSmell,1840,MAJOR,Extract the assignment out of this expression.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62927,AXIlWM1EOPE4MZK-QGjK,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62928,AXIlWM1EOPE4MZK-QGjL,Bug,1572,MAJOR,"Call ""remove()"" on ""bufferBytes"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62929,AXIlWM1EOPE4MZK-QGjM,Bug,1572,MAJOR,"Call ""remove()"" on ""bufferWire"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62930,AXIlWM1EOPE4MZK-QGjN,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 87.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62931,AXIlWM1EOPE4MZK-QGjO,CodeSmell,1867,MAJOR,"Rename ""lastCycle"" which hides the field declared at line 95.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62932,AXIlWM1EOPE4MZK-QGjP,CodeSmell,1940,INFO,Do not forget to remove this deprecated code someday.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62933,AXIlWM1EOPE4MZK-QGjQ,CodeSmell,1847,MAJOR,Add the missing @deprecated Javadoc tag.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62934,AXIlWM1EOPE4MZK-QGjR,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62935,AXIlWM1EOPE4MZK-QGjS,CodeSmell,1771,MAJOR,Catch Exception instead of Throwable.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62936,AXIlWM1EOPE4MZK-QGjT,CodeSmell,1867,MAJOR,"Rename ""lastIndex"" which hides the field declared at line 93.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62937,AXIlWM1EOPE4MZK-QGjU,CodeSmell,1867,MAJOR,"Rename ""wire"" which hides the field declared at line 88.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62938,AXIlWM1EOPE4MZK-QGjV,CodeSmell,1867,MAJOR,"Rename ""queue"" which hides the field declared at line 76.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62939,AXIlWM1EOPE4MZK-QGjW,CodeSmell,1867,MAJOR,"Rename ""store"" which hides the field declared at line 85.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62940,AXIlWM1EOPE4MZK-QGjX,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62941,AXIlWM1EOPE4MZK-QGjY,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62942,AXIlWM1EOPE4MZK-QGjZ,CodeSmell,1867,MAJOR,"Rename ""wire"" which hides the field declared at line 88.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62943,AXIlWM1EOPE4MZK-QGja,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62944,AXIlWM1EOPE4MZK-QGjb,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 87.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62945,AXIlWM1EOPE4MZK-QGjc,CodeSmell,1867,MAJOR,"Rename ""lastCycle"" which hides the field declared at line 95.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62946,AXIlWM1EOPE4MZK-QGjd,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62947,AXIlWM1EOPE4MZK-QGje,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 87.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62948,AXIlWM1EOPE4MZK-QGjf,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 87.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62949,AXIlWM1EOPE4MZK-QGjg,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 87.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62950,AXIlWM1EOPE4MZK-QGjh,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62951,AXIlWM1EOPE4MZK-QGji,CodeSmell,1867,MAJOR,"Rename ""lastCycle"" which hides the field declared at line 95.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62952,AXIlWM1EOPE4MZK-QGjj,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62953,AXIlWM1EOPE4MZK-QGjk,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62954,AXIlWM1EOPE4MZK-QGjl,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62955,AXIlWM1EOPE4MZK-QGjm,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62956,AXIlWM1EOPE4MZK-QGjn,CodeSmell,1867,MAJOR,"Rename ""lastPosition"" which hides the field declared at line 94.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62957,AXIlWM1EOPE4MZK-QGjo,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.core.io.IORuntimeException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62958,AXIlWM1EOPE4MZK-QGjp,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62959,AXIlWM1EOPE4MZK-QGjq,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62960,AXIlWM1EOPE4MZK-QGjr,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62961,AXIlWM1EOPE4MZK-QGjs,CodeSmell,1541,BLOCKER,"Rename method ""index"" to prevent any misunderstanding/clash with field ""index"" defined on line 912.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62962,AXIlWM1EOPE4MZK-QGjt,CodeSmell,1867,MAJOR,"Rename ""index"" which hides the field declared at line 912.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62963,AXIlWM1EOPE4MZK-QGju,CodeSmell,1867,MAJOR,"Rename ""index"" which hides the field declared at line 912.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62964,AXIlWM1EOPE4MZK-QGjv,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62965,AXIlWM1EOPE4MZK-QGjw,CodeSmell,1707,MINOR,"Declare ""tryAgain"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62966,AXIlWM1EOPE4MZK-QGjx,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62967,AXIlWM1EOPE4MZK-QGjy,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62968,AXIlWM1FOPE4MZK-QGjz,CodeSmell,1694,MINOR,"Remove this use of ""store""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62969,AXIlWM1FOPE4MZK-QGj0,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 915.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62970,AXIlWM1FOPE4MZK-QGj1,CodeSmell,1867,MAJOR,"Rename ""index"" which hides the field declared at line 912.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62971,AXIlWM1FOPE4MZK-QGj2,CodeSmell,1768,MAJOR,Format specifiers should be used instead of string concatenation.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62972,AXIlWM1FOPE4MZK-QGj3,CodeSmell,1694,MINOR,"Remove this use of ""store""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62973,AXIlWM1FOPE4MZK-QGj4,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 915.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62974,AXIlWM1FOPE4MZK-QGj5,CodeSmell,1694,MINOR,"Remove this use of ""store""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62975,AXIlWM1FOPE4MZK-QGj6,CodeSmell,1694,MINOR,"Remove this use of ""store""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62976,AXIlWM1FOPE4MZK-QGj7,CodeSmell,1867,MAJOR,"Rename ""index"" which hides the field declared at line 912.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62977,AXIlWM1FOPE4MZK-QGj8,CodeSmell,1867,MAJOR,"Rename ""index"" which hides the field declared at line 912.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62978,AXIlWM1FOPE4MZK-QGj9,CodeSmell,1867,MAJOR,"Rename ""cycle"" which hides the field declared at line 915.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62979,AXIlWM1FOPE4MZK-QGj-,CodeSmell,1768,MAJOR,Format specifiers should be used instead of string concatenation.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62980,AXIlWM1FOPE4MZK-QGj_,CodeSmell,1867,MAJOR,"Rename ""context"" which hides the field declared at line 909.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62981,AXIlWM1FOPE4MZK-QGkA,CodeSmell,1940,INFO,Do not forget to remove this deprecated code someday.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62982,AXIlWM1FOPE4MZK-QGkB,CodeSmell,1847,MAJOR,Add the missing @deprecated Javadoc tag.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62983,AXIlWM1FOPE4MZK-QGkC,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""onSuccessfulLookup"" on line 1989.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62984,AXIlWM1FOPE4MZK-QGkD,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62985,AXIlWM1FOPE4MZK-QGkE,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+62986,AXIlWM2kOPE4MZK-QGkF,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+62987,AXIlWM2kOPE4MZK-QGkG,CodeSmell,1707,MINOR,"Declare ""lastTouchedPos"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+62988,AXIlWM2kOPE4MZK-QGkH,CodeSmell,1707,MINOR,"Declare ""lastPos"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+62989,AXIlWM2kOPE4MZK-QGkI,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+62990,AXIlWM2kOPE4MZK-QGkJ,CodeSmell,1707,MINOR,"Declare ""pretouch"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+62991,AXIlWM23OPE4MZK-QGkK,CodeSmell,524,MAJOR,1 duplicated blocks of code must be removed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62992,AXIlWM23OPE4MZK-QGkL,Bug,1696,MINOR,"""sequence"" is marked ""org.jetbrains.annotations.NotNull"" but is not initialized in this constructor.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62993,AXIlWM23OPE4MZK-QGkM,Bug,1518,MINOR,"Cast one of the operands of this addition operation to a ""long"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62994,AXIlWM23OPE4MZK-QGkN,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62995,AXIlWM23OPE4MZK-QGkO,CodeSmell,1526,MINOR,"Remove the ""transient"" modifier from this field.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62996,AXIlWM23OPE4MZK-QGkP,CodeSmell,1408,MAJOR,Replace this assert with a proper check.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62997,AXIlWM23OPE4MZK-QGkQ,CodeSmell,1408,MAJOR,Replace this assert with a proper check.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62998,AXIlWM23OPE4MZK-QGkR,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+62999,AXIlWM23OPE4MZK-QGkS,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+63000,AXIlWM23OPE4MZK-QGkT,CodeSmell,1694,MINOR,"Remove this use of ""get""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+63001,AXIlWM23OPE4MZK-QGkU,CodeSmell,1694,MINOR,"Remove this use of ""get""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+63002,AXIlWM23OPE4MZK-QGkV,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+63003,AXIlWM23OPE4MZK-QGkW,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+63004,AXIlWM3aOPE4MZK-QGkX,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/FileSystemDirectoryListing.java
+63005,AXIlWM5KOPE4MZK-QGkY,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+63006,AXIlWM5LOPE4MZK-QGkZ,CodeSmell,1719,MINOR,"Use ""Boolean.parseBoolean"" for this string-to-boolean conversion.",src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+63007,AXIlWM5LOPE4MZK-QGka,CodeSmell,1771,MAJOR,Catch Exception instead of Throwable.,src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+63008,AXIlWM5LOPE4MZK-QGkb,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+63009,AXIlWM5LOPE4MZK-QGkc,Bug,1817,MAJOR,"Either re-interrupt this method or rethrow the ""InterruptedException"".",src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+63010,AXIlWM5LOPE4MZK-QGkd,CodeSmell,1505,MAJOR,Either remove or fill this block of code.,src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+63011,AXIlWM6ZOPE4MZK-QGke,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataKeys.java
+63012,AXIlWM6ZOPE4MZK-QGkf,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataKeys.java
+63013,AXIlWM6ZOPE4MZK-QGkg,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataKeys.java
+63014,AXIlWM6ZOPE4MZK-QGkh,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataKeys.java
+63015,AXIlWM64OPE4MZK-QGki,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+63016,AXIlWM64OPE4MZK-QGkj,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+63017,AXIlWM7NOPE4MZK-QGkk,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/single/RollCycleEncodeSequence.java
+63018,AXIlWM7yOPE4MZK-QGkl,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/NoopQueueLock.java
+63019,AXIlWM7yOPE4MZK-QGkm,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/NoopQueueLock.java
+63020,AXIlWM7yOPE4MZK-QGkn,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/NoopQueueLock.java
+63021,AXIlWM7yOPE4MZK-QGko,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/NoopQueueLock.java
+63022,AXIlWM8UOPE4MZK-QGkp,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/ReadOnlyWriteLock.java
+63023,AXIlWM8oOPE4MZK-QGkq,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63024,AXIlWM8oOPE4MZK-QGkr,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63025,AXIlWM8oOPE4MZK-QGks,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63026,AXIlWM8oOPE4MZK-QGkt,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63027,AXIlWM8oOPE4MZK-QGku,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63028,AXIlWM8oOPE4MZK-QGkv,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63029,AXIlWM8oOPE4MZK-QGkw,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63030,AXIlWM8oOPE4MZK-QGkx,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63031,AXIlWM8oOPE4MZK-QGky,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63032,AXIlWM8oOPE4MZK-QGkz,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63033,AXIlWM8oOPE4MZK-QGk0,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63034,AXIlWM8oOPE4MZK-QGk1,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+63035,AXIlWM9uOPE4MZK-QGk2,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/TableDirectoryListing.java
+63036,AXIlWM9uOPE4MZK-QGk3,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/TableDirectoryListing.java
+63037,AXIlWM9uOPE4MZK-QGk4,Bug,1436,MINOR,"Use a thread-safe type; adding ""volatile"" is not enough to make this field thread-safe.",src/main/java/net/openhft/chronicle/queue/impl/single/TableDirectoryListing.java
+63038,AXIlWM-GOPE4MZK-QGk5,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63039,AXIlWM-GOPE4MZK-QGk6,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63040,AXIlWM-GOPE4MZK-QGk7,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63041,AXIlWM-GOPE4MZK-QGk8,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63042,AXIlWM-GOPE4MZK-QGk9,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63043,AXIlWM-GOPE4MZK-QGk-,CodeSmell,1578,MAJOR,"Rename field ""cachedCycleTree""",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63044,AXIlWM-GOPE4MZK-QGk_,CodeSmell,1840,MAJOR,Extract the assignment out of this expression.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63045,AXIlWM-GOPE4MZK-QGlA,CodeSmell,1840,MAJOR,Extract the assignment out of this expression.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63046,AXIlWM-GOPE4MZK-QGlB,CodeSmell,1707,MINOR,"Declare ""overlapSize"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63047,AXIlWM-GOPE4MZK-QGlC,CodeSmell,1707,MINOR,"Declare ""lastCycle"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63048,AXIlWM-GOPE4MZK-QGlD,Bug,1572,MAJOR,"Call ""remove()"" on ""tlTailer"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63049,AXIlWM-GOPE4MZK-QGlE,SecurityHotspot,1762,CRITICAL,Make sure that using this pseudorandom number generator is safe here.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63050,AXIlWM-GOPE4MZK-QGlF,CodeSmell,1810,MAJOR,"Remove this unused method parameter ""zoneId"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63051,AXIlWM-GOPE4MZK-QGlG,CodeSmell,1564,MINOR,"Remove the parentheses around the ""ref"" parameter",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63052,AXIlWM-GOPE4MZK-QGlH,CodeSmell,1405,CRITICAL,"Change this ""try"" to a try-with-resources.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63053,AXIlWM-GOPE4MZK-QGlI,CodeSmell,1564,MINOR,"Remove the parentheses around the ""ref"" parameter",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63054,AXIlWM-GOPE4MZK-QGlJ,CodeSmell,1539,MINOR,Remove useless curly braces around statement,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63055,AXIlWM-GOPE4MZK-QGlK,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63056,AXIlWM-GOPE4MZK-QGlL,CodeSmell,1867,MAJOR,"Rename ""rollCycle"" which hides the field declared at line 123.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63057,AXIlWM-HOPE4MZK-QGlM,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63058,AXIlWM-HOPE4MZK-QGlN,CodeSmell,1867,MAJOR,"Rename ""overlapSize"" which hides the field declared at line 90.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63059,AXIlWM-HOPE4MZK-QGlO,CodeSmell,1590,MINOR,Remove this redundant jump.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63060,AXIlWM-HOPE4MZK-QGlP,CodeSmell,1867,MAJOR,"Rename ""lastCycle"" which hides the field declared at line 120.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63061,AXIlWM-HOPE4MZK-QGlQ,CodeSmell,1433,MAJOR,"Use ""java.nio.Files#delete"" here for better messages on error conditions.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63062,AXIlWM-HOPE4MZK-QGlR,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 24 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63063,AXIlWM-HOPE4MZK-QGlS,CodeSmell,1867,MAJOR,"Rename ""path"" which hides the field declared at line 78.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63064,AXIlWM-HOPE4MZK-QGlT,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63065,AXIlWM-HOPE4MZK-QGlU,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63066,AXIlWM-HOPE4MZK-QGlV,Vulnerability,1406,MINOR,"Do something with the ""boolean"" value returned by ""createNewFile"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63067,AXIlWM-HOPE4MZK-QGlW,CodeSmell,1851,CRITICAL,"Make the enclosing method ""static"" or remove this set.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63068,AXIlWM-HOPE4MZK-QGlX,CodeSmell,1867,MAJOR,"Rename ""dateCache"" which hides the field declared at line 116.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63069,AXIlWM-HOPE4MZK-QGlY,CodeSmell,1408,MAJOR,Replace this assert with a proper check.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63070,AXIlWM-HOPE4MZK-QGlZ,CodeSmell,1530,MINOR,"Move this method into ""StoreSupplier"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63071,AXIlWM-HOPE4MZK-QGla,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63072,AXIlWM-HOPE4MZK-QGlb,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+63073,AXIlWM_HOPE4MZK-QGlc,CodeSmell,1457,CRITICAL,"Define a constant instead of duplicating this literal "", overriding to "" 4 times.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQMeta.java
+63074,AXIlWM_HOPE4MZK-QGld,CodeSmell,1867,MAJOR,"Rename ""roll"" which hides the field declared at line 30.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQMeta.java
+63075,AXIlWM_aOPE4MZK-QGle,CodeSmell,1477,MINOR,Extract this nested code block into a method.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63076,AXIlWM_aOPE4MZK-QGlf,CodeSmell,1712,MAJOR,Use the built-in formatting to construct this argument.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63077,AXIlWM_aOPE4MZK-QGlg,CodeSmell,1712,MAJOR,Use the built-in formatting to construct this argument.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63078,AXIlWM_aOPE4MZK-QGlh,Vulnerability,1640,MINOR,Make writeBufferMode a static final constant or non-public and provide accessors if needed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63079,AXIlWM_aOPE4MZK-QGli,Vulnerability,1640,MINOR,Make readBufferMode a static final constant or non-public and provide accessors if needed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63080,AXIlWM_aOPE4MZK-QGlj,Bug,1637,MAJOR,"Use the ""equals"" method if value comparison was intended.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63081,AXIlWM_aOPE4MZK-QGlk,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""rollTime"" on line 399.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63082,AXIlWM_aOPE4MZK-QGll,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63083,AXIlWM_aOPE4MZK-QGlm,CodeSmell,1768,MAJOR,Format specifiers should be used instead of string concatenation.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63084,AXIlWM_aOPE4MZK-QGln,CodeSmell,1574,MINOR,"Remove this unnecessary cast to ""Class"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63085,AXIlWM_aOPE4MZK-QGlo,CodeSmell,1462,CRITICAL,"Use static access with ""java.lang.Enum"" for ""valueOf"".",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63086,AXIlWM_aOPE4MZK-QGlp,CodeSmell,1768,MAJOR,Format specifiers should be used instead of string concatenation.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63087,AXIlWM_aOPE4MZK-QGlq,CodeSmell,1768,MAJOR,Format specifiers should be used instead of string concatenation.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63088,AXIlWM_aOPE4MZK-QGlr,CodeSmell,1867,MAJOR,"Rename ""readOnly"" which hides the field declared at line 125.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63089,AXIlWM_aOPE4MZK-QGls,CodeSmell,1505,MAJOR,Either remove or fill this block of code.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63090,AXIlWM_aOPE4MZK-QGlt,CodeSmell,1829,MAJOR,Extract this nested ternary operation into an independent statement.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63091,AXIlWM_aOPE4MZK-QGlu,CodeSmell,1408,MAJOR,Replace this assert with a proper check.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63092,AXIlWM_aOPE4MZK-QGlv,CodeSmell,1940,INFO,Do not forget to remove this deprecated code someday.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63093,AXIlWM_aOPE4MZK-QGlw,CodeSmell,1847,MAJOR,Add the missing @deprecated Javadoc tag.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63094,AXIlWM_aOPE4MZK-QGlx,CodeSmell,1940,INFO,Do not forget to remove this deprecated code someday.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63095,AXIlWM_aOPE4MZK-QGly,CodeSmell,1847,MAJOR,Add the missing @deprecated Javadoc tag.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63096,AXIlWM_aOPE4MZK-QGlz,CodeSmell,1829,MAJOR,Extract this nested ternary operation into an independent statement.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63097,AXIlWM_aOPE4MZK-QGl0,CodeSmell,1854,MINOR,"Remove the literal ""false"" boolean value.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63098,AXIlWM_aOPE4MZK-QGl1,CodeSmell,1854,MINOR,"Remove the literal ""true"" boolean value.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63099,AXIlWM_aOPE4MZK-QGl2,CodeSmell,1854,MINOR,"Remove the literal ""false"" boolean value.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63100,AXIlWM_aOPE4MZK-QGl3,CodeSmell,1854,MINOR,"Remove the literal ""false"" boolean value.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63101,AXIlWM_aOPE4MZK-QGl4,CodeSmell,1676,BLOCKER,"Remove this ""clone"" implementation; use a copy constructor or copy factory instead.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63102,AXIlWM_aOPE4MZK-QGl5,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63103,AXIlWM_aOPE4MZK-QGl6,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.core.io.IORuntimeException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+63104,AXIlWNB9OPE4MZK-QGl7,Bug,1518,MINOR,"Cast one of the operands of this addition operation to a ""long"".",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63105,AXIlWNB9OPE4MZK-QGl8,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63106,AXIlWNB9OPE4MZK-QGl9,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63107,AXIlWNB9OPE4MZK-QGl-,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63108,AXIlWNB9OPE4MZK-QGl_,Bug,1933,MAJOR,"Change this condition so that it does not always evaluate to ""false""",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63109,AXIlWNB9OPE4MZK-QGmA,CodeSmell,1840,MAJOR,Extract the assignment out of this expression.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63110,AXIlWNB9OPE4MZK-QGmB,CodeSmell,1707,MINOR,"Declare ""indexCountBits"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63111,AXIlWNB9OPE4MZK-QGmC,CodeSmell,1707,MINOR,"Declare ""indexSpacingBits"" on a separate line.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63112,AXIlWNB9OPE4MZK-QGmD,CodeSmell,1541,BLOCKER,"Rename method ""nextEntryToBeIndexed"" to prevent any misunderstanding/clash with field ""nextEntryToBeIndexed"" defined on line 47.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63113,AXIlWNB9OPE4MZK-QGmE,Bug,1572,MAJOR,"Call ""remove()"" on ""index2indexArray"".",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63114,AXIlWNB9OPE4MZK-QGmF,Bug,1572,MAJOR,"Call ""remove()"" on ""indexArray"".",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63115,AXIlWNB9OPE4MZK-QGmG,CodeSmell,1867,MAJOR,"Rename ""writePosition"" which hides the field declared at line 60.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63116,AXIlWNB9OPE4MZK-QGmH,CodeSmell,1679,MINOR,Add logic to this catch clause or eliminate it and rethrow the exception automatically.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63117,AXIlWNB9OPE4MZK-QGmI,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63118,AXIlWNB9OPE4MZK-QGmJ,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63119,AXIlWNB9OPE4MZK-QGmK,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63120,AXIlWNB9OPE4MZK-QGmL,CodeSmell,1873,MAJOR,Refactor the code to remove this label and the need for it.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63121,AXIlWNB9OPE4MZK-QGmM,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63122,AXIlWNB9OPE4MZK-QGmN,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63123,AXIlWNB9OPE4MZK-QGmO,CodeSmell,1867,MAJOR,"Rename ""index2Index"" which hides the field declared at line 50.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63124,AXIlWNB9OPE4MZK-QGmP,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63125,AXIlWNB9OPE4MZK-QGmQ,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63126,AXIlWNB9OPE4MZK-QGmR,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63127,AXIlWNB9OPE4MZK-QGmS,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63128,AXIlWNB9OPE4MZK-QGmT,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63129,AXIlWNB9OPE4MZK-QGmU,CodeSmell,1867,MAJOR,"Rename ""sequence"" which hides the field declared at line 61.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63130,AXIlWNB9OPE4MZK-QGmV,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63131,AXIlWNB9OPE4MZK-QGmW,CodeSmell,1867,MAJOR,"Rename ""sequence"" which hides the field declared at line 61.",src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63132,AXIlWNB9OPE4MZK-QGmX,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63133,AXIlWNB9OPE4MZK-QGmY,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63134,AXIlWNB9OPE4MZK-QGmZ,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63135,AXIlWNB9OPE4MZK-QGma,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+63136,AXIlWNFTOPE4MZK-QGmb,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/impl/single/PrecreatedFiles.java
+63137,AXIlWNFnOPE4MZK-QGmc,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+63138,AXIlWNFnOPE4MZK-QGmd,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+63139,AXIlWNFnOPE4MZK-QGme,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+63140,AXIlWNFnOPE4MZK-QGmf,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+63141,AXIlWNFnOPE4MZK-QGmg,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+63142,AXIlWNGROPE4MZK-QGmh,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+63143,AXIlWNGROPE4MZK-QGmi,CodeSmell,1564,MINOR,"Remove the parentheses around the ""v"" parameter",src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+63144,AXIlWNGROPE4MZK-QGmj,CodeSmell,1564,MINOR,"Remove the parentheses around the ""v"" parameter",src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+63145,AXIlWNGROPE4MZK-QGmk,CodeSmell,1676,BLOCKER,"Remove this ""clone"" implementation; use a copy constructor or copy factory instead.",src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+63146,AXIlWNGpOPE4MZK-QGml,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/table/Metadata.java
+63147,AXIlWNG6OPE4MZK-QGmm,CodeSmell,1457,CRITICAL,"Define a constant instead of duplicating this literal ""Read only"" 10 times.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63148,AXIlWNG6OPE4MZK-QGmn,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63149,AXIlWNG6OPE4MZK-QGmo,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63150,AXIlWNG6OPE4MZK-QGmp,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63151,AXIlWNG6OPE4MZK-QGmq,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63152,AXIlWNG6OPE4MZK-QGmr,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63153,AXIlWNG6OPE4MZK-QGms,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63154,AXIlWNG6OPE4MZK-QGmt,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63155,AXIlWNG6OPE4MZK-QGmu,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63156,AXIlWNG6OPE4MZK-QGmv,CodeSmell,1484,MINOR,Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63157,AXIlWNG6OPE4MZK-QGmw,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63158,AXIlWNG6OPE4MZK-QGmx,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63159,AXIlWNG6OPE4MZK-QGmy,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63160,AXIlWNG6OPE4MZK-QGmz,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63161,AXIlWNG6OPE4MZK-QGm0,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63162,AXIlWNG6OPE4MZK-QGm1,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63163,AXIlWNG6OPE4MZK-QGm2,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63164,AXIlWNG6OPE4MZK-QGm3,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63165,AXIlWNG6OPE4MZK-QGm4,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63166,AXIlWNG6OPE4MZK-QGm5,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""file"" on line 60.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63167,AXIlWNG6OPE4MZK-QGm6,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""file"" on line 60.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63168,AXIlWNG6OPE4MZK-QGm7,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""file"" on line 60.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63169,AXIlWNG6OPE4MZK-QGm8,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""file"" on line 60.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63170,AXIlWNG6OPE4MZK-QGm9,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""file"" on line 60.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63171,AXIlWNG6OPE4MZK-QGm-,CodeSmell,1428,MAJOR,"Update this method so that its implementation is not identical to ""file"" on line 60.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63172,AXIlWNG6OPE4MZK-QGm_,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63173,AXIlWNG6OPE4MZK-QGnA,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63174,AXIlWNG6OPE4MZK-QGnB,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+63175,AXIlWNHdOPE4MZK-QGnC,CodeSmell,524,MAJOR,1 duplicated blocks of code must be removed.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63176,AXIlWNHdOPE4MZK-QGnD,CodeSmell,1906,MAJOR,Extract this nested try block into a separate method.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63177,AXIlWNHdOPE4MZK-QGnE,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63178,AXIlWNHdOPE4MZK-QGnF,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63179,AXIlWNHdOPE4MZK-QGnG,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63180,AXIlWNHdOPE4MZK-QGnH,CodeSmell,1694,MINOR,"Remove this use of ""get""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63181,AXIlWNHdOPE4MZK-QGnI,CodeSmell,1694,MINOR,"Remove this use of ""get""; it is deprecated.",src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63182,AXIlWNHdOPE4MZK-QGnJ,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+63183,AXIlWNICOPE4MZK-QGnK,CodeSmell,1524,MAJOR,Define and throw a dedicated exception instead of using a generic one.,src/main/java/net/openhft/chronicle/queue/impl/RollingResourcesCache.java
+63184,AXIlWNICOPE4MZK-QGnL,Vulnerability,1640,MINOR,Make pathExists a static final constant or non-public and provide accessors if needed.,src/main/java/net/openhft/chronicle/queue/impl/RollingResourcesCache.java
+63185,AXIlWNIVOPE4MZK-QGnM,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/WireStore.java
+63186,AXIlWNIVOPE4MZK-QGnN,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/WireStore.java
+63187,AXIlWNIsOPE4MZK-QGnO,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'java.lang.IllegalStateException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/impl/RollingChronicleQueue.java
+63188,AXIlWNJAOPE4MZK-QGnP,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63189,AXIlWNJAOPE4MZK-QGnQ,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63190,AXIlWNJAOPE4MZK-QGnR,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63191,AXIlWNJAOPE4MZK-QGnS,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63192,AXIlWNJAOPE4MZK-QGnT,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63193,AXIlWNJAOPE4MZK-QGnU,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63194,AXIlWNJAOPE4MZK-QGnV,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63195,AXIlWNJAOPE4MZK-QGnW,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63196,AXIlWNJAOPE4MZK-QGnX,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63197,AXIlWNJAOPE4MZK-QGnY,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63198,AXIlWNJAOPE4MZK-QGnZ,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63199,AXIlWNJAOPE4MZK-QGna,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63200,AXIlWNJAOPE4MZK-QGnb,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63201,AXIlWNJAOPE4MZK-QGnc,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63202,AXIlWNJAOPE4MZK-QGnd,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63203,AXIlWNJAOPE4MZK-QGne,Bug,1557,MAJOR,Remove this conditional structure or edit its code blocks so that they're not all the same.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63204,AXIlWNJAOPE4MZK-QGnf,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63205,AXIlWNJAOPE4MZK-QGng,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63206,AXIlWNJAOPE4MZK-QGnh,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63207,AXIlWNJAOPE4MZK-QGni,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63208,AXIlWNJAOPE4MZK-QGnj,CodeSmell,1550,MAJOR,This block of commented-out lines of code should be removed.,src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+63209,AXIlWNJ6OPE4MZK-QGnk,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+63210,AXIlWNJ6OPE4MZK-QGnl,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+63211,AXIlWNJ6OPE4MZK-QGnm,CodeSmell,1815,MINOR,"Remove this unnecessary null check; ""instanceof"" returns false for nulls.",src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+63212,AXIlWNJ6OPE4MZK-QGnn,CodeSmell,1810,MAJOR,"Remove this unused method parameter ""methodReaderInterface"".",src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+63213,AXIlWNKTOPE4MZK-QGno,CodeSmell,1783,CRITICAL,"Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.",src/main/java/net/openhft/chronicle/queue/reader/MethodReaderQueueEntryHandler.java
+63214,AXIlWNKrOPE4MZK-QGnp,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63215,AXIlWNKrOPE4MZK-QGnq,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63216,AXIlWNKrOPE4MZK-QGnr,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63217,AXIlWNKrOPE4MZK-QGns,Bug,1518,MINOR,"Cast one of the operands of this subtraction operation to a ""double"".",src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63218,AXIlWNKrOPE4MZK-QGnt,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63219,AXIlWNKrOPE4MZK-QGnu,CodeSmell,1566,MAJOR,"Remove this useless assignment to local variable ""counter"".",src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63220,AXIlWNKrOPE4MZK-QGnv,CodeSmell,1867,MAJOR,"Rename ""counter"" which hides the field declared at line 32.",src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63221,AXIlWNKrOPE4MZK-QGnw,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+63222,AXIlWNLFOPE4MZK-QGnx,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/BufferMode.java
+63223,AXIlWNLFOPE4MZK-QGny,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/BufferMode.java
+63224,AXIlWNLFOPE4MZK-QGnz,CodeSmell,1488,CRITICAL,Rename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.,src/main/java/net/openhft/chronicle/queue/BufferMode.java
+63225,AXIlWNLUOPE4MZK-QGn0,CodeSmell,1538,MINOR,Reduce the total number of break and continue statements in this loop to use at most one.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63226,AXIlWNLUOPE4MZK-QGn1,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63227,AXIlWNLUOPE4MZK-QGn2,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63228,AXIlWNLUOPE4MZK-QGn3,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63229,AXIlWNLUOPE4MZK-QGn4,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63230,AXIlWNLUOPE4MZK-QGn5,Bug,1435,MAJOR,"Use an ""AtomicInteger"" for this field; its operations are atomic.",src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63231,AXIlWNLUOPE4MZK-QGn6,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63232,AXIlWNLUOPE4MZK-QGn7,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+63233,AXIlWNLmOPE4MZK-QGn8,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+63234,AXIlWNLmOPE4MZK-QGn9,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.wire.UnrecoverableTimeoutException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+63235,AXIlWNLmOPE4MZK-QGn-,CodeSmell,1718,MAJOR,"Add the ""@Override"" annotation above this method signature",src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+63236,AXIlWNLmOPE4MZK-QGn_,CodeSmell,1718,MAJOR,"Add the ""@Override"" annotation above this method signature",src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+63237,AXIlWNLmOPE4MZK-QGoA,CodeSmell,1940,INFO,Do not forget to remove this deprecated code someday.,src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+63238,AXIlWNL9OPE4MZK-QGoB,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+63239,AXIlWNL9OPE4MZK-QGoC,CodeSmell,1442,MINOR,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+63240,AXIlWNL9OPE4MZK-QGoD,CodeSmell,1442,MINOR,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+63241,AXIlWNL9OPE4MZK-QGoE,CodeSmell,1442,MINOR,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+63242,AXIlWNL9OPE4MZK-QGoF,CodeSmell,1442,MINOR,Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.,src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+63243,AXIlWNMSOPE4MZK-QGoG,CodeSmell,1867,MAJOR,"Rename ""eventLoop"" which hides the field declared at line 46.",src/main/java/net/openhft/chronicle/queue/service/EventLoopServiceWrapper.java
+63244,AXIlWNMhOPE4MZK-QGoH,CodeSmell,1718,MAJOR,"Add the ""@Override"" annotation above this method signature",src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+63245,AXIlWNMhOPE4MZK-QGoI,CodeSmell,1934,MINOR,Remove the declaration of thrown exception 'net.openhft.chronicle.core.io.IORuntimeException' which is a runtime exception.,src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+63246,AXIlWNMwOPE4MZK-QGoJ,Bug,1409,BLOCKER,"Use try-with-resources or close this ""ResultSet"" in a ""finally"" clause.",src/main/java/net/openhft/chronicle/queue/JDBCComponent.java
+63247,AXIlWNMwOPE4MZK-QGoK,CodeSmell,1771,MAJOR,Catch Exception instead of Throwable.,src/main/java/net/openhft/chronicle/queue/JDBCComponent.java
+63248,AXIlWNMwOPE4MZK-QGoL,CodeSmell,1771,MAJOR,Catch Exception instead of Throwable.,src/main/java/net/openhft/chronicle/queue/JDBCComponent.java
+63249,AXIlWNNEOPE4MZK-QGoM,CodeSmell,1673,CRITICAL,Move constants to a class or enum.,src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+63250,AXIlWNNEOPE4MZK-QGoN,CodeSmell,1940,INFO,Do not forget to remove this deprecated code someday.,src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+63251,AXIlWNNEOPE4MZK-QGoO,CodeSmell,1439,MINOR,"Replace the type specification in this constructor call with the diamond operator (""<>"").",src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+63252,AXIlWNNcOPE4MZK-QGoP,CodeSmell,1788,MAJOR,Merge this if statement with the enclosing one.,src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+63253,AXIlWNNcOPE4MZK-QGoQ,CodeSmell,1813,MINOR,Use the primitive boolean expression here.,src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+63254,AXIlWNNcOPE4MZK-QGoR,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+63255,AXIlWNNeOPE4MZK-QGoS,SecurityHotspot,1607,CRITICAL,Make sure that command line arguments are used safely here.,src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+63256,AXIlWNNfOPE4MZK-QGoT,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+63257,AXIlWNNfOPE4MZK-QGoU,CodeSmell,1896,CRITICAL,Refactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.,src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+63258,AXIlWNOAOPE4MZK-QGoV,SecurityHotspot,1607,CRITICAL,Make sure that command line arguments are used safely here.,src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+63259,AXIlWNOAOPE4MZK-QGoW,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+63260,AXIlWNOAOPE4MZK-QGoX,CodeSmell,1641,MINOR,Remove this array creation and simply pass the elements.,src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+63261,AXIlWNOAOPE4MZK-QGoY,CodeSmell,1943,INFO,Complete the task associated to this TODO comment.,src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+63262,AXIlWNOAOPE4MZK-QGoZ,CodeSmell,1916,MAJOR,"Remove this unused private ""stateWindows"" method.",src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+63263,AXIlWNOvOPE4MZK-QGoa,SecurityHotspot,1607,CRITICAL,Make sure that command line arguments are used safely here.,src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+63264,AXIlWNOvOPE4MZK-QGob,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+63265,AXIlWNOvOPE4MZK-QGoc,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+63266,AXIlWNOvOPE4MZK-QGod,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+63267,AXIlWNOvOPE4MZK-QGoe,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+63268,AXIlWNPFOPE4MZK-QGof,Vulnerability,1925,MINOR,Use a logger to log this exception.,src/main/java/net/openhft/chronicle/queue/QueueUnlockMain.java
+63269,AXIlWNPFOPE4MZK-QGog,SecurityHotspot,1607,CRITICAL,Make sure that command line arguments are used safely here.,src/main/java/net/openhft/chronicle/queue/QueueUnlockMain.java
+63270,AXIlWNPFOPE4MZK-QGoh,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/QueueUnlockMain.java
+63271,AXIlWNPFOPE4MZK-QGoi,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/QueueUnlockMain.java
+63272,AXIlWNPFOPE4MZK-QGoj,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/QueueUnlockMain.java
+63273,AXIlWNPWOPE4MZK-QGok,SecurityHotspot,1607,CRITICAL,Make sure that command line arguments are used safely here.,src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+63274,AXIlWNPWOPE4MZK-QGol,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+63275,AXIlWNPWOPE4MZK-QGom,CodeSmell,1508,MAJOR,Replace this use of System.out or System.err by a logger.,src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+63276,AXIlWNPrOPE4MZK-QGon,CodeSmell,1457,CRITICAL,"Define a constant instead of duplicating this literal ""Unknown type: "" 3 times.",src/main/java/net/openhft/chronicle/queue/QueueOffsetSpec.java
+63277,AXIlWNP_OPE4MZK-QGoo,CodeSmell,1771,MAJOR,Catch Exception instead of Throwable.,src/main/java/net/openhft/chronicle/queue/JDBCService.java
+63278,AXIlWNQUOPE4MZK-QGop,Bug,1853,CRITICAL,"Update this scope and remove the ""systemPath"".",pom.xml

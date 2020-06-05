@@ -1,0 +1,4990 @@
+commit ae3206ec828b21a89ef2afaca14cdae9355b8d79
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-14 22:43:11 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit bb53c788d573b80c2c3f67db65641f76c42f4f4e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-14 22:39:58 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 3e649b51bc4030dd57de21524a7d3af26fe11c6c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-14 22:39:48 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.16
+
+2	2	pom.xml
+
+commit 95f10fba01a358629148be333b7f8ec24c702c1b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-14 22:29:13 +0200
+
+    Updating to bom version 2.19.151
+
+commit 2fa37756703fa0c13e2a1e5e5aa500658841559f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-14 17:03:33 +0200
+
+    Updating to bom version 2.19.151
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit d4e18c075eb18c29f8552ce22138202793fa186c
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-14 16:01:19 +0100
+
+    https://github.com/OpenHFT/Chronicle-Queue/issues/670 ignored test
+
+2	5	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+commit 2413a64a174c3d7ba90ebadbd62e55e2f8093d45
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-14 14:47:07 +0100
+
+    added stress test
+
+90	0	src/test/java/net/openhft/chronicle/queue/impl/single/CheckIndicesTest.java
+
+commit ce605a6455ad426d050621366e31be5a2c8773c8
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-14 09:58:36 +0100
+
+    improved logging of lock on the table store file. Retrying
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+4	2	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+commit 60836188dc6b11ffae5c693f6653681ceb4d55b8
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-05-14 08:24:10 +1000
+
+    doco
+
+3	3	README.adoc
+
+commit 80c74dac199325869eab71e1e346e433e4d4c720
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-05-13 17:25:57 +0100
+
+    Add writeBytes for metadata
+
+10	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 6e7515538c59bffa8b4f57e7fbf67f5685e0ca4e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 17:42:10 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+commit db546f7834ce21bdf30b315a6c53f9f0b8edcc6c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 17:22:00 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 9e5ab214f827eda610db7cae87d4a98ffbb2ce47
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 17:19:22 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 7333e85f80a738aa3e8ae05be5946779964e0adf
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 17:19:13 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.15
+
+2	2	pom.xml
+
+commit b7ce5eeceb6c32a8a7b80ffb9a434c4c9efa582d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 17:09:27 +0200
+
+    Updating to bom version 2.19.144
+
+commit 281d6cbd5b24baaae8307a10e98935f1af216abd
+Merge: 2251a9f34 bc37cbdb2
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 15:50:31 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 2251a9f340e5ea9b57e51d7e4d4a8d5eac74f5dd
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 15:50:22 +0100
+
+    added @Ignore
+
+2	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+2	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+
+commit bc37cbdb2300eb704e05b110807341395e892732
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 16:35:10 +0200
+
+    Updating to bom version 2.19.144
+
+commit 37467226dc17f81433fd6c57c5862cc9a7157686
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 15:51:23 +0200
+
+    Updating to bom version 2.19.144
+
+commit 1658b929d28ad09304d9ef8b6ee11a2a40d295c9
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 14:48:42 +0100
+
+    removed debug logging
+
+3	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+commit 72137d45a3a2040f7431cb8bb2dc493952ebe007
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-12 15:06:38 +0200
+
+    Updating to bom version 2.19.144
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 0a052176d6192c9e78234c39c217bb15d507e0d4
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 10:54:02 +0100
+
+    fixed flaky test DocumentOrderingTest
+
+3	2	src/main/java/net/openhft/chronicle/queue/impl/WireStorePool.java
+5	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+4	0	src/test/java/net/openhft/chronicle/queue/impl/single/DocumentOrderingTest.java
+
+commit 76c4b857f0181cc96d31cf71d10cc648a166d604
+Merge: 87c7488ed 56c9c772c
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 10:30:48 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 87c7488ed16990614f3b802f940605ce8ec8aa79
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 10:30:39 +0100
+
+    added -> Failed to shrink file as it no-longer existing
+
+4	0	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+
+commit 56c9c772c6841d933259a4a858f4554bb02a532d
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-05-12 18:29:09 +1000
+
+    refactor PretoucherTest* to make use of separate JVM per test class
+
+56	0	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherDontWriteTest.java
+63	0	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherEarlyCycleTest.java
+3	67	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+commit 9326d895c376ad0e917e9d30a9df7aa24f7a8ab8
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 09:07:22 +0100
+
+    fixed flakey test - see https://teamcity.chronicle.software/buildConfiguration/OpenHFT_ChronicleQueue4_Snapshot/408583?mode=builds
+
+16	12	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+commit c7b257d33982a5d55ad5de3582e0c060ef5d752a
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 08:34:31 +0100
+
+    removed commented out code
+
+1	4	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+commit 50bfb08b7b0e0a2b703997f39f61af89b1d15ed2
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-12 08:33:39 +0100
+
+    changed test to use unique temp directory because it was reported as flaky by teamcity ( was not able to reproduce the issue locally ) - see https://teamcity.chronicle.software/buildConfiguration/OpenHFT_ChronicleQueue4_Snapshot/408523?buildTab=tests&filterText=net.openhft.chronicle.queue.impl.single&pager.currentPage=1
+
+3	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+4	2	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+3	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+20	14	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+commit 284c58133ee5b7763b86fc69e490d275f322abc9
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-11 18:21:21 +0100
+
+    improved cleanupJob
+
+11	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit a257570fe8eb0b93f76daf6776c406ffe80ea67e
+Author: Per Minborg <minborg@speedment.com>
+Date:   2020-05-11 19:06:50 +0200
+
+    Fix problem with closer never being executed
+
+8	25	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 9d2b855c71a9409cc1d97a34d50a998c89ff1680
+Author: Per Minborg <minborg@speedment.com>
+Date:   2020-05-11 14:51:08 +0200
+
+    Protect against NPE, Fix #668
+
+12	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 812c0df2f804a451794919ed1e21e97eb99b2be6
+Author: Per Minborg <minborg@speedment.com>
+Date:   2020-05-11 14:24:51 +0200
+
+    Catch close action exceptions, Fix #666
+
+6	2	src/main/java/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.java
+
+commit 1a76b9a3301a507fcc65905bf7e8c508eb19e0ce
+Author: Per Minborg <minborg@speedment.com>
+Date:   2020-05-11 14:12:31 +0200
+
+    Protect from NPE, Fix #667
+
+11	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 9a2777121ce332bbd7586b2b05cd99fb5dad9823
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-07 14:06:30 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+commit bc452c38db59e84665f1682910d63c5c17d25214
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-07 13:42:41 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit c2da613d9bd6d955df2fb2eaafa3234d36474ed7
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-07 13:41:14 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit fee2c92480d52a2bc4a34429cd25e4ca091a17a3
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-07 13:41:06 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.14
+
+2	2	pom.xml
+
+commit b3275a1b45066ab83651ee219bb0624d6d633e68
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-07 13:35:47 +0200
+
+    Updating to bom version 2.19.136
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 253b499975fda349d69178ccaf79999e07bb092d
+Author: Per Minborg <minborg@speedment.com>
+Date:   2020-05-06 16:11:45 +0200
+
+    Fix reference count issue, Fix #664
+
+147	136	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+6	1	src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+
+commit aa667494f78b18cd1e2e2cf25a3e5010ab6d7b46
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-06 10:53:23 +0100
+
+    added     * @see <a>https://github.com/OpenHFT/Chronicle-Queue/issues/664</a>
+
+4	0	src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+
+commit f354ada56f5822a33959e9b0684e8497dab9f85d
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-06 10:50:45 +0100
+
+    net.openhft.chronicle.queue.CloserJobRefCountOnCloseTest added failing test net.openhft.chronicle.queue.CloserJobRefCountOnCloseTest
+
+17	0	src/test/java/net/openhft/chronicle/queue/CloserJobRefCountOnCloseTest.java
+
+commit 406494fb8085227cbd839ae14fc2f312b551125c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-05 09:55:54 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+commit 5bb68e81fe038b99ecfee31fc2bcb39087d95954
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-05 09:50:22 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 176350eaaadd8063e5219754bc40d112ee7968a5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-05 09:48:39 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 5683992b78e14a7092d9a02260c0ff3238704f16
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-05 09:48:28 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.13
+
+2	2	pom.xml
+
+commit 8b6a5b4fd66c36966e1f63ebd9eb809d57b1e6cf
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-05 09:43:58 +0200
+
+    Updating to bom version 2.19.129
+
+commit c4c94706671ba4ed5f4bdf5632334e28ba67d53a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-05 09:05:31 +0200
+
+    Updating to bom version 2.19.129
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit df5779426ffa8d1996e0d810f0ae75a574674b8f
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-05-04 14:25:22 +0100
+
+    Add a benchmark for large messages.
+
+66	0	src/test/java/net/openhft/chronicle/queue/bench/ByteArrayJLBHBenchmark.java
+107	0	src/test/java/net/openhft/chronicle/queue/bench/QueueLargeMessageJLBHBenchmark.java
+
+commit 14afb257ebba1737955680d1ebe786bc476bd794
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-05-04 13:57:17 +1000
+
+    misc tidy
+
+3	4	src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+0	1	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+0	2	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+0	1	src/main/java/net/openhft/chronicle/queue/service/ServiceWrapperBuilder.java
+1	1	src/main/java/net/openhft/chronicle/queue/util/FileState.java
+5	6	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/DocumentOrderingTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+3	3	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManagerMBean.java
+
+commit 35dffe14853c52435cf24e2bbfe5778010b747bc
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-05-04 12:44:42 +1000
+
+    less code #663
+
+1	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit ab3a31aa025dccea935635f2a713fdbc3d285bcb
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-05-04 12:43:31 +1000
+
+    Make strongAppenders take precedence over "chronicle.queue.release.weakRef.resource" #663
+
+4	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 2484a69156f4364dd7a35f1e066e419d8977e418
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-05-03 20:02:14 +0200
+
+    Publishing javadoc for chronicle-queue:5.19.13-SNAPSHOT
+
+89	59	apidocs/allclasses-frame.html
+89	59	apidocs/allclasses-noframe.html
+112	156	apidocs/constant-values.html
+43	19	apidocs/deprecated-list.html
+27	18	apidocs/help-doc.html
+1454	841	apidocs/index-all.html
+9	8	apidocs/index.html
+273	0	apidocs/net/openhft/chronicle/queue/BenchmarkMain.html
+355	0	apidocs/net/openhft/chronicle/queue/BufferMode.html
+385	0	apidocs/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.html
+1036	0	apidocs/net/openhft/chronicle/queue/ChronicleQueue.html
+385	0	apidocs/net/openhft/chronicle/queue/ChronicleReaderMain.html
+236	0	apidocs/net/openhft/chronicle/queue/CycleCalculator.html
+353	0	apidocs/net/openhft/chronicle/queue/DefaultCycleCalculator.html
+316	0	apidocs/net/openhft/chronicle/queue/DumpQueueMain.html
+525	0	apidocs/net/openhft/chronicle/queue/ExcerptAppender.html
+272	0	apidocs/net/openhft/chronicle/queue/ExcerptCommon.html
+692	0	apidocs/net/openhft/chronicle/queue/ExcerptTailer.html
+313	0	apidocs/net/openhft/chronicle/queue/JDBCComponent.html
+280	0	apidocs/net/openhft/chronicle/queue/JDBCResult.html
+324	0	apidocs/net/openhft/chronicle/queue/JDBCService.html
+244	0	apidocs/net/openhft/chronicle/queue/JDBCStatement.html
+558	0	apidocs/net/openhft/chronicle/queue/NoMessageHistory.html
+323	0	apidocs/net/openhft/chronicle/queue/PretouchHandler.html
+359	0	apidocs/net/openhft/chronicle/queue/QueueOffsetSpec.Type.html
+379	0	apidocs/net/openhft/chronicle/queue/QueueOffsetSpec.html
+273	0	apidocs/net/openhft/chronicle/queue/QueueUnlockMain.html
+419	0	apidocs/net/openhft/chronicle/queue/RollCycle.html
+776	0	apidocs/net/openhft/chronicle/queue/RollCycles.html
+388	0	apidocs/net/openhft/chronicle/queue/RollDetails.html
+368	0	apidocs/net/openhft/chronicle/queue/TailerDirection.html
+379	0	apidocs/net/openhft/chronicle/queue/TailerState.html
+391	0	apidocs/net/openhft/chronicle/queue/backed/map/QueueBackedMaps.html
+318	0	apidocs/net/openhft/chronicle/queue/backed/map/QueueEvents.html
+126	0	apidocs/net/openhft/chronicle/queue/backed/map/class-use/QueueBackedMaps.html
+182	0	apidocs/net/openhft/chronicle/queue/backed/map/class-use/QueueEvents.html
+25	0	apidocs/net/openhft/chronicle/queue/backed/map/package-frame.html
+161	0	apidocs/net/openhft/chronicle/queue/backed/map/package-summary.html
+147	0	apidocs/net/openhft/chronicle/queue/backed/map/package-tree.html
+159	0	apidocs/net/openhft/chronicle/queue/backed/map/package-use.html
+267	0	apidocs/net/openhft/chronicle/queue/batch/BatchAppender.html
+292	0	apidocs/net/openhft/chronicle/queue/batch/BatchAppenderNative.html
+195	0	apidocs/net/openhft/chronicle/queue/batch/class-use/BatchAppender.html
+126	0	apidocs/net/openhft/chronicle/queue/batch/class-use/BatchAppenderNative.html
+25	0	apidocs/net/openhft/chronicle/queue/batch/package-frame.html
+161	0	apidocs/net/openhft/chronicle/queue/batch/package-summary.html
+143	0	apidocs/net/openhft/chronicle/queue/batch/package-tree.html
+182	0	apidocs/net/openhft/chronicle/queue/batch/package-use.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/BenchmarkMain.html
+240	0	apidocs/net/openhft/chronicle/queue/class-use/BufferMode.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/ChronicleHistoryReaderMain.html
+343	0	apidocs/net/openhft/chronicle/queue/class-use/ChronicleQueue.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/ChronicleReaderMain.html
+188	0	apidocs/net/openhft/chronicle/queue/class-use/CycleCalculator.html
+175	0	apidocs/net/openhft/chronicle/queue/class-use/DefaultCycleCalculator.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/DumpQueueMain.html
+219	0	apidocs/net/openhft/chronicle/queue/class-use/ExcerptAppender.html
+214	0	apidocs/net/openhft/chronicle/queue/class-use/ExcerptCommon.html
+311	0	apidocs/net/openhft/chronicle/queue/class-use/ExcerptTailer.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCComponent.html
+178	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCResult.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCService.html
+179	0	apidocs/net/openhft/chronicle/queue/class-use/JDBCStatement.html
+175	0	apidocs/net/openhft/chronicle/queue/class-use/NoMessageHistory.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/PretouchHandler.html
+175	0	apidocs/net/openhft/chronicle/queue/class-use/QueueOffsetSpec.Type.html
+201	0	apidocs/net/openhft/chronicle/queue/class-use/QueueOffsetSpec.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/QueueUnlockMain.html
+301	0	apidocs/net/openhft/chronicle/queue/class-use/RollCycle.html
+188	0	apidocs/net/openhft/chronicle/queue/class-use/RollCycles.html
+126	0	apidocs/net/openhft/chronicle/queue/class-use/RollDetails.html
+275	0	apidocs/net/openhft/chronicle/queue/class-use/TailerDirection.html
+203	0	apidocs/net/openhft/chronicle/queue/class-use/TailerState.html
+333	0	apidocs/net/openhft/chronicle/queue/impl/CommonStore.html
+255	0	apidocs/net/openhft/chronicle/queue/impl/ExcerptContext.html
+535	0	apidocs/net/openhft/chronicle/queue/impl/RollingChronicleQueue.html
+297	0	apidocs/net/openhft/chronicle/queue/impl/RollingResourcesCache.Resource.html
+374	0	apidocs/net/openhft/chronicle/queue/impl/RollingResourcesCache.html
+245	0	apidocs/net/openhft/chronicle/queue/impl/StoreFileListener.html
+235	0	apidocs/net/openhft/chronicle/queue/impl/StoreReleasable.html
+379	0	apidocs/net/openhft/chronicle/queue/impl/TableStore.html
+508	0	apidocs/net/openhft/chronicle/queue/impl/WireStore.html
+200	0	apidocs/net/openhft/chronicle/queue/impl/WireStoreFactory.html
+361	0	apidocs/net/openhft/chronicle/queue/impl/WireStorePool.html
+284	0	apidocs/net/openhft/chronicle/queue/impl/WireStoreSupplier.html
+248	0	apidocs/net/openhft/chronicle/queue/impl/class-use/CommonStore.html
+255	0	apidocs/net/openhft/chronicle/queue/impl/class-use/ExcerptContext.html
+166	0	apidocs/net/openhft/chronicle/queue/impl/class-use/RollingChronicleQueue.html
+168	0	apidocs/net/openhft/chronicle/queue/impl/class-use/RollingResourcesCache.Resource.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/class-use/RollingResourcesCache.html
+206	0	apidocs/net/openhft/chronicle/queue/impl/class-use/StoreFileListener.html
+201	0	apidocs/net/openhft/chronicle/queue/impl/class-use/StoreReleasable.html
+305	0	apidocs/net/openhft/chronicle/queue/impl/class-use/TableStore.html
+224	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStore.html
+166	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStoreFactory.html
+167	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStorePool.html
+167	0	apidocs/net/openhft/chronicle/queue/impl/class-use/WireStoreSupplier.html
+35	0	apidocs/net/openhft/chronicle/queue/impl/package-frame.html
+199	0	apidocs/net/openhft/chronicle/queue/impl/package-summary.html
+228	0	apidocs/net/openhft/chronicle/queue/impl/package-tree.html
+245	0	apidocs/net/openhft/chronicle/queue/impl/package-use.html
+406	0	apidocs/net/openhft/chronicle/queue/impl/single/BinarySearch.html
+302	0	apidocs/net/openhft/chronicle/queue/impl/single/DirectoryListing.html
+489	0	apidocs/net/openhft/chronicle/queue/impl/single/MetaDataField.html
+375	0	apidocs/net/openhft/chronicle/queue/impl/single/MetaDataKeys.html
+342	0	apidocs/net/openhft/chronicle/queue/impl/single/NoopQueueLock.html
+336	0	apidocs/net/openhft/chronicle/queue/impl/single/PrecreatedFiles.html
+324	0	apidocs/net/openhft/chronicle/queue/impl/single/Pretoucher.html
+378	0	apidocs/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.html
+265	0	apidocs/net/openhft/chronicle/queue/impl/single/QueueLock.html
+327	0	apidocs/net/openhft/chronicle/queue/impl/single/ReadOnlyWriteLock.html
+244	0	apidocs/net/openhft/chronicle/queue/impl/single/ReferenceCountedCache.html
+359	0	apidocs/net/openhft/chronicle/queue/impl/single/SCQMeta.html
+367	0	apidocs/net/openhft/chronicle/queue/impl/single/ScanResult.html
+1507	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.html
+1990	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.html
+230	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.InternalAppender.html
+986	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.StoreTailer.html
+266	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.html
+841	0	apidocs/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.html
+398	0	apidocs/net/openhft/chronicle/queue/impl/single/StoreComponentReferenceHandler.html
+372	0	apidocs/net/openhft/chronicle/queue/impl/single/TSQueueLock.html
+361	0	apidocs/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.html
+277	0	apidocs/net/openhft/chronicle/queue/impl/single/WriteLock.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/BinarySearch.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/DirectoryListing.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/MetaDataField.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/MetaDataKeys.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/NoopQueueLock.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/PrecreatedFiles.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/Pretoucher.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/QueueFileShrinkManager.html
+207	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/QueueLock.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/ReadOnlyWriteLock.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/ReferenceCountedCache.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SCQMeta.html
+219	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/ScanResult.html
+231	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueue.html
+501	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueBuilder.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueExcerpts.InternalAppender.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueExcerpts.StoreTailer.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueExcerpts.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/SingleChronicleQueueStore.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/StoreComponentReferenceHandler.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/TSQueueLock.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/TableStoreWriteLock.html
+170	0	apidocs/net/openhft/chronicle/queue/impl/single/class-use/WriteLock.html
+49	0	apidocs/net/openhft/chronicle/queue/impl/single/package-frame.html
+264	0	apidocs/net/openhft/chronicle/queue/impl/single/package-summary.html
+191	0	apidocs/net/openhft/chronicle/queue/impl/single/package-tree.html
+233	0	apidocs/net/openhft/chronicle/queue/impl/single/package-use.html
+417	0	apidocs/net/openhft/chronicle/queue/impl/table/AbstractTSQueueLock.html
+412	0	apidocs/net/openhft/chronicle/queue/impl/table/Metadata.NoMeta.html
+289	0	apidocs/net/openhft/chronicle/queue/impl/table/Metadata.html
+593	0	apidocs/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.html
+407	0	apidocs/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.html
+639	0	apidocs/net/openhft/chronicle/queue/impl/table/SingleTableStore.html
+172	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/AbstractTSQueueLock.html
+175	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/Metadata.NoMeta.html
+278	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/Metadata.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/ReadonlyTableStore.html
+195	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/SingleTableBuilder.html
+126	0	apidocs/net/openhft/chronicle/queue/impl/table/class-use/SingleTableStore.html
+32	0	apidocs/net/openhft/chronicle/queue/impl/table/package-frame.html
+186	0	apidocs/net/openhft/chronicle/queue/impl/table/package-summary.html
+180	0	apidocs/net/openhft/chronicle/queue/impl/table/package-tree.html
+206	0	apidocs/net/openhft/chronicle/queue/impl/table/package-use.html
+273	0	apidocs/net/openhft/chronicle/queue/jitter/QueuePingPongMain.html
+126	0	apidocs/net/openhft/chronicle/queue/jitter/class-use/QueuePingPongMain.html
+21	0	apidocs/net/openhft/chronicle/queue/jitter/package-frame.html
+144	0	apidocs/net/openhft/chronicle/queue/jitter/package-summary.html
+139	0	apidocs/net/openhft/chronicle/queue/jitter/package-tree.html
+126	0	apidocs/net/openhft/chronicle/queue/jitter/package-use.html
+51	0	apidocs/net/openhft/chronicle/queue/package-frame.html
+280	0	apidocs/net/openhft/chronicle/queue/package-summary.html
+215	0	apidocs/net/openhft/chronicle/queue/package-tree.html
+347	0	apidocs/net/openhft/chronicle/queue/package-use.html
+664	0	apidocs/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.html
+461	0	apidocs/net/openhft/chronicle/queue/reader/ChronicleReader.html
+249	0	apidocs/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.html
+310	0	apidocs/net/openhft/chronicle/queue/reader/DummyMethodReaderQueueEntryHandler.html
+310	0	apidocs/net/openhft/chronicle/queue/reader/MessageToTextQueueEntryHandler.html
+310	0	apidocs/net/openhft/chronicle/queue/reader/MethodReaderQueueEntryHandler.html
+243	0	apidocs/net/openhft/chronicle/queue/reader/QueueEntryHandler.html
+230	0	apidocs/net/openhft/chronicle/queue/reader/class-use/ChronicleHistoryReader.html
+242	0	apidocs/net/openhft/chronicle/queue/reader/class-use/ChronicleReader.html
+166	0	apidocs/net/openhft/chronicle/queue/reader/class-use/ChronicleReaderPlugin.html
+126	0	apidocs/net/openhft/chronicle/queue/reader/class-use/DummyMethodReaderQueueEntryHandler.html
+126	0	apidocs/net/openhft/chronicle/queue/reader/class-use/MessageToTextQueueEntryHandler.html
+126	0	apidocs/net/openhft/chronicle/queue/reader/class-use/MethodReaderQueueEntryHandler.html
+189	0	apidocs/net/openhft/chronicle/queue/reader/class-use/QueueEntryHandler.html
+30	0	apidocs/net/openhft/chronicle/queue/reader/package-frame.html
+181	0	apidocs/net/openhft/chronicle/queue/reader/package-summary.html
+157	0	apidocs/net/openhft/chronicle/queue/reader/package-tree.html
+192	0	apidocs/net/openhft/chronicle/queue/reader/package-use.html
+425	0	apidocs/net/openhft/chronicle/queue/service/EventLoopServiceWrapper.html
+252	0	apidocs/net/openhft/chronicle/queue/service/ServiceWrapper.html
+555	0	apidocs/net/openhft/chronicle/queue/service/ServiceWrapperBuilder.html
+126	0	apidocs/net/openhft/chronicle/queue/service/class-use/EventLoopServiceWrapper.html
+179	0	apidocs/net/openhft/chronicle/queue/service/class-use/ServiceWrapper.html
+208	0	apidocs/net/openhft/chronicle/queue/service/class-use/ServiceWrapperBuilder.html
+26	0	apidocs/net/openhft/chronicle/queue/service/package-frame.html
+163	0	apidocs/net/openhft/chronicle/queue/service/package-summary.html
+156	0	apidocs/net/openhft/chronicle/queue/service/package-tree.html
+162	0	apidocs/net/openhft/chronicle/queue/service/package-use.html
+367	0	apidocs/net/openhft/chronicle/queue/util/FileState.html
+368	0	apidocs/net/openhft/chronicle/queue/util/FileUtil.html
+181	0	apidocs/net/openhft/chronicle/queue/util/class-use/FileState.html
+126	0	apidocs/net/openhft/chronicle/queue/util/class-use/FileUtil.html
+25	0	apidocs/net/openhft/chronicle/queue/util/package-frame.html
+161	0	apidocs/net/openhft/chronicle/queue/util/package-summary.html
+151	0	apidocs/net/openhft/chronicle/queue/util/package-tree.html
+159	0	apidocs/net/openhft/chronicle/queue/util/package-use.html
+16	8	apidocs/overview-frame.html
+58	21	apidocs/overview-summary.html
+218	2900	apidocs/overview-tree.html
+10	3	apidocs/package-list
+221	121	apidocs/stylesheet.css
+
+commit 3f10e135e61d82483b84c18f52cdcea77c4b9fe5
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-05-01 11:41:16 +0100
+
+    we should reset the pauser after a timeout exception
+
+2	0	src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+
+commit 15c6566b34271bcb68d3774fad3ad350f9667d0c
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-28 19:36:35 +0100
+
+    Cleanup
+
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/ClientWiredExcerptAppenderStateless.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/ClientWiredExcerptTailerStateless.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/QueueAppenderResponse.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/QueueTailerResponse.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/Compression.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/Excerpts.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/DirectChronicleQueue.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/SingleAppender.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/SingleTailer.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/WireUtil.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/GenerateData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/OffHeapGenerateData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/OffHeapReplayData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/OffHeapTestData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/ReplayData.java
+1	3	chronicle-sandbox/src/main/java/net/openhft/chronicle/sandbox/replay/TestData.java
+1	3	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/simple/WriterMain.java
+2	4	src/main/java/net/openhft/chronicle/queue/BufferMode.java
+1	3	src/main/java/net/openhft/chronicle/queue/JDBCResult.java
+1	3	src/main/java/net/openhft/chronicle/queue/JDBCService.java
+1	3	src/main/java/net/openhft/chronicle/queue/JDBCStatement.java
+1	3	src/main/java/net/openhft/chronicle/queue/NoMessageHistory.java
+1	3	src/main/java/net/openhft/chronicle/queue/TailerState.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/ExcerptContext.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/StoreFileListener.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataKeys.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/SCQRoll.java
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/ScanResult.java
+1	3	src/main/java/net/openhft/chronicle/queue/service/EventLoopServiceWrapper.java
+1	3	src/main/java/net/openhft/chronicle/queue/service/ServiceWrapper.java
+1	3	src/main/java/net/openhft/chronicle/queue/service/ServiceWrapperBuilder.java
+1	3	src/test/java/net/openhft/chronicle/queue/CountingJDBCResult.java
+1	3	src/test/java/net/openhft/chronicle/queue/JDBCServiceTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/MessageReaderWriterTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/MethodReaderObjectReuseTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/ReadmeTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/RunLargeQueueMain.java
+1	3	src/test/java/net/openhft/chronicle/queue/TestAppenderThreadSafe.java
+2	4	src/test/java/net/openhft/chronicle/queue/WriteReadTextTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/MarketDataListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/Order.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderIdea.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderIdeaListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderManager.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/OrderManagerTest.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/Side.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/SidedMarketDataCombiner.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/SidedMarketDataListener.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/SidedPrice.java
+1	3	src/test/java/net/openhft/chronicle/queue/micros/TopOfBookPrice.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloReplier.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloWorld.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloWorldImpl.java
+1	3	src/test/java/net/openhft/chronicle/queue/service/HelloWorldTest.java
+
+commit f8fdd00e827c3c96f84189fddff30e07b7b4d597
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-28 15:02:45 +0100
+
+    Remaining fixes for #658 and documentation update
+
+65	61	README.adoc
+4	6	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+13	17	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+88	55	src/test/java/net/openhft/chronicle/queue/bench/QueueContendedWritesJLBHBenchmark.java
+16	1	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+
+commit 9593205e5a3edecbcfec2d116f6426067d39baa0
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-27 20:25:59 +0100
+
+    Leftovers
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 6d196931db0e5c69bcb606537b7d1bdd047ccdd9
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-27 20:23:02 +0100
+
+    Reduce footprint for doublebuffering - #658
+
+4	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 28c8aec68d2ef669944993b14f3e142c3f595544
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-27 20:17:13 +0100
+
+    Added double buffering for contended appends - fixes #658
+
+99	6	README.adoc
+2	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+32	6	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+40	16	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+151	0	src/test/java/net/openhft/chronicle/queue/bench/QueueContendedWritesJLBHBenchmark.java
+
+commit 260b0f5a6cc9937813602477e3f67647a3ef0446
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-04-27 15:06:07 +0100
+
+    ignored tests https://github.com/OpenHFT/Chronicle-Queue/issues/660
+
+4	0	src/test/java/net/openhft/chronicle/queue/reader/ChronicleMethodReaderTest.java
+
+commit 8e4d7a5a2d92c8dcc561c25f96ddaccc931b6867
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-04-27 12:51:14 +0100
+
+    Extend argument to enable MethodReader support to specify an interface to use for decode messages in a queue to support custom DTOs and @MethodIds, closes https://github.com/OpenHFT/Chronicle-Queue/issues/659
+
+41	12	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+12	0	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+commit 277358806671c3de2769f153e9127c9d53661856
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-04-27 12:46:50 +0100
+
+    Revert "enhance ChronicleReader"
+    
+    This reverts commit 601d026b
+
+14	54	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+0	10	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+commit 987cf793d3ae9bddb8ae215148ab2f154f468ab8
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-04-27 12:22:49 +0100
+
+    Extend argument to enable MethodReader support to specify an interface to use for decode messages in a queue to support custom DTOs and @MethodIds, closes https://github.com/OpenHFT/Chronicle-Queue/issues/659
+
+1	5	README.adoc
+
+commit 6ceee4a48f8c7c15dbec015dbaa10e2573f35f53
+Merge: 818d9e90f f1ba2b46f
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-04-27 11:51:06 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 818d9e90faa194c7fa27f264f961a64898115fa7
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-04-27 11:50:53 +0100
+
+    Extend argument to enable MethodReader support to specify an interface to use for decode messages in a queue to support custom DTOs and @MethodIds, closes https://github.com/OpenHFT/Chronicle-Queue/issues/659
+
+1	1	src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+55	16	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+36	0	src/main/java/net/openhft/chronicle/queue/reader/DummyMethodReaderQueueEntryHandler.java
+16	17	src/main/java/net/openhft/chronicle/queue/reader/MethodReaderQueueEntryHandler.java
+269	0	src/test/java/net/openhft/chronicle/queue/reader/ChronicleMethodReaderTest.java
+11	9	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+commit f1ba2b46f57d63c023b6d46643e00a46792759ec
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-24 18:10:16 +0100
+
+    Update root pom
+
+1	1	benchmarks/pom.xml
+1	1	chronicle-sandbox/pom.xml
+1	1	chronicle-test/pom.xml
+1	1	load-harness/pom.xml
+7	12	pom.xml
+
+commit fd1803e71fa7adbeb3a49d2c3074923594d74309
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-23 10:28:56 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 455aba613c771941b2cd438ef362c0089aa154b7
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-23 10:27:32 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit bd77f4cf37b71966adf0a9091825798ee42ce797
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-23 10:27:24 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.12
+
+2	2	pom.xml
+
+commit 672729e0eac80e1d92efb5a91097ebdefce977f9
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-23 10:22:56 +0200
+
+    Updating to bom version 2.19.117
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 9c59c41bfc7b769f8180a18235b5cc84ddb824da
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-22 20:06:52 +0100
+
+    Prevent writing to the sink queue - fixes ChronicleEnterprise/Chronicle-Queue-Enterprise#77
+
+25	23	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 7cd797ca73e2d28989099c5d66dc2798fd671693
+Merge: 864aed574 db2c8fd0c
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-22 15:46:22 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 864aed574ed44fedeed8dfbeaeb78e00756884fa
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-22 15:45:54 +0100
+
+    Rename net.openhft.chronicle.network.cluster.ConnectionStrategy to avoid duplicated class name with net.openhft.chronicle.network.ConnectionStrategy, fixes OpenHFT/Chronicle-Network#63
+
+0	3	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/BytesRingBufferTest.java
+0	3	src/main/java/net/openhft/chronicle/queue/impl/single/BinarySearch.java
+0	3	src/test/java/net/openhft/chronicle/queue/CreateAtIndexTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/LastIndexAppendedTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/IndexTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/MultiThreadedRollTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/TestBinarySearch.java
+
+commit db2c8fd0c4b2cef268fb563b7c7709a0344dbab7
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-22 16:18:52 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 862de4bfc7e32c2e9fcdda2e49caa5da055eef57
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-22 16:16:54 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 924d38d3e5024c039700091993b5db2fb198d112
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-22 16:16:46 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.11
+
+2	2	pom.xml
+
+commit eea16a99cc6f570fa4c9e9e0b01554a962651cde
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-22 16:12:21 +0200
+
+    Updating to bom version 2.19.114
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 05669ed2bf088302d266fb11407cbde30026c365
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-22 13:03:02 +0100
+
+    Cleanup
+
+0	30	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 0f76724f7efb667144465de16866c5aec70c0f03
+Merge: c805613ce 0b773c3c6
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-21 16:50:04 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c805613cec2ef9b360403df7e044a7c8d47f3163
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-21 16:49:12 +0100
+
+    Fix the alignment to not be part of the message written (and read) - as part of fixing the ARM support, to fix OpenHFT/Chronicle-Queue#656
+
+2	1	src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+0	19	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+2	0	src/main/java/net/openhft/chronicle/queue/impl/WireStore.java
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/MetaDataField.java
+0	38	src/main/java/net/openhft/chronicle/queue/impl/single/QueueInspector.java
+4	7	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+2	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+14	42	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+21	4	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+28	21	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+322	312	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+2	6	src/test/java/net/openhft/chronicle/queue/ThreadedQueueTest.java
+478	477	src/test/java/net/openhft/chronicle/queue/WriteBytesTest.java
+64	176	src/test/java/net/openhft/chronicle/queue/impl/RollingChronicleQueueTest.java
+0	78	src/test/java/net/openhft/chronicle/queue/impl/single/QueueInspectorTest.java
+125	258	src/test/java/net/openhft/chronicle/queue/impl/single/RollingCycleTest.java
+266	308	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormat2Test.java
+2	4	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormatTest.java
+2	3	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilderTest.java
+51	63	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit 0b773c3c6202eb90a5428ff1438c2ae5c48b4e29
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 15:13:57 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+commit 4d0ee247b85df69e002ff31cc41df8d3a14bfa0a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 15:08:35 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit b7a14560559836ef43a53cec07358e7d66399c2b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 15:07:07 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 73ee4b4f29b567113f2312a299fdf13f30ba9ead
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 15:06:59 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.10
+
+2	2	pom.xml
+
+commit 30e12d999b831754b2130bd7c1e5a83782b1eb8c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 15:02:33 +0200
+
+    Updating to bom version 2.19.108
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 1a1cbd99d5af1cb9e00a60e30855afdaf3740440
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 05:20:47 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 75c60bc5b9d0df47662d2bbf21039644117a604d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 05:19:06 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 61d8729179563d5d8967b0f588d31959a8fd79fd
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 05:18:58 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.9
+
+2	2	pom.xml
+
+commit 666aa8eea28d41dc680fd4b47585b4e5a35342c2
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-21 05:14:31 +0200
+
+    Updating to bom version 2.19.105
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit b770b9906e50c7bb67bd78314a5dde74909102a4
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-04-21 12:32:55 +1000
+
+    comment
+
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+commit e16772b22bd5dd9b5121736620116621c9d5082b
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-04-21 12:31:57 +1000
+
+    Don't lock the queue if you can't write
+
+4	2	src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+
+commit 603dd3901dfe1ad34e2dc4c83dcd6a182da28a52
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-04-21 12:27:24 +1000
+
+    Allow pretoucher to be read only #657
+    PretoucherTest was broken so introduce a horrible hack
+
+17	12	src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+78	13	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+commit de28c57b0f0af322aec71e74e6c263784d0d948f
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-20 15:25:46 +0100
+
+    Delete incorrect test case - there's no more incomplete headers possible in the CQ file
+
+0	35	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleTest.java
+
+commit f04dd7f69b0ad87b96cb42b935248a4119b0a081
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-04-20 14:58:11 +0100
+
+    Fix ARM alignment - #656
+
+5	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+1	0	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+
+commit 32e8c72fc1df6907da8a561ff4f06afc55a4b5af
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-04-16 08:44:14 +0100
+
+    changed from to direction == BACKWARD to direction != FORWARD
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+1	0	src/test/java/net/openhft/chronicle/queue/ThreadedQueueTest.java
+
+commit 0bdf67581630730610a42366e7979de7b6a0fcd6
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-04-16 08:30:14 +0100
+
+    fixed #653 by calling reading document if EOF
+
+16	9	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 264bbf3af6b37c1bdf72972f86a775ea39d0f98c
+Merge: 972fd0944 1b8b8fb47
+Author: Dmitry Pisklov <dpisklov@users.noreply.github.com>
+Date:   2020-04-14 14:12:12 +0100
+
+    Merge pull request #654 from dkhamitov/print-help-not-just-usage
+    
+    Make help printed by default (no args) for CLI tools
+
+commit 1b8b8fb47d773e99c82ae6169089724009c0ad77
+Author: dkhamitov <khamitov.dm@gmail.com>
+Date:   2020-04-13 16:04:18 +0300
+
+    Make help printed by default (no args) for CLI tools
+
+16	8	src/main/java/net/openhft/chronicle/queue/ChronicleHistoryReaderMain.java
+16	7	src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+
+commit 972fd094402bc8b745a7a499427d18524e628f15
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-13 12:48:07 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 9485f91c0d3c2fe8515315665841a127ebec5c3b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-13 12:46:23 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 669b1e07e4416e7819190902f568bbd760bde19e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-13 12:46:14 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.8
+
+2	2	pom.xml
+
+commit 9e6fd61c899219c6a13cef9ce2854c8f3f995fd9
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-13 12:41:48 +0200
+
+    Updating to bom version 2.19.96
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 8ffab47e8316b689de45f9100ae02b85b6b9c502
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-04-13 11:14:20 +0100
+
+    fixed https://github.com/OpenHFT/Chronicle-Queue/issues/653
+
+4	0	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+4	6	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+8	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+55	20	src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+
+commit 834d9bd0c1942cdd357fc18f1259a45637bbe9d6
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 12:11:17 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 5dd7fe4d6ad86bb45740ebeb6a5a929e3ca55bf3
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 12:09:54 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit facadde7cbc4d07d9c07178b4ac8b587fd86f11d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 12:09:46 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.7
+
+2	2	pom.xml
+
+commit 96fd98eacaa27457ee37612f15b80f4ddf0d3c0d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 12:05:21 +0200
+
+    Updating to bom version 2.19.68
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit d4cf3faa245bada278090ee04202297566a2203f
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-04-02 10:44:22 +0100
+
+    Remove a tag which makes no sense.
+
+0	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+
+commit 5330e6de0ce70369800c25a218941d71de231aa2
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 09:16:55 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 24ac8a845470d61cb026acf0b46a18c3bc524782
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 09:15:34 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 6673d62a95b8b14687cbd7dac0305663c79f32ac
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 09:15:26 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.6
+
+2	2	pom.xml
+
+commit 374c700eb80c32859f39a53fae82b5a318cb5bf2
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-04-02 09:12:04 +0200
+
+    Updating to bom version 2.19.65
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit a4c6cae7ef7294b0ba37c71b52b54a053bb25511
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-31 14:21:10 +0100
+
+    May be fix flaky test
+
+12	17	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+commit e1e7cf8844a891b29dc090902b9798b13c0780f0
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-30 18:16:46 +0100
+
+    reverted back to  <chronicle.datagrid.version>2.19.4-SNAPSHOT</chronicle.datagrid.version> and added a test to queue
+
+31	0	src/test/java/net/openhft/chronicle/queue/ValueStringArray.java
+42	0	src/test/java/net/openhft/chronicle/queue/ValueStringArrayTest.java
+
+commit b1dd5ff05e582cc441d4efb6622a063dd7510870
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-30 17:34:58 +0200
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit d319dbe7d2aac57d4f0b2af465966f4d00b85da5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-30 17:33:18 +0200
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit a162c70e2a69aa6681e99880817d371cbe8612a4
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-30 17:33:09 +0200
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.5
+
+2	2	pom.xml
+
+commit 801cf649ff35560bf82bc17d44458a4d8e559414
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-30 17:29:31 +0200
+
+    Updating to bom version 2.19.48
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 89e335f4e8dc705ed72bd526a112ad410b7b167d
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-30 16:03:10 +0100
+
+    fixed https://github.com/OpenHFT/Chronicle-Queue/issues/651
+
+2	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+12	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+96	4	src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+
+commit 1da21dddc7106f4bd57166ce5847d948c875f91a
+Merge: 032f2e5d0 942a5a522
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-27 15:12:23 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 032f2e5d0e18f5dbfc28afa81b593c46e6d91aa3
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-27 15:11:43 +0000
+
+    Update nexus to use HTTPS
+
+2	2	load-harness/pom.xml
+1	1	pom.xml
+
+commit 942a5a5222aa4b21abbc12189aaaf238547a397e
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-27 10:31:03 +0000
+
+    change to only create the file if we get an FileNotFoundException
+
+22	16	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit abab67ce6b5ee8d0d0c667345a98a19ee8e399e2
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-27 10:13:20 +0000
+
+    creates all the directories
+
+2	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit d7dcf84e0bf18abc46dc1a57b6c5be0da8a32373
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-27 09:29:54 +0000
+
+    chagned logging to ->                  Jvm.warn().on(getClass(), "unable to create a file at " + path.getAbsolutePath(), ex);
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 8e39912d764b9ee2524e2ed375811e0f79097103
+Merge: c38aa50c1 f2ee70466
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-27 08:30:30 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c38aa50c140e5692368efc22cb85ecdaa9db7049
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-27 08:30:21 +0000
+
+    pretoucher to create the directory if it does not exist
+
+16	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit f2ee70466e4aece5dbdc84034c96a8ea5f340590
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-27 00:26:42 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+commit 4e09022ae395494fd15588683eb7167f4d195ba7
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-27 00:19:18 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 64e2f018c163fcd643aba9264e1d516dc3dac109
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-27 00:17:55 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 95acd586836203fefb35a239b6aa37f006ea6ff2
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-27 00:17:47 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.4
+
+2	2	pom.xml
+
+commit bd5ccc00a78a1b73402eea7e211fd2fa57c5dd06
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-27 00:14:19 +0100
+
+    Updating to bom version 2.19.45
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 97593f8930ff741f92d943a3832fb158e9b62bc1
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-26 19:05:13 +0000
+
+    fixed file not found issue in pretoucher
+
+12	8	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 9ac55822f9bd3ef32365e98f48f3816111a8a13e
+Merge: 00b7109a3 6b812f401
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-26 16:52:38 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 6b812f401e89a024240a5801a1ff448c01699434
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-26 16:30:31 +0000
+
+    Update doco
+
+24	0	README.adoc
+
+commit 00b7109a3f5603942f1c9d65d03505a4b9352b79
+Merge: 8d6fb4df6 08940bc08
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-26 15:32:49 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 08940bc081fa2fc9b5f93b0800a9d2deb3dcf730
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-25 16:55:00 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 38ede0d7fe58be965d3cc804f3d98acc02f8a067
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-25 16:53:00 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit caaf65cd76d6b9f3663e0a450d0a858d4bc21b4d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-25 16:52:51 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.3
+
+2	2	pom.xml
+
+commit ddb2943c08d4ae9a253a0b15956b03084b5eb14f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-25 16:49:21 +0100
+
+    Updating to bom version 2.19.43
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 8d6fb4df6cb9e72bbed25ecab683e804d34a06dc
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-24 17:32:09 +0000
+
+    improved javadoc
+
+5	1	src/main/java/net/openhft/chronicle/queue/BufferMode.java
+3	1	src/main/java/net/openhft/chronicle/queue/RollCycle.java
+4	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/RollingChronicleQueue.java
+12	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit feee2af503da61ef431a379dccb475f4b1502288
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-24 15:07:59 +0000
+
+    ignored on windows net.openhft.chronicle.queue.impl.single.EofMarkerOnEmptyQueueTest.shouldRecoverFromEmptyQueueOnRoll
+
+3	0	src/test/java/net/openhft/chronicle/queue/impl/single/EofMarkerOnEmptyQueueTest.java
+
+commit b9f9d268745017cdc501d8c5a69f34eab2ab50d1
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-24 14:31:53 +0000
+
+    https://github.com/ChronicleEnterprise/Chronicle-Services/issues/149 fixed NPE
+
+6	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 9a979b077cc1bf0e4055b6b6cadbb7d367631478
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-24 14:26:29 +0000
+
+    https://github.com/ChronicleEnterprise/Chronicle-Services/issues/149 found further places where we move the index but don't set the `address`
+
+16	10	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 5a0b8d30c1ea4d16c6c10a9a02b561a83beef7fa
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-24 10:29:27 +0000
+
+    https://github.com/ChronicleEnterprise/Chronicle-Services/issues/149 peekDocument was not taking account of move to index, more changes to follow shortly
+
+16	10	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+82	0	src/test/java/net/openhft/chronicle/queue/PeekDocumentTest.java
+
+commit be0a9f45fd951d31ca94835d882421b9b1cd98bb
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 17:54:48 +0000
+
+    ignored as this is a stress test
+
+1	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+
+commit 4b956b67c2c8ec5779f8ea34ca59c810cd1204bc
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 17:49:22 +0000
+
+    ignore pretocher on windows
+
+3	2	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit 72e56a29974f85006caa58a6a5d6e43681714d29
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 17:45:41 +0000
+
+    removed test
+
+0	34	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+commit 43c7ce547bcb1f7f07c07eae862256f88a64ff64
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 17:41:55 +0000
+
+    updated docs
+
+1	1	README.adoc
+
+commit b285565b831f6a0451175cd0d574599e7967d5a5
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 17:01:39 +0000
+
+    added -"( unless you are writing bytes )""
+
+1	1	README.adoc
+
+commit e8172f54e3a7b88040850c89b41f775d9d687b58
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 17:00:29 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+1	1	README.adoc
+
+commit 7a4ea83ce0d1e5401c1c6b9ec998e560d3920c0e
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:59:37 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+2	2	README.adoc
+
+commit 011dd3b8dc7475d2b038b43992b884d3d5c69ad7
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:57:38 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+4	3	README.adoc
+
+commit 840a5c9ca021bf1dc3f9bda7bb14eb462446ed2a
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:56:32 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+15	18	README.adoc
+
+commit 53ec9b2577f600ea13f981f87db37e7336953bc6
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:52:39 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+2	2	README.adoc
+
+commit 20fc2d917961bac3ba03cb8223c7b2bd6ad15217
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:49:00 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+5	1	README.adoc
+
+commit 66d20298fb750ecbf6f3124b9f13be4d1804acfd
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:45:27 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+8	0	README.adoc
+
+commit 0d81475b3201cfcf50e11abb30593ab57666db10
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:36:23 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+29	1	README.adoc
+
+commit 77d110f3655fc03fe7ac7f3484fbdd755a91ffba
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:29:41 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+1	1	README.adoc
+
+commit 6f645c15292b6a9bad38f30f210b70738e900e7e
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 16:28:32 +0000
+
+    added "==== Padding ensured data is cache line aligned"
+
+17	0	README.adoc
+
+commit ae7a566a2c0c57897732ba96c604ee3ca7160386
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 13:48:28 +0000
+
+    fixed and removed tests
+
+0	4	src/main/java/net/openhft/chronicle/queue/reader/StringEventsMethodWriter.java
+0	93	src/test/java/net/openhft/chronicle/queue/FsFullReadTest.java
+0	73	src/test/java/net/openhft/chronicle/queue/FsFullWriteTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+
+commit f9e55fc84ec4f3b4febccb014d7691b313a3ce1d
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 11:15:33 +0000
+
+    removed @Ignore
+
+4	0	src/main/java/net/openhft/chronicle/queue/reader/StringEventsMethodWriter.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+4	2	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+0	6	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+0	2	src/test/java/net/openhft/chronicle/queue/reader/ChronicleReaderTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 4353a6056ac4e90b20fe9898e26d95ae10bd3f26
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 11:07:20 +0000
+
+    removed @Ignore
+
+0	1	src/test/java/net/openhft/chronicle/queue/FsFullWriteTest.java
+
+commit 9c39478e50fb46241593c6b45d2e6b766549131f
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 11:01:29 +0000
+
+    removed @Ignore
+
+0	1	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 850e0a2d6df0304e3d83c948e1daff4277b78a83
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 10:58:39 +0000
+
+    removed @Ignore
+
+2	3	src/test/java/net/openhft/chronicle/queue/JDBCServiceTest.java
+
+commit ed125c5e4b1210229b3a06795124bc99336871a5
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-23 09:38:36 +0000
+
+    aded jitter to docs
+
+51	0	README.adoc
+
+commit ce47a5e6b1df5c65039945de59edaeb131e829a2
+Merge: 446c02be3 12f0a9a8f
+Author: Dmitry Pisklov <dpisklov@users.noreply.github.com>
+Date:   2020-03-19 20:10:22 +0000
+
+    Merge pull request #649 from JanStureNielsen/master
+    
+    Polish -- remove unused imports.
+
+commit 12f0a9a8f5c97fe4b730599731957c6f9eb19c68
+Author: Jan Nielsen <jan.sture.nielsen@gmail.com>
+Date:   2020-03-19 13:57:41 -0600
+
+    Polish -- remove unused imports.
+
+0	1	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+0	1	src/test/java/net/openhft/chronicle/queue/QueueReadForwardSkippingACycleBiggerThanADayTest.java
+0	11	src/test/java/net/openhft/chronicle/queue/cleanup/CleanupUnusedQueueFilesTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+0	4	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherListener.java
+0	1	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherMain.java
+
+commit 446c02be39972782a73e01b88feca23e04fdfa9c
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-03-05 14:29:30 +1100
+
+    doco
+
+1	1	README.adoc
+
+commit a5bd6ad070cabcd7ada42f31f1ced09302f4d1f4
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-03-05 14:23:49 +1100
+
+    remove broken link
+
+0	2	README.adoc
+
+commit 32c2d85b61f3dd7c9f11e9a3ab4329fff4734856
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-03-04 12:01:58 +0000
+
+    Move to .19 releases
+
+1	0	pom.xml
+
+commit 4e5d8093ac3969dc7828aff233b623f43636e949
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-03-04 09:32:38 +0000
+
+    Move to .19 releases
+
+1	1	benchmarks/pom.xml
+2	3	chronicle-sandbox/pom.xml
+2	3	chronicle-test/pom.xml
+1	2	load-harness/pom.xml
+1	3	pom.xml
+
+commit b16d634acf1a41bb0e2d4b87b3e6c15a958f29ac
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-03 16:14:39 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 3fc399473fc215ccceda95ccc05a9cdfd4a5f406
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-03 16:13:09 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit f663b2be5a62abd26c164eb65a633809a5742eea
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-03 16:13:00 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.2
+
+2	2	pom.xml
+
+commit c0c43bdc6af3a1a9ac380c47d46f6c5b019929e2
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-03-03 16:09:39 +0100
+
+    Updating to bom version 2.19.12
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 366a1312f9e4d2437e77863a70346a71cf3028d5
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-03 14:28:19 +0000
+
+    Fix test and release file handles
+
+8	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+1	0	src/test/java/net/openhft/chronicle/queue/impl/single/StuckQueueTest.java
+
+commit 779fe0a2e2f3faf472c77109dae1c21767098c7a
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-03 14:02:29 +0000
+
+    Fix the issue with pretoucher precreating files and then causing EOF to not be written - fixes #647
+
+8	2	src/main/java/net/openhft/chronicle/queue/impl/single/Pretoucher.java
+26	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+21	22	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+5	6	src/test/java/net/openhft/chronicle/queue/impl/single/EofMarkerOnEmptyQueueTest.java
+
+commit 8d454166809ba4fcfdf9bbf24faada65487545d7
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-03 11:28:33 +0000
+
+    Cleanup
+
+4	4	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+3	5	src/main/java/net/openhft/chronicle/queue/impl/single/DirectoryListing.java
+0	10	src/main/java/net/openhft/chronicle/queue/impl/single/FileSystemDirectoryListing.java
+3	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+0	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+16	22	src/main/java/net/openhft/chronicle/queue/impl/single/TableDirectoryListing.java
+1	1	src/test/java/net/openhft/chronicle/queue/TestDeleteQueueFile.java
+
+commit cf01f2a7d080f36874b73359613089f3da0fd329
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-03-02 18:02:45 +0000
+
+    Make test fail
+
+3	3	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit a4b4ede29768d725d2672a1536f54e0e7f0253a0
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-02 17:15:23 +0000
+
+    updated test
+
+0	2	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit a160d8fc92b482239ec5c4aee9fb94f7ed78b6bc
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-02 17:13:51 +0000
+
+    https://github.com/OpenHFT/Chronicle-Queue/issues/647 added failing test
+
+74	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit cb4b68780a3b33150c16b41285a762ed0773f68f
+Merge: d44963f5a 2c0d3325d
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-02 14:59:00 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit d44963f5a536303940ac82f40dbcb614e9e2782a
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-03-02 14:58:50 +0000
+
+    minor change
+
+4	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 2c0d3325d9450f883c980c923509c028e49eaa07
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-27 14:04:19 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit bd0807a0ee1b45ad87fabbf4d3ba979490a2ec46
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-27 14:02:39 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 7a0115d2ea75a6e735d17b9b5e7ca9481e96b5ff
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-27 14:02:31 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.1
+
+2	2	pom.xml
+
+commit 12b83c28b7e1ef19d744b6e3d8050f46d9afc41a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-27 13:59:08 +0100
+
+    Updating to bom version 2.19.6
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 624026f89b1d51e65d148059d54575488f2cd044
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-02-26 10:21:51 +1100
+
+    Improve TableStoreWriteLock diagnosis message
+
+3	1	src/main/java/net/openhft/chronicle/queue/impl/single/TableStoreWriteLock.java
+
+commit ad09297786509c4ca6e10fba4581d63d3be2595b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:46:04 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+commit 3fa412add0b8cf212ee188a842224302ebb72624
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:45:08 +0100
+
+    Reverting back to bom version 2.19-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 610365c04f638435f8d48a236b5f71398e65373c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:42:26 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit cf1a1816f89f7aa5f048c7554118413b86f8acef
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:42:19 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.19.0
+
+2	2	pom.xml
+
+commit 684dbb00dafa1e04b3570dcc6860146671803a60
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:38:57 +0100
+
+    Updating to bom version 2.19.0
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 0ccf73a176a881854e11a7ae372fc72167e5c8c9
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:29:41 +0100
+
+    Updating to bom version 2.17.600
+
+commit 021b68f3665456dd4a17fc2ad173c291781cb9f6
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-24 17:00:37 +0100
+
+    Updating to bom version 2.17.600
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 7c0dd9caacf54a49ed92e666149b41ab80538a6b
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-02-24 14:14:40 +0000
+
+    Move to 2.19 bom
+
+2	2	pom.xml
+
+commit 0d4ba1996046f38bd71967a82b3aede1a105cd9f
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-02-24 13:45:43 +0000
+
+    Move to X.19 branch
+
+1	1	pom.xml
+
+commit df57eae31a5610f08a70a97a74139af691e23808
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-02-19 08:59:34 +0000
+
+    fixed https://github.com/OpenHFT/Chronicle-Queue/issues/643
+
+0	2	README.adoc
+
+commit 7d1c151c4ced6806a1ec90c4291e2504e82efb3a
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-02-13 16:13:12 +0000
+
+    Downgrade warn to debug - fixes #641
+
+1	4	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+commit 93adcf6dc814bd8a4f0d40cd8c3070898353c177
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-02-10 13:48:31 +1100
+
+    doco
+
+2	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+
+commit a5dcf9bfab273a775c1842a93b607db0c8fd34c5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-06 02:51:38 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit dbd7cd910c226f0413697e58608b2fbba268eb45
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-06 02:50:02 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit c7c56f446e54cb29e04b50472751708a194ddef8
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-06 02:49:53 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.43
+
+2	2	pom.xml
+
+commit bd0ef632350ee653ca650541c6f0c0334b33ddc1
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-06 02:46:31 +0100
+
+    Updating to bom version 2.17.584
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 95e9d2be8f99016e384e79bb077e7e0cb99ba236
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-05 08:18:52 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 07d1ec76d9e67303bc9621f464f90057d8365b4f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-05 08:17:22 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit f520196dc58884944764e89f086f9df22ad56dee
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-05 08:17:14 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.42
+
+2	2	pom.xml
+
+commit 857e69bf87bbf9412e9f6307c4430b9e6efca752
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-05 08:13:54 +0100
+
+    Updating to bom version 2.17.574
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 205f63d305cdad693d82f97cbce2a9de9bb12f73
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-03 14:52:56 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 3d9e52a6ecc1721f7c96fbd485773d1b88db16d6
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-02-03 14:52:49 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.41
+
+2	2	pom.xml
+
+commit 153107cac0a54fdc85d7663456a854e68a71bb4d
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-02-03 13:48:30 +0000
+
+    rolled to       <dependency>
+                              <groupId>net.openhft</groupId>
+                              <artifactId>chronicle-bom</artifactId>
+                              <version>2.17.562</version>
+                              <type>pom</type>
+                              <scope>import</scope>
+                          </dependency>
+
+1	1	pom.xml
+
+commit 9042b334d86c4567fcfaecdaa717cdfc6b43b26f
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-02-02 13:14:08 +1100
+
+    temp ignore some tests
+
+3	0	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 12d8157b3cdd92fe0d219b95377919005140d43a
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-02-02 12:59:02 +1100
+
+    Ensure default EventGroup allows replication priority by default (this thread is lazy anyway)
+
+2	1	docs/ring_buffer.adoc
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit d19198a99a509482bded09c18f36f1a8cbf79c25
+Author: hft-team-city <teamcity@chronicle.software>
+Date:   2020-01-31 13:15:06 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit ae3438b3264fa2543dbbf7f0b83b9b4399e74c8a
+Author: hft-team-city <teamcity@chronicle.software>
+Date:   2020-01-31 13:06:34 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit fdb798415e06c989452014bb55f7b9ae06a72779
+Author: hft-team-city <teamcity@chronicle.software>
+Date:   2020-01-31 13:04:34 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit d188cccefcb164b1d89c4ba4f67959b69baf1a2c
+Author: hft-team-city <teamcity@chronicle.software>
+Date:   2020-01-31 13:04:26 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.40
+
+2	2	pom.xml
+
+commit 273222d1fa8482b16d9c9b4e4b69c65181193f31
+Author: hft-team-city <teamcity@chronicle.software>
+Date:   2020-01-31 13:00:08 +0000
+
+    Updating to bom version 2.17.562
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit f354a1c48d0ed9a8374994cce76c830a32b0cb65
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-01-30 13:25:55 +1100
+
+    doco
+
+5	0	docs/ring_buffer.adoc
+
+commit 4067de8b8e6c958548847363457a9e853ddb2885
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-01-30 12:43:08 +1100
+
+    fix ring buffer capacity default
+
+2	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 0a563a0f9ee900adee1d4faae0f9c7b9d9cd15dc
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-20 15:00:45 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 7e287525af9d7553ce9aa9d8bcfd6b43d3f0ba62
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-20 14:59:12 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 4cbf6a9ee4ffdacd35bd0344012ac86fbb688610
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-20 14:59:03 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.39
+
+2	2	pom.xml
+
+commit 2d45ad43469ea22bd24ada7444f9915014825084
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-20 14:55:27 +0000
+
+    Updating to bom version 2.17.544
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 9ddc43ae5f2bd31d363400b74744a82daf1485fb
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-01-16 17:53:06 +0000
+
+    Make QueueLock reentrant and improve owning thread check
+
+16	15	src/main/java/net/openhft/chronicle/queue/impl/single/TSQueueLock.java
+
+commit ce9194827dbaaace405f0fdbda1836c07cd8ad88
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-01-14 14:39:54 +0000
+
+    Improve tests cleanup
+
+30	27	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+1	0	src/test/java/net/openhft/chronicle/queue/MoveToWrongIndexThenToEndTest.java
+
+commit edd6769e1f535f6d3fc169a3242db4978c3cac05
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-14 14:23:40 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit 6005eb8b346da31baf651c1dece2a1fa96320964
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-14 14:22:27 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 1e0d67238a1952bfeef3a9e3649222528e6a9841
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-14 14:21:00 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit f272067cb379f620f9d6ef171d39cae86cc493d9
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-14 14:20:53 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.38
+
+2	2	pom.xml
+
+commit d18963ceb7f1ed0723b96502d3cc52a91481d2fb
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-14 14:17:15 +0000
+
+    Updating to bom version 2.17.542
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 5f121827dfb4f50dfd8c3bdc78509f6881462012
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2020-01-14 13:34:42 +0000
+
+    Bump queue
+
+30	31	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit ab2491d204d3d89220c1f6f15ec9eb22cfef02b1
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2020-01-14 15:57:53 +1100
+
+    tidy doco
+
+1	4	docs/ring_buffer.adoc
+
+commit 13ab40ecc6ead99f36870df87b1c3b689cb44284
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-13 23:04:02 +0000
+
+    Updating to bom version 2.17.540
+
+commit 36abb149e85d1ade50ae09f6fe7862359681838e
+Merge: 64d200273 cd4916873
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-13 18:23:47 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 64d2002731cb51ae17c46239be0cfe789024e6b0
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-13 18:23:37 +0000
+
+    Move to new chunks eagerly instead of lazily with the pretoucher, closes https://github.com/ChronicleEnterprise/Chronicle-FIX/issues/391
+
+7	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+29	29	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherStateTest.java
+
+commit cd49168734a887f2cd8f32cf52943219e5ec114e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-13 18:07:11 +0000
+
+    Updating to bom version 2.17.540
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 4f2fca00ce3fd4973270bf736caaa3f95810f05b
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-13 17:56:01 +0000
+
+    Move to new chunks eagerly instead of lazily with the pretoucher, closes https://github.com/ChronicleEnterprise/Chronicle-FIX/issues/391
+
+1	1	src/main/java/net/openhft/chronicle/queue/PretouchHandler.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+
+commit 225a8af0a493b138d4dd3118740d0cd90490fd4c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 17:00:26 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 422bbd1df74d216dc2bf218d504009bd4481afc6
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 16:58:57 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 280fde6f283d70e19ea5c7e7f3fd76b57bd19b58
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 16:58:50 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.37
+
+2	2	pom.xml
+
+commit e76b3cce34e40c31cc25e1d1e2602218a993c7ce
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 16:55:11 +0000
+
+    Updating to bom version 2.17.536
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 34329d2c5e2cda104e57f045149e2c0f0058728d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-11 16:40:26 +0000
+
+    Make the pretoucher touch further ahead for long delays on new chunks.
+
+7	1	src/main/java/net/openhft/chronicle/queue/PretouchHandler.java
+
+commit f35755b80f598c7d1a08cb9c3212d31244921e34
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-11 16:35:29 +0000
+
+    Make the pretoucher touch further ahead for long delays on new chunks.
+
+53	57	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherStateTest.java
+
+commit cfdd77e24f5d3879720bfd821e1ca47e172ed54c
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-11 16:27:15 +0000
+
+    Make the pretoucher touch further ahead for long delays on new chunks.
+
+3	2	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+
+commit cecb7360de91d78d64f0f0583d2a23335437f9c5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 13:23:52 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit b6d72e8ec4c9557f1b6b680440050bf1987ae95d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 13:17:45 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit f9fa6da3f362967dd3412abfcb5c455f93bf3524
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 13:16:20 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 29be40a8f02ddf8b5aae1c21daa8bd6be2b30099
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 13:16:13 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.36
+
+2	2	pom.xml
+
+commit 5fca5751240537fc8ea5833dd6e9ab85bcfaf92a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-11 13:12:32 +0000
+
+    Updating to bom version 2.17.533
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 25ebc900eaf7fd2d947234d0acf34d3bd105a8b3
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2020-01-11 10:21:56 +0000
+
+    Make the PretoucherState.headRoom configurable and 1 MB by default, closes https://github.com/ChronicleEnterprise/Chronicle-FIX/issues/391
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+
+commit 611bd834be9a0fc4fde7e9b02ef3a09e5bd9aa2a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 14:21:01 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 2040f5e09b729b6ef7b93ae9a5c1110fe707d064
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 14:19:29 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit e7fe875dd7103e140ea8460c96be1fb40bba89ca
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 14:19:22 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.35
+
+2	2	pom.xml
+
+commit 3b64e1054b1ce0efc95bb5ac7e5a681bfff5b14f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 14:15:48 +0000
+
+    Updating to bom version 2.17.531
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 18708f7e0c3db17bcac58a39ab95a097b1037f75
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-08 13:51:36 +0000
+
+    added net.openhft.chronicle.queue.ChronicleQueueIndexTest.testIndexQueue
+
+48	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit 308c7dff74e9685fe99e7a3820b2fc020b2cc0d3
+Merge: 3b75efc12 d6114c358
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-08 13:37:53 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 3b75efc12fc0aeaf9dc58823981e34ed4133d845
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-08 13:37:43 +0000
+
+    changed to     setCycle2(lastCycle, false);
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit d6114c35802b3228fe39bf9a820dcac258eae62d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 13:19:53 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 60e65ad68caa3dffc904c17297e6911e51b0905c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 13:18:16 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit afca4b1461a50a03a64818b5fb80cd938a5d724b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 13:18:09 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.34
+
+2	2	pom.xml
+
+commit 2f8b82c8c1bdf86285ba94698d8c0571f5ffef30
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2020-01-08 13:14:37 +0000
+
+    Updating to bom version 2.17.529
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 5b12a26cbe02e0740e6b1f3a7c1e9673d1f14458
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-08 12:24:10 +0000
+
+    improved comment
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 7ce115cb8e1aef85b444254c7a8f0331cc884796
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-08 12:23:28 +0000
+
+    simplified to  setCycle(lastCycle); becuase rolling as well was causing test to fail
+
+1	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit b1eebebec4e2aff36f136d595c80fbc808dee8fd
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-08 11:59:06 +0000
+
+    fixed https://github.com/OpenHFT/Chronicle-Queue/issues/639
+
+12	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+83	42	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit 870cdafebd7b4458649b1c472b8933b7158f69be
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-07 17:50:08 +0000
+
+    revertBack
+
+8	8	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit f4efb09b80047092dcb41390304e8a584d07f38f
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-03 18:29:53 +0000
+
+    added java doc and fix the test
+
+3	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+7	8	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit 2b245017b2c47c89dc86d5276977d3a8e888a53b
+Merge: eefe31c18 5407c3d7c
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-03 17:51:57 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit eefe31c1841f684976acb86d6de031c25ae8df49
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2020-01-03 17:51:34 +0000
+
+    https://github.com/OpenHFT/Chronicle-Queue/issues/639 added failing test
+
+58	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueIndexTest.java
+
+commit 5407c3d7cc64142adfd32fb67d1bbb54e5541147
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-19 12:01:16 +1100
+
+    friendlier output for ChronicleReaderMain descendants
+
+2	3	src/main/java/net/openhft/chronicle/queue/ChronicleReaderMain.java
+
+commit 9b29a345474d36baf9cc2ef2593125f108a8709d
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-18 12:36:37 +0100
+
+    Add command line invocation of removable roll file candidates
+
+11	0	docs/managing_roll_files_directly.adoc
+18	0	src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+
+commit a4fb49e7f3e21df02f5c3555870938817f3738b4
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-18 11:03:52 +0100
+
+    Expect UnsupportedOperationException rather than NPE
+
+2	2	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 29efd33adc099c0c7561e5df8981c9d84334df88
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-18 11:01:05 +0100
+
+    Fix issue with exception not being thrown on Windows
+
+9	0	src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+12	0	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 83a35db21e1f8152a30806f091464aab46a58cc5
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-18 10:31:37 +0100
+
+    Add assumption on tests not on windows and rename test names
+
+8	3	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 3d4ce596e5869f28f094cda6b8afe812be09baac
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-17 20:12:08 +0100
+
+    Fix typos in doc
+
+6	6	docs/managing_roll_files_directly.adoc
+
+commit 1cd6ff10dad9bbbafb48b323808ea22b1735a256
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-17 20:05:35 +0100
+
+    Add FileUtil class for direct file management, Fix #636
+
+87	0	docs/managing_roll_files_directly.adoc
+5	0	src/main/java/net/openhft/chronicle/queue/util/FileState.java
+151	0	src/main/java/net/openhft/chronicle/queue/util/FileUtil.java
+166	0	src/test/java/net/openhft/chronicle/queue/cleanup/CleanupUnusedQueueFilesTest.java
+173	0	src/test/java/net/openhft/chronicle/queue/util/FileUtilTest.java
+
+commit 7beb14b741efd8c5fc292f5d96fa70562ecc62a4
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-16 15:32:46 +0000
+
+    tidy
+
+0	35	src/test/java/net/openhft/chronicle/queue/ProxyTest.java
+
+commit b761fda51252e9e0eda08fdf732483ea16d0b006
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 15:33:40 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit a9cb75a37aa1a570e5eea8be561b9de994930a77
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 15:32:35 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit f67f7205ba6b824695442570095dd8b44ca3023d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 15:31:13 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 64488da55a00210b490e4e9a0eda2118f8b349d1
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 15:31:06 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.33
+
+2	2	pom.xml
+
+commit 21c98064a5cf0605ecf55bf7552b6f4d5ab5418f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 15:27:29 +0000
+
+    Updating to bom version 2.17.506
+
+commit b191e73980d42100d3e4fec79ce5b0af5bbf3a89
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 15:16:47 +0000
+
+    Updating to bom version 2.17.506
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 2e4b9da1a48a66c31b54d35648fee7e015b6832b
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 15:04:12 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit e61b06b2566acd85aba03f67644a25243ac3c188
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 14:56:40 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit eee1ad450f5d864e414487c6e5bdfa8644cc283d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 14:55:13 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 706f62353c2c1fa7e2eab1f50dc255acb7c4d94d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 14:55:05 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.32
+
+2	2	pom.xml
+
+commit 23fa60414a183423480479afa87b7bde64d42cf4
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 14:51:17 +0000
+
+    Updating to bom version 2.17.503
+
+commit fbab6eeec6cdcbd6edaf60a7fa507f8f60bd7322
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 13:46:24 +0000
+
+    Updating to bom version 2.17.503
+
+1	1	pom.xml
+
+commit 89d53ba265e3e7b1e5a86e4a8d847ef764dd883b
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 13:45:25 +0000
+
+    Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+
+1	1	pom.xml
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 3d9618aa7009c8837baaaae1a1502f59c6067bb5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 13:39:08 +0000
+
+    Updating to bom version 2.17.503
+
+1	1	pom.xml
+
+commit 6d8e08e92bd7ebce8e863b531e61daf1ed673b16
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 13:11:49 +0000
+
+    Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+
+1	1	pom.xml
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+2	2	src/test/java/net/openhft/chronicle/queue/Stackoveflow52274284Test.java
+
+commit 310af3a16e9c71eaa2b5511f96c2804741159464
+Merge: f2fbf93bd 2998bec9d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 12:58:16 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f2fbf93bdc87c856569b4b5ea342b8245d49ae85
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 12:58:05 +0000
+
+    Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+3	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 2998bec9db6f661519aef136009290eacb3b3473
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 12:53:39 +0000
+
+    Updating to bom version 2.17.503
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit f278ab9ecccc00b3dc2325f5479ab057b03ae7c4
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 12:49:52 +0000
+
+    Re-release queue, Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+
+8	4	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 683c50fdda5ce18bbf92528aa08b5c512104ad52
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-13 12:38:11 +0000
+
+    Strange issue where if an address is reused memory mapping soon after first being used, the CPU thinks the memory is ivalid when it is valid as a dump of /proc/self/maps shows. For now adding just a 1 ms pause is enough to avoid this. Closes https://github.com/OpenHFT/Chronicle-Queue/issues/637
+
+23	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 530b9b32292a9f62f11f337f0603fb7bcfab4740
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 11:23:43 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 779cf250ca6f2185872c3d8f9c8eed1cc838b843
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 11:23:36 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.31
+
+2	2	pom.xml
+
+commit f1d7786ee061fa408862747fe58797679fd5dcfe
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 11:10:22 +0000
+
+    Updating to bom version 2.17.502
+
+commit d25239692083517cb8505ad0b741f0e0d26037cc
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 10:54:10 +0000
+
+    Updating to bom version 2.17.502
+
+commit ac112bc1452f62d6309fa8503c039e5be5b70b76
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-13 10:28:23 +0000
+
+    Updating to bom version 2.17.502
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 601d026b666022310a4e1de50c81abdb695281ef
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-13 11:32:28 +1100
+
+    enhance ChronicleReader
+
+3	2	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+10	0	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+commit 0fd44f8b75f259c42205d787f2be93c28f37b254
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-13 11:03:58 +1100
+
+    protected ChronicleReader.applyFiltersAndLog
+
+1	1	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+
+commit df093df054105d6e81daf9cf0bf1ad31c6404baf
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-12-11 14:44:36 +0000
+
+    Add possibility to skip table store when dumping the queue
+
+8	6	src/main/java/net/openhft/chronicle/queue/DumpQueueMain.java
+
+commit 1dabcb948739db96675874848264c94f8f8c21e5
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-09 15:16:22 +0000
+
+    Added support for setting thread affinity using a description, closes https://github.com/OpenHFT/Java-Thread-Affinity/issues/54
+
+4	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 1eb0675dd044d22303ae48640bc90b51b7c17f3a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-04 20:01:58 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit d60f72a98240acdb565344d722af171062eb25ea
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-04 20:00:22 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit b7233bf6dafca851be09c67484228110c3fe8d8d
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-04 20:00:15 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.30
+
+2	2	pom.xml
+
+commit 57d1d439a7a5766db313c538c48c37eaa76b248c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-04 19:56:34 +0000
+
+    Updating to bom version 2.17.481
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit cb7efc558583bf5caead5bb7e06aba03334f79ef
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-04 19:53:16 +0000
+
+    Fix a bug in Threads.forEachThread
+
+1	1	pom.xml
+
+commit f34d26a9a57e634bbfb599f88f113555771c1341
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-04 19:35:08 +0000
+
+    Updating to bom version 2.17.480
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 86a81ddc664546205f6321bfadf52b935dba8186
+Merge: 1e9af663c 410b95447
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-12-04 12:38:18 +0000
+
+    Merge pull request #634 from minborg/master
+    
+    Improve on JavaDoc and more
+
+commit 410b9544737e017b40fb0aa7b2cbf660808739c3
+Merge: c9ce5b333 1e9af663c
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-12-04 12:37:36 +0000
+
+    Merge branch 'master' into master
+
+commit c9ce5b333be411a3b7ed30bad9ee37946853905c
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-04 12:44:51 +0100
+
+    Add JavaDoc for RollCycle::defaultIndexSpacing
+
+15	0	src/main/java/net/openhft/chronicle/queue/RollCycle.java
+
+commit 1e9af663c65f33be6cf46a029ef99c962e345ace
+Merge: 71c5038b7 b67abc986
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-12-04 11:01:36 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 71c5038b7bcc774ee35a160c6e2e6e7d05e14283
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-12-04 11:01:17 +0000
+
+    created RollCycles.all() to prevent modifaction of the shared array.
+
+7	1	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 512e493765e0da478138950a8435b7ded551f5b7
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-04 11:15:04 +0100
+
+    Improve JavaDoc for ExcerptCommon
+
+15	1	src/main/java/net/openhft/chronicle/queue/ExcerptCommon.java
+
+commit 5b62c6dc71ee09144ede9114106e520e2c15a36e
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-04 11:10:31 +0100
+
+    Improve JavaDoc for RollCycle
+
+56	0	src/main/java/net/openhft/chronicle/queue/RollCycle.java
+
+commit 08ab9bebfded52bee3c96a68d191f0a29619958a
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-04 11:10:00 +0100
+
+    RollCycles: Make properties private and remove redundant main method
+
+7	13	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+
+commit b67abc98613ef58f70ef1b5ebf0c436c1733be5d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-04 09:23:33 +0000
+
+    Split AbstractMarshallable into SelfDescribingMarshallable and BytesInBinaryMarshallable, closes https://github.com/OpenHFT/Chronicle-Wire/issues/151
+
+4	3	README.adoc
+7	4	docs/BigDataAndChronicleQueue.adoc
+1	1	load-harness/src/main/java/net/openhft/load/messages/EightyByteMessage.java
+1	1	load-harness/src/main/java/net/openhft/load/messages/Sizer.java
+2	2	src/main/java/net/openhft/chronicle/queue/RollDetails.java
+
+commit d0df69ca47214d29b8bb0e345d2ee1fc99f30045
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-04 09:06:59 +0000
+
+    Ignore flakey test.
+
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/PretoucherTest.java
+
+commit c6ef3d9002f75db66106e8655f815aa3b864149d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-04 08:53:31 +0000
+
+    Tidy
+
+0	20	README.adoc
+
+commit 4699ac5043992be2f9215190a986890e95ecc150
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-04 07:50:17 +0000
+
+    Updating to bom version 2.17.478
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 7863eb3eb0aca5e8589245eddba44b7a3906b1f1
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-12-04 05:28:27 +0000
+
+    Split AbstractMarshallable into SelfDecribingMarshallable and BytesInBinaryMarshallable, closes https://github.com/OpenHFT/Chronicle-Wire/issues/151
+
+5	5	src/test/java/net/openhft/chronicle/queue/DtoBytesMarshallableTest.java
+4	4	src/test/java/net/openhft/chronicle/queue/MessageReaderWriterTest.java
+3	3	src/test/java/net/openhft/chronicle/queue/MethodReaderObjectReuseTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/ProxyTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormat2Test.java
+3	3	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/impl/single/TestBinarySearch.java
+3	3	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+2	2	src/test/java/net/openhft/chronicle/queue/impl/single/pretoucher/PretoucherSoakTest.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/Order.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/OrderIdea.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/SidedPrice.java
+2	2	src/test/java/net/openhft/chronicle/queue/micros/TopOfBookPrice.java
+
+commit fd5641f5300bbfa07a17d4eaddfcbfb62a63267b
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-04 14:57:35 +1100
+
+    Dump a StackTrace when when SingleTableStore.doWith*Lock times out #633
+
+22	28	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+commit 6095e3860272769f18b79ef52ab49749256328d8
+Merge: 9a9fae551 2ccbc0834
+Author: Dmitry Pisklov <dpisklov@users.noreply.github.com>
+Date:   2019-12-03 18:11:34 +0000
+
+    Merge pull request #632 from minborg/master
+    
+    Improve JavaDoc and more
+
+commit 2ccbc08342469f69e4f94f75032c9e6a231abc49
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-03 19:04:40 +0100
+
+    Improve JavaDocs for ChronicleQueue
+
+204	34	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+
+commit 2326a98b7c63d8992e4bf21f3a6599dfa82a4bb0
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-03 19:04:19 +0100
+
+    Improve JavaDoc for ExcerptAppender further
+
+10	2	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+
+commit 15553789e6ccdf0be7bd2e32b941bfb84fff71ec
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-03 16:38:30 +0100
+
+    Improve JavaDoc for ExcerptTailer
+
+102	29	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+
+commit 20feb92e28c39dfa401453b827b4ebd5761efe87
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-03 16:38:09 +0100
+
+    Improve JacaDocs for ExcerptAppender
+
+24	1	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+
+commit 9a9fae5510ce8f41cbd57cae58d9906bc6b35d24
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-03 09:17:14 +1100
+
+    Update FAQ.adoc
+
+1	1	docs/FAQ.adoc
+
+commit 9c600db0d3fbe9f4fb91caaaafb4b18bf6bc343d
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-03 08:56:44 +1100
+
+    Update faq
+    
+    More docker
+
+3	1	docs/FAQ.adoc
+
+commit b51acecde103100ed78dcd86a44109f5de5d859d
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-12-03 08:19:54 +1100
+
+    Update FAQ.adoc
+
+12	0	docs/FAQ.adoc
+
+commit 2b4518852ba48931faf1c52a802025f7c4e2796f
+Merge: 7a1a48892 998071339
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-02 14:42:47 +0100
+
+    Merge pull request #1 from OpenHFT/master
+    
+    Rebase and merge
+
+commit 998071339d6ee39aa69dd7f19c1afd9aaaef7c5e
+Merge: 1562fc346 7a1a48892
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-12-02 13:34:40 +0000
+
+    Merge pull request #631 from minborg/master
+    
+    Fix minor typos in readme and improve on javadoc for ExcerptAppender
+
+commit 7a1a4889229d3ee28bfbd03f7f8596dfd90eb293
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-02 14:25:26 +0100
+
+    Improve JavaDocs for ExcerptAppender
+
+46	8	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+
+commit b0516d5759f5b00d57c4ee64b406b671c55919cd
+Author: Per-Åke Minborg <minborg@speedment.com>
+Date:   2019-12-02 14:24:21 +0100
+
+    Update README.adoc, fix typos
+
+37	36	README.adoc
+
+commit 1562fc346b82f69c4aff4c0227cd621d655df55a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-02 10:25:12 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 1ba6a1891fb1c8e5a20dcd0976c21ac99b272c6c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-02 10:23:41 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit b70f53fcef300dfb87b741928b3a2119907cb941
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-02 10:23:34 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.29
+
+2	2	pom.xml
+
+commit 28aee5ae5b6105e3ec97bb19b85b38b96538164e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-12-02 10:19:11 +0000
+
+    Updating to bom version 2.17.469
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 3c4737a0056da7a7d7930d8d45d74ba30d2ef776
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-11-28 20:07:51 +0000
+
+    Fix Javadoc and restructure services
+
+0	5	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+5	2	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+1	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/batch/BatchAppender.java
+10	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+1	1	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReaderPlugin.java
+
+commit 3a2e32526d148d9cb919a25b944925974b497c5d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-11-26 08:29:11 +0000
+
+    third-party-bom -> 3.6.15
+
+1	1	benchmarks/pom.xml
+1	1	chronicle-sandbox/pom.xml
+1	1	chronicle-test/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 072bdf5cc6c8d2aa16bbb1c1ce93e492c81b2566
+Author: Peter K Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-11-25 14:13:52 +0000
+
+    Update README.adoc
+
+1	1	README.adoc
+
+commit 95e9699acd2e65410a5c7e0bb7d528f166fe0b85
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-11-15 17:51:21 +0000
+
+    Reduce the overhead of using asserts with queue.
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+6	8	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+3	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+
+commit 326e2751e001e684e2f32971bfbdc6f5d329a109
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-11-10 13:51:01 +0800
+
+    de-flake RollCycleMultiThreadStressReadOnlyTest
+
+3	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+commit 5d4fd08ef0542ad65c65d557f8f885df38c85e16
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-11-10 12:18:06 +0800
+
+    new MT stress test writing with shared ChronicleQueue object
+
+4	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressPretouchTest.java
+4	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressReadOnlyTest.java
+24	0	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressSharedWriterQueueTest.java
+32	20	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadStressTest.java
+
+commit fc2179ccbb317c6f873ca31fc65e98e23204684e
+Merge: 500d198bd a48beda4d
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-11-08 20:10:06 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 500d198bd2a36e66f780c41357c20b55f8704a67
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-11-08 20:09:49 +0000
+
+    Update JLBH deps
+
+6	0	pom.xml
+
+commit a48beda4dad40be6914568a6f9def3044737bad3
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-11-07 14:34:29 +0000
+
+    Update pretoucher.adoc
+
+2	2	docs/pretoucher.adoc
+
+commit 2275fc51544756d86706abc734d78b3fe82c0906
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-11-07 14:33:11 +0000
+
+    Update pretoucher.adoc
+    
+    corrected link
+
+3	3	docs/pretoucher.adoc
+
+commit 17cc88f59361511bb662e9e1c105afcbb717bdb4
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-11-07 14:31:04 +0000
+
+    Create pretoucher.adoc
+    
+    Created as per RA email 21 Oct 2019, 13:46
+
+25	0	docs/pretoucher.adoc
+
+commit 53544087796b5c74e984274b1120f984543d300d
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-11-07 14:17:31 +0000
+
+    Add files via upload
+
+-	-	docs/images/pretoucher_test.png
+
+commit 75841e7c2e73f18ff23131dd5a46e89dab028aae
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-06 12:36:53 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 27b6865a48b56eb641ffc81b1041ee015edaa944
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-06 12:35:21 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 96765feb26b3cb79f863dd882d9368999eb84a45
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-06 12:35:14 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.28
+
+2	2	pom.xml
+
+commit a9d70f7713afeb88ba990603d1e728e992f4563c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-06 12:31:13 +0000
+
+    Updating to bom version 2.17.426
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 575103958968e9454f1e9246c8be6c7bd791bfed
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-11-05 16:50:55 +0000
+
+    Fixes #627
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 4542a76a01cdb0fa0a41fab80cf2ce68a2cda10b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-05 15:58:12 +0000
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 30f0bf6fa08bb3bb5f1090051485bfef57c20ed8
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-05 15:56:36 +0000
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 8ca1f33c51485b4a60af6960f582a5b99b375abe
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-05 15:56:29 +0000
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.27
+
+2	2	pom.xml
+
+commit c16509892f024163cb3d2bab3701895bdb9145cb
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-11-05 15:52:31 +0000
+
+    Updating to bom version 2.17.425
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit bcc11e688bb70495235b047df7dec3f748d89ff4
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:36:35 +0100
+
+    Update README.adoc
+
+1	1	README.adoc
+
+commit 5a79b786ddc57cae646b65aa58a7d74793615bda
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:35:01 +0100
+
+    Update README.adoc
+
+10	6	README.adoc
+
+commit 0dda765e759b037893211c5b6e49f81010e5babe
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:32:37 +0100
+
+    Update README.adoc
+
+2	2	README.adoc
+
+commit 312c881ea8104ae1b06bceca3b7affb988632ee9
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:31:16 +0100
+
+    Update README.adoc
+
+10	7	README.adoc
+
+commit b4ee96858db95f1a264bf3acd7b25a3ac7912616
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:28:37 +0100
+
+    Update README.adoc
+
+2	2	README.adoc
+
+commit fb6c598f919a3d6c8d7e9d2e9f7ae7593cde2c32
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:27:32 +0100
+
+    Update README.adoc
+
+3	2	README.adoc
+
+commit fb47ef89ed6cae0138019d7cde5139c54097bb9e
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-23 11:25:57 +0100
+
+    Update README.adoc
+
+64	0	README.adoc
+
+commit c91276c9ac3413646fef6594dbb3d974fe2c3b7c
+Merge: f3d209f9a 41a81757a
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-10-22 17:01:50 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f3d209f9a3b16251ab35c98721c5d0411e98e333
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-10-22 17:01:43 +0100
+
+    Remove System.out.println
+
+2	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+
+commit 41a81757a2cf9668a10302dddbc29c556345b897
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-22 16:32:46 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 6551de93c4881d31a52ab783e2ffd4621f125202
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-22 16:31:16 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 52279250946b23c2a087c65931e5270226a21748
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-22 16:31:09 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.26
+
+2	2	pom.xml
+
+commit a6440350b8780c23c169454bdfcea5714aeec730
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-22 16:27:00 +0100
+
+    Updating to bom version 2.17.411
+
+commit dcb923f4c0975fae6dca0e4b96ec354581eb9c13
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-10-22 16:21:27 +0100
+
+    Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/MessageHistoryTest.java
+
+commit 3d00bda4964a63c862b694342e366627a91741b4
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-10-22 16:19:01 +0100
+
+    Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/MessageHistoryTest.java
+
+commit 1da8a91a2273cb4c937470689c7faa545f94775a
+Merge: 08d01d902 236529d40
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-10-22 16:18:33 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 08d01d9024d2695f2d1da44c3133ecef22631559
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-10-22 16:18:13 +0100
+
+    Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+
+34	8	src/test/java/net/openhft/chronicle/queue/impl/single/MessageHistoryTest.java
+
+commit 236529d40d12d890d800940f0c6c7dc2a4648cfe
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-22 15:39:23 +0100
+
+    Updating to bom version 2.17.411
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 2c69bf7b5208498514465b886657a10e7d78bb8e
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-10-22 14:02:28 +0100
+
+    Allow MethodWriters to be thread safe by default, closes https://github.com/OpenHFT/Chronicle-Queue/issues/625
+
+4	4	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+22	25	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+
+commit 8910a20bc1b7aa08ecc5192b882fd81d3f719c44
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-10-22 11:01:14 +0100
+
+    added test for -> net.openhft.chronicle.queue.impl.single.TestMethodWriterWithThreads
+
+140	0	src/test/java/net/openhft/chronicle/queue/impl/single/TestMethodWriterWithThreads.java
+
+commit fdf0f3db90c4f75aabfad718b8943bc171e23a96
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-10-18 14:24:22 +0100
+
+    Update FAQ.adoc
+    
+    Corrected typo
+
+3	3	docs/FAQ.adoc
+
+commit d0c6cfcbd18a67e14282106761239a08b2ebf5ff
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-10-17 14:13:38 +0100
+
+    Update FAQ.adoc
+
+1	0	docs/FAQ.adoc
+
+commit 33f49fa581fc65c844831249a9632c9200082ddd
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-10-17 14:11:59 +0100
+
+    Update FAQ.adoc
+    
+    Updated as per Chronicle Hardware Optimization - RA Email Thu, 10 Oct, 08:57
+
+59	35	docs/FAQ.adoc
+
+commit eca605f91d861ad01c3c4b1b87affd19227788cc
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-10-16 21:20:50 +1100
+
+    doco
+
+9	9	docs/ring_buffer.adoc
+
+commit 40e9557b792037085ee62e19a45dd495617d1c37
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-16 11:01:00 +0100
+
+    Update ring_buffer.adoc
+
+0	6	docs/ring_buffer.adoc
+
+commit 8b02aa80c696f5042efc75ee2883b7afcee69faa
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-10-16 10:53:02 +0100
+
+    Update ring_buffer.adoc
+
+3	3	docs/ring_buffer.adoc
+
+commit 5e63982a81d2664414d9a0dfca0a574182b7b738
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-11 18:55:19 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 237a63ae6e625fe521851ac44a37d904fbd74062
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-11 18:52:08 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 61f14aaf304072df7a2ab78afab2322d18d4aea0
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-11 18:52:01 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.25
+
+2	2	pom.xml
+
+commit 3ecdf0c84b9018a896716bedfc2f07f65401206a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-11 18:47:42 +0100
+
+    Updating to bom version 2.17.402
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit bf46e9030c1701a308a1ceabee79ad99dee8eea9
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-10-11 17:46:04 +0100
+
+    Ensure the correct roll cycle is selected if wrong format is used in the build, closes https://github.com/OpenHFT/Chronicle-Queue/issues/624
+
+15	15	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+5	3	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+20	10	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormatTest.java
+12	9	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit 56cfd149bf1ce38bab225a18bb02832d384d5fd0
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-10-11 17:14:17 +0100
+
+    added test https://github.com/OpenHFT/Chronicle-Queue/issues/624
+
+170	153	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit b07044ff322ea11250d7bc95277ae92117400e81
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-10-10 09:06:29 +1100
+
+    change log to debug #622
+
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 089bdca7d79fad6707ae496ac447ca084158316c
+Merge: 5ef3fbb2a c75a4c9c3
+Author: Dmitry Pisklov <dpisklov@users.noreply.github.com>
+Date:   2019-10-08 14:28:20 +0100
+
+    Merge pull request #621 from coderit-srl/bug/chronicle-queue-620
+    
+    Fix RollingResourcesCache#toLong to support length > ONE_DAY_IN_MILLI…
+
+commit c75a4c9c3a5a041f6c7659a3e060341397931fb4
+Author: Giovanni Condello <g.condello_ext@technancial.com>
+Date:   2019-10-10 10:46:08 +0200
+
+    Fix RollingResourcesCache#toLong to support length > ONE_DAY_IN_MILLIS, closes https://github.com/OpenHFT/Chronicle-Queue/issues/620
+
+6	1	src/main/java/net/openhft/chronicle/queue/impl/RollingResourcesCache.java
+83	0	src/test/java/net/openhft/chronicle/queue/QueueReadForwardSkippingACycleBiggerThanADayTest.java
+85	0	src/test/java/net/openhft/chronicle/queue/harness/WeeklyRollCycle.java
+18	1	src/test/java/net/openhft/chronicle/queue/impl/RollingResourcesCacheTest.java
+
+commit 5ef3fbb2a60a11749e8589cd1a8afe6ab056910a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-03 17:04:36 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 2fdd6ad40ceee6240e0f98d179f1d34a8a351901
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-03 17:02:05 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 697abe9db58f41c1c617b8f3c33fe4663b9fedb6
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-03 17:01:58 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.24
+
+2	2	pom.xml
+
+commit 040d7f8e136b48f47143debbf060b5f7dcc658ca
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-10-03 16:57:45 +0100
+
+    Updating to bom version 2.17.394
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit a19b97b34cef852c97112444ab4652f0a3574683
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-10-01 21:58:06 +0100
+
+    Fix rolling cycles backwards - fixes #619
+
+3	5	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+73	0	src/test/java/net/openhft/chronicle/queue/QueueReadBackwardsTest.java
+
+commit 58efa343fa6cb45b82108c7a3044a0d0530765f4
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-10-01 14:23:34 +1000
+
+    revert 3rd party bom
+
+1	1	pom.xml
+
+commit 233a237b51be32e54b07a2644578159bcd8bb728
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-10-01 11:51:25 +1000
+
+    replication doco
+
+40	2	docs/replication.adoc
+3	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 600381fc3a856a596b82195f689d4d72b66357ed
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-10-01 11:12:41 +1000
+
+    bump 3rd party bom to get correct org.jetbrains annotations version
+
+1	1	pom.xml
+
+commit ec2b127fa9127a68b2bfe4e4a278901038401a6e
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-10-01 10:48:54 +1000
+
+    doco
+
+1	1	docs/replication.adoc
+
+commit c7ee438ab08110292a171e72437e7e5fb046e162
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-25 12:47:44 +0100
+
+    Fixed StreamingDataInput.read(byte[], offset, length) was ignoring the offset, closes https://github.com/OpenHFT/Chronicle-Map/issues/183
+
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit ad811daf8727744f931f8e3ea715cc6ae8a37c77
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-25 05:58:27 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit a35abd98137edcb2c2b1170a3c814f4ce6310b0e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-25 05:57:00 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 7e7b610b26bf9e51bccdde8ad61f52929b621726
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-25 05:56:53 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.23
+
+2	2	pom.xml
+
+commit 71e3238c12aec3366901bfc75717e23ef6f48e55
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-25 05:52:44 +0100
+
+    Updating to bom version 2.17.386
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 58f7c6896a56101b151b96fb24cbc22aca870122
+Merge: 4df2e2299 742773375
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-23 13:43:42 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 4df2e2299ab05f40c47e21394bf7b0751e15ca7f
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-23 13:43:26 +0100
+
+    Fix an issue where writingDocument wasn't resetting everything, closes https://github.com/ChronicleEnterprise/Chronicle-Map-Enterprise/issues/16
+
+1	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+52	30	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+1	0	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+
+commit 742773375c74ba8b98e5ac5feea8b1d980e4d870
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-09-22 17:22:21 +1000
+
+    turn off read only test for Windows
+
+3	3	src/test/java/net/openhft/chronicle/queue/ReadWriteTest.java
+
+commit 87379a0bf71245a3432690951de62d20e2773f0e
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-09-21 10:32:00 +1000
+
+    doco repair
+
+2	1	README.adoc
+
+commit d8c7005eeb8dcb60749e88e4d67253454d29f239
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-20 14:37:24 +0100
+
+    Simplified support for Marshallable and BytesMarshallable, https://github.com/OpenHFT/Chronicle-Map/issues/196
+
+0	439	src/test/java/net/openhft/chronicle/queue/impl/single/NotCompleteTest.java
+
+commit 73a0f7f50cdeff0e04b798d79db3970c6a2b7bd8
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-20 14:19:45 +0100
+
+    Simplified support for Marshallable and BytesMarshallable, https://github.com/OpenHFT/Chronicle-Map/issues/196
+
+1	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit 4a064918d76594374856da96261f695882b9c6bd
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-09-17 18:49:36 +1000
+
+    bump third party bom
+
+1	1	pom.xml
+
+commit f4e460fee657193a11b7d3d413a7d3d0718f95fa
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-17 09:17:32 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit e1614f57b5878b8e5de19f271c243fdce4a19c35
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-17 09:16:14 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit bd90858bf331fc28e9ed7dc1f78dd539076f3873
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-17 09:16:06 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.22
+
+3	4	pom.xml
+
+commit 85db07866fef4cf84a8afa2ebe5e05befb195a68
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-17 09:12:05 +0100
+
+    Updating to bom version 2.17.379
+
+commit de920ae9479a037e9ba3c42a0798b48a735ee07b
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-17 08:51:40 +0100
+
+    Updating to bom version 2.17.379
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit bd28088bd5c3fe0b2aa4b09da594f3125d0321b5
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-09-17 17:46:39 +1000
+
+    Force readOnly(true) if metadata.cq4t is read only #618
+
+4	0	src/main/java/net/openhft/chronicle/queue/impl/TableStore.java
+7	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+5	0	src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+18	1	src/test/java/net/openhft/chronicle/queue/ReadWriteTest.java
+
+commit 4baaa9be4d6a307525572ec56926fc8e92d9a562
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-09-08 14:24:48 +1000
+
+    latest 3rd party pom
+
+1	1	pom.xml
+
+commit 83e00b0827847a6b02ca2ebbabd0fd0830a100fd
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-06 09:13:09 +0100
+
+    Make the tools.jar only included if present.
+
+26	1	pom.xml
+
+commit a3246aaa3f95d4d3c2bb64a252229840b9927fcf
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-03 17:28:37 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit b09c6b0fcd02c08ec6e43d8534a487f60cbcfdd3
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-03 17:26:57 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 37fc6b9766aceccfcb0161b670c6bbbf88a8fb12
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-03 17:26:50 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.21
+
+2	2	pom.xml
+
+commit 3ecb689fe9f060c53678876596fcafb1802c7f2e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-03 17:22:46 +0100
+
+    Updating to bom version 2.17.367
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit c68f371a0de536bce720118c60059121f7126e31
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-03 11:50:42 +0100
+
+    Fix for default method.
+
+7	0	src/main/java/net/openhft/chronicle/queue/backed/map/QueueBackedMaps.java
+0	6	src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+
+commit e5f74c5cb5405f5ca131b978e2317cdd1c6a94f4
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-03 11:10:09 +0100
+
+    Fix for windows
+
+2	1	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+
+commit 48d13679166b50c66d3ae98a73e40dfd1537a5e6
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-03 10:54:20 +0100
+
+    Test was flaky with file shrinking enabled.
+
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollingCycleTest.java
+
+commit ee5fb2fe0077ab935b2bac851b2a26dd03a9ba54
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-03 10:45:30 +0100
+
+    Test was flaky with file shrinking enabled.
+
+13	9	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+20	19	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+6	0	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+347	325	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+3	3	src/test/java/net/openhft/chronicle/queue/impl/single/RollingCycleTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit 5e5b53962270e5231ecd341e3229a2857a608b68
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-03 09:26:16 +0100
+
+    Test was flaky depending on when it was run.
+
+1	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+315	18	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+
+commit 566af1e92bc38e49489a58377e501ac2e2475313
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-09-03 09:01:03 +0100
+
+    Fix up version dependencies.
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+1	1	src/main/java/net/openhft/chronicle/queue/NoMessageHistory.java
+
+commit 07cc1157a8db3c8b283ea9116be76671abf5f227
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-09-02 01:13:13 +0100
+
+    Updating to bom version 2.17.364
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 74a0b3393b56f860216b5018b232464b7dad80ab
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-30 16:07:35 +0100
+
+    Added support the pathId to be derived from the MessageHistory, closes https://github.com/ChronicleEnterprise/Chronicle-Queue-Enterprise/issues/68
+
+6	0	src/main/java/net/openhft/chronicle/queue/NoMessageHistory.java
+52	0	src/main/java/net/openhft/chronicle/queue/backed/map/QueueBackedMaps.java
+41	0	src/main/java/net/openhft/chronicle/queue/backed/map/QueueEvents.java
+
+commit 3174663a0ee59ed631109db7e21b4e9a89225c4b
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-30 09:42:26 +0100
+
+    Added support for striding when scanning backwards, closes https://github.com/OpenHFT/Chronicle-Queue/issues/617
+
+3	0	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+12	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/TailerDirection.java
+15	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+63	0	src/test/java/net/openhft/chronicle/queue/StridingAQueueTest.java
+
+commit f64a6accb74c2396e2fa22e031b2d5f7b3c41ad9
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-28 08:52:45 +0100
+
+    Added support for dynamic discovery of files, https://github.com/OpenHFT/Chronicle-Core/issues/88
+
+7	0	pom.xml
+3	0	src/main/java/net/openhft/chronicle/queue/impl/CommonStore.java
+12	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+8	0	src/main/java/net/openhft/chronicle/queue/impl/table/ReadonlyTableStore.java
+12	2	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+1	3	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+6	2	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherListener.java
+8	2	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherMain.java
+
+commit 950918e0094b553d1c83ef425a0b006feccc1657
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 19:00:39 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit 7c8be7b5fa0fc6b9a1378f770c5041eae2a147be
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 18:54:10 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 26a08e9b9732f71ac466125a4e25b1a308d01bed
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 18:52:43 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 9907297053725a3522c28cf470b288e934f62c87
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 18:52:36 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.20
+
+2	2	pom.xml
+
+commit 86b180098382fab57eab99f564373fed256afa68
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 18:48:31 +0100
+
+    Updating to bom version 2.17.357
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 9dc5b6da341f1270b0704d1b47d427b99c3b1943
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-08-27 18:24:30 +0100
+
+    fixed https://github.com/OpenHFT/Chronicle-Queue/issues/616
+
+9	13	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+commit 816f707785416ea9375f0c7e69f0e795e81f4642
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 09:59:27 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+commit 83eec887c8bc11b4ebec044a660ce1dacc861635
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 09:59:18 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 15c61cdd256c3ce799d4beb34dc730781cbf0448
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 09:57:51 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 106c65a5bb1cfa1f8e318a70dfd03c76d3547112
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 09:57:43 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.19
+
+2	2	pom.xml
+
+commit 6928e98a96957a19ed200587bae38f316d2e0988
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 09:54:03 +0100
+
+    Updating to bom version 2.17.355
+
+commit cfc1cdf8b66058a93a07f266912597a6182cb57a
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-27 09:28:13 +0100
+
+    Updating to bom version 2.17.355
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit ca3fdec3c9994a5ce65380c7455c7d50babdfeee
+Merge: c4503f091 9b52172a6
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-08-27 08:19:33 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit c4503f09105062857172ac99fa2d8e87f15a3c34
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-08-27 08:19:24 +0100
+
+    fixed https://github.com/OpenHFT/Chronicle-Queue/issues/616
+
+14	8	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+commit 9b52172a63652aee00df97a1b8c53783c1de0e4e
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-24 12:35:57 +0100
+
+    Added support for dynamic discovery of files, https://github.com/OpenHFT/Chronicle-Core/issues/88
+
+2	0	src/main/java/net/openhft/chronicle/queue/ChronicleQueue.java
+1	0	src/main/java/net/openhft/chronicle/queue/impl/CommonStore.java
+2	0	src/main/java/net/openhft/chronicle/queue/impl/WireStore.java
+19	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+14	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+44	6	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+5	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManagerMBean.java
+
+commit ababdb8f4ab55406d6d020a1561b54d239d0571c
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-24 11:30:25 +0100
+
+    Added support for dynamic discovery of files, https://github.com/OpenHFT/Chronicle-Core/issues/88
+
+42	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManager.java
+11	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueFileManagerMBean.java
+53	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherListener.java
+23	0	src/test/java/net/openhft/chronicle/queue/watcher/QueueWatcherMain.java
+
+commit 35c1ddf4493ff6bec62d32b2b1a0e5f5836faa18
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-22 16:33:23 +0100
+
+    Activate pre-java9 via a profile for better post Java8 support.
+
+19	4	chronicle-test/pom.xml
+
+commit 94b0c9736ac5ef0fc19fad6cfc3ccf5beb8132a2
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-08-22 08:18:52 +1000
+
+    SingleChronicleQueueBuilder.ringBufferReopenReader
+
+14	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit a9489b013e5f0ee0a63ccd2349e60746f161bd1e
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-08-21 15:01:53 +0100
+
+    Fix readme - fixes #615
+
+2	2	README.adoc
+
+commit d196d2f41853663779abe5ff42d94764e0b949da
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-08-21 10:43:49 +1000
+
+    SingleChronicleQueueBuilder.drainerPriority
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 7a919ec3146976be770b3f07b51da3f11bfa2bbb
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-08-21 10:37:57 +1000
+
+    SingleChronicleQueueBuilder.drainerPriority
+
+15	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 05e4bd528b760d8143aaaac7c2c280f76037637c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-19 11:09:21 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 9d21262b3becc6ddc0a52ce1a5f68f00842eda2c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-19 11:05:46 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 3390d3080d4a85807eb8c916887074372f948307
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-19 11:05:40 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.18
+
+2	2	pom.xml
+
+commit cb9e8a7abd5a47614fb8c1e26a5d9859634ce32c
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-19 11:01:29 +0100
+
+    Updating to bom version 2.17.350
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit b572969cbdfef9b5f0734cfd0f255d25e11d4c00
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-08-19 10:54:59 +0100
+
+    added CHECK_INDEX to stop the slow assertion check of index checking, being done when you are running code with -ea
+
+5	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+
+commit a7a12390d1425f158730970be55b45a54e6dbc07
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-08-16 16:39:12 +1000
+
+    update doco
+
+4	2	README.adoc
+
+commit ae6655d0be8af24ea3928e9e12c36044a05b428a
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-15 14:41:30 +0100
+
+    Reduce redundant newlines
+
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/engine/client/internal/QueueWireHandler.java
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/SingleTailer.java
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/ringbuffer/BytesRingBuffer.java
+0	1	chronicle-sandbox/src/main/java/net/openhft/chronicle/queue/impl/ringbuffer/ZippedDocumentAppender.java
+0	1	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/BytesRingBufferTest.java
+0	1	chronicle-sandbox/src/test/java/net/openhft/chronicle/queue/impl/SingleChronicleQueueTest.java
+0	1	load-harness/src/main/java/net/openhft/load/Publisher.java
+0	1	load-harness/src/main/java/net/openhft/load/PublisherMain.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/BinarySearch.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/PretoucherState.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQMeta.java
+0	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+0	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+0	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+0	3	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueStore.java
+0	1	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+0	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueuePeekDocumentTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTestBase.java
+0	1	src/test/java/net/openhft/chronicle/queue/ChronicleQueueTwoThreads.java
+0	1	src/test/java/net/openhft/chronicle/queue/CycleNotFoundTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/DirectoryUtils.java
+0	4	src/test/java/net/openhft/chronicle/queue/DtoBytesMarshallableTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/MappedFileSafeLimitTooSmallTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/MarshallableTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/MoveToWrongIndexThenToEndTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/ProxyTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/TestDeleteQueueFile.java
+0	1	src/test/java/net/openhft/chronicle/queue/VisibilityOfMessagesBetweenTailorsAndAppenderTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/bench/BatchAppenderNativeTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/EofMarkerOnEmptyQueueTest.java
+0	4	src/test/java/net/openhft/chronicle/queue/impl/single/NotCompleteTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/RollCycleMultiThreadTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleCQFormatTest.java
+0	20	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/StuckQueueTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/impl/single/TestBinarySearch.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/TestTailAfterRoll.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/ToEndTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/jitter/QueueReadJitterMain.java
+0	1	src/test/java/net/openhft/chronicle/queue/micros/OrderManagerTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReaderTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/reader/RollEOFTest.java
+
+commit 96a881388e30953aebe0908b5e1fe3591f9d69d3
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-15 09:45:08 +0100
+
+    Remove <p/>
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+
+commit 2aee503c6f77c08850f9324f9f94a79d90a4f433
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-14 14:50:20 +0100
+
+    Restructure to add a Guarded model (and test model for the guarded jar), https://github.com/ChronicleEnterprise/Chronicle-Map-Enterprise/issues/14
+
+3	0	src/main/java/net/openhft/chronicle/queue/RollCycles.java
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit f4074a3436b9119a2471609359d76fb25710811c
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-13 11:46:25 +0100
+
+    Deduce redundant newlines
+
+0	1	src/test/java/net/openhft/chronicle/queue/CreateAtIndexTest.java
+0	1	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit b9286921a4674aaaff3c70fdf33d0942a9156b15
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-08 13:07:02 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 3a6ead6d8b94a0df69a03f3bd48cbf159d691d4f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-08 13:05:36 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 1caba12c846abea8cd34207e381f9022905c2cf5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-08 13:05:29 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.17
+
+2	2	pom.xml
+
+commit bb3c4034d461dac20bc158387e08afed08c09c0f
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-08-08 13:01:19 +0100
+
+    Updating to bom version 2.17.308
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 48970dc7e9ded9044770e32ddccda1c9a873d30a
+Merge: 67ec97648 e211000a2
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-08 09:59:53 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 67ec976489e8aea89e94d18289b824db2f5d7e2a
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-08 09:59:33 +0100
+
+    Make shutdowns cleaner
+
+12	8	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+
+commit e211000a29a9e958160cc053677283d60b7f6bbe
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-08-08 09:01:12 +0100
+
+    Update README.adoc
+
+1	1	README.adoc
+
+commit f1ffd7978c283f5714d88e6512cf339f13edfe4d
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-08-08 08:59:08 +0100
+
+    Update README.adoc
+
+1	1	README.adoc
+
+commit fc1bd3f6bd874d57c11370d10308bec00ddacbba
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-08-08 08:56:50 +0100
+
+    Update README.adoc
+
+1	1	README.adoc
+
+commit 5d7c4104143b597dd78f54743adb0685761729d7
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-07 20:49:42 +0100
+
+    Improved DEBUG logging.
+
+9	16	src/main/java/net/openhft/chronicle/queue/impl/single/SCQIndexing.java
+
+commit dfa5e199f19041b9f718a313b2d364adbc899c70
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-07 13:17:51 +0100
+
+    Correct some typos.
+
+1	1	MigratingToV4.adoc
+1	1	README.adoc
+2	2	docs/FAQ.adoc
+1	1	docs/How_it_works.adoc
+2	2	docs/encryption.adoc
+4	4	docs/queue-replication-message-protocol-overview.adoc
+14	17	src/main/java/net/openhft/chronicle/queue/BenchmarkMain.java
+0	28	src/main/java/net/openhft/chronicle/queue/impl/single/NoDocumentContext.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/ReferenceCountedCache.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SCQMeta.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+8	7	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+1	6	src/main/java/net/openhft/chronicle/queue/jitter/QueuePingPongMain.java
+5	5	src/main/java/net/openhft/chronicle/queue/reader/ChronicleHistoryReader.java
+1	3	src/main/java/net/openhft/chronicle/queue/reader/ChronicleReader.java
+
+commit 52e2f3877e90d0f9b1ba19d89335849b1af8c759
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-08-06 14:29:54 +0100
+
+    Avoid an accessor method by using package local
+
+3	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueue.java
+
+commit 6b6224b09ae737742d9629ddf6ff9382202af5fb
+Merge: 90db4e6bf 13ef533d6
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 18:25:19 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 90db4e6bffb9820e2735427fc4b209802d6e1a00
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 18:24:54 +0100
+
+    Updated documentation
+
+-	-	images/cq-vs-cqz.png
+
+commit 13ef533d6bb817f1a9cadae40ebee71cb5362b53
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-07-30 18:15:28 +0100
+
+    Update performance.adoc
+
+1	1	docs/performance.adoc
+
+commit 3d9e8be7132c4faef24914c0414b5ab7ba58cd47
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-07-30 18:14:25 +0100
+
+    Update performance.adoc
+
+2	2	docs/performance.adoc
+
+commit 5f21647621a51409e0f5164e1ba671035206d14c
+Merge: cc2756740 3fe5d3154
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 18:12:13 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit cc2756740904756402234d0fd34b9a98d98ed684
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 18:11:47 +0100
+
+    Updated documentation
+
+1	1	README.adoc
+
+commit 3fe5d31545a0da03ae55539dfe41889340ae8c3b
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-07-30 18:11:46 +0100
+
+    Update performance.adoc
+
+2	2	docs/performance.adoc
+
+commit c4d80d4a0b0aa4f508f0178be57211f7c3b1f740
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-07-30 18:10:44 +0100
+
+    Update performance.adoc
+
+2	2	docs/performance.adoc
+
+commit 57502a7a1a04df34c752b1d6da42b0427f2e4cbd
+Merge: 454b61d38 23370fe8a
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 18:03:08 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 454b61d38cc9d0702c1784234dca396938b8a696
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 18:02:11 +0100
+
+    Updated documentation
+
+7	0	docs/performance.adoc
+-	-	images/cq-vs-cqz-java.png
+-	-	images/cq-vs-cqz.png
+
+commit 23370fe8a2f9d056a3ecf0ae16da925407f648a9
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-07-30 17:47:41 +0100
+
+    Update README.adoc
+    
+    added c++
+
+1	1	README.adoc
+
+commit 039a1210744ea3b07adefb39bd22c40e166c2858
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 17:18:53 +0100
+
+    Update documentation
+
+1	0	README.adoc
+1	1	docs/performance.adoc
+-	-	images/cqz-performance-java.png
+-	-	images/cqz-performance.png
+
+commit 7165ec76ef8cf93f8c49922f39b6467a5a60fd48
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-07-30 17:15:34 +0100
+
+    Updated documentation
+
+1	0	README.adoc
+47	0	docs/performance.adoc
+-	-	images/cq-performance-java.png
+-	-	images/cq-performance.png
+-	-	images/cqz-performance-java.png
+-	-	images/cqz-performance.png
+
+commit 57b6336b55d5765d2bd75b332572e698a3ca063e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-23 08:08:54 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit f16a9935d3f0f5419c5f793da4f5bd048757b8e4
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-23 08:07:25 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 00a1720a57ef127c6385eeda79522f4be3ff7732
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-23 08:07:18 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.16
+
+2	2	pom.xml
+
+commit 7e265f6bad93700e66dd14fe016a0614338df4e8
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-23 08:03:17 +0100
+
+    Updating to bom version 2.17.281
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 17730eb758ac8cc91b59750b55408ea9007217b7
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-07-22 17:12:53 +0100
+
+    Update README.adoc
+    
+    removed white space
+
+0	1	README.adoc
+
+commit 32b561b893b158a2d6fe145d517ccbdcc806b4d4
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-07-22 10:15:30 +1000
+
+    ringBufferForceCreateReader
+
+15	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 3066e611793c20bd7a202bf20b1e5a644fdcdb7e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-19 12:46:02 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 0dd8fc05d7d524c28d074a82bfdca74f5412484e
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-19 12:44:34 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit 2bb8d12c58d096e19e607dcfd9763fcef6864e67
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-19 12:44:27 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.15
+
+2	2	pom.xml
+
+commit c12ba698953d06de8793c9199566f8abb2fe1cc5
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-07-19 12:40:45 +0100
+
+    Updating to bom version 2.17.275
+
+1	1	benchmarks/pom.xml
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit aad64dc5e4316890efd7467a4a15da252f9cb947
+Merge: 21d5794fa 49c7f2835
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-07-18 13:34:13 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 21d5794fa910e7fbe7cb0bf8b25ae72f5027e57a
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-07-18 13:34:06 +0100
+
+    Fix package name
+
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/Monitor.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/PeriodicUpdateEventHandler.java
+2	4	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/PretoucherSoakTest.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/ValidFields.java
+1	1	src/test/java/net/openhft/chronicle/queue/impl/single/{preroucher => pretoucher}/Validatable.java
+
+commit 49c7f2835e14a253ffdedb7b7f49a67656878e5d
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-07-18 14:56:15 +1000
+
+    fix ring buffer tests with safer default value
+
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit b22a9967b8af1d84b84e713bd36c80670d5ea6e9
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-07-18 11:41:32 +1000
+
+    ringBufferPauser
+
+15	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 6ac1fa096087ca285a76f34207239e3eb8cd882b
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-07-15 20:20:33 +1000
+
+    Fixed tailer.readAfterReplicaAcknowledged(true) #613
+
+2	2	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+34	1	src/test/java/net/openhft/chronicle/queue/LastAcknowledgedTest.java
+
+commit 75a85fc524630c644ecea3231dd37d582030e102
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-06-30 12:36:56 +1000
+
+    javadoc and test
+
+6	0	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+16	0	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilderTest.java
+
+commit 8160ed5bc90abe39c3c762fca7a66e6444a2ad9b
+Author: jerryshea <jerry.shea@chronicle.software>
+Date:   2019-07-12 20:00:21 +0800
+
+    doco for ring buffer
+
+24	4	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit d4280888eeff14df3604e70dccb7f81a6c323b45
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-07-10 09:53:07 +0100
+
+    Add benchmarks for queue
+
+18	13	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/LatencyDistributionMain.java
+41	3	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+75	57	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/ThroughputMain.java
+
+commit 80a411426fefce138fa475bd9c3c6be2a3e87b12
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-27 17:56:27 +0100
+
+    Benchmark module for Chronicle-Queue
+
+1	1	benchmarks/pom.xml
+
+commit 303fee1aeb6552c873caea71dcd0cf8a2f5d403c
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-27 17:54:34 +0100
+
+    Add a stand alone benchmark JAR for queue
+
+2	2	benchmarks/pom.xml
+
+commit 618dd1a7eace3d9c85ab7d87e38e6bbc2f32d9dc
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-27 16:47:02 +0100
+
+    Benchmark module for Chronicle-Queue
+
+4	4	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/LatencyDistributionMain.java
+14	3	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+
+commit 6f04a6bf8b7961dd989de57d146dcb0d12d9f7de
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-27 16:00:58 +0100
+
+    Benchmark module for Chronicle-Queue
+
+6	2	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+
+commit f02d6d2a8f8861e1a34e9c1a19ea03abd647600d
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-27 15:46:31 +0100
+
+    Benchmark module for Chronicle-Queue
+
+1	1	benchmarks/pom.xml
+283	0	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/LatencyDistributionMain.java
+8	101	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+120	0	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/ThroughputMain.java
+
+commit 9cdcb5524c0d82e2db0ee9ba35fd8690a49446e8
+Merge: 9aecb6cf7 4fb402f94
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-26 09:41:14 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 9aecb6cf7d007d1f660330dcbfdc89298a6a753c
+Author: Peter Lawrey <peter.lawrey@higherfrequencytrading.com>
+Date:   2019-06-26 09:40:38 +0100
+
+    Add a stand alone benchmark JAR for queue
+
+125	0	benchmarks/pom.xml
+113	0	benchmarks/src/main/java/net/openhft/chronicle/queue/benchmark/Main.java
+
+commit 4fb402f94d965c72e830220eb0de5ceb6afc83cf
+Author: neil-clifford <neil.clifford@chronicle.software>
+Date:   2019-06-20 14:44:25 +0100
+
+    Update FAQ.adoc
+    
+    New Q and A
+
+4	0	docs/FAQ.adoc
+
+commit a8d7272e3cc8420233c7e63e4681aaff21df06e1
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-06-14 14:18:21 +0100
+
+    reverted bad commit
+
+0	38	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit 2b20996e167b48d10430f8ac41e6fe7e611392d2
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-06-13 14:24:28 +0100
+
+    Update LICENSE
+
+197	10	LICENSE
+
+commit 321401126cfd10e9f77d6cdcd019c6a406642ced
+Author: Rob Austin <6506056+RobAustin@users.noreply.github.com>
+Date:   2019-06-13 14:23:25 +0100
+
+    Rename LICENSE.adoc to LICENSE
+
+1	1	LICENSE.adoc => LICENSE
+
+commit 6ad0ea7adbcea3ee9bd7fba8349641106addccac
+Author: Rob Austin <rob.austin@boundedbuffer.co.uk>
+Date:   2019-06-12 17:40:30 +0100
+
+    added support for multiple currencies
+
+38	0	src/test/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueTest.java
+
+commit 878fdf062448db966241f90b9258f9bb63c33d79
+Author: Dmitry Pisklov <dpisklov@gmail.com>
+Date:   2019-06-10 16:34:15 +0100
+
+    Fixed #611
+
+1	1	src/main/java/net/openhft/chronicle/queue/ExcerptAppender.java
+1	1	src/main/java/net/openhft/chronicle/queue/ExcerptTailer.java
+1	1	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueExcerpts.java
+107	0	src/test/java/net/openhft/chronicle/queue/ChronicleAppenderCycleTest.java
+0	3	src/test/java/net/openhft/chronicle/queue/ChronicleQueueMethodsWithoutParameters.java
+
+commit 1fc4b35e929aab87934991da1b945066461fcde0
+Author: Dmitry Pisklov <dpisklov@users.noreply.github.com>
+Date:   2019-06-05 16:09:19 +0100
+
+    Update README.adoc
+
+14	14	README.adoc
+
+commit ff402b225151d1bb46bf86a71443acc77092bb11
+Author: rogersimmons <roger.simmons@higherfrequencytrading.com>
+Date:   2019-06-03 10:34:35 +0100
+
+    Coordinate read-only access to metadata file
+    https://github.com/OpenHFT/Chronicle-Queue/issues/607
+
+7	1	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableBuilder.java
+25	0	src/main/java/net/openhft/chronicle/queue/impl/table/SingleTableStore.java
+
+commit 519a7a9ef8817c6aa939de4a0cc9b52d22ff2675
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-05-30 17:07:35 +0100
+
+    Reverting back to bom version 2.17-SNAPSHOT
+
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit 77660ddf6c8fef0dca3dac827bc318f272a45b55
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-05-30 17:05:28 +0100
+
+    [maven-release-plugin] prepare for next development iteration
+
+2	2	pom.xml
+
+commit e2efc35b54464f2d395fbbc6dd6e0ebbc2392596
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-05-30 17:05:22 +0100
+
+    [maven-release-plugin] prepare release chronicle-queue-5.17.14
+
+2	2	pom.xml
+
+commit e363fba40e87b4bf6fd39f4c3e24f04451a369b2
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-05-30 17:01:26 +0100
+
+    Updating to bom version 2.17.250
+
+commit b4c5fc6aa9b9ea2b86eef3ae76505f6c9e32c3a7
+Author: teamcity_hft <teamcity@chronicle.software>
+Date:   2019-05-30 16:45:14 +0100
+
+    Updating to bom version 2.17.250
+
+1	1	load-harness/pom.xml
+1	1	pom.xml
+
+commit a448bac692b35094cd0fae43b7803330b7bc982e
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-05-28 16:32:54 +1000
+
+    ringBufferReaderCanDrain param to make CQE ring buffer draining more predictable
+
+13	0	src/main/java/net/openhft/chronicle/queue/impl/single/SingleChronicleQueueBuilder.java
+
+commit 2efe12540ea77a816bcf5ca442b4cecb471ca53d
+Author: Jerry Shea <jerry.shea@chronicle.software>
+Date:   2019-05-24 14:02:03 +1000
+
+    prevent garbage from auto-boxing in LOG.debug
+
+2	1	src/main/java/net/openhft/chronicle/queue/impl/single/QueueFileShrinkManager.java

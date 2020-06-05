@@ -1,0 +1,3197 @@
+[b95683111] Bela Ban 2013-02-05 Correct parsing to take semicolons into account (https://issues.jboss.org/browse/JGRP-1569)
+0	82	conf/scripts/MessageBeforeConnectedTest/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+1	1	src/org/jgroups/protocols/JDBC_PING.java
+3	3	src/org/jgroups/stack/Configurator.java
+
+[b01c35693] Bela Ban 2013-02-05 pleasing the eclipse compiler
+2	2	src/org/jgroups/util/RingBuffer.java
+2	2	src/org/jgroups/util/RingBufferLockless.java
+
+[a94d090eb] Bela Ban 2013-02-05 Removed thread groups (https://issues.jboss.org/browse/JGRP-1576)
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+7	8	src/org/jgroups/blocks/BasicConnectionTable.java
+9	10	src/org/jgroups/blocks/ConnectionTableNIO.java
+22	35	src/org/jgroups/blocks/TCPConnectionMap.java
+1	1	src/org/jgroups/demos/Draw.java
+1	2	src/org/jgroups/protocols/BPING.java
+1	1	src/org/jgroups/protocols/BasicTCP.java
+1	1	src/org/jgroups/protocols/FD_SOCK.java
+1	1	src/org/jgroups/protocols/MPING.java
+1	4	src/org/jgroups/protocols/SCOPE.java
+5	8	src/org/jgroups/protocols/TCP.java
+13	51	src/org/jgroups/protocols/TP.java
+2	2	src/org/jgroups/stack/GossipRouter.java
+0	3	src/org/jgroups/stack/Protocol.java
+42	34	src/org/jgroups/util/DefaultThreadFactory.java
+20	15	src/org/jgroups/util/LazyThreadFactory.java
+4	3	src/org/jgroups/util/ThreadFactory.java
+2	2	src/org/jgroups/util/Util.java
+12	14	tests/junit-functional/org/jgroups/blocks/ConnectionMapTest.java
+2	2	tests/junit-functional/org/jgroups/protocols/VERIFY_SUSPECT_Test.java
+4	6	tests/junit-functional/org/jgroups/tests/ConnectionMapUnitTest.java
+3	4	tests/junit-functional/org/jgroups/tests/LargeMergeTest.java
+2	3	tests/junit-functional/org/jgroups/tests/MergeTest2.java
+2	3	tests/junit-functional/org/jgroups/tests/MergeTest3.java
+2	3	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+2	3	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+3	3	tests/junit/org/jgroups/tests/ThreadFactoryTest.java
+
+[285a8cbc4] Bela Ban 2013-02-05 sending FIND_INITIAL_MBRS up to all nodes if we use a singleton (https://issues.jboss.org/browse/JGRP-1572)
+1	1	src/org/jgroups/protocols/TP.java
+
+[6d9b654fd] Bela Ban 2013-02-05 sending FIND_INITIAL_MBRS up to all nodes if we use a singleton (https://issues.jboss.org/browse/JGRP-1572)
+1	1	src/org/jgroups/protocols/TP.java
+
+[edc3171c5] Bela Ban 2013-02-05 Grabbing HD and HR at the same time, under a lock (https://issues.jboss.org/browse/JGRP-1573)
+8	4	src/org/jgroups/protocols/UNICAST2.java
+
+[f673345d8] Bela Ban 2013-02-05 Grabbing HD and HR at the same time (under lock) (https://issues.jboss.org/browse/JGRP-1573)
+12	6	src/org/jgroups/protocols/UNICAST2.java
+
+[82aed44f0] Bela Ban 2013-02-05  Made View.members unmodifiable (https://issues.jboss.org/browse/JGRP-1575)
+7	9	src/org/jgroups/View.java
+34	1	tests/junit-functional/org/jgroups/tests/ViewTest.java
+
+[a24c852ef] Bela Ban 2013-02-05 - removed FD_ICMP (https://issues.jboss.org/browse/JGRP-1582)
+0	1	conf/jg-magic-map.xml
+0	3	conf/jg-protocol-ids.xml
+1	1	conf/jgroups.bnd
+0	6	doc/manual/en/modules/advanced.xml
+0	23	doc/manual/en/modules/protocols.xml
+-	-	lib/bsh.jar
+0	7	lib/licenses/thirdparty-licenses.xml
+0	7	pom.xml
+0	140	src/org/jgroups/protocols/BSH.java
+0	145	src/org/jgroups/protocols/FD_ICMP.java
+0	328	src/org/jgroups/protocols/FD_SIMPLE.java
+0	166	src/org/jgroups/protocols/HTOTAL.java
+1	1	tests/junit-functional/org/jgroups/tests/ConfiguratorTest.java
+0	105	tests/other/org/jgroups/tests/Bsh.java
+
+[a4760dff9] Bela Ban 2013-02-05 ns
+1	1	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[5ea6978f8] Bela Ban 2013-01-17 - Added MessageBatch and unit test - Changed message list marshalling: write/read length of message list first - Added up(MessageBatch) to Protocol (default impl) - Added enable_batching to TP - All protocols up to and including NAKACK2 and UNICAST2 now implement - this method - Message bundling: we're only passing the cluster name *once* - Moved unmarshalling code into TP.receive() - JIRA: https://issues.jboss.org/browse/JGRP-1564
+3	2	conf/jg-messages.properties
+4	3	conf/jg-messages_de.properties
+2	0	doc/design/MarshalingFormat.txt
+6	12	src/org/jgroups/Message.java
+55	32	src/org/jgroups/protocols/BARRIER.java
+71	52	src/org/jgroups/protocols/COMPRESS.java
+26	0	src/org/jgroups/protocols/DAISYCHAIN.java
+27	48	src/org/jgroups/protocols/DELAY.java
+0	59	src/org/jgroups/protocols/DELAY_JOIN_REQ.java
+98	126	src/org/jgroups/protocols/DISCARD.java
+5	9	src/org/jgroups/protocols/DISCARD_PAYLOAD.java
+29	8	src/org/jgroups/protocols/DUPL.java
+4	3	src/org/jgroups/protocols/Discovery.java
+11	0	src/org/jgroups/protocols/EXAMPLE.java
+39	22	src/org/jgroups/protocols/FD.java
+14	4	src/org/jgroups/protocols/FD_ALL.java
+8	2	src/org/jgroups/protocols/HDRS.java
+22	4	src/org/jgroups/protocols/MERGE2.java
+0	3	src/org/jgroups/protocols/MERGE3.java
+22	2	src/org/jgroups/protocols/PRIO.java
+28	2	src/org/jgroups/protocols/SCOPE.java
+28	7	src/org/jgroups/protocols/SHUFFLE.java
+53	88	src/org/jgroups/protocols/SIZE.java
+6	0	src/org/jgroups/protocols/STATS.java
+233	154	src/org/jgroups/protocols/TP.java
+8	2	src/org/jgroups/protocols/TRACE.java
+10	16	src/org/jgroups/protocols/TUNNEL.java
+131	30	src/org/jgroups/protocols/UNICAST2.java
+181	51	src/org/jgroups/protocols/pbcast/NAKACK2.java
+50	4	src/org/jgroups/stack/Protocol.java
+13	0	src/org/jgroups/util/Headers.java
+236	0	src/org/jgroups/util/MessageBatch.java
+55	31	src/org/jgroups/util/Table.java
+10	0	src/org/jgroups/util/Util.java
+258	0	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+63	36	tests/junit-functional/org/jgroups/tests/TableTest.java
+39	3	tests/junit/org/jgroups/tests/JoinTest.java
+47	83	tests/junit/org/jgroups/tests/OOBTest.java
+10	24	tests/junit/org/jgroups/tests/ReconciliationTest.java
+
+[052f4d4e7] Bela Ban 2013-02-04 added up(MessageBatch)
+6	0	src/org/jgroups/protocols/STATS.java
+8	2	src/org/jgroups/protocols/TRACE.java
+10	16	src/org/jgroups/protocols/TUNNEL.java
+
+[b324da8dd] Bela Ban 2013-02-04 added up(MessageBatch)
+22	2	src/org/jgroups/protocols/PRIO.java
+28	2	src/org/jgroups/protocols/SCOPE.java
+28	7	src/org/jgroups/protocols/SHUFFLE.java
+7	0	src/org/jgroups/util/MessageBatch.java
+21	0	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+
+[daec3760b] Bela Ban 2013-02-04 added up(MessageBatch)
+8	2	src/org/jgroups/protocols/HDRS.java
+22	4	src/org/jgroups/protocols/MERGE2.java
+
+[a8c625f1e] Bela Ban 2013-02-04 added up(MessageBatch)
+11	0	src/org/jgroups/protocols/EXAMPLE.java
+4	3	src/org/jgroups/protocols/FD.java
+
+[c7029d3da] Bela Ban 2013-02-04 added up(MessageBatch)
+29	8	src/org/jgroups/protocols/DUPL.java
+
+[fcf408bf9] Bela Ban 2013-02-04 added up(MessageBatch)
+5	9	src/org/jgroups/protocols/DISCARD_PAYLOAD.java
+
+[7fc4635ff] Bela Ban 2013-02-04 added up(MessageBatch)
+0	59	src/org/jgroups/protocols/DELAY_JOIN_REQ.java
+39	3	tests/junit/org/jgroups/tests/JoinTest.java
+
+[5b2cb80af] Bela Ban 2013-02-04 added up(MessageBatch)
+26	0	src/org/jgroups/protocols/DAISYCHAIN.java
+27	48	src/org/jgroups/protocols/DELAY.java
+
+[bdc89da03] Bela Ban 2013-02-04 added up(MessageBatch)
+71	52	src/org/jgroups/protocols/COMPRESS.java
+
+[dc4576ac1] Bela Ban 2013-02-04 added up(MessageBatch)
+53	88	src/org/jgroups/protocols/SIZE.java
+
+[94134b582] Bela Ban 2013-02-04 ns
+1	1	src/org/jgroups/protocols/pbcast/NAKACK2.java
+44	74	tests/junit/org/jgroups/tests/OOBTest.java
+
+[db28af305] Bela Ban 2013-02-01 Merge pull request #73 from nickmbailey/master
+[1e8b7c8e8] Bela Ban 2013-02-01 Removed conditional acking (https://issues.jboss.org/browse/JGRP-1578)
+2	5	src/org/jgroups/protocols/UNICAST.java
+1	1	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+65	0	tests/junit-functional/org/jgroups/protocols/UNICAST_DroppedAckTest.java
+
+[7f3535fb9] Bela Ban 2013-02-01 Removed conditional acking (https://issues.jboss.org/browse/JGRP-1578)
+2	5	src/org/jgroups/protocols/UNICAST.java
+1	1	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+65	0	tests/junit-functional/org/jgroups/protocols/UNICAST_DroppedAckTest.java
+
+[1343e60d7] Bela Ban 2013-02-01 ns
+3	9	tests/junit/org/jgroups/tests/OOBTest.java
+
+[407ccd62c] Bela Ban 2013-01-31 added batch processing to UNICAST2
+128	33	src/org/jgroups/protocols/UNICAST2.java
+
+[f83f92e31] Bela Ban 2013-01-31 ns
+2	1	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[91eb62eec] Bela Ban 2013-01-30 Merge pull request #72 from rvansa/master
+[fcc2fd4e2] rvansa 2013-01-30 Using Util.loadClass instead of Class.forName, merged exception handling
+2	6	src/org/jgroups/util/CustomRejectionPolicy.java
+
+[eee50aefd] Bela Ban 2013-01-30 Merge pull request #71 from rvansa/Branch_JGroups_3_2
+[0689846ea] rvansa 2013-01-30 progress_check and custom ThreadPoolExecutor rejection policies (+ tests)
+43	0	src/org/jgroups/util/CustomRejectionPolicy.java
+13	0	src/org/jgroups/util/NoProgressException.java
+77	0	src/org/jgroups/util/ProgressCheckRejectionPolicy.java
+4	0	src/org/jgroups/util/Util.java
+140	0	tests/junit/org/jgroups/tests/RejectionPoliciesTest.java
+
+[ee3c553e1] rvansa 2013-01-30 Merge branch 'JGRP-1574' into Branch_JGroups_3_2
+[6ad6b45ef] rvansa 2013-01-30 progress_check and custom ThreadPoolExecutor rejection policies (+ tests)
+43	0	src/org/jgroups/util/CustomRejectionPolicy.java
+13	0	src/org/jgroups/util/NoProgressException.java
+77	0	src/org/jgroups/util/ProgressCheckRejectionPolicy.java
+4	0	src/org/jgroups/util/Util.java
+140	0	tests/junit/org/jgroups/tests/RejectionPoliciesTest.java
+
+[1bc1c29cd] Bela Ban 2013-01-30 Implemented up(MessageBatch) for NAKACK2
+179	50	src/org/jgroups/protocols/pbcast/NAKACK2.java
+0	1	src/org/jgroups/util/MessageBatch.java
+
+[3dd683088] Bela Ban 2013-01-29 added Table.add(Tuple list)
+55	31	src/org/jgroups/util/Table.java
+63	36	tests/junit-functional/org/jgroups/tests/TableTest.java
+
+[b575d32a8] Bela Ban 2013-01-28 Implemented up(MessageBatch) for various protocols
+1	2	conf/jg-messages.properties
+1	2	conf/jg-messages_de.properties
+55	32	src/org/jgroups/protocols/BARRIER.java
+1	2	src/org/jgroups/protocols/DISCARD.java
+3	16	src/org/jgroups/protocols/Discovery.java
+38	22	src/org/jgroups/protocols/FD.java
+14	4	src/org/jgroups/protocols/FD_ALL.java
+0	3	src/org/jgroups/protocols/MERGE3.java
+35	14	src/org/jgroups/stack/Protocol.java
+10	0	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+
+[8bd9f5f88] Bela Ban 2013-01-28 Implemented up(MessageBatch) for Discovery
+14	0	src/org/jgroups/protocols/Discovery.java
+2	0	src/org/jgroups/stack/Protocol.java
+
+[d6f46fe30] Bela Ban 2013-01-28 up(MessageBatch) by default sends messages up the stack individually
+2	1	conf/jg-messages.properties
+1	0	conf/jg-messages_de.properties
+15	21	src/org/jgroups/stack/Protocol.java
+
+[aae1eeb76] Bela Ban 2013-01-25 ns
+29	31	src/org/jgroups/protocols/DISCARD.java
+19	48	src/org/jgroups/protocols/TP.java
+
+[1ab17a777] Bela Ban 2013-01-25 Added Mode to MessageBatch
+2	2	src/org/jgroups/protocols/TP.java
+5	5	src/org/jgroups/util/MessageBatch.java
+
+[00323ead8] Bela Ban 2013-01-25 - Added up(MessageBatch) to DISCARD - Added enable_batching to TP
+70	95	src/org/jgroups/protocols/DISCARD.java
+20	1	src/org/jgroups/protocols/TP.java
+8	6	src/org/jgroups/util/MessageBatch.java
+48	4	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+10	24	tests/junit/org/jgroups/tests/ReconciliationTest.java
+
+[57991d649] Bela Ban 2013-01-24 ns
+3	2	conf/jg-messages.properties
+3	2	conf/jg-messages_de.properties
+2	0	doc/design/MarshalingFormat.txt
+6	12	src/org/jgroups/Message.java
+95	58	src/org/jgroups/protocols/TP.java
+33	4	src/org/jgroups/stack/Protocol.java
+13	0	src/org/jgroups/util/Headers.java
+31	1	src/org/jgroups/util/MessageBatch.java
+10	0	src/org/jgroups/util/Util.java
+28	14	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+
+[98ea97b0a] Bela Ban 2013-01-24 resetting num_bytes_received
+2	0	src/org/jgroups/protocols/pbcast/STABLE.java
+
+[055339a67] Bela Ban 2013-01-24 num_bytes_received is reset on STABILITY message
+2	0	src/org/jgroups/protocols/pbcast/STABLE.java
+
+[1b7743a96] Bela Ban 2013-01-23 ns
+55	23	src/org/jgroups/protocols/TP.java
+
+[757df6500] Bela Ban 2013-01-23 ns
+26	1	src/org/jgroups/util/MessageBatch.java
+6	2	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+
+[02f83c762] Bela Ban 2013-01-23 Fixed non-merge bug with TCPGOSSIP. Was fixed a long time ago in master, no need to forward-port
+1	1	build.xml
+1	1	conf/manifest.mf
+42	42	conf/tcpgossip.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+8	7	src/org/jgroups/protocols/TCPGOSSIP.java
+
+[dda44f887] Bela Ban 2013-01-23 changed default cluster name
+1	1	tests/other/org/jgroups/tests/RouterStubGet.java
+
+[6a1ae57d3] Bela Ban 2013-01-22 Fixed NPE (https://issues.jboss.org/browse/JGRP-1567)
+2	0	src/org/jgroups/protocols/UNICAST2.java
+
+[6c60e3b20] Bela Ban 2013-01-22 Fixed NPE (https://issues.jboss.org/browse/JGRP-1567)
+2	0	src/org/jgroups/protocols/UNICAST2.java
+
+[166d6e6cc] Bela Ban 2013-01-22 - Added MessageBatch and unit test - Changed message list marshalling: write/read length of message list first
+11	11	src/org/jgroups/protocols/TP.java
+173	0	src/org/jgroups/util/MessageBatch.java
+165	0	tests/junit-functional/org/jgroups/tests/MessageBatchTest.java
+
+[3fb4e63f8] Bela Ban 2013-01-21 Moved unmarshalling code into TP.receive()
+7	9	src/org/jgroups/protocols/TP.java
+
+[6cd20bba9] Bela Ban 2013-01-17 ns
+35	14	src/org/jgroups/protocols/TP.java
+
+[5d00c5384] Bela Ban 2013-01-17 first shot at passing batches up as individual messages in thread pools (bad perf)
+86	85	src/org/jgroups/protocols/TP.java
+7	1	src/org/jgroups/protocols/UNICAST2.java
+
+[4efbbb085] Bela Ban 2013-01-17 ns
+3	2	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[2629b030d] Bela Ban 2013-01-17 ns
+1	0	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[9a008bc57] Bela Ban 2013-01-17 removed main()
+2	2	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[3a0e30607] Bela Ban 2013-01-17 Backported fix from master for https://issues.jboss.org/browse/JGRP-1563
+4	0	src/org/jgroups/JChannel.java
+40	21	src/org/jgroups/protocols/UNICAST2.java
+37	15	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[903b9a355] Bela Ban 2013-01-17 ns
+1	1	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[3fe50929e] Bela Ban 2013-01-17 Implemented resending of first message (if dropped) in the retransmit task  (https://issues.jboss.org/browse/JGRP-1563)
+94	22	src/org/jgroups/protocols/UNICAST2.java
+1	0	src/org/jgroups/stack/Protocol.java
+33	0	src/org/jgroups/util/MyReceiver.java
+21	0	src/org/jgroups/util/Util.java
+106	0	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[249f27237] Bela Ban 2013-01-17 Checking connection IDs for ACKs
+40	21	src/org/jgroups/protocols/UNICAST2.java
+28	3	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[ca0281e25] Bela Ban 2013-01-17 ns
+2	4	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+
+[2a094b54b] Bela Ban 2013-01-16 Implemented resending of first message (if dropped) in the retransmit task  (https://issues.jboss.org/browse/JGRP-1563)
+63	8	src/org/jgroups/protocols/UNICAST2.java
+1	0	src/org/jgroups/stack/Protocol.java
+6	6	src/org/jgroups/util/MyReceiver.java
+1	1	src/org/jgroups/util/Util.java
+39	7	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+
+[dd80283e8] Bela Ban 2013-01-14 - Added unit test for JGRP-1548 - Message bundlers now use the log of the encloding class (e.g. UDP or TCP)
+3	0	src/org/jgroups/Channel.java
+4	0	src/org/jgroups/JChannel.java
+0	6	src/org/jgroups/protocols/TP.java
+33	0	src/org/jgroups/util/MyReceiver.java
+71	0	tests/junit-functional/org/jgroups/protocols/UNICAST2_Test.java
+1	1	tests/junit-functional/org/jgroups/tests/UNICAST_Test.java
+2	4	tests/junit/org/jgroups/tests/UnicastUnitTest.java
+
+[68a24d01c] Bela Ban 2013-01-16 removed ResourceDMBeanOld
+0	554	src/org/jgroups/jmx/ResourceDMBeanOld.java
+
+[260407e90] Bela Ban 2013-01-14 - Simplification of JMX support (ResourceDMBean) - Fluent methods are now also supported - JIRA: https://issues.jboss.org/browse/JGRP-1562
+3	3	src/org/jgroups/JChannel.java
+2	2	src/org/jgroups/conf/PropertyHelper.java
+2	2	src/org/jgroups/demos/JmxDemo.java
+4	4	src/org/jgroups/jmx/JmxConfigurator.java
+270	374	src/org/jgroups/jmx/ResourceDMBean.java
+554	0	src/org/jgroups/jmx/ResourceDMBeanOld.java
+2	2	src/org/jgroups/protocols/DISCARD.java
+3	3	src/org/jgroups/protocols/TP.java
+1	1	src/org/jgroups/protocols/pbcast/STABLE.java
+1	1	src/org/jgroups/stack/GossipRouter.java
+27	21	src/org/jgroups/stack/Protocol.java
+2	20	src/org/jgroups/stack/ProtocolStack.java
+2	3	src/org/jgroups/util/PropertiesToXML.java
+116	28	src/org/jgroups/util/Util.java
+16	12	src/org/jgroups/util/XMLSchemaGenerator.java
+194	0	tests/junit-functional/org/jgroups/tests/JmxTest.java
+7	1	tests/junit-functional/org/jgroups/tests/UtilTest.java
+
+[6db6939b1] Bela Ban 2013-01-12 - Implemented concurrent connections in TCPConnectionMap https://issues.jboss.org/browse/JGRP-1549 - Upgraded byteman to 2.1.2
+74	0	conf/scripts/TCPConnectionMapTest/testConcurrentConnect.btm
+84	0	conf/scripts/TCPConnectionMapTest/testConcurrentConnect2.btm
+67	0	doc/design/TCPConnectionMap.txt
+-	-	lib/byteman-bmunit.jar
+-	-	lib/byteman-install.jar
+-	-	lib/byteman-submit.jar
+-	-	lib/byteman.jar
+4	4	lib/licenses/thirdparty-licenses.xml
+43	57	src/org/jgroups/blocks/AbstractConnectionMap.java
+263	263	src/org/jgroups/blocks/TCPConnectionMap.java
+5	9	src/org/jgroups/protocols/BasicTCP.java
+1	0	src/org/jgroups/protocols/TCP.java
+1	1	src/org/jgroups/protocols/TP.java
+5	0	src/org/jgroups/util/Util.java
+241	0	tests/byteman/org/jgroups/tests/byteman/TCPConnectionMapTest.java
+34	0	tests/byteman/org/jgroups/tests/helpers/TCPConnectionMapTestHelper.java
+9	11	tests/junit-functional/org/jgroups/tests/ConnectionMapUnitTest.java
+0	154	tests/junit-functional/org/jgroups/tests/TCPConnectionMapTest.java
+
+[0515686e1] Bela Ban 2013-01-03 Verifying that the target's site is the same as the unreachable site before calling siteUnreachable()
+3	0	src/org/jgroups/blocks/UnicastRequest.java
+
+[f52244d9b] Bela Ban 2013-01-03 Verifying that the target's site is the same as the unreachable site before calling siteUnreachable()
+3	0	src/org/jgroups/blocks/UnicastRequest.java
+
+[07738afdb] Bela Ban 2012-12-29 - Added new protocol SUPERVISOR (rules based fault detection and correction) - Added unit test SUPERVISOR_Test - Updated documentation JIRA: https://issues.jboss.org/browse/JGRP-1557
+1	0	conf/jg-protocol-ids.xml
+9	0	conf/rules.xml
+23	0	conf/rules.xsd
+1	1	doc/manual/en/master.xml
+98	0	doc/manual/en/modules/advanced.xml
+14	0	doc/manual/en/modules/protocols.xml
+30	4	src/org/jgroups/blocks/MethodCall.java
+1	1	src/org/jgroups/demos/Draw.java
+49	0	src/org/jgroups/protocols/rules/CheckFDMonitor.java
+25	0	src/org/jgroups/protocols/rules/EventHandler.java
+56	0	src/org/jgroups/protocols/rules/Rule.java
+275	0	src/org/jgroups/protocols/rules/SUPERVISOR.java
+27	0	src/org/jgroups/protocols/rules/SampleRule.java
+2	0	src/org/jgroups/util/PropertiesToXML.java
+118	0	tests/junit-functional/org/jgroups/protocols/SUPERVISOR_Test.java
+
+[6cf64613a] Bela Ban 2012-12-29 ns
+13	15	tests/junit-functional/org/jgroups/protocols/SUPERVISOR_Test.java
+
+[a06089f22] Bela Ban 2012-12-29 More work and added SUPERVISOR_Test
+120	0	tests/junit-functional/org/jgroups/protocols/SUPERVISOR_Test.java
+
+[4a1c36461] Bela Ban 2012-12-29 More work and added SUPERVISOR_Test
+9	5	src/org/jgroups/protocols/rules/Rule.java
+30	3	src/org/jgroups/protocols/rules/SUPERVISOR.java
+
+[d0f63080a] Bela Ban 2012-12-29 Initial work on SUPERVISOR (https://issues.jboss.org/browse/JGRP-1557)
+1	0	conf/jg-protocol-ids.xml
+52	0	src/org/jgroups/protocols/rules/Rule.java
+106	0	src/org/jgroups/protocols/rules/SUPERVISOR.java
+2	0	src/org/jgroups/util/PropertiesToXML.java
+
+[2f10835bd] Bela Ban 2012-12-28 FD monitor task doesn't stop when membership is >= 2 (https://issues.jboss.org/browse/JGRP-1559)
+86	96	src/org/jgroups/protocols/FD.java
+7	6	src/org/jgroups/protocols/FD_ICMP.java
+7	6	src/org/jgroups/protocols/FD_PING.java
+7	1	src/org/jgroups/util/Util.java
+1	1	tests/junit-functional/org/jgroups/tests/FdMonitorTest.java
+20	0	tests/junit-functional/org/jgroups/tests/UtilTest.java
+
+[38fb1cc7f] Bela Ban 2012-12-28 FD monitor task doesn't stop when membership is >= 2 (https://issues.jboss.org/browse/JGRP-1559)
+86	96	src/org/jgroups/protocols/FD.java
+7	6	src/org/jgroups/protocols/FD_ICMP.java
+7	6	src/org/jgroups/protocols/FD_PING.java
+7	1	src/org/jgroups/util/Util.java
+1	1	tests/junit-functional/org/jgroups/tests/FdMonitorTest.java
+20	0	tests/junit-functional/org/jgroups/tests/UtilTest.java
+
+[a440dad48] Bela Ban 2012-12-27 Moved isMergeRunning() into the merge handling code
+9	11	src/org/jgroups/protocols/Discovery.java
+
+[74ef0c5a3] Bela Ban 2012-12-21 Added stats to RELAY2 (https://issues.jboss.org/browse/JGRP-1547)
+115	7	src/org/jgroups/protocols/relay/RELAY2.java
+8	0	src/org/jgroups/protocols/relay/Relayer.java
+12	5	tests/other/org/jgroups/tests/UnicastTestRpc.java
+
+[bc7408902] Bela Ban 2012-12-21 ns
+1	1	bin/jgroups.sh
+0	1	tests/other/org/jgroups/tests/Probe.java
+
+[836461046] Bela Ban 2012-12-21 Added stats to RELAY2 (https://issues.jboss.org/browse/JGRP-1547)
+115	7	src/org/jgroups/protocols/relay/RELAY2.java
+8	0	src/org/jgroups/protocols/relay/Relayer.java
+12	5	tests/other/org/jgroups/tests/UnicastTestRpc.java
+
+[fd08bf763] Bela Ban 2012-12-21 ns
+1	1	bin/jgroups.sh
+0	1	tests/other/org/jgroups/tests/Probe.java
+
+[77272f484] Bela Ban 2012-12-21 added defer_client_bind_addr
+5	1	src/org/jgroups/blocks/TCPConnectionMap.java
+3	0	src/org/jgroups/protocols/BasicTCP.java
+8	2	src/org/jgroups/protocols/TCP.java
+
+[c9f78a442] Bela Ban 2012-12-21 Merge remote branch 'bdecoste/Branch_JGroups_3_2' into tmp (added defer_client_bind_addr)
+[fb9e4b9bc] William DeCoste 2012-12-19 added defer_client_bind_addr
+22	3	src/org/jgroups/blocks/TCPConnectionMap.java
+4	0	src/org/jgroups/protocols/TCP.java
+4	1	src/org/jgroups/protocols/TP.java
+
+[8ba811b1d] Bela Ban 2012-12-19 - Reworded warning message (https://issues.jboss.org/browse/JGRP-1556) - Changed version to 3.2.6
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+10	1	src/org/jgroups/blocks/RequestCorrelator.java
+
+[cc00e3f1c] Bela Ban 2012-12-19 reworded warning message (https://issues.jboss.org/browse/JGRP-1556)
+10	1	src/org/jgroups/blocks/RequestCorrelator.java
+
+[b641dbc4c] Bela Ban 2012-12-19 TimeScheduler3 now correctly cancels all tests in stop(), and also drops tasks added if not running
+6	4	src/org/jgroups/util/HashedTimingWheel.java
+18	9	src/org/jgroups/util/TimeScheduler3.java
+67	53	tests/junit-functional/org/jgroups/tests/TimeSchedulerTest.java
+
+[b98c791e4] Bela Ban 2012-12-19 Changed timer_type to "new3" in config files
+1	1	conf/fast-local.xml
+1	1	conf/tcp.xml
+1	1	conf/toa.xml
+1	1	conf/udp-largecluster.xml
+1	1	conf/udp.xml
+
+[ab1b4d2da] Bela Ban 2012-12-12 - Implemented TimeScheduler2 (timer_type="new3" activates it) (https://issues.jboss.org/browse/JGRP-1553) - Implemented toString() for all (major) tasks - Changed timer_type to new3 by default - Changed timer_rejection_policy to "abort" by default (spawns a new thread)
+1	1	conf/fast-local.xml
+1	1	conf/tcp.xml
+1	1	conf/toa.xml
+1	1	conf/udp-largecluster.xml
+1	1	conf/udp.xml
+4	0	src/org/jgroups/protocols/COUNTER.java
+8	0	src/org/jgroups/protocols/FD.java
+9	0	src/org/jgroups/protocols/FD_ALL.java
+4	0	src/org/jgroups/protocols/FD_SOCK.java
+4	0	src/org/jgroups/protocols/MERGE2.java
+14	6	src/org/jgroups/protocols/MERGE3.java
+16	12	src/org/jgroups/protocols/TP.java
+8	0	src/org/jgroups/protocols/UNICAST.java
+12	0	src/org/jgroups/protocols/UNICAST2.java
+4	0	src/org/jgroups/protocols/pbcast/Merger.java
+4	0	src/org/jgroups/protocols/pbcast/NAKACK2.java
+10	4	src/org/jgroups/protocols/pbcast/STABLE.java
+8	0	src/org/jgroups/stack/RouterStubManager.java
+5	0	src/org/jgroups/util/AgeOutCache.java
+7	3	src/org/jgroups/util/DefaultTimeScheduler.java
+1	1	src/org/jgroups/util/TimeScheduler.java
+1	1	src/org/jgroups/util/TimeScheduler2.java
+330	0	src/org/jgroups/util/TimeScheduler3.java
+4	3	src/org/jgroups/util/Util.java
+170	28	tests/junit-functional/org/jgroups/tests/TimeSchedulerTest.java
+
+[aef2015f4] Bela Ban 2012-12-19 Changed timer_type to "old" by default
+1	1	conf/fast-local.xml
+1	1	conf/tcp.xml
+1	1	conf/toa.xml
+1	1	conf/udp-largecluster.xml
+1	1	conf/udp.xml
+1	1	src/org/jgroups/protocols/TP.java
+
+[3d961e770] Bela Ban 2012-12-19 - Merged remote branch 'bdecoste/Branch_JGroups_3_0' into tmp - Changed version to 3.0.16
+[138701311] William DeCoste 2012-12-15 added defer_client_bind_addr
+1	1	build.xml
+1	1	pom.xml
+38	3	src/org/jgroups/blocks/TCPConnectionMap.java
+4	0	src/org/jgroups/protocols/TCP.java
+3	0	src/org/jgroups/protocols/TP.java
+
+[61e955264] Bela Ban 2012-12-13 ns
+1	1	src/org/jgroups/Version.java
+
+[3e69d2639] Bela Ban 2012-12-13 Changed version to 3.2.5.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[881bf4f1a] Bela Ban 2012-12-13 Added client_bind_addr and client_bind_port to TCP (not TCP_NIO) (https://issues.jboss.org/browse/JGRP-1555)
+1	0	src/org/jgroups/Global.java
+63	80	src/org/jgroups/blocks/TCPConnectionMap.java
+24	10	src/org/jgroups/protocols/BasicTCP.java
+2	6	src/org/jgroups/protocols/TCP.java
+
+[bfc4ba61b] Bela Ban 2012-12-13 Added client_bind_addr and client_bind_port to TCP (not TCP_NIO) (https://issues.jboss.org/browse/JGRP-1555)
+1	0	src/org/jgroups/Global.java
+60	68	src/org/jgroups/blocks/TCPConnectionMap.java
+24	10	src/org/jgroups/protocols/BasicTCP.java
+2	2	src/org/jgroups/protocols/TCP.java
+
+[07e647911] Bela Ban 2012-12-13 Monitor sets ping_dest=null on stop(), reconnects correctly now (https://issues.jboss.org/browse/JGRP-1554)
+54	60	src/org/jgroups/Message.java
+45	58	src/org/jgroups/protocols/FD.java
+1	3	src/org/jgroups/protocols/FD_ALL.java
+76	0	tests/junit-functional/org/jgroups/tests/FdMonitorTest.java
+
+[19404eee4] Bela Ban 2012-12-13 Monitor sets ping_dest=null on stop(), reconnects correctly now (https://issues.jboss.org/browse/JGRP-1554)
+43	55	src/org/jgroups/protocols/FD.java
+76	0	tests/junit-functional/org/jgroups/tests/FdMonitorTest.java
+
+[0817aea59] Bela Ban 2012-12-12 changed methods in Message to become fluid
+54	60	src/org/jgroups/Message.java
+1	3	src/org/jgroups/protocols/FD_ALL.java
+
+[785f633f3] Bela Ban 2012-12-12 Removed UFC from configs with TCP as transport
+0	1	conf/flush-tcp.xml
+0	1	conf/mping.xml
+0	1	conf/tcp-nio.xml
+0	2	conf/tcp.xml
+0	1	conf/tcpgossip.xml
+7	0	src/org/jgroups/protocols/UFC.java
+
+[32f3335eb] Bela Ban 2012-12-12 ns
+2	2	src/org/jgroups/protocols/Discovery.java
+
+[ee3e30028] Bela Ban 2012-12-12 ns
+[09965c735] Bela Ban 2012-12-09 Prints details of who-has and address- caches when a physical address is not found
+35	3	src/org/jgroups/protocols/TP.java
+9	3	src/org/jgroups/util/AgeOutCache.java
+27	0	src/org/jgroups/util/ExpiryCache.java
+
+[af48204c2] Bela Ban 2012-12-12 changed javadoc
+12	42	src/org/jgroups/util/TimeScheduler2.java
+
+[71a47f836] Bela Ban 2012-12-11 Dynamically grabbing physical address if not found
+10	1	src/org/jgroups/protocols/TP.java
+
+[ce279315d] Bela Ban 2012-12-10 Created ExpiryCache and using it in TP as a who-has cache (https://issues.jboss.org/browse/JGRP-1551)
+7	4	src/org/jgroups/protocols/TP.java
+103	0	src/org/jgroups/util/ExpiryCache.java
+69	0	tests/junit-functional/org/jgroups/tests/ExpiryCacheTest.java
+1	1	tests/other/org/jgroups/tests/Probe.java
+
+[f19d7105c] Bela Ban 2012-12-10 Added javadoc, removed commented methods
+6	0	src/org/jgroups/protocols/relay/RELAY2.java
+0	15	src/org/jgroups/protocols/relay/SiteUUID.java
+
+[3254ecec4] Bela Ban 2012-12-09 Prints details of who-has and address- caches when a physical address is not found
+42	2	src/org/jgroups/protocols/TP.java
+9	3	src/org/jgroups/util/AgeOutCache.java
+
+[0ede04779] Bela Ban 2012-12-05 Added target="1.6" to Ant compilation
+3	0	build.xml
+
+[087b1f1ad] Bela Ban 2012-12-05 Documented -passcode
+6	10	tests/other/org/jgroups/tests/Probe.java
+
+[71794414e] Bela Ban 2012-12-05 ns
+4	5	src/org/jgroups/blocks/TCPConnectionMap.java
+
+[f70a37e21] Bela Ban 2012-12-04 Added test and better logging for TCPConnectionMap
+7	9	src/org/jgroups/blocks/TCPConnectionMap.java
+1	1	src/org/jgroups/protocols/UNICAST2.java
+154	0	tests/junit-functional/org/jgroups/tests/TCPConnectionMapTest.java
+
+[926929753] Bela Ban 2012-12-04 ns
+1	0	src/org/jgroups/protocols/relay/RELAY2.java
+
+[c882441ba] Bela Ban 2012-12-03 Added warn_if_ftc_missing property
+5	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[a48c295e9] Bela Ban 2012-12-03 Including org.jgroups.protocols.relay package in schema generation
+19	16	src/org/jgroups/util/XMLSchemaGenerator.java
+
+[785521a43] Bela Ban 2012-11-30 Adde ability for AUTH tokens to send messages (https://issues.jboss.org/browse/JGRP-1546)
+4	1	conf/jg-magic-map.xml
+6	0	src/org/jgroups/auth/AuthToken.java
+206	0	src/org/jgroups/auth/DemoToken.java
+8	0	src/org/jgroups/auth/FixedMembershipToken.java
+7	3	src/org/jgroups/auth/MD5Token.java
+4	0	src/org/jgroups/auth/RegexMembership.java
+4	0	src/org/jgroups/auth/SimpleToken.java
+19	15	src/org/jgroups/auth/X509Token.java
+1	2	src/org/jgroups/conf/ClassConfigurator.java
+103	74	src/org/jgroups/protocols/AUTH.java
+67	23	src/org/jgroups/protocols/AuthHeader.java
+2	2	src/org/jgroups/protocols/PingData.java
+5	5	src/org/jgroups/stack/GossipData.java
+12	0	src/org/jgroups/util/SizeStreamable.java
+2	2	src/org/jgroups/util/Util.java
+20	10	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[26b7c60d5] Bela Ban 2012-11-29 - Backported JGRP-1545 - Changed version to 3.2.4.Final
+1	1	build.xml
+82	0	conf/scripts/MessageBeforeConnectedTest/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+20	0	conf/scripts/MessageBeforeConnectedTest/testSendingOfMsgsOnUnconnectedChannel.btm
+1	1	pom.xml
+34	8	src/org/jgroups/Channel.java
+82	72	src/org/jgroups/JChannel.java
+2	2	src/org/jgroups/Version.java
+1	1	src/org/jgroups/blocks/MessageDispatcher.java
+97	0	tests/byteman/org/jgroups/tests/byteman/MessageBeforeConnectedTest.java
+38	0	tests/byteman/org/jgroups/tests/helpers/MessageBeforeConnectedTestHelper.java
+34	14	tests/junit/org/jgroups/tests/ChannelTest.java
+
+[46055d92d] Bela Ban 2012-11-29 Added new state CONNECTING: if a message is sent after when CONNECTING or CONNECTED, it does not throw an exception (https://issues.jboss.org/browse/JGRP-1545)
+82	0	conf/scripts/MessageBeforeConnectedTest/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+34	8	src/org/jgroups/Channel.java
+82	72	src/org/jgroups/JChannel.java
+1	1	src/org/jgroups/blocks/MessageDispatcher.java
+18	4	tests/byteman/org/jgroups/tests/byteman/MessageBeforeConnectedTest.java
+9	4	tests/byteman/org/jgroups/tests/helpers/MessageBeforeConnectedTestHelper.java
+34	14	tests/junit/org/jgroups/tests/ChannelTest.java
+
+[f1b801521] Bela Ban 2012-11-28 Added test for JGRP-1545
+20	0	conf/scripts/MessageBeforeConnectedTest/testSendingOfMsgsOnUnconnectedChannel.btm
+83	0	tests/byteman/org/jgroups/tests/byteman/MessageBeforeConnectedTest.java
+33	0	tests/byteman/org/jgroups/tests/helpers/MessageBeforeConnectedTestHelper.java
+
+[96318863d] Bela Ban 2012-11-27 - Back-ported JGRP-1542 and JGRP-1543 - Changed version to 3.2.3
+1	1	build.xml
+1	1	pom.xml
+46	35	src/org/jgroups/Message.java
+2	2	src/org/jgroups/Version.java
+70	76	src/org/jgroups/blocks/MessageDispatcher.java
+1	1	src/org/jgroups/blocks/RequestCorrelator.java
+7	4	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+1	1	src/org/jgroups/protocols/TP.java
+43	56	src/org/jgroups/protocols/relay/RELAY2.java
+19	19	src/org/jgroups/protocols/relay/Relayer.java
+31	62	src/org/jgroups/stack/Protocol.java
+15	8	src/org/jgroups/util/ForwardQueue.java
+8	0	src/org/jgroups/util/Util.java
+2	2	tests/other/org/jgroups/tests/UnicastTestRpc.java
+
+[aa77b52ca] Bela Ban 2012-11-27 Passing up the SITE-UNREACHABLE event (https://issues.jboss.org/browse/JGRP-1543)
+70	76	src/org/jgroups/blocks/MessageDispatcher.java
+1	1	src/org/jgroups/blocks/RequestCorrelator.java
+
+[25080dccb] Bela Ban 2012-11-27 Merge branch 'master' of github.com:belaban/JGroups
+[959da7d5e] Bela Ban 2012-11-27 ns
+1	1	src/org/jgroups/protocols/relay/RELAY2.java
+11	5	src/org/jgroups/util/ForwardQueue.java
+
+[ade9117c5] Bela Ban 2012-11-27 added JMX attrs
+4	2	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[ad2f532b2] Bela Ban 2012-11-26 We can only change the status to DOWN from UNKNOWN (not from DOWN or UP)
+9	8	src/org/jgroups/protocols/relay/Relayer.java
+
+[efd55b191] Bela Ban 2012-11-26 Use of copying instead of marshalling
+0	14	src/org/jgroups/protocols/relay/RELAY2.java
+
+[ba4be84a4] Bela Ban 2012-11-26 Use of copying instead of marshalling
+43	32	src/org/jgroups/Message.java
+42	40	src/org/jgroups/protocols/relay/RELAY2.java
+11	12	src/org/jgroups/protocols/relay/Relayer.java
+31	62	src/org/jgroups/stack/Protocol.java
+8	0	src/org/jgroups/util/Util.java
+2	2	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[cad103753] Bela Ban 2012-11-25 ns
+3	1	src/org/jgroups/util/ForwardQueue.java
+
+[625a4a898] Bela Ban 2012-11-23 ns
+2	2	tests/other/org/jgroups/tests/UnicastTestRpc.java
+
+[ff2a509c0] Bela Ban 2012-11-23 Using AtomicLong for ID generation
+3	2	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+1	2	src/org/jgroups/util/ForwardQueue.java
+
+[227858293] Bela Ban 2012-11-23 ns
+1	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[784922fd2] Bela Ban 2012-11-23 Passing flags to the wrapper messages
+42	43	src/org/jgroups/protocols/relay/RELAY2.java
+6	6	src/org/jgroups/protocols/relay/Relayer.java
+2	2	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[9b3d28ffd] Bela Ban 2012-11-23 Added javadoc for Bundler implementations
+123	96	src/org/jgroups/protocols/TP.java
+
+[c86da4f76] Bela Ban 2012-11-22 pp
+4	4	src/org/jgroups/Message.java
+
+[885bb7842] Bela Ban 2012-11-22 Set enable_unicast_bundling to true by default
+1	1	src/org/jgroups/protocols/TP.java
+
+[1866c8cd9] Bela Ban 2012-11-26 We can only change the status to DOWN from UNKNOWN (not from DOWN or UP)
+9	8	src/org/jgroups/protocols/relay/Relayer.java
+
+[514ca0064] Bela Ban 2012-11-26 Use of copying instead of marshalling
+0	14	src/org/jgroups/protocols/relay/RELAY2.java
+
+[7dfe93afc] Bela Ban 2012-11-26 Use of copying instead of marshalling
+43	32	src/org/jgroups/Message.java
+42	40	src/org/jgroups/protocols/relay/RELAY2.java
+11	12	src/org/jgroups/protocols/relay/Relayer.java
+31	62	src/org/jgroups/stack/Protocol.java
+8	0	src/org/jgroups/util/Util.java
+2	2	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[b6cc72efc] Bela Ban 2012-11-25 ns
+3	1	src/org/jgroups/util/ForwardQueue.java
+
+[edf2989a5] Bela Ban 2012-11-23 ns
+2	2	tests/other/org/jgroups/tests/UnicastTestRpc.java
+
+[3fdf1758b] Bela Ban 2012-11-23 Using AtomicLong for ID generation
+3	2	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+1	2	src/org/jgroups/util/ForwardQueue.java
+
+[4aeff5232] Bela Ban 2012-11-23 Changed version to 3.2.2.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[1f82588f7] Bela Ban 2012-11-23 Merge pull request #68 from luksa/channel_thread_group_leak
+[c132f1728] Marko Luksa 2012-11-23 Fix TP$2 (channel ThreadGroup) leak
+16	8	src/org/jgroups/protocols/TP.java
+
+[ad1ec10ca] Bela Ban 2012-11-23 ns
+1	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[42327c3bd] Bela Ban 2012-11-23 Passing flags to the wrapper messages
+42	43	src/org/jgroups/protocols/relay/RELAY2.java
+6	6	src/org/jgroups/protocols/relay/Relayer.java
+2	2	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[8d5d704d3] Bela Ban 2012-11-23 Added javadoc for Bundler implementations
+123	96	src/org/jgroups/protocols/TP.java
+
+[d6f195206] Bela Ban 2012-11-22 pp
+4	4	src/org/jgroups/Message.java
+
+[56cc7b333] Bela Ban 2012-11-22 Set enable_unicast_bundling to true by default
+1	1	src/org/jgroups/protocols/TP.java
+
+[900a0b6a8] Bela Ban 2012-11-22 ns
+1	1	tests/junit-functional/org/jgroups/tests/TimeSchedulerTest.java
+
+[fdda0e367] Bela Ban 2012-11-22 Make sure the stack-indepenent tests pass by binding them to 127.0.0.1
+9	17	conf/log4j.properties
+13	1	src/org/jgroups/JChannel.java
+15	16	src/org/jgroups/protocols/FD.java
+27	22	tests/junit/org/jgroups/tests/GossipRouterTest.java
+12	15	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+7	1	tests/junit/org/jgroups/tests/SharedTransportTest.java
+18	17	tests/junit/org/jgroups/tests/TCPGOSSIP_Test.java
+30	26	tests/junit/org/jgroups/tests/TUNNEL_Test.java
+
+[ef8df315a] Bela Ban 2012-11-21 - Passing the jgroups.bind_addr system property to build.xml - Replacing String.length()  > 0 with isEmpty()
+1	0	build.xml
+9	12	src/org/jgroups/stack/Configurator.java
+
+[eda33eaec] Bela Ban 2012-11-21 checking for lo and lo0
+1	1	tests/junit-functional/org/jgroups/tests/PropertyConvertersTest.java
+
+[447fb34fc] Bela Ban 2012-11-21 changed defaults for xmit_interval
+1	1	conf/udp-largecluster.xml
+2	2	conf/udp.xml
+
+[a8dbf4c8b] Bela Ban 2012-11-21 Code simplification
+17	22	src/org/jgroups/protocols/UNICAST2.java
+17	22	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[ca225a1fd] Bela Ban 2012-11-21 Clearing task map on view change
+2	2	src/org/jgroups/protocols/UNICAST2.java
+
+[97ab65806] Bela Ban 2012-11-21 Using same retransmission code in UNICAST2 as in NAKACK2 (https://issues.jboss.org/browse/JGRP-1539)
+45	24	src/org/jgroups/protocols/UNICAST2.java
+
+[a9862ffe2] Bela Ban 2012-11-19 Changed javadocs and manual to clarify the use of dests in MessageDispatcher.castMessage() and RpcDispatcher.callRemoteMethods()
+35	3	doc/manual/en/modules/blocks.xml
+4	8	src/org/jgroups/blocks/MessageDispatcher.java
+6	6	src/org/jgroups/blocks/RpcDispatcher.java
+
+[658d8d8a1] Bela Ban 2012-11-19 Only retransmit previous xmit_inerval (https://issues.jboss.org/browse/JGRP-1539)
+16	2	src/org/jgroups/protocols/pbcast/NAKACK2.java
+3	2	tests/junit-functional/org/jgroups/protocols/NAKACK2_RetransmitTest.java
+
+[c57dc481a] Bela Ban 2012-11-19 Added SeqnoList.removeHigher() plus unit test
+23	0	src/org/jgroups/util/SeqnoList.java
+21	0	tests/junit-functional/org/jgroups/tests/SeqnoListTest.java
+
+[a4eeac5ac] Bela Ban 2012-11-16 Added a test case to test unnecessary retransmissions (https://issues.jboss.org/browse/JGRP-1539)
+2	5	src/org/jgroups/protocols/UNICAST2.java
+24	14	src/org/jgroups/protocols/pbcast/NAKACK2.java
+12	0	src/org/jgroups/util/SeqnoList.java
+180	0	tests/junit-functional/org/jgroups/protocols/NAKACK2_RetransmitTest.java
+15	0	tests/junit-functional/org/jgroups/tests/SeqnoListTest.java
+
+[14f80ff9f] Bela Ban 2012-11-21 changed defaults for xmit_interval
+1	1	conf/udp-largecluster.xml
+2	2	conf/udp.xml
+
+[65efacbad] Bela Ban 2012-11-21 Code simplification
+17	22	src/org/jgroups/protocols/UNICAST2.java
+17	22	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[4cfc1aa15] Bela Ban 2012-11-21 Clearing task map on view change
+2	2	src/org/jgroups/protocols/UNICAST2.java
+
+[0a5e02a48] Bela Ban 2012-11-21 Using same retransmission code in UNICAST2 as in NAKACK2 (https://issues.jboss.org/browse/JGRP-1539)
+45	24	src/org/jgroups/protocols/UNICAST2.java
+
+[8f2e7e0fb] Bela Ban 2012-11-20 Added SiteMasters to UnicastDistRpc and UPerf
+5	0	src/org/jgroups/protocols/relay/SiteUUID.java
+16	1	tests/other/org/jgroups/tests/UnicastTestRpc.java
+45	11	tests/perf/org/jgroups/tests/perf/UPerf.java
+
+[1f5cac74e] Bela Ban 2012-11-19 Added .DS_Store
+1	0	.gitignore
+
+[f19310192] Bela Ban 2012-11-19 Fixed test to run on Mac OS
+9	1	tests/junit-functional/org/jgroups/tests/PropertyConvertersTest.java
+
+[8ac14006b] Bela Ban 2012-11-19 Changed javadocs and manual to clarify the use of dests in MessageDispatcher.castMessage() and RpcDispatcher.callRemoteMethods()
+35	3	doc/manual/en/modules/blocks.xml
+4	8	src/org/jgroups/blocks/MessageDispatcher.java
+6	6	src/org/jgroups/blocks/RpcDispatcher.java
+
+[87aa55798] Bela Ban 2012-11-19 Only retransmit previous xmit_inerval (https://issues.jboss.org/browse/JGRP-1539)
+16	2	src/org/jgroups/protocols/pbcast/NAKACK2.java
+3	2	tests/junit-functional/org/jgroups/protocols/NAKACK2_RetransmitTest.java
+
+[63ea597c3] Bela Ban 2012-11-19 Added SeqnoList.removeHigher() plus unit test
+23	0	src/org/jgroups/util/SeqnoList.java
+21	0	tests/junit-functional/org/jgroups/tests/SeqnoListTest.java
+
+[08ef0043f] Bela Ban 2012-11-16 Added a test case to test unnecessary retransmissions (https://issues.jboss.org/browse/JGRP-1539)
+2	5	src/org/jgroups/protocols/UNICAST2.java
+24	14	src/org/jgroups/protocols/pbcast/NAKACK2.java
+12	0	src/org/jgroups/util/SeqnoList.java
+180	0	tests/junit-functional/org/jgroups/protocols/NAKACK2_RetransmitTest.java
+15	0	tests/junit-functional/org/jgroups/tests/SeqnoListTest.java
+
+[670b46e0b] Bela Ban 2012-11-16 added config example to PDC
+12	0	doc/manual/en/modules/protocols.xml
+
+[305068f5c] Bela Ban 2012-11-16 Added Persistent Discovery Cache (PDC) (https://issues.jboss.org/browse/JGRP-1541)
+1	0	conf/jg-protocol-ids.xml
+11	0	doc/manual/en/modules/protocols.xml
+26	14	src/org/jgroups/protocols/Discovery.java
+330	0	src/org/jgroups/protocols/PDC.java
+1	2	src/org/jgroups/protocols/TP.java
+
+[135bbeb26] Bela Ban 2012-11-14 - Removed use of ThreadGroups (https://issues.jboss.org/browse/JGRP-1410) - Fixed incorrect naming of threads in shared transport
+7	8	src/org/jgroups/blocks/BasicConnectionTable.java
+9	10	src/org/jgroups/blocks/ConnectionTableNIO.java
+6	13	src/org/jgroups/blocks/TCPConnectionMap.java
+1	1	src/org/jgroups/demos/Draw.java
+1	2	src/org/jgroups/protocols/BPING.java
+1	1	src/org/jgroups/protocols/FD_SOCK.java
+1	1	src/org/jgroups/protocols/MPING.java
+1	4	src/org/jgroups/protocols/SCOPE.java
+4	12	src/org/jgroups/protocols/TCP.java
+13	44	src/org/jgroups/protocols/TP.java
+2	2	src/org/jgroups/stack/GossipRouter.java
+0	3	src/org/jgroups/stack/Protocol.java
+42	34	src/org/jgroups/util/DefaultThreadFactory.java
+20	15	src/org/jgroups/util/LazyThreadFactory.java
+4	3	src/org/jgroups/util/ThreadFactory.java
+2	2	src/org/jgroups/util/Util.java
+12	14	tests/junit-functional/org/jgroups/blocks/ConnectionMapTest.java
+2	2	tests/junit-functional/org/jgroups/protocols/VERIFY_SUSPECT_Test.java
+4	6	tests/junit-functional/org/jgroups/tests/ConnectionMapUnitTest.java
+3	4	tests/junit-functional/org/jgroups/tests/LargeMergeTest.java
+2	3	tests/junit-functional/org/jgroups/tests/MergeTest2.java
+2	3	tests/junit-functional/org/jgroups/tests/MergeTest3.java
+2	3	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+2	3	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+3	3	tests/junit/org/jgroups/tests/ThreadFactoryTest.java
+
+[843211b99] Bela Ban 2012-11-13 Fixed scm section (https://issues.jboss.org/browse/JGRP-1536)
+2	3	pom.xml
+
+[5ea053074] Bela Ban 2012-11-13 Changed version to 3.3.0.Alpha1
+1	1	src/org/jgroups/Version.java
+
+[58c6ecbd1] Bela Ban 2012-11-13 Merge branch 'Branch_JGroups_3_2' of github.com:belaban/JGroups into Branch_JGroups_3_2
+[fcc682b70] Bela Ban 2012-11-13 Changed version to 3.2.1.Final
+1	1	src/org/jgroups/Version.java
+
+[0fc09611b] Bela Ban 2012-11-13 Changed version to 3.2.1.Final
+1	1	src/org/jgroups/Version.java
+
+[6bd048c28] Bela Ban 2012-11-07 Passing exception to log statement (https://issues.jboss.org/browse/JGRP-1537)
+1	1	src/org/jgroups/protocols/FILE_PING.java
+
+[5c4792ed9] Bela Ban 2012-11-07 Changed SCM to point to GitHub
+5	4	pom.xml
+
+[b4f3a594b] Bela Ban 2012-11-06 Only join the diag group on a given interface is the interface is up and has addresses associated
+1	1	src/org/jgroups/stack/DiagnosticsHandler.java
+
+[c2e410363] Bela Ban 2012-11-02 Cancelling the down-task if the route transitions to UP before the task has a chance to kick in
+10	5	src/org/jgroups/protocols/relay/RELAY2.java
+73	32	src/org/jgroups/protocols/relay/Relayer.java
+99	53	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[0c08eec76] Bela Ban 2012-11-01 ns
+4	4	src/org/jgroups/protocols/TP.java
+18	20	src/org/jgroups/protocols/relay/RELAY2.java
+32	30	src/org/jgroups/protocols/relay/Relayer.java
+4	4	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[370f19925] Bela Ban 2012-11-01 - Added local_addr - Relay creation can now be done in the background - TP nulls the thread pools on destroy() [https://issues.jboss.org/browse/JGRP-1528]
+3	1	src/org/jgroups/JChannel.java
+5	5	src/org/jgroups/protocols/Discovery.java
+3	2	src/org/jgroups/protocols/TP.java
+42	23	src/org/jgroups/protocols/relay/RELAY2.java
+14	13	src/org/jgroups/protocols/relay/Relayer.java
+16	2	src/org/jgroups/protocols/relay/config/RelayConfig.java
+26	30	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[5b20e8d79] Bela Ban 2012-11-01 First commit of batching for RELAY2 (https://issues.jboss.org/browse/JGRP-1528); Relay2Test doesn't pass yet
+66	55	src/org/jgroups/protocols/relay/RELAY2.java
+160	42	src/org/jgroups/protocols/relay/Relayer.java
+1	1	src/org/jgroups/protocols/relay/config/RelayConfig.java
+186	9	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[708ffcf2f] Bela Ban 2012-11-01 Not throwing an exception if a probe-triggered method execution doesn't find the method
+2	1	src/org/jgroups/JChannel.java
+
+[5561371c1] Bela Ban 2012-10-31 ns
+1	1	conf/relay1.xml
+1	1	conf/relay2.xml
+1	1	src/org/jgroups/protocols/relay/Relayer.java
+
+[e4e99464e] Bela Ban 2012-10-29 Updated TestNG lib to 6.8.0
+2	2	lib/licenses/thirdparty-licenses.xml
+-	-	lib/{testng.jar => testng-6.8.jar}
+
+[9fbccd945] Bela Ban 2012-10-29 Updated byteman libs to 2.1.0
+-	-	lib/byteman-bmunit.jar
+-	-	lib/byteman-install.jar
+-	-	lib/byteman-submit.jar
+-	-	lib/byteman.jar
+4	4	lib/licenses/thirdparty-licenses.xml
+
+[d0f6ba13c] Bela Ban 2012-10-29 Testsuite now doesn't hang on BecomeServerTest any longer
+20	13	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+1	1	conf/testng/byteman.xml
+31	0	tests/byteman/org/jgroups/tests/helpers/BecomeServerTestHelper.java
+7	1	tests/byteman/org/jgroups/tests/helpers/ForwardToCoordFailoverTestHelper.java
+7	1	tests/byteman/org/jgroups/tests/helpers/SequencerFailoverTestHelper.java
+
+[aed5d433e] Bela Ban 2012-10-24 ns
+20	8	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+5	0	src/org/jgroups/protocols/pbcast/NAKACK2.java
+5	4	tests/byteman/org/jgroups/tests/byteman/BecomeServerTest.java
+
+[f0cba805d] Bela Ban 2012-10-23 Deleting the rendezvous at the end of the test
+11	0	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+
+[1b8a94d53] Bela Ban 2012-10-23 Added unit test for FORWARD_TO_COORD (https://issues.jboss.org/browse/JGRP-1517)
+26	0	conf/scripts/ForwardToCoordFailoverTest/testSendingDuringViewChange.btm
+1	1	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+1	0	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+37	24	src/org/jgroups/util/ForwardQueue.java
+167	0	tests/byteman/org/jgroups/tests/byteman/ForwardToCoordFailoverTest.java
+31	0	tests/byteman/org/jgroups/tests/helpers/ForwardToCoordFailoverTestHelper.java
+1	1	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[4bd0e9319] Bela Ban 2012-10-23 Completed implementation of FIFo order for messages forwarded to the site master by FORWARD_TO_COORD (https://issues.jboss.org/browse/JGRP-1517).
+55	83	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+315	0	src/org/jgroups/util/ForwardQueue.java
+10	5	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[6d6ce32f2] Bela Ban 2012-10-22 Removed unboxing
+2	2	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[075258179] Bela Ban 2012-10-22 ns
+2	2	src/org/jgroups/protocols/SEQUENCER.java
+
+[b28631675] Bela Ban 2012-10-22 ns
+2	2	src/org/jgroups/protocols/SEQUENCER.java
+
+[cbbcb17f2] Bela Ban 2012-11-13 Changed version to 3.2.1.Final
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[d13773eb8] Bela Ban 2012-11-07 Passing exception to log statement (https://issues.jboss.org/browse/JGRP-1537)
+1	1	src/org/jgroups/protocols/FILE_PING.java
+
+[a316dea5b] Bela Ban 2012-11-07 Changed SCM to point to GitHub
+5	4	pom.xml
+
+[4c9776a2c] Bela Ban 2012-11-06 Only join the diag group on a given interface is the interface is up and has addresses associated
+1	1	src/org/jgroups/stack/DiagnosticsHandler.java
+
+[4f825d8cb] Bela Ban 2012-11-02 Cancelling the down-task if the route transitions to UP before the task has a chance to kick in
+10	5	src/org/jgroups/protocols/relay/RELAY2.java
+73	32	src/org/jgroups/protocols/relay/Relayer.java
+99	53	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[e556ac66d] Bela Ban 2012-11-01 ns
+4	4	src/org/jgroups/protocols/TP.java
+18	20	src/org/jgroups/protocols/relay/RELAY2.java
+32	30	src/org/jgroups/protocols/relay/Relayer.java
+4	4	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[5f74ed626] Bela Ban 2012-11-01 - Added local_addr - Relay creation can now be done in the background - TP nulls the thread pools on destroy() [https://issues.jboss.org/browse/JGRP-1528]
+3	1	src/org/jgroups/JChannel.java
+5	5	src/org/jgroups/protocols/Discovery.java
+3	2	src/org/jgroups/protocols/TP.java
+42	23	src/org/jgroups/protocols/relay/RELAY2.java
+14	13	src/org/jgroups/protocols/relay/Relayer.java
+16	2	src/org/jgroups/protocols/relay/config/RelayConfig.java
+26	30	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[499890ed7] Bela Ban 2012-11-01 First commit of batching for RELAY2 (https://issues.jboss.org/browse/JGRP-1528); Relay2Test doesn't pass yet
+66	55	src/org/jgroups/protocols/relay/RELAY2.java
+160	42	src/org/jgroups/protocols/relay/Relayer.java
+1	1	src/org/jgroups/protocols/relay/config/RelayConfig.java
+186	9	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[d302028f2] Bela Ban 2012-11-01 Not throwing an exception if a probe-triggered method execution doesn't find the method
+2	1	src/org/jgroups/JChannel.java
+
+[59a2ebcfc] Bela Ban 2012-10-31 ns
+1	1	conf/relay1.xml
+1	1	conf/relay2.xml
+1	1	src/org/jgroups/protocols/relay/Relayer.java
+
+[b4e31c086] Bela Ban 2012-10-30 Throwing exception if bind address == target address (https://issues.jboss.org/browse/JGRP-1530)
+5	3	src/org/jgroups/blocks/TCPConnectionMap.java
+
+[a93b76bc9] Bela Ban 2012-10-29 ENCRYPT: when encrypt_entire_message is true, headers won't get attached to the message carrying the encrypted message as a payload, but the encrypted message will have those headers included when decrypted and unmarshalled (https://issues.jboss.org/browse/JGRP-1531)
+9	1	conf/EncryptKeyStore.xml
+1	1	conf/encrypt-entire-message.xml
+1	1	src/org/jgroups/JChannel.java
+7	4	src/org/jgroups/auth/SimpleToken.java
+4	0	src/org/jgroups/protocols/AuthHeader.java
+45	53	src/org/jgroups/protocols/ENCRYPT.java
+
+[be9e4f381] Bela Ban 2012-10-29 Updated TestNG lib to 6.8.0
+2	2	lib/licenses/thirdparty-licenses.xml
+-	-	lib/{testng.jar => testng-6.8.jar}
+
+[c8fc6745b] Bela Ban 2012-10-29 Updated byteman libs to 2.1.0
+-	-	lib/byteman-bmunit.jar
+-	-	lib/byteman-install.jar
+-	-	lib/byteman-submit.jar
+-	-	lib/byteman.jar
+4	4	lib/licenses/thirdparty-licenses.xml
+
+[62772f900] Bela Ban 2012-10-29 Testsuite now doesn't hang on BecomeServerTest any longer
+20	13	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+1	1	conf/testng/byteman.xml
+31	0	tests/byteman/org/jgroups/tests/helpers/BecomeServerTestHelper.java
+7	1	tests/byteman/org/jgroups/tests/helpers/ForwardToCoordFailoverTestHelper.java
+7	1	tests/byteman/org/jgroups/tests/helpers/SequencerFailoverTestHelper.java
+
+[58604407f] Bela Ban 2012-10-24 ns
+20	8	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+5	0	src/org/jgroups/protocols/pbcast/NAKACK2.java
+5	4	tests/byteman/org/jgroups/tests/byteman/BecomeServerTest.java
+
+[c1f08ac46] Bela Ban 2012-10-23 Deleting the rendezvous at the end of the test
+11	0	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+
+[eb1e587be] Bela Ban 2012-10-23 Added unit test for FORWARD_TO_COORD (https://issues.jboss.org/browse/JGRP-1517)
+26	0	conf/scripts/ForwardToCoordFailoverTest/testSendingDuringViewChange.btm
+1	1	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+1	0	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+37	24	src/org/jgroups/util/ForwardQueue.java
+167	0	tests/byteman/org/jgroups/tests/byteman/ForwardToCoordFailoverTest.java
+31	0	tests/byteman/org/jgroups/tests/helpers/ForwardToCoordFailoverTestHelper.java
+1	1	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[78654fb3c] Bela Ban 2012-10-23 Completed implementation of FIFo order for messages forwarded to the site master by FORWARD_TO_COORD (https://issues.jboss.org/browse/JGRP-1517).
+55	83	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+315	0	src/org/jgroups/util/ForwardQueue.java
+10	5	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[f233d3ae8] Bela Ban 2012-10-22 Removed unboxing
+2	2	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[fdba3b712] Bela Ban 2012-10-22 ns
+2	2	src/org/jgroups/protocols/SEQUENCER.java
+
+[0f13241d9] Bela Ban 2012-10-22 ns
+2	2	src/org/jgroups/protocols/SEQUENCER.java
+
+[3e8aa494d] Bela Ban 2012-10-19 Changed version to 3.3.0.Alpha1
+1	1	build.xml
+0	133	doc/ReleaseNotes-3.2.0.txt
+57	0	doc/ReleaseNotes-3.3.0.txt
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[1a6c2df34] Bela Ban 2012-10-19 Changed version to 3.20.Final and updated release doc
+1	1	build.xml
+9	0	doc/ReleaseNotes-3.2.0.txt
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[a64104388] Bela Ban 2012-10-19 Heartbeats or messages from previously suspected members cause removal of those from suspected_mbrs and sending of UNSUSPECT event up and down the stack (https://issues.jboss.org/browse/JGRP-1523)
+39	11	src/org/jgroups/protocols/FD_ALL.java
+1	1	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+
+[1e3afb78c] Bela Ban 2012-10-19 Changed version to 3.2.0.CR3
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[44c4edc28] Bela Ban 2012-10-18 ns
+8	1	conf/relay1.xml
+8	1	conf/relay2.xml
+
+[3261948c8] Bela Ban 2012-10-18 Merge pull request #67 from tristantarrant/JGRP-1527
+[9cdd82515] Tristan Tarrant 2012-10-18 JGRP-1527 Make the POM package the jg-messages*.properties files in the JAR
+1	0	pom.xml
+
+[db9db8c12] Bela Ban 2012-10-17 Replaced synchronized methods with ReentrantLock; connection status change notifications are invoked outside the lock scope (https://issues.jboss.org/browse/JGRP-1526)
+103	51	src/org/jgroups/stack/RouterStub.java
+
+[1188671ab] Bela Ban 2012-10-16 Waiting until we have a bridge view of 2 members at X
+4	0	src/org/jgroups/protocols/relay/RELAY2.java
+10	0	src/org/jgroups/protocols/relay/Relayer.java
+14	2	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[9c895d845] Bela Ban 2012-10-16 Completed Relay2Test
+0	15	src/org/jgroups/JChannel.java
+10	0	src/org/jgroups/protocols/relay/RELAY2.java
+117	4	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[b15cb08c8] Bela Ban 2012-10-16 Test for RELAY2 (https://issues.jboss.org/browse/JGRP-1524)
+33	0	tests/junit-functional/org/jgroups/tests/Relay2Test.java
+
+[a7642801a] Bela Ban 2012-10-15 Added JChannel constructor which takes a list of protocols as arg
+15	0	src/org/jgroups/JChannel.java
+
+[2e15a115a] Bela Ban 2012-10-16 Added ability to configure RELAY2 with fluent configuration (https://issues.jboss.org/browse/JGRP-1525)
+16	0	src/org/jgroups/JChannel.java
+46	33	src/org/jgroups/protocols/relay/RELAY2.java
+3	3	src/org/jgroups/protocols/relay/Relayer.java
+46	20	src/org/jgroups/protocols/relay/config/RelayConfig.java
+
+[4a03df72b] Bela Ban 2012-10-15 Moved CountTests, DumpData and JUnitXmlReporter from src/ to tests/util to prevent their inclusion into the resulting JAR file (avoiding dependency on TestNG)
+2	0	build.xml
+0	1	{src => tests/util}/org/jgroups/util/CountTests.java
+0	0	{src => tests/util}/org/jgroups/util/DumpData.java
+0	0	{src => tests/util}/org/jgroups/util/JUnitXMLReporter.java
+
+[396bc40a4] Bela Ban 2012-10-15 - First remove routes of left members, then add routes of existing members (https://issues.jboss.org/browse/JGRP-1524) - Changed version to 3.2.0.CR2
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+9	9	src/org/jgroups/protocols/relay/Relayer.java
+
+[08f61574b] Bela Ban 2012-10-12 removed unboxing
+2	2	src/org/jgroups/protocols/FD_ALL.java
+
+[e5bafecd9] Bela Ban 2012-10-09 - GossipRouter: faster condition evaluation - UnicastTest: fixed NPE
+2	2	src/org/jgroups/stack/GossipRouter.java
+1	1	tests/other/org/jgroups/tests/UnicastTest.java
+
+[e77fb91c1] Bela Ban 2012-10-09 ns
+1	10	src/org/jgroups/stack/GossipRouter.java
+
+[be2134c9e] Bela Ban 2012-10-05 Become_server_queue was never flushed (JGRP-1522) - fixed now
+1	3	src/org/jgroups/protocols/pbcast/NAKACK.java
+1	3	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[84421390e] Bela Ban 2012-10-05 Changed version to 3.2.0.CR1
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[e3ede76c7] Bela Ban 2012-10-05 Updated release notes
+36	3	doc/ReleaseNotes-3.2.0.txt
+
+[21c666f2b] Bela Ban 2012-10-05 Completed JGRP-1522
+8	8	tests/junit/org/jgroups/blocks/LockServiceTest.java
+
+[77889606b] Bela Ban 2012-10-04 Completed JGRP-1522
+30	14	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+50	62	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+5	9	src/org/jgroups/protocols/pbcast/GMS.java
+38	12	src/org/jgroups/protocols/pbcast/NAKACK.java
+34	11	src/org/jgroups/protocols/pbcast/NAKACK2.java
+22	17	tests/byteman/org/jgroups/tests/byteman/BecomeServerTest.java
+2	0	tests/junit-functional/org/jgroups/protocols/NAKACK_Delivery_Test.java
+
+[5e0eac16a] Bela Ban 2012-10-04 Refactoring of connect() methods
+51	96	src/org/jgroups/JChannel.java
+
+[1d205c002] Bela Ban 2012-10-03 First set of tests for JGRP-1522
+54	0	conf/scripts/BecomeServerTest/testSendingOfMsgsOnUnconnectedChannel.btm
+95	0	tests/byteman/org/jgroups/tests/byteman/BecomeServerTest.java
+
+[55aadfaad] Bela Ban 2012-10-04 changed version to 3.2.0.Beta1
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[962210261] Bela Ban 2012-10-04 changed version to 3.20.Alpha3
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[a1d4c2ef9] Bela Ban 2012-10-04 Merge pull request #66 from alesj/util_fix
+[f6513e59e] Ales Justin 2012-10-04 Use right classloader
+1	1	src/org/jgroups/util/Util.java
+
+[d5f45714b] Bela Ban 2012-10-02 Added section on RELAY2.can_become_site_master
+17	0	doc/manual/en/modules/advanced.xml
+
+[96cf4e95c] Bela Ban 2012-10-02 Added ability to skip certain members marked with can_become_site_master=false (https://issues.jboss.org/browse/JGRP-1521)
+3	0	conf/jg-magic-map.xml
+87	0	src/org/jgroups/protocols/relay/CanBeSiteMaster.java
+62	0	src/org/jgroups/protocols/relay/CanBeSiteMasterTopology.java
+48	3	src/org/jgroups/protocols/relay/RELAY2.java
+1	1	src/org/jgroups/stack/Protocol.java
+7	0	src/org/jgroups/util/TopologyUUID.java
+
+[a9f97e10b] Bela Ban 2012-10-02 Merge branch 'Branch_JGroups_2_6' of github.com:belaban/JGroups into Branch_JGroups_2_6
+[b117b78fc] Bela Ban 2012-10-02 Changed URL to download jboss-test.jar
+1	1	build.xml
+
+[415c84fbb] Bela Ban 2012-10-02 Merge pull request #65 from navssurtani/2.6.22
+[fe7d670f5] Navin Surtani 2012-10-02 JBPAPP-9952: Sorted out bug in VERIFY_SUSPECT and released 2.6.22.Final
+4	3	src/org/jgroups/protocols/VERIFY_SUSPECT.java
+
+[d84d92343] Bela Ban 2012-10-01 More inspections applied
+4	4	src/org/jgroups/JChannel.java
+1	1	src/org/jgroups/util/UUID.java
+
+[806288f6a] Bela Ban 2012-09-28 Added log_discard_messages_version
+11	11	src/org/jgroups/protocols/TP.java
+
+[4a4ade858] Bela Ban 2012-09-27 ns
+1	1	src/org/jgroups/UnreachableException.java
+
+[8e69951b6] Bela Ban 2012-09-26 Handling thread interruption when sending message and blocking for route
+4	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[f76f7230a] Bela Ban 2012-09-25 IntelliJ analysis fixes
+1	1	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+1	7	src/org/jgroups/protocols/pbcast/NAKACK.java
+1	7	src/org/jgroups/protocols/pbcast/NAKACK2.java
+1	1	src/org/jgroups/protocols/pbcast/STATE.java
+0	1	src/org/jgroups/protocols/pbcast/STATE_SOCK.java
+0	2	src/org/jgroups/protocols/pbcast/StreamingStateTransfer.java
+12	12	src/org/jgroups/protocols/relay/RELAY2.java
+6	7	src/org/jgroups/protocols/relay/Relayer.java
+
+[1b1092a3d] Bela Ban 2012-09-25 Catching exceptions in test
+10	4	src/org/jgroups/demos/RelayDemoRpc.java
+
+[39e6692fb] Bela Ban 2012-09-24 Fixed issue with multicast cycles (https://issues.jboss.org/browse/JGRP-1519)
+4	2	src/org/jgroups/protocols/relay/RELAY2.java
+
+[36297b4fe] Bela Ban 2012-09-24 Fixed NPE
+1	1	src/org/jgroups/JChannel.java
+
+[4153bbd4b] Bela Ban 2012-09-24 Changed version to 3.2.0.Beta1
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[2b5289936] Bela Ban 2012-09-21 - Removed unneeded error log statements - Changed UnicastRequest.getValue() to take unreachable response into account for future
+1	4	src/org/jgroups/blocks/BasicConnectionTable.java
+4	10	src/org/jgroups/blocks/MessageDispatcher.java
+13	6	src/org/jgroups/blocks/UnicastRequest.java
+2	2	src/org/jgroups/demos/RelayDemoRpc.java
+0	2	src/org/jgroups/protocols/UDP.java
+
+[50de51e21] Bela Ban 2012-09-21 Fixed typo
+1	1	conf/jg-messages_de.properties
+4	4	src/org/jgroups/protocols/UDP.java
+
+[95481da95] Bela Ban 2012-09-20 Internationalized receive buffers warning
+3	1	conf/jg-messages.properties
+2	0	conf/jg-messages_de.properties
+2	4	src/org/jgroups/blocks/TCPConnectionMap.java
+4	8	src/org/jgroups/protocols/UDP.java
+
+[8fcc86f18] Bela Ban 2012-09-20 Internationalized 'deprecated' warning
+2	1	conf/jg-messages.properties
+1	0	conf/jg-messages_de.properties
+5	4	src/org/jgroups/stack/Configurator.java
+
+[d785e1e56] Bela Ban 2012-09-20 - Implemented SuppressLog; no need anymore to use SuppressCache directly (JGRP-1518)
+3	7	conf/jg-messages.properties
+3	8	conf/jg-messages_de.properties
+25	38	src/org/jgroups/protocols/TP.java
+11	16	src/org/jgroups/protocols/pbcast/NAKACK.java
+11	16	src/org/jgroups/protocols/pbcast/NAKACK2.java
+53	0	src/org/jgroups/util/SuppressLog.java
+
+[6ae24af79] Bela Ban 2012-09-19 Removed some error log statements
+1	1	src/org/jgroups/protocols/TP.java
+8	28	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[96479d482] Bela Ban 2012-09-21 Merge branch 'Branch_JGroups_2_6' of github.com:belaban/JGroups into Branch_JGroups_2_6
+[224c86eda] Bela Ban 2012-09-21 Wrapping socket send() in a catch clause
+12	2	tests/other/org/jgroups/tests/McastSenderTest.java
+
+[63eecd0f0] Bela Ban 2012-09-19 Added getBridge() to RELAY2
+12	0	src/org/jgroups/protocols/relay/RELAY2.java
+4	0	src/org/jgroups/protocols/relay/Relayer.java
+
+[ca4131292] Bela Ban 2012-09-19 - Removed discard_incompatible_packets from transport (https://issues.jboss.org/browse/JGRP-1518) - Implemented suppressing of identical messages for a configurable time (https://issues.jboss.org/browse/JGRP-1518)
+0	1	conf/fast-local.xml
+17	13	conf/jg-messages.properties
+18	13	conf/jg-messages_de.properties
+0	1	conf/tcp.xml
+0	1	conf/toa.xml
+0	1	conf/udp-largecluster.xml
+0	1	conf/udp.xml
+5	0	src/org/jgroups/JChannel.java
+88	14	src/org/jgroups/protocols/TP.java
+38	10	src/org/jgroups/protocols/pbcast/NAKACK.java
+36	3	src/org/jgroups/protocols/pbcast/NAKACK2.java
+99	0	src/org/jgroups/util/SuppressCache.java
+46	0	tests/junit-functional/org/jgroups/tests/SuppressCacheTest.java
+
+[e60cbb693] Bela Ban 2012-09-19 ns
+2	2	src/org/jgroups/stack/Configurator.java
+
+[5c6acfcbd] Bela Ban 2012-09-19 Changed link for AWS_PING docu
+1	1	doc/manual/en/modules/protocols.xml
+
+[f57fcb05f] Bela Ban 2012-09-18 Internationalized further warning statements (https://issues.jboss.org/browse/JGRP-1475)
+13	6	conf/jg-messages.properties
+13	7	conf/jg-messages_de.properties
+2	2	src/org/jgroups/blocks/TCPConnectionMap.java
+4	4	src/org/jgroups/jmx/ResourceDMBean.java
+3	10	src/org/jgroups/protocols/TP.java
+2	10	src/org/jgroups/protocols/UNICAST.java
+2	10	src/org/jgroups/protocols/UNICAST2.java
+6	13	src/org/jgroups/protocols/pbcast/NAKACK.java
+7	15	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[579775154] Bela Ban 2012-09-18 ns
+1	3	src/org/jgroups/jmx/ResourceDMBean.java
+
+[d676e9b26] Bela Ban 2012-09-18 - Added jg-messages*.properties files for English and German (https://issues.jboss.org/browse/JGRP-1475) - Added helper methods in Util to get i8n messages out of the resource bundle (https://issues.jboss.org/browse/JGRP-1475) - Converting some exceptions to use internationalized messages (https://issues.jboss.org/browse/JGRP-1475)
+6	0	conf/jg-messages.properties
+7	0	conf/jg-messages_de.properties
+2	0	src/org/jgroups/conf/ConfiguratorFactory.java
+2	12	src/org/jgroups/conf/XmlConfigurator.java
+6	15	src/org/jgroups/stack/Configurator.java
+16	1	src/org/jgroups/util/Util.java
+
+[09c2b2dd2] Bela Ban 2012-09-18 pp
+6	6	src/org/jgroups/JChannel.java
+2	2	src/org/jgroups/stack/Protocol.java
+
+[53f6beea2] Bela Ban 2012-09-18 Including jg-message*.properties files in resulting JAR
+23	23	build.xml
+
+[2d594d783] Bela Ban 2012-09-17 Merge branch 'JGRP-1514'
+[2af2c25d1] Bela Ban 2012-09-17 Added retrying if a remote site is down (https://issues.jboss.org/browse/JGRP-1514)
+24	9	src/org/jgroups/protocols/relay/RELAY2.java
+
+[fad0a556d] Bela Ban 2012-09-17 Increased timeout for RPCs to 10s
+20	8	src/org/jgroups/demos/RelayDemoRpc.java
+
+[bd0e24726] Bela Ban 2012-09-17 Changed version to 3.2.0.Alpha2
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[7c4410224] Bela Ban 2012-09-17 Fixed typo
+1	1	src/org/jgroups/protocols/SEQUENCER.java
+
+[dfa1b35cc] Bela Ban 2012-09-17 Fixed typo
+1	1	src/org/jgroups/protocols/SEQUENCER.java
+
+[e489a544f] Bela Ban 2012-09-14 added javadoc
+10	1	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[3062f419d] Bela Ban 2012-09-14 ns
+13	34	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[9e88a1847] Bela Ban 2012-09-14 Implemented destroy() in SHARED_LOOPBACK, to unregister members
+16	13	src/org/jgroups/protocols/SHARED_LOOPBACK.java
+
+[2e7d88a75] Bela Ban 2012-09-14 Added local_addr in trace statements
+6	4	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+8	8	src/org/jgroups/protocols/UNICAST2.java
+1	1	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+
+[6f4c44c4e] Bela Ban 2012-09-13 ns
+78	76	tests/junit/org/jgroups/tests/OOBTest.java
+
+[24267a4cb] Bela Ban 2012-09-13 Changed GossipRouter tests to use separate, non-conflicting, ports (https://issues.jboss.org/browse/JGRP-1515)
+4	4	src/org/jgroups/protocols/TP.java
+14	0	src/org/jgroups/util/ResourceManager.java
+41	26	tests/junit/org/jgroups/tests/GossipRouterTest.java
+51	51	tests/junit/org/jgroups/tests/TCPGOSSIP_Test.java
+29	3	tests/junit/org/jgroups/tests/TUNNELDeadLockTest.java
+47	63	tests/junit/org/jgroups/tests/TUNNEL_Test.java
+
+[279cd2bce] Bela Ban 2012-09-13 Creating thread groups channel_thread_group and pools_thread_group in init() and destroying them in destroy() of TP.
+20	9	src/org/jgroups/protocols/TP.java
+1	1	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[33e81d154] Bela Ban 2012-09-13 Replaced log.info() messages with System.outs in tests
+2	1	src/org/jgroups/protocols/FILE_PING.java
+3	3	src/org/jgroups/protocols/JDBC_PING.java
+2	2	src/org/jgroups/stack/GossipRouter.java
+6	6	tests/junit/org/jgroups/tests/FlushTest.java
+1	1	tests/junit/org/jgroups/tests/LastMessageDroppedTest.java
+6	6	tests/junit/org/jgroups/tests/OOBTest.java
+2	2	tests/junit/org/jgroups/tests/ReconciliationTest.java
+2	2	tests/junit/org/jgroups/tests/ReplicatedHashMapStartupTest.java
+4	4	tests/junit/org/jgroups/tests/StateTransferTest.java
+
+[c4847108b] Bela Ban 2012-09-12 Added docu on FORWARD_TO_COORD
+7	0	doc/manual/en/modules/advanced.xml
+
+[58117bf20] Bela Ban 2012-09-12 Switched transport from UDP --> SHARED_LOOPBACK
+4	6	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[fdbe75138] Bela Ban 2012-09-12 Added test to forward a message to a member which hasn't yet seen the new view and therefore rejects the message
+1	1	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+50	8	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[364da333f] Bela Ban 2012-09-12 Added logging to FORWARD_TO_COOR, using FORWARD_TO_COORD event in  RELAY2 now
+31	4	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+0	3	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+3	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[73f2c120e] Bela Ban 2012-09-12 New test for FORWARD_TO_COORD
+216	0	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[468b8da90] Bela Ban 2012-09-12 ns
+13	0	src/org/jgroups/protocols/SHARED_LOOPBACK.java
+4	1	src/org/jgroups/protocols/TP.java
+1	1	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[fdbcd01a3] Bela Ban 2012-09-12 Added local address to trace statements
+7	6	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[c40b0f24b] Bela Ban 2012-09-12 ns
+1	1	src/org/jgroups/protocols/Discovery.java
+
+[b732172cb] Bela Ban 2012-09-10 Use of FORWARD event by RELAY2
+9	9	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+22	6	src/org/jgroups/protocols/relay/RELAY2.java
+
+[92f1d9882] Bela Ban 2012-09-10 Added ability to grab a list of provided down or up services
+30	10	src/org/jgroups/stack/Protocol.java
+
+[b3e1c430b] Bela Ban 2012-09-07 Added empty public ctor
+3	0	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[57b347bae] Bela Ban 2012-09-07 First impl of FORWARD_TO_COORD protocol (https://issues.jboss.org/browse/JGRP-1401)
+60	59	conf/jg-magic-map.xml
+1	0	conf/jg-protocol-ids.xml
+9	7	src/org/jgroups/Event.java
+220	0	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[454041acc] Bela Ban 2012-09-12 Added test to forward a message to a member which hasn't yet seen the new view and therefore rejects the message
+1	1	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+50	8	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[370b79e89] Bela Ban 2012-09-12 Added logging to FORWARD_TO_COOR, using FORWARD_TO_COORD event in  RELAY2 now
+31	4	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+0	3	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+3	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[d040c5ac9] Bela Ban 2012-09-12 New test for FORWARD_TO_COORD
+216	0	tests/junit-functional/org/jgroups/protocols/FORWARD_TO_COORD_Test.java
+
+[c065accd5] Bela Ban 2012-09-12 ns
+13	0	src/org/jgroups/protocols/SHARED_LOOPBACK.java
+4	1	src/org/jgroups/protocols/TP.java
+1	1	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[5bd73064c] Bela Ban 2012-09-12 Added local address to trace statements
+7	6	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[bae2f1746] Bela Ban 2012-09-12 ns
+1	1	src/org/jgroups/protocols/Discovery.java
+
+[8abc9f08e] Bela Ban 2012-09-12 Changed incorrect error message (https://issues.jboss.org/browse/JGRP-1499)
+2	2	src/org/jgroups/protocols/BasicTCP.java
+
+[e4c18ae78] Bela Ban 2012-09-12 Changed incorrect error message (https://issues.jboss.org/browse/JGRP-1499)
+1	1	src/org/jgroups/protocols/BasicTCP.java
+
+[e39d15739] Bela Ban 2012-09-12 Queue messages in NAKACK{2} until we become a server, then replay them (https://issues.jboss.org/browse/JGRP-1509)
+0	4	src/org/jgroups/Event.java
+5	19	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+15	24	src/org/jgroups/protocols/pbcast/GMS.java
+39	11	src/org/jgroups/protocols/pbcast/NAKACK.java
+58	37	src/org/jgroups/protocols/pbcast/NAKACK2.java
+54	58	tests/junit/org/jgroups/tests/SharedTransportTest.java
+
+[7e4142aab] Bela Ban 2012-09-11 If we're the coord, handle GMS.leave_timeout differently (https://issues.jboss.org/browse/JGRP-1509)
+4	1	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+
+[f1ffa339f] Bela Ban 2012-09-11 If we're the coord, handle GMS.leave_timeout differently (https://issues.jboss.org/browse/JGRP-1509)
+4	1	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+
+[2b63daad6] Bela Ban 2012-09-10 Use of FORWARD event by RELAY2
+9	9	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+22	6	src/org/jgroups/protocols/relay/RELAY2.java
+
+[ed07b809e] Bela Ban 2012-09-10 Added ability to grab a list of provided down or up services
+30	10	src/org/jgroups/stack/Protocol.java
+
+[db1ad4ec0] Bela Ban 2012-09-07 Added empty public ctor
+3	0	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[e92420a0b] Bela Ban 2012-09-07 First impl of FORWARD_TO_COORD protocol (https://issues.jboss.org/browse/JGRP-1401)
+60	59	conf/jg-magic-map.xml
+1	0	conf/jg-protocol-ids.xml
+11	9	src/org/jgroups/Event.java
+220	0	src/org/jgroups/protocols/FORWARD_TO_COORD.java
+
+[83aa13161] Bela Ban 2012-09-06 Waiting in setup() until the cluster has formed successfully
+1	4	tests/junit/org/jgroups/tests/OverlappingMergeTest.java
+
+[a30cb98a1] Bela Ban 2012-09-06 Removed JMX info from RSVPTest
+4	8	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[93a9b012c] Bela Ban 2012-09-04 yet another test
+21	0	tests/junit-functional/org/jgroups/tests/MergerTest.java
+
+[df9f50095] Bela Ban 2012-09-04 ns
+0	1	tests/junit-functional/org/jgroups/tests/MergerTest.java
+
+[5d22fdf29] Bela Ban 2012-09-04 Added test to MergerTest
+64	39	tests/junit-functional/org/jgroups/tests/MergerTest.java
+
+[7a29ca102] Bela Ban 2012-09-04 Using NO_TOTAL_ORDER for the MergeView installation multicast (https://issues.jboss.org/browse/JGRP-1484)
+6	0	src/org/jgroups/protocols/pbcast/GMS.java
+
+[dc0071442] Bela Ban 2012-09-04 ns
+0	9	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+
+[e3d5a538f] Bela Ban 2012-09-04 Added new test by David (testMergeParticipant()) to test https://issues.jboss.org/browse/JGRP-1484
+83	5	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+
+[972a8ed53] Bela Ban 2012-09-04 Fixed operator precedence bug (David's pull request)
+2	2	src/org/jgroups/blocks/LazyRemovalCache.java
+
+[805a0b6a6] Bela Ban 2012-09-04 added evictLogicalAddressCache(boolean force)
+5	1	src/org/jgroups/protocols/TP.java
+
+[1f524055e] Bela Ban 2012-09-04 initial_hosts are initialized to an empty list (prevents NPE)
+13	13	src/org/jgroups/protocols/TCPPING.java
+
+[8093986c5] Bela Ban 2012-09-04 Returning modifiable list from parseCommandDelimitedList(), as users may want to add hosts (e.g. TCPPING.initial_hosts)
+2	2	src/org/jgroups/util/Util.java
+
+[e0647602a] Bela Ban 2012-09-06 Changed version to 3.0.15.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[618dc198d] Bela Ban 2012-09-06 - Implementation of call termination in MessageDispatcher when underlying channel is closed (https://issues.jboss.org/browse/JGRP-1508)  - Unit test (by Dan Berindei)
+24	0	src/org/jgroups/blocks/GroupRequest.java
+5	1	src/org/jgroups/blocks/MessageDispatcher.java
+1	1	src/org/jgroups/blocks/Request.java
+3	0	src/org/jgroups/blocks/RequestCorrelator.java
+1	2	src/org/jgroups/blocks/RpcDispatcher.java
+1	1	src/org/jgroups/blocks/RspCollector.java
+17	0	src/org/jgroups/blocks/UnicastRequest.java
+1	0	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+
+[c9dd83912] Bela Ban 2012-09-05 - Implementation of call termination in MessageDispatcher when underlying channel is closed (https://issues.jboss.org/browse/JGRP-1508)  - Unit test (by Dan Berindei)
+1	0	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+
+[1b7eb3413] Bela Ban 2012-09-05 Added test for https://issues.jboss.org/browse/JGRP-1508
+225	0	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+
+[960f40808] Bela Ban 2012-09-05 - Implementation of call termination in MessageDispatcher when underlying channel is closed (https://issues.jboss.org/browse/JGRP-1508)  - Unit test (by Dan Berindei)
+24	0	src/org/jgroups/blocks/GroupRequest.java
+5	1	src/org/jgroups/blocks/MessageDispatcher.java
+1	1	src/org/jgroups/blocks/Request.java
+3	0	src/org/jgroups/blocks/RequestCorrelator.java
+1	2	src/org/jgroups/blocks/RpcDispatcher.java
+1	0	src/org/jgroups/blocks/RspCollector.java
+17	0	src/org/jgroups/blocks/UnicastRequest.java
+106	92	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+
+[c0d51f982] Bela Ban 2012-09-05 Merge pull request #64 from danberindei/t_1508_m
+[3836ffaeb] Dan Berindei 2012-09-05 JGRP-1508 Test showing tht closing the channel does not cancel pending requests
+27	2	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+
+[b3c602729] Dan Berindei 2012-09-04 JGRP-1508 Test sending messages with MessageDispatcher after the channel has been closed
+186	0	tests/junit-functional/org/jgroups/tests/MessageDispatcherRSVPTest.java
+
+[eea8fc8c3] Bela Ban 2012-09-04 yet another test
+21	0	tests/junit-functional/org/jgroups/tests/MergerTest.java
+
+[195274588] Bela Ban 2012-09-04 ns
+0	1	tests/junit-functional/org/jgroups/tests/MergerTest.java
+
+[85f026378] Bela Ban 2012-09-04 Added test to MergerTest
+64	39	tests/junit-functional/org/jgroups/tests/MergerTest.java
+
+[307fd5cf5] Bela Ban 2012-09-04 Added testCancellationByClosingChannel()
+33	5	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[450ce8b8e] Bela Ban 2012-09-04 Using NO_TOTAL_ORDER for the MergeView installation multicast (https://issues.jboss.org/browse/JGRP-1484)
+6	0	src/org/jgroups/protocols/pbcast/GMS.java
+
+[a0a337225] Bela Ban 2012-09-04 ns
+0	9	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+
+[0906f392e] Bela Ban 2012-09-04 Added new test by David (testMergeParticipant()) to test https://issues.jboss.org/browse/JGRP-1484
+83	5	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+
+[a59eacf9a] Bela Ban 2012-09-04 Fixed operator precedence bug (David's pull request)
+2	2	src/org/jgroups/blocks/LazyRemovalCache.java
+
+[f9c3e7086] Bela Ban 2012-09-04 Moved killing of tasks from destroy() to stop()
+1	1	src/org/jgroups/protocols/RSVP.java
+
+[5f2042af7] Bela Ban 2012-09-04 Moved killing of tasks from destroy() to stop()
+1	1	src/org/jgroups/protocols/RSVP.java
+
+[838bc844d] Bela Ban 2012-09-04 added evictLogicalAddressCache(boolean force)
+5	1	src/org/jgroups/protocols/TP.java
+
+[87e868b9b] Bela Ban 2012-09-04 initial_hosts are initialized to an empty list (prevents NPE)
+13	13	src/org/jgroups/protocols/TCPPING.java
+
+[9fc6c7cc5] Bela Ban 2012-09-04 Returning modifiable list from parseCommandDelimitedList(), as users may want to add hosts (e.g. TCPPING.initial_hosts)
+2	2	src/org/jgroups/util/Util.java
+
+[ba03d3a6c] Bela Ban 2012-09-03 incrementing next only when next_to_remove was updated correctly
+2	1	src/org/jgroups/stack/AckReceiverWindow.java
+
+[ba6fe0775] Bela Ban 2012-08-31 - Moved flushing from flush() to startFlusher() (https://issues.jboss.org/browse/JGRP-1495) - Adjusted Byteman script to make test pass
+1	1	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+7	5	src/org/jgroups/protocols/SEQUENCER.java
+
+[42c717c0e] Bela Ban 2012-08-31 Applied pull request by David Hotham to fix views that can pass each other (https://issues.jboss.org/browse/JGRP-1496)
+1	1	src/org/jgroups/protocols/pbcast/GMS.java
+
+[65c860c20] Bela Ban 2012-08-30 Added who_has_cache_timeout and physical_addr_max_fetch_attempts
+13	3	src/org/jgroups/protocols/TP.java
+
+[a765276e8] Bela Ban 2012-08-30 Updated release notes
+0	315	doc/ReleaseNotes-3.1.0.txt
+91	0	doc/ReleaseNotes-3.2.0.txt
+
+[bf5a08117] Bela Ban 2012-08-30 Correctly updating num_received on viewChange() now
+1	1	src/org/jgroups/blocks/GroupRequest.java
+
+[6dd0dd0c7] Bela Ban 2012-08-30 Merge branch 'JGRP-1433' into merge-1433
+[599308543] Bela Ban 2012-08-30 Added documentation on RELAY2
+221	0	doc/manual/en/modules/advanced.xml
+9	0	doc/manual/en/modules/protocols.xml
+1	1	src/org/jgroups/protocols/relay/RELAY2.java
+
+[750eb80fa] Bela Ban 2012-08-29 Applied David's pull request for https://issues.jboss.org/browse/JGRP-1492: exclude non-members when returning cache elements if return_entire_cache is true
+19	16	src/org/jgroups/protocols/Discovery.java
+1	5	src/org/jgroups/protocols/TP.java
+
+[8ed7b237d] Bela Ban 2012-08-29 - Added warning on forwarding routes
+6	2	src/org/jgroups/protocols/relay/RELAY2.java
+13	19	src/org/jgroups/protocols/relay/Relayer.java
+
+[deed0aa2e] Bela Ban 2012-08-29 Removed forwarding route
+1	3	conf/relay2.xml
+
+[421afbe39] Bela Ban 2012-08-28 Changed version to 3.0.14.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[316175e4c] Bela Ban 2012-08-28 - Fixed counting both received *and* suspected flags  (https://issues.jboss.org/browse/JGRP-1505) - Added test case GroupRequest.testResponsesComplete()
+13	7	src/org/jgroups/blocks/GroupRequest.java
+84	23	tests/junit-functional/org/jgroups/blocks/GroupRequestTest.java
+
+[f9d4e8ea3] Bela Ban 2012-08-28 - Fixed counting both received *and* suspected flags  (https://issues.jboss.org/browse/JGRP-1505) - Added test case GroupRequest.testResponsesComplete()
+13	7	src/org/jgroups/blocks/GroupRequest.java
+84	23	tests/junit-functional/org/jgroups/blocks/GroupRequestTest.java
+
+[0f33caa8b] Bela Ban 2012-08-28 Merge pull request #63 from wburns/JGRP-1501
+[571f8d546] William Burns 2012-08-27 JGRP-1501
+13	17	src/org/jgroups/blocks/executor/ExecutionService.java
+23	8	src/org/jgroups/protocols/Executing.java
+68	11	tests/junit/org/jgroups/blocks/{ => executor}/ExecutingServiceTest.java
+
+[a5e1315f1] Bela Ban 2012-08-27 Merge branch 'JGRP-1498'
+[fa1feb7bc] Bela Ban 2012-08-27 fixed typo
+1	1	doc/design/SEQUENCER.txt
+
+[f8d4403a2] Bela Ban 2012-08-27 Merge pull request #62 from dimbleby/JGRP-1498
+[ce181c4ee] Bela Ban 2012-08-27 Added handling of multicasts (if relay_multicasts is true)
+33	34	src/org/jgroups/demos/RelayDemoRpc.java
+62	9	src/org/jgroups/protocols/relay/RELAY2.java
+31	7	src/org/jgroups/protocols/relay/Relayer.java
+
+[9b0d0f85a] Bela Ban 2012-08-23 Printing non-string props (e.g. InetAddresses) correctly (https://issues.jboss.org/browse/JGRP-1504)
+35	3	src/org/jgroups/conf/PropertyConverters.java
+3	1	src/org/jgroups/conf/ProtocolConfiguration.java
+
+[51aaeae6f] Bela Ban 2012-08-23 Printing non-string props (e.g. InetAddresses) correctly (https://issues.jboss.org/browse/JGRP-1504)
+35	3	src/org/jgroups/conf/PropertyConverters.java
+3	1	src/org/jgroups/conf/ProtocolConfiguration.java
+
+[f6053d84f] Bela Ban 2012-08-22 Implemented SITE-UNREACHABLE semantics
+3	1	src/org/jgroups/Event.java
+27	0	src/org/jgroups/UnreachableException.java
+36	5	src/org/jgroups/blocks/GroupRequest.java
+10	2	src/org/jgroups/blocks/MessageDispatcher.java
+2	0	src/org/jgroups/blocks/Request.java
+28	13	src/org/jgroups/blocks/RequestCorrelator.java
+1	0	src/org/jgroups/blocks/RspCollector.java
+24	2	src/org/jgroups/blocks/UnicastRequest.java
+63	2	src/org/jgroups/demos/RelayDemoRpc.java
+49	14	src/org/jgroups/protocols/relay/RELAY2.java
+10	2	src/org/jgroups/protocols/relay/Relayer.java
+5	5	src/org/jgroups/protocols/relay/SiteMaster.java
+16	2	src/org/jgroups/util/Rsp.java
+
+[5ab75b7e9] Bela Ban 2012-08-22 ns
+6	2	src/org/jgroups/protocols/relay/RELAY2.java
+0	1	src/org/jgroups/protocols/relay/Relayer.java
+
+[6394bb39a] Bela Ban 2012-08-22 Added view handling
+1	2	src/org/jgroups/demos/RelayDemoRpc.java
+
+[ab08a7675] Bela Ban 2012-08-21 Unicasting between sites works more or less
+18	13	src/org/jgroups/protocols/relay/RELAY2.java
+4	0	src/org/jgroups/protocols/relay/SiteUUID.java
+
+[eca519867] Bela Ban 2012-08-21 First successful sending of a unicast to a remote SiteMaster and reception of the unicast response
+69	37	src/org/jgroups/protocols/relay/RELAY2.java
+1	1	src/org/jgroups/protocols/relay/Relayer.java
+1	1	src/org/jgroups/protocols/relay/SiteMaster.java
+16	6	src/org/jgroups/protocols/relay/SiteUUID.java
+1	1	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[8ffb994ef] Bela Ban 2012-08-21 Added trace statements on delivery of a message
+8	1	src/org/jgroups/protocols/pbcast/NAKACK.java
+8	1	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[2f6400d1c] Bela Ban 2012-08-21 Adding trace for delivering a message
+8	1	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[6ed3da937] Bela Ban 2012-08-21 Handling views correctly now and refreshing Entry with members after adding Entry to ids (https://issues.jboss.org/browse/JGRP-1503)
+24	12	src/org/jgroups/protocols/RSVP.java
+
+[e4a68da2e] Bela Ban 2012-08-21 Updated version to 3.0.13.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[9cda8fb89] Bela Ban 2012-08-21 Handling views correctly now and refreshing Entry with members after adding Entry to ids (https://issues.jboss.org/browse/JGRP-1503)
+24	12	src/org/jgroups/protocols/RSVP.java
+
+[36169c967] Bela Ban 2012-08-20 removed 'copy' log statement
+2	4	src/org/jgroups/protocols/pbcast/STABLE.java
+
+[3aa3b0567] Bela Ban 2012-08-20 removed log message about 'copy'
+2	4	src/org/jgroups/protocols/pbcast/STABLE.java
+
+[8a1d3a002] Bela Ban 2012-08-20 ns
+1	1	conf/relay2.xml
+10	2	src/org/jgroups/protocols/relay/RELAY2.java
+2	2	src/org/jgroups/protocols/relay/Relayer.java
+
+[7dd338e36] Bela Ban 2012-08-17 Updated doc with link to AWS_PING (Meltmedia)
+9	0	doc/manual/en/modules/protocols.xml
+
+[9f9821e9b] Bela Ban 2012-08-16 Copying NakackHeader before modifying it (https://issues.jboss.org/browse/JGRP-1502)
+6	2	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[1dd8c09ef] Bela Ban 2012-08-16 Added javadoc to Message.copy() to clarify semantics (no deep copy)
+4	1	src/org/jgroups/Message.java
+
+[c8d585039] Bela Ban 2012-08-16 Copying NakackHeader2 before modifying it [in NAKACK2] (https://issues.jboss.org/browse/JGRP-1502)
+6	2	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[66ba3a454] Bela Ban 2012-08-16 Copying NakackHeader before modifying it (https://issues.jboss.org/browse/JGRP-1502)
+6	2	src/org/jgroups/protocols/pbcast/NAKACK.java
+0	2	src/org/jgroups/protocols/pbcast/NakAckHeader2.java
+
+[f5826bce8] Bela Ban 2012-08-14 Replaced ThreadLocal.set(false) with .remove() to prevent thread leak (https://issues.jboss.org/browse/JGRP-1500)
+2	2	src/org/jgroups/protocols/FlowControl.java
+
+[476aff581] Bela Ban 2012-08-14 Set version to 3.0.12.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[2decf949c] Bela Ban 2012-08-14 Replaced ThreadLocal.set(false) with .remove() to prevent thread leak (https://issues.jboss.org/browse/JGRP-1500)
+2	2	src/org/jgroups/protocols/FlowControl.java
+
+[56940af34] Bela Ban 2012-08-14 make is_server volatile
+4	4	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[1003ffcc6] Bela Ban 2012-08-13 Merge branch 'master' of github.com:belaban/JGroups
+[39f1278d4] Bela Ban 2012-08-07 ns
+1	2	conf/jg-magic-map.xml
+1	5	conf/jg-protocol-ids.xml
+
+[55f93051b] Bela Ban 2012-08-06 ns
+97	2	src/org/jgroups/protocols/relay/RELAY2.java
+17	2	src/org/jgroups/protocols/relay/Relayer.java
+1	0	src/org/jgroups/protocols/relay/SiteMaster.java
+
+[7cf888068] dch 2012-07-29 No advantage to Util.sleep, since we're throwing InterruptedException now
+1	1	src/org/jgroups/protocols/SEQUENCER.java
+
+[3105488df] dch 2012-07-29 JGRP-1498 avoid a deadlock in SEQUENCER
+9	5	src/org/jgroups/protocols/SEQUENCER.java
+
+[264b2c281] Dennis Reed 2012-07-26 [BZ 843644] Backport JGRP-1497
+1	0	src/org/jgroups/protocols/FD_SOCK.java
+
+[b848ed0f0] Dennis Reed 2012-07-26 [BZ 843644] Add _JGRP-1497 into Version output
+1	1	src/org/jgroups/Version.java
+
+[75eb6fe4a] Dennis Reed 2012-07-25 [JGRP-1497] Set TCP keepalive on FD_SOCK server-side sockets
+1	0	src/org/jgroups/protocols/FD_SOCK.java
+
+[8e50fa454] Dennis Reed 2012-07-25 [JGRP-1497] Set TCP keepalive on FD_SOCK server-side sockets
+1	0	src/org/jgroups/protocols/FD_SOCK.java
+
+[603b74ae2] Dennis Reed 2012-07-25 [JGRP-1497] Set TCP keepalive on FD_SOCK server-side sockets
+1	0	src/org/jgroups/protocols/FD_SOCK.java
+
+[a9138400a] Dennis Reed 2012-07-25 Set version to 2.6.22
+1	1	build.xml
+1	1	conf/manifest.mf
+2	2	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[e446c1dbf] Dennis Reed 2012-07-23 [JGRP-1494] Show members that did not respond to FLUSH in exception
+9	1	src/org/jgroups/protocols/pbcast/FLUSH.java
+
+[daf6e3d4c] Dennis Reed 2012-07-23 [JGRP-1494] Show members that did not respond to FLUSH in exception
+9	1	src/org/jgroups/protocols/pbcast/FLUSH.java
+
+[d267a3120] Dennis Reed 2012-07-23 [JGRP-1494] Log members that did not respond to FLUSH at WARN level
+8	4	src/org/jgroups/protocols/pbcast/FLUSH.java
+
+[f685f7ac0] Bela Ban 2012-07-12 - Added test for RELAY2.Relay2Header to SizeTest - Changed Util.writeAddress()/readAddress() to include SITE_UUID and SITE_MASTER
+2	1	conf/jg-magic-map.xml
+5	3	src/org/jgroups/Address.java
+50	4	src/org/jgroups/protocols/relay/RELAY2.java
+3	0	src/org/jgroups/protocols/relay/Relayer.java
+22	8	src/org/jgroups/util/Util.java
+12	0	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[cc6d5c2c4] Bela Ban 2012-07-11 Routes are now correctly added and removed to and from the routes table
+8	2	src/org/jgroups/protocols/relay/RELAY2.java
+48	9	src/org/jgroups/protocols/relay/Relayer.java
+4	0	src/org/jgroups/protocols/relay/SiteUUID.java
+
+[1b7545573] Bela Ban 2012-07-11 Relayer is now started when becoming the coordinator and stopped when ceasing to be the coordinator
+1	1	conf/relay.xsd
+3	3	conf/relay1.xml
+7	2	conf/relay2.xml
+2	5	src/org/jgroups/protocols/MPING.java
+91	10	src/org/jgroups/protocols/relay/RELAY2.java
+159	0	src/org/jgroups/protocols/relay/Relayer.java
+7	0	src/org/jgroups/util/Util.java
+
+[c53c2a545] Bela Ban 2012-07-10 Changed IDs for relay2.xml
+2	2	conf/relay2.xml
+
+[c03a35d5a] Bela Ban 2012-07-10 Fixed incorrect config (result of rebase)
+2	3	conf/jg-magic-map.xml
+1	5	conf/jg-protocol-ids.xml
+3	3	conf/relay1.xml
+14	0	doc/design/RELAY2.txt
+15	0	src/org/jgroups/protocols/relay/RELAY2.java
+3	3	src/org/jgroups/protocols/relay/config/RelayConfig.java
+
+[6ee8c660b] Bela Ban 2012-07-10 Added SiteAddress(String site_name)
+4	0	src/org/jgroups/protocols/relay/SiteMaster.java
+9	7	src/org/jgroups/protocols/relay/SiteUUID.java
+
+[0be296f3b] Bela Ban 2012-07-05 Added parsing of config to RELAY2
+41	2	src/org/jgroups/protocols/relay/RELAY2.java
+12	10	src/org/jgroups/protocols/relay/config/RelayConfig.java
+
+[15c7c3eda] Bela Ban 2012-07-05 Changed schema for relay, first version of parsing complete
+26	34	conf/relay.xsd
+18	35	conf/relay1.xml
+12	15	conf/relay2.xml
+10	4	src/org/jgroups/protocols/relay/RELAY2.java
+27	0	src/org/jgroups/protocols/relay/SiteMaster.java
+23	18	src/org/jgroups/protocols/relay/SiteUUID.java
+177	46	src/org/jgroups/protocols/relay/config/RelayConfig.java
+
+[3edc2aef7] Bela Ban 2012-07-04 Added SiteAddress, SiteUUID and SiteMaster
+2	1	conf/jg-magic-map.xml
+15	16	doc/design/RELAY2.txt
+13	0	src/org/jgroups/protocols/relay/SiteAddress.java
+19	0	src/org/jgroups/protocols/relay/SiteMaster.java
+104	0	src/org/jgroups/protocols/relay/SiteUUID.java
+
+[f8665dab2] Bela Ban 2012-03-30 Started parsing of relay config
+6	6	conf/relay1.xml
+3	3	conf/relay2.xml
+3	0	src/org/jgroups/protocols/relay/RELAY2.java
+112	0	src/org/jgroups/protocols/relay/config/RelayConfig.java
+
+[a33b35603] Bela Ban 2012-03-28 - Moved RELAY2 to its own package org.jgroups.protocols.relay - Changed relay.xsd
+1	1	conf/jg-magic-map.xml
+4	0	conf/jg-protocol-ids.xml
+57	51	conf/relay.xsd
+1	1	conf/relay1.xml
+1	1	src/org/jgroups/protocols/{ => relay}/RELAY2.java
+1	0	src/org/jgroups/util/PropertiesToXML.java
+
+[b1ef29f9e] Bela Ban 2012-03-27 typo
+1	1	conf/relay1.xml
+
+[62060218a] Bela Ban 2012-03-23 Schema and examples of RELAY2 configuration
+63	0	conf/relay.xsd
+48	0	conf/relay1.xml
+25	0	conf/relay2.xml
+
+[64a4b21ac] Bela Ban 2012-03-23 makeReply() now has the dest address (if unicast) as sender
+1	0	conf/jg-magic-map.xml
+4	1	src/org/jgroups/Message.java
+2	0	src/org/jgroups/protocols/RELAY2.java
+
+[3460903d5] Bela Ban 2012-03-14 created protocol RELAY2
+1	0	conf/jg-magic-map.xml
+1	0	conf/jg-protocol-ids.xml
+30	0	src/org/jgroups/protocols/RELAY2.java
+
+[876cb55eb] Bela Ban 2012-03-08 ns
+27	10	doc/design/RELAY2.txt
+
+[10c233f68] Bela Ban 2012-03-08 Fleshing out the design
+47	6	doc/design/RELAY2.txt
+
+[b876c765d] Bela Ban 2012-07-10 Updated version to 3.2.0.Alpha1
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[1df66514d] Bela Ban 2012-07-06 Updated release to 3.10.Final
+125	1	doc/ReleaseNotes-3.1.0.txt
+
+[60192de7a] Bela Ban 2012-07-06 Updated version to 3.10.Final
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[eda91fe29] Bela Ban 2012-07-06 Replaced removeAll() with individual remove() calls (https://issues.jboss.org/browse/JGRP-1490)
+3	1	src/org/jgroups/util/TimeScheduler2.java
+
+[8f670c5cd] Bela Ban 2012-07-06 Replaced removeAll() with individual remove() calls (https://issues.jboss.org/browse/JGRP-1490)
+3	1	src/org/jgroups/util/TimeScheduler2.java
+
+[e1b1c20d3] Bela Ban 2012-07-03 Added section on STATS to docu
+9	0	doc/manual/en/modules/protocols.xml
+2	0	src/org/jgroups/protocols/AUTH.java
+
+[0eb009e2f] Bela Ban 2012-07-03 Exposing STATS as MBean
+2	0	src/org/jgroups/protocols/STATS.java
+
+[89e17675c] Bela Ban 2012-07-03 Exposing STATS as MBean
+2	0	src/org/jgroups/protocols/STATS.java
+
+[90ee78818] Bela Ban 2012-07-03 Dropping unicast message when dest != local_addr (https://issues.jboss.org/browse/JGRP-1489)
+22	0	src/org/jgroups/protocols/TP.java
+
+[4a5611c37] Bela Ban 2012-07-02 Applied pull request by dimbleby: added max_join_attempts to GMS (https://issues.jboss.org/browse/JGRP-1485)
+22	13	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+5	0	src/org/jgroups/protocols/pbcast/GMS.java
+
+[f76579302] Bela Ban 2012-07-02 Fixes NPE when creating channels on a shared transport concurrently (https://issues.jboss.org/browse/JGRP-1488)
+4	0	src/org/jgroups/stack/Configurator.java
+
+[b407a2f5b] Bela Ban 2012-07-02 Fixes NPE when creating channels on a shared transport concurrently (https://issues.jboss.org/browse/JGRP-1488)
+4	0	src/org/jgroups/stack/Configurator.java
+
+[a8a621f32] Bela Ban 2012-06-21 Only real coordinators can be selected as merge leaders
+9	2	src/org/jgroups/protocols/MERGE3.java
+
+[590afc21c] Bela Ban 2012-06-21 Preventing forwarding to null coordinator
+10	1	src/org/jgroups/protocols/SEQUENCER.java
+
+[a6b0773e9] Bela Ban 2012-06-21 Fixed NPE
+5	12	src/org/jgroups/protocols/SEQUENCER.java
+0	4	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+
+[fa10c575c] Bela Ban 2012-06-20 JGRP-1470 - Encypt diagnostics responses Conflicts:
+6	3	src/org/jgroups/protocols/TP.java
+56	10	src/org/jgroups/stack/DiagnosticsHandler.java
+25	2	src/org/jgroups/util/Util.java
+32	10	tests/other/org/jgroups/tests/Probe.java
+
+[b6107177e] Vladimir Blagojevic 2012-06-19 JGRP-1470 - Encypt diagnostics responses
+4	1	src/org/jgroups/protocols/TP.java
+51	6	src/org/jgroups/stack/DiagnosticsHandler.java
+25	2	src/org/jgroups/util/Util.java
+31	9	tests/other/org/jgroups/tests/Probe.java
+
+[9338afecc] Bela Ban 2012-06-20 Fixed NPE (JGRP-1482)
+2	0	src/org/jgroups/util/Owner.java
+
+[ed6200394] Bela Ban 2012-06-20 Fixed NPE (https://issues.jboss.org/browse/JGRP-1482)
+2	0	src/org/jgroups/util/Owner.java
+
+[780252361] Dennis Reed 2012-06-19 [JGRP-1483] Don't swallow exception in Util.createServerSocket
+2	4	src/org/jgroups/util/Util.java
+
+[d1b00406f] Bela Ban 2012-06-15 Now the candidates for merge leaders are picked from *actual* coordinators (first in their views) (https://issues.jboss.org/browse/JGRP-1451)
+2	2	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+7	7	src/org/jgroups/protocols/pbcast/GMS.java
+10	3	src/org/jgroups/protocols/pbcast/Merger.java
+6	3	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+21	0	src/org/jgroups/util/Util.java
+24	12	tests/junit/org/jgroups/tests/OverlappingMergeTest.java
+
+[b76af6987] Bela Ban 2012-06-14 Added test case for https://issues.jboss.org/browse/JGRP-1451
+49	23	tests/junit-functional/org/jgroups/tests/MergerTest.java
+75	19	tests/junit/org/jgroups/tests/OverlappingMergeTest.java
+
+[2e02486d9] Bela Ban 2012-06-15 A MERGE even now doesn't have to wait until the view bundling time has elapsed if it is the last request in the ViewHandler (https://issues.jboss.org/browse/JGRP-1451)
+2	2	src/org/jgroups/protocols/pbcast/GMS.java
+
+[146630235] Bela Ban 2012-06-15 A MERGE even now doesn't have to wait until the view bundling time has elapsed if it is the last request in the ViewHandler (https://issues.jboss.org/browse/JGRP-1451)
+1	1	src/org/jgroups/protocols/pbcast/GMS.java
+
+[849995d66] Bela Ban 2012-06-15 Now the candidates for merge leaders are picked from *actual* coordinators (first in their views) (https://issues.jboss.org/browse/JGRP-1451)
+2	2	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+7	7	src/org/jgroups/protocols/pbcast/GMS.java
+10	3	src/org/jgroups/protocols/pbcast/Merger.java
+6	3	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+21	0	src/org/jgroups/util/Util.java
+24	12	tests/junit/org/jgroups/tests/OverlappingMergeTest.java
+
+[be6ac09f9] Bela Ban 2012-06-14 Added test case for https://issues.jboss.org/browse/JGRP-1451
+49	23	tests/junit-functional/org/jgroups/tests/MergerTest.java
+75	19	tests/junit/org/jgroups/tests/OverlappingMergeTest.java
+
+[e6947c299] Dennis Reed 2012-06-13 [JGRP-1480] Cleaning up test case
+4	4	src/org/jgroups/protocols/pbcast/NakAckHeader.java
+
+[6a86be7ed] Dennis Reed 2012-06-13 [JGRP-1480] Cleaning up test case
+4	4	src/org/jgroups/protocols/pbcast/NakAckHeader.java
+2	2	tests/junit-functional/org/jgroups/protocols/NAKACK_REBROADCAST_Test.java
+
+[44723221f] Dennis Reed 2012-06-13 [JGRP-1480] Fix NAKACK REBROADCAST in NAKACK2
+3	3	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[3401f4bd3] Dennis Reed 2012-06-13 [JGRP-1480] Adapt test to NAKACK2 for master
+18	16	tests/junit-functional/org/jgroups/protocols/NAKACK_REBROADCAST_Test.java
+
+[c9bda42d3] Dennis Reed 2012-06-13 [JGRP-1480] Request retransmission even when only missing one message
+3	3	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[9737c8cce] Dennis Reed 2012-06-13 [JGRP-1480] Test case for JGRP-1480: NAKACK REBROADCAST
+4	4	src/org/jgroups/protocols/pbcast/NakAckHeader.java
+106	0	tests/junit-functional/org/jgroups/protocols/NAKACK_REBROADCAST_Test.java
+
+[c7cb78ea4] Dennis Reed 2012-06-13 [JGRP-1480] Request retransmission even when only missing one message
+3	3	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[b5e4d473f] Dennis Reed 2012-06-13 [JGRP-1480] Test case for JGRP-1480: NAKACK REBROADCAST
+4	4	src/org/jgroups/protocols/pbcast/NakAckHeader.java
+106	0	tests/junit-functional/org/jgroups/protocols/NAKACK_REBROADCAST_Test.java
+
+[4b35c204a] Dennis Reed 2012-06-13 [JGRP-1480] NAKACK - Don't retransmit messages already received
+1	1	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[991f79818] Dennis Reed 2012-06-13 [JGRP-1480] Test for JGRP-1480: NAKACK RETRANSMISSION
+4	4	src/org/jgroups/protocols/pbcast/NakAckHeader.java
+123	0	tests/junit-functional/org/jgroups/tests/NAKACK_REBROADCAST_Test.java
+
+[ec83d4bc9] Dennis Reed 2012-06-13 [JGRP-1480] Simulator -- don't send view until after calling start()
+5	5	src/org/jgroups/debug/Simulator.java
+
+[58e8ce158] Bela Ban 2012-06-13 ns
+1	0	conf/sequencer.xml
+
+[ae5896ef6] Bela Ban 2012-06-13 Updated design doc on SEQUENCER, added test
+41	35	doc/design/SEQUENCER.txt
+0	4	doc/manual/en/modules/protocols.xml
+22	33	src/org/jgroups/protocols/SEQUENCER.java
+4	1	src/org/jgroups/stack/ProtocolStack.java
+133	41	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+2	5	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+0	2	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[1aa11106d] Bela Ban 2012-06-13 ns
+82	90	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+0	4	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+4	8	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[be38cd9a0] Bela Ban 2012-06-13 ns
+2	2	src/org/jgroups/protocols/SEQUENCER.java
+2	3	tests/{byteman/org/jgroups/tests/byteman => junit/org/jgroups/tests}/SequencerMergeTest.java
+2	8	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[2e867c34e] Bela Ban 2012-06-13 First working cut
+6	6	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+173	85	src/org/jgroups/protocols/SEQUENCER.java
+6	1	src/org/jgroups/protocols/SHUFFLE.java
+34	12	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+27	10	tests/byteman/org/jgroups/tests/byteman/SequencerMergeTest.java
+24	7	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[af9513ef2] Bela Ban 2012-06-07 ns
+0	2	tests/byteman/org/jgroups/tests/byteman/SequencerMergeTest.java
+
+[d9091024e] Bela Ban 2012-06-07 Initial test for https://issues.jboss.org/browse/JGRP-1468
+209	0	tests/byteman/org/jgroups/tests/byteman/SequencerMergeTest.java
+
+[a3d93d2e1] Bela Ban 2012-06-07 - Resending now uses RESEND instead of FORWARD; the diff being that resent messages are forwarded immediately (DONT_BUNDLE flag) [JGRP-1449] - A FORWARD or RESEND message from a non-member is discarded [https://issues.jboss.org/browse/JGRP-1468]
+32	14	src/org/jgroups/protocols/SEQUENCER.java
+
+[3d1255fc6] Bela Ban 2012-06-13 Updated design doc on SEQUENCER, added test
+41	35	doc/design/SEQUENCER.txt
+0	4	doc/manual/en/modules/protocols.xml
+22	33	src/org/jgroups/protocols/SEQUENCER.java
+4	1	src/org/jgroups/stack/ProtocolStack.java
+133	41	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+2	5	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+0	2	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[3f1101e18] Bela Ban 2012-06-13 ns
+82	90	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+0	4	tests/junit/org/jgroups/tests/SequencerMergeTest.java
+4	8	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[3a2f18b2c] Bela Ban 2012-06-13 ns
+2	2	src/org/jgroups/protocols/SEQUENCER.java
+2	3	tests/{byteman/org/jgroups/tests/byteman => junit/org/jgroups/tests}/SequencerMergeTest.java
+2	8	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[8022867c4] Bela Ban 2012-06-13 First working cut
+6	6	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+173	85	src/org/jgroups/protocols/SEQUENCER.java
+6	1	src/org/jgroups/protocols/SHUFFLE.java
+34	12	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+27	10	tests/byteman/org/jgroups/tests/byteman/SequencerMergeTest.java
+24	7	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[3cc153a56] Bela Ban 2012-06-13 JGRP-1355
+158	35	src/org/jgroups/protocols/Executing.java
+
+[adfa3a540] Bela Ban 2012-06-13 Merge pull request #51 from wburns/JGRP-1479
+[6dab07e5c] Bela Ban 2012-06-13 JGRP-1355
+90	13	src/org/jgroups/blocks/executor/ExecutionRunner.java
+
+[7f31609f5] William Burns 2012-06-12 JGRP-1479
+158	35	src/org/jgroups/protocols/Executing.java
+
+[8c52f9479] William Burns 2012-06-12 JGRP-1355
+90	13	src/org/jgroups/blocks/executor/ExecutionRunner.java
+
+[d00b7a334] Bela Ban 2012-06-08 Added @since javadoc
+2	1	src/org/jgroups/protocols/SWIFT_PING.java
+
+[528a06c52] Bela Ban 2012-06-08 Merge pull request #50 from tsegismont/SWIFT_PING
+[649a3f3bb] Thomas SEGISMONT 2012-06-08 Add protocol SWIFT_PING
+1	0	.gitignore
+1	0	conf/jg-protocol-ids.xml
+30	0	doc/manual/en/modules/protocols.xml
+724	0	src/org/jgroups/protocols/SWIFT_PING.java
+
+[a25b709fc] Bela Ban 2012-06-08 No need to extends Helper
+1	6	tests/byteman/org/jgroups/tests/helpers/SequencerFailoverTestHelper.java
+
+[362612a73] Bela Ban 2012-06-08 Moved helper class out of org.jgroups.tests.byteman package (https://issues.jboss.org/browse/BYTEMAN-209)
+1	1	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+1	16	conf/testng/byteman.xml
+1	1	tests/byteman/org/jgroups/tests/{byteman => helpers}/SequencerFailoverTestHelper.java
+
+[8882cc366] Bela Ban 2012-06-08 Fixed typo
+1	1	src/org/jgroups/blocks/TCPConnectionMap.java
+
+[c1630dc78] Bela Ban 2012-06-08 instanceof doesn't need a null check
+1	1	src/org/jgroups/protocols/pbcast/GMS.java
+
+[68298f977] Bela Ban 2012-06-07 Applied change by David (https://issues.jboss.org/browse/JGRP-1477)
+2	1	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+
+[fe7e98e9b] Bela Ban 2012-06-07 Removed double-writing (https://issues.jboss.org/browse/JGRP-1476)
+1	4	src/org/jgroups/blocks/BasicConnectionTable.java
+1	5	src/org/jgroups/blocks/TCPConnectionMap.java
+0	32	src/org/jgroups/util/Util.java
+
+[dab8dba89] Bela Ban 2012-06-07 Removed double-writing (https://issues.jboss.org/browse/JGRP-1476)
+1	4	src/org/jgroups/blocks/BasicConnectionTable.java
+1	5	src/org/jgroups/blocks/TCPConnectionMap.java
+0	32	src/org/jgroups/util/Util.java
+
+[64a3fc28b] Bela Ban 2012-06-07 ns
+0	2	tests/byteman/org/jgroups/tests/byteman/SequencerMergeTest.java
+
+[e975636eb] Bela Ban 2012-06-07 Initial test for https://issues.jboss.org/browse/JGRP-1468
+209	0	tests/byteman/org/jgroups/tests/byteman/SequencerMergeTest.java
+
+[4ae43fff7] Bela Ban 2012-06-07 - Resending now uses RESEND instead of FORWARD; the diff being that resent messages are forwarded immediately (DONT_BUNDLE flag) [JGRP-1449] - A FORWARD or RESEND message from a non-member is discarded [https://issues.jboss.org/browse/JGRP-1468]
+32	14	src/org/jgroups/protocols/SEQUENCER.java
+
+[e6ec529ae] Bela Ban 2012-06-06 ns
+2	3	src/org/jgroups/protocols/SEQUENCER.java
+
+[7291574a3] Bela Ban 2012-06-06 Using a promise instead of a timeout to wait for a resent message to be delivered
+16	14	src/org/jgroups/protocols/SEQUENCER.java
+6	0	tests/junit-functional/org/jgroups/tests/PromiseTest.java
+
+[fd33433fd] Bela Ban 2012-06-06 Resending messages one by one, to prevent new coordinator (who doesn't know he is coordinator) from dropping messages (https://issues.jboss.org/browse/JGRP-1449)
+3	2	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+56	26	src/org/jgroups/protocols/SEQUENCER.java
+
+[52886ff25] Bela Ban 2012-06-05 Applied pull request https://github.com/belaban/JGroups/pull/29 (break if a JoinRsp is received)
+5	3	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+
+[e635e357d] Bela Ban 2012-06-05 Merge branch 'master' of github.com:belaban/JGroups
+[0451476ff] Bela Ban 2012-06-05 Implemented blocking of message sending before resend is complete (https://issues.jboss.org/browse/JGRP-1449)
+161	66	src/org/jgroups/protocols/SEQUENCER.java
+
+[2cfa8d033] Bela Ban 2012-06-05 ns
+6	8	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+
+[a1108b862] Bela Ban 2012-06-05 ns
+11	6	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTestHelper.java
+
+[71c4794b9] Bela Ban 2012-06-05 Checking the correct order
+12	1	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+
+[c4b542db7] Bela Ban 2012-06-02 Added JIRA to comment
+1	1	src/org/jgroups/protocols/SEQUENCER.java
+
+[64e126bbc] Bela Ban 2012-06-02 Removed uneeded header attachments
+39	60	src/org/jgroups/protocols/SEQUENCER.java
+1	3	tests/junit-functional/org/jgroups/tests/SizeTest.java
+
+[9c5e3fa4f] Bela Ban 2012-06-02 Added -name
+9	2	src/org/jgroups/demos/Chat.java
+
+[50fba171b] Bela Ban 2012-06-01 Test case SequencerFailoverTest works now with TestNG/ANT
+2	2	build.xml
+8	4	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+16	1	conf/testng/byteman.xml
+4	4	lib/licenses/thirdparty-licenses.xml
+10	9	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTest.java
+1	1	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTestHelper.java
+
+[8348a4242] Bela Ban 2012-06-01 Updated bytmena to 3.0.3
+-	-	lib/byteman-bmunit.jar
+-	-	lib/byteman-install.jar
+-	-	lib/byteman-submit.jar
+-	-	lib/byteman.jar
+
+[059d3a4d4] Bela Ban 2012-06-01 Created test for https://issues.jboss.org/browse/JGRP-1449
+1	1	build.xml
+25	0	conf/scripts/SequencerFailoverTest/testResendingVersusNewMessages.btm
+10	5	src/org/jgroups/protocols/SEQUENCER.java
+71	14	tests/{junit/org/jgroups/tests => byteman/org/jgroups/tests/byteman}/SequencerFailoverTest.java
+31	0	tests/byteman/org/jgroups/tests/byteman/SequencerFailoverTestHelper.java
+
+[7ab16844a] Bela Ban 2012-05-31 Merge pull request #48 from pruivo/fix_1
+[efa0fcb08] Pedro Ruivo 2012-05-30  * bugfix when the address list in TOA is a single member
+25	1	src/org/jgroups/protocols/tom/DeliveryManagerImpl.java
+7	0	src/org/jgroups/protocols/tom/TOA.java
+12	4	src/org/jgroups/protocols/tom/ToaHeader.java
+
+[77d8c4878] Bela Ban 2012-05-31 Removed some unneeded classes (https://issues.jboss.org/browse/JGRP-1473)
+2	2	src/org/jgroups/protocols/SCOPE.java
+1	1	src/org/jgroups/protocols/TP.java
+1	12	src/org/jgroups/util/DefaultThreadFactory.java
+0	22	src/org/jgroups/util/DefaultTimeScheduler.java
+9	25	src/org/jgroups/util/HashedTimingWheel.java
+0	6	src/org/jgroups/util/MockTimeScheduler.java
+0	22	src/org/jgroups/util/ThreadDecorator.java
+0	21	src/org/jgroups/util/ThreadManager.java
+0	56	src/org/jgroups/util/ThreadManagerThreadPoolExecutor.java
+1	1	src/org/jgroups/util/TimeScheduler.java
+9	24	src/org/jgroups/util/TimeScheduler2.java
+
+[87938cfa6] Bela Ban 2012-05-31 Removed some unneeded classes (https://issues.jboss.org/browse/JGRP-1473)
+2	2	src/org/jgroups/protocols/SCOPE.java
+1	1	src/org/jgroups/protocols/TP.java
+1	11	src/org/jgroups/util/DefaultThreadFactory.java
+0	24	src/org/jgroups/util/DefaultTimeScheduler.java
+10	25	src/org/jgroups/util/HashedTimingWheel.java
+0	6	src/org/jgroups/util/MockTimeScheduler.java
+0	22	src/org/jgroups/util/ThreadDecorator.java
+0	21	src/org/jgroups/util/ThreadManager.java
+0	56	src/org/jgroups/util/ThreadManagerThreadPoolExecutor.java
+1	1	src/org/jgroups/util/TimeScheduler.java
+10	25	src/org/jgroups/util/TimeScheduler2.java
+
+[754b39b43] Bela Ban 2012-05-30 Changed version to 3.1.0.Beta2
+1	1	build.xml
+1	1	pom.xml
+10	10	src/org/jgroups/Version.java
+
+[8b675b872] Bela Ban 2012-05-30 Looping back unicast messages with a shared transport (https://issues.jboss.org/browse/JGRP-1466)
+2	3	src/org/jgroups/protocols/TP.java
+
+[6e94176aa] Bela Ban 2012-05-30 Looping back unicast messages with a shared transport (https://issues.jboss.org/browse/JGRP-1466)
+2	3	src/org/jgroups/protocols/TP.java
+
+[30d8074dc] Bela Ban 2012-05-30 Replaced HashMap with ConcurrentHashMap and removed synchronization (https://issues.jboss.org/browse/JGRP-1460)
+2	6	src/org/jgroups/protocols/CENTRAL_LOCK.java
+49	56	src/org/jgroups/protocols/Locking.java
+3	5	src/org/jgroups/protocols/PEER_LOCK.java
+
+[88ddc530d] Bela Ban 2012-05-30 Changed number of bytes to send
+5	6	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[3c5f3fcdc] Bela Ban 2012-05-30 Replaced HashMap with ConcurrentHashMap and removed synchronization (https://issues.jboss.org/browse/JGRP-1460)
+2	6	src/org/jgroups/protocols/CENTRAL_LOCK.java
+49	56	src/org/jgroups/protocols/Locking.java
+3	5	src/org/jgroups/protocols/PEER_LOCK.java
+
+[ede165d1b] Bela Ban 2012-05-30 clear the interrupted bit before a test run
+2	1	tests/junit/org/jgroups/blocks/LockServiceTest.java
+
+[91a05c449] Bela Ban 2012-05-30 Handling UNSUSPECT event in FD_ALL (https://issues.jboss.org/browse/JGRP-1471)
+9	0	src/org/jgroups/protocols/FD_ALL.java
+
+[627f8b656] Bela Ban 2012-05-30 Handling UNSUSPECT event in FD_ALL (https://issues.jboss.org/browse/JGRP-1471)
+9	0	src/org/jgroups/protocols/FD_ALL.java
+
+[703916b2d] Bela Ban 2012-05-30 Initializing view correctly (JGRP-1469)
+1	0	src/org/jgroups/blocks/ReplicatedTree.java
+
+[b7090b773] Bela Ban 2012-05-30 Setting the membership correctly (https://issues.jboss.org/browse/JGRP-1469)
+1	0	src/org/jgroups/blocks/ReplicatedTree.java
+
+[d91692721] Bela Ban 2012-05-30 Checking for non-null CT before sending of message (https://issues.jboss.org/browse/JGRP-1465)
+2	1	src/org/jgroups/protocols/TCP.java
+
+[e50f52817] Bela Ban 2012-05-30 Checking for non-null connection map before sending a message (https://issues.jboss.org/browse/JGRP-1465)
+2	1	src/org/jgroups/protocols/TCP.java
+
+[7a643dc6b] Bela Ban 2012-05-30 Added code contributed by Peter Nerg to fix temp exceptions reading and writing files
+106	29	src/org/jgroups/protocols/FILE_PING.java
+
+[eb5f5e1be] Bela Ban 2012-05-30 Added code contributed by Peter Nerg to fix temp exceptions reading and writing files
+106	29	src/org/jgroups/protocols/FILE_PING.java
+
+[32356107c] Bela Ban 2012-05-16 ns
+6	6	tests/junit/org/jgroups/tests/SharedTransportTest.java
+
+[9820cd8e6] Bela Ban 2012-05-16 Waiting for senders to complete
+10	5	tests/junit/org/jgroups/protocols/UNICAST_ContentionTest.java
+
+[dda23c8d3] Dennis Reed 2012-05-29 [JGRP-989] Testcase for TCPPING dynamic hosts
+139	0	tests/junit-functional/org/jgroups/tests/TCPPINGTest.java
+
+[88e322824] Bela Ban 2012-05-29 Merge pull request #47 from dimbleby/trivia
+[0ffe0a9b8] Bela Ban 2012-05-29 Added diagnostics_ttl
+5	2	src/org/jgroups/protocols/TP.java
+8	0	src/org/jgroups/stack/DiagnosticsHandler.java
+
+[0977fb3b6] Bela Ban 2012-05-29 Added diagnostics_ttl
+4	1	src/org/jgroups/protocols/TP.java
+5	1	src/org/jgroups/stack/DiagnosticsHandler.java
+
+[27bf529f4] Dennis Reed 2012-05-25 [JGRP-989] Backport dynamic TCPPING members to JGroups 2.6
+38	1	src/org/jgroups/protocols/TCPPING.java
+3	0	src/org/jgroups/util/BoundedList.java
+
+[6e37c51a1] dch 2012-05-23 Send upwards message to the upwards protocol
+37	37	src/org/jgroups/protocols/pbcast/GMS.java
+
+[e7ec7257a] Bela Ban 2012-05-16 - Removed PREPARE_VIEW event (not used anywhere) - Set version to 3.0.11.Final
+1	1	build.xml
+1	1	pom.xml
+0	2	src/org/jgroups/Event.java
+2	2	src/org/jgroups/Version.java
+0	3	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+0	3	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+
+[e9bc8f807] Bela Ban 2012-05-16 Removed PREPARE_VIEW event (not used anywhere)
+0	2	src/org/jgroups/Event.java
+0	3	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+0	3	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+
+[b3c4c4c14] Bela Ban 2012-05-16 Waiting for senders to complete
+10	5	tests/junit/org/jgroups/protocols/UNICAST_ContentionTest.java
+
+[7e1c7b2d3] Bela Ban 2012-05-16 - Set discard_incompatible_packets to true by default - Discarding packets from different version in TCPConnectionMap (https://issues.jboss.org/browse/JGRP-1464)
+3	6	src/org/jgroups/protocols/UDP.java
+
+[f9bfda218] Bela Ban 2012-05-16 Diagnostics address and mcast address can now be the same, as long as the port is different, or vice versa (https://issues.jboss.org/browse/JGRP-1453)
+3	6	src/org/jgroups/protocols/UDP.java
+
+[a81223f69] Bela Ban 2012-05-16 - Set discard_incompatible_packets to true by default - Discarding packets from different version in TCPConnectionMap (https://issues.jboss.org/browse/JGRP-1464)
+4	9	src/org/jgroups/blocks/TCPConnectionMap.java
+2	2	src/org/jgroups/protocols/TP.java
+
+[110ebff49] Bela Ban 2012-05-16 - Set discard_incompatible_packets to true by default - Discarding packets from different version in TCPConnectionMap (https://issues.jboss.org/browse/JGRP-1464)
+4	9	src/org/jgroups/blocks/TCPConnectionMap.java
+2	2	src/org/jgroups/protocols/TP.java
+
+[7422d94b2] Bela Ban 2012-05-14 Removed handling of SUSPECT event and using TMP_VIEW instead (https://issues.jboss.org/browse/JGRP-1452)
+17	20	src/org/jgroups/protocols/SEQUENCER.java
+
+[62784ad57] Bela Ban 2012-05-14 Removed handling of SUSPECT event and using TMP_VIEW instead (https://issues.jboss.org/browse/JGRP-1452)
+17	20	src/org/jgroups/protocols/SEQUENCER.java
+
+[d1f58dd02] Bela Ban 2012-05-14 Backported change from master (https://issues.jboss.org/browse/JGRP-1463)
+23	9	src/org/jgroups/protocols/FD_SOCK.java
+
+[b0b90f293] Bela Ban 2012-05-14 Merge pull request #46 from dimbleby/JGRP-1463
+[342812fff] Bela Ban 2012-05-14 Moved socket creation out of common path (https://issues.jboss.org/browse/JGRP-1462)
+99	44	src/org/jgroups/protocols/SEQUENCER.java
+
+[5de2f4dd1] Bela Ban 2012-05-14 Sending messages with monotonically increasing seqnos (https://issues.jboss.org/browse/JGRP-1461)
+99	44	src/org/jgroups/protocols/SEQUENCER.java
+
+[a9e05fe89] dch 2012-05-14 JGRP-1463: Avoid ArrayIndexOutOfBoundsException
+78	64	src/org/jgroups/protocols/FD_SOCK.java
+
+[e19fc0999] Bela Ban 2012-05-14 Moved socket creation out of common path (https://issues.jboss.org/browse/JGRP-1462)
+8	2	src/org/jgroups/protocols/UDP.java
+
+[cdc43acd3] Bela Ban 2012-05-14 Catching exception on socket creation and destroying sockets if an exception was caught
+8	2	src/org/jgroups/protocols/UDP.java
+
+[b9d3e8daa] Bela Ban 2012-05-14 Moved socket creation out of common path (https://issues.jboss.org/browse/JGRP-1462)
+2	1	src/org/jgroups/blocks/AbstractConnectionMap.java
+55	17	src/org/jgroups/blocks/TCPConnectionMap.java
+
+[efbc5bc9c] Bela Ban 2012-05-14 Moved socket creation out of common path (https://issues.jboss.org/browse/JGRP-1462)
+2	1	src/org/jgroups/blocks/AbstractConnectionMap.java
+55	16	src/org/jgroups/blocks/TCPConnectionMap.java
+
+[b017372f8] Bela Ban 2012-05-12 removed queues
+7	7	src/org/jgroups/protocols/DAISYCHAIN.java
+
+[bc01fe5a8] Bela Ban 2012-05-11 Added throughput test with multiple threads
+52	11	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[0e23ce360] Bela Ban 2012-05-11 Code optimizations in RATE_LIMITER and throughput test
+13	20	src/org/jgroups/protocols/RATE_LIMITER.java
+3	4	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[02f269fba] Bela Ban 2012-05-11 Optimizations
+11	5	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[b95b87a5c] Bela Ban 2012-05-10 new test for RATE_LIMITER's throughput
+149	0	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[794dfe6ef] Bela Ban 2012-05-09 Check for illegal condition max_bytes < frag_size
+8	2	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[8b643566a] Bela Ban 2012-05-09 Added check if max_bytes is a multiple of frag_size
+34	8	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[43a13970d] Bela Ban 2012-05-08 removed send and forward queues (temp change)
+6	50	src/org/jgroups/protocols/DAISYCHAIN.java
+
+[4602a9ad9] Bela Ban 2012-05-11 Added throughput test with multiple threads
+52	11	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[4c04903f6] Bela Ban 2012-05-11 Code optimizations in RATE_LIMITER and throughput test
+13	20	src/org/jgroups/protocols/RATE_LIMITER.java
+3	4	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[3bccdf30b] Bela Ban 2012-05-11 Optimizations
+11	5	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[19f76967a] Bela Ban 2012-05-10 new test for RATE_LIMITER's throughput
+149	0	tests/junit-functional/org/jgroups/protocols/RATE_LIMITER_Test.java
+
+[a6e726f6d] Bela Ban 2012-05-10 - Removed SeqnoTable/Test - No need to order messages via seqnoTable, as they are already ordered (https://issues.jboss.org/browse/JGRP-1461)
+46	57	src/org/jgroups/protocols/SEQUENCER.java
+0	112	src/org/jgroups/util/SeqnoTable.java
+0	145	tests/junit-functional/org/jgroups/tests/SeqnoTableTest.java
+16	5	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[d3486c105] Bela Ban 2012-05-10 - Removed SeqnoTable and SeqnoTableTest - No need to order messages as they are already ordered by virtue of the coord sending them FIFO (https://issues.jboss.org/browse/JGRP-1461)
+39	51	src/org/jgroups/protocols/SEQUENCER.java
+0	106	src/org/jgroups/util/SeqnoTable.java
+0	173	tests/junit-functional/org/jgroups/tests/SeqnoTableTest.java
+16	5	tests/junit/org/jgroups/tests/SequencerOrderTest.java
+
+[58de8978e] Bela Ban 2012-05-10 added test for SeqnoTable.Entry
+26	1	tests/junit-functional/org/jgroups/tests/SeqnoTableTest.java
+
+[744b0424d] Bela Ban 2012-05-10 changed position of SEQUENCER (needs to be above flow control protocols)
+1	1	conf/sequencer.xml
+
+[025e5ccd5] Bela Ban 2012-05-10 Merge pull request #44 from dimbleby/JGRP-1461
+[c9c3d9800] dch 2012-05-09 JGRP-1461 Remove unnecessary variable and constructor
+6	6	src/org/jgroups/protocols/SEQUENCER.java
+0	6	src/org/jgroups/util/SeqnoTable.java
+6	6	tests/junit-functional/org/jgroups/tests/SeqnoTableTest.java
+
+[d6204c5b3] dch 2012-05-09 JGRP-1461 A new Entry shouldn't expect to see all previous sequence numbers.
+1	1	src/org/jgroups/util/SeqnoTable.java
+21	18	tests/junit-functional/org/jgroups/tests/SeqnoTableTest.java
+
+[3cc54a04f] Bela Ban 2012-05-09 Asking the coord to retransmit the last message from the joiner (https://issues.jboss.org/browse/JGRP-1455)
+1	1	build.xml
+2	0	src/org/jgroups/Event.java
+9	0	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+1	2	src/org/jgroups/protocols/pbcast/GMS.java
+9	4	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[3244cb666] Bela Ban 2012-05-09 ns
+2	2	tests/junit/org/jgroups/tests/SharedTransportTest.java
+
+[6f73685e3] Bela Ban 2012-05-09 increased size of JVM for unit tests
+2	1	build.xml
+2	2	doc/design/SEQUENCER.txt
+
+[d4bf6a045] Bela Ban 2012-05-09 Preventing duplicate delivery of messages, backported from master  (https://issues.jboss.org/browse/JGRP-1458)
+1	2	src/org/jgroups/util/SeqnoTable.java
+
+[dc1486971] Bela Ban 2012-05-09 Merge pull request #41 from dimbleby/JGRP-1458
+[f2a13c1e0] Bela Ban 2012-05-09 Not incrementing the highest delivered seqno for the coord anymore (https://issues.jboss.org/browse/JGRP-1455)
+15	0	doc/design/varia2.txt
+4	4	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+
+[ab400b5e9] Bela Ban 2012-05-09 Not incrementing the highest delivered seqno for the coord anymore (https://issues.jboss.org/browse/JGRP-1455)
+15	0	doc/design/varia2.txt
+4	4	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+
+[2e86d0abd] Bela Ban 2012-05-09 Not incrementing the highest delivered seqno for the coord anymore (https://issues.jboss.org/browse/JGRP-1455)
+15	0	doc/design/varia2.txt
+4	4	src/org/jgroups/protocols/pbcast/ClientGmsImpl.java
+
+[412b83189] Bela Ban 2012-05-09 First (non-working) version of MFC2
+1	0	conf/jg-protocol-ids.xml
+274	0	src/org/jgroups/protocols/MFC2.java
+
+[17620db9d] Bela Ban 2012-05-09 Check for illegal condition max_bytes < frag_size
+8	2	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[f5d02e276] Bela Ban 2012-05-09 Added check if max_bytes is a multiple of frag_size
+34	8	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[b081047d3] Bela Ban 2012-05-08 removed send and forward queues (temp change)
+6	50	src/org/jgroups/protocols/DAISYCHAIN.java
+
+[a5bd019ee] Bela Ban 2012-05-08 Reset stats
+9	3	src/org/jgroups/protocols/DAISYCHAIN.java
+
+[4a75bb2c6] Bela Ban 2012-05-07 CLEAR_RESULTS message now waits for all acks, or up to 5 secs
+30	16	tests/perf/org/jgroups/tests/perf/MPerf.java
+
+[2c392363a] Bela Ban 2012-05-07 Backported changes to RATE_LIMITER from master to 3.0 branch
+42	35	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[2f31700bc] Bela Ban 2012-05-05 Merge pull request #43 from dimbleby/trivia
+[4831fe90c] dch 2012-05-05 Fix toString() for VERIFY_SUSPECT$Entry
+1	1	src/org/jgroups/protocols/VERIFY_SUSPECT.java
+
+[9a71771cd] Bela Ban 2012-05-02 - Added log_not_found_msgs to UNICAST2 - When seqnos are requested for retransmission that are <= low, no warning message is logged - Before sending a retransmit list, we remove seqnos <= low, as the window might have advanced after we got the list
+12	3	src/org/jgroups/protocols/UNICAST2.java
+9	3	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[bd126890d] Bela Ban 2012-05-02 Added remove() and test
+20	0	src/org/jgroups/util/SeqnoList.java
+17	1	tests/junit-functional/org/jgroups/tests/SeqnoListTest.java
+
+[499aa01f4] Bela Ban 2012-04-30 ns
+4	4	src/org/jgroups/protocols/RATE_LIMITER.java
+6	1	tests/perf/org/jgroups/tests/perf/MPerf.java
+
+[e8c0cad07] Bela Ban 2012-04-27 Adding cluster name to ProbeHandler in MessageDispatcher
+7	6	src/org/jgroups/blocks/MessageDispatcher.java
+
+[b9c59ea51] Bela Ban 2012-04-27 Adding cluster name to ProbeHandler in MessageDispatcher
+7	6	src/org/jgroups/blocks/MessageDispatcher.java
+
+[8f0a71b00] Bela Ban 2012-04-25 Added stats, using LockSupport.parkNanos() now to sleep
+29	27	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[b45548c99] Bela Ban 2012-04-25 Changed RATE_LIMITER to use ns
+12	7	src/org/jgroups/protocols/RATE_LIMITER.java
+
+[e316b5122] Bela Ban 2012-04-25 Switched to System.nanoTime() to compute block time
+4	4	src/org/jgroups/util/CreditMap.java
+
+[b67eec516] Bela Ban 2012-04-23 JGRP-1457 don't lose scheduled tasks
+5	4	src/org/jgroups/util/TimeScheduler2.java
+
+[624039a75] dch 2012-04-22 JGRP-1457 don't lose scheduled tasks
+5	4	src/org/jgroups/util/TimeScheduler2.java
+
+[2f19f7477] Bela Ban 2012-04-23 JGRP-1450 don't forget who is suspected
+5	5	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+
+[d77c440cf] dch 2012-04-15 JGRP-1450 don't forget who is suspected
+5	5	src/org/jgroups/protocols/pbcast/ParticipantGmsImpl.java
+
+[78fb43a74] dch 2012-04-22 JGRP-1458 SEQUENCER delivers the same message twice
+1	2	src/org/jgroups/util/SeqnoTable.java
+
+[cbe6d1c16] Bela Ban 2012-04-20 Changed version to 3.0.10.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[60342bb05] Bela Ban 2012-04-20 - Fixed pickTargets() in UUPerf (would pick A,A in {A}) - Code to prevent NPE in RpcDispatcher is options is null - Stats for MessageDispatcher (https://issues.jboss.org/browse/JGRP-1456)
+61	4	src/org/jgroups/blocks/MessageDispatcher.java
+21	13	src/org/jgroups/blocks/RpcDispatcher.java
+3	1	tests/other/org/jgroups/tests/UnicastTestRpcDist.java
+
+[ffa98d86f] Bela Ban 2012-04-20 - Fixed pickTargets() in UUPerf (would pick A,A in {A}) - Code to prevent NPE in RpcDispatcher is options is null - Stats for MessageDispatcher (https://issues.jboss.org/browse/JGRP-1456)
+61	3	src/org/jgroups/blocks/MessageDispatcher.java
+20	12	src/org/jgroups/blocks/RpcDispatcher.java
+3	1	tests/perf/org/jgroups/tests/perf/UPerf.java
+
+[7b8645f20] Bela Ban 2012-04-20 changed log level from error to warn
+2	2	src/org/jgroups/protocols/UNICAST.java
+2	2	src/org/jgroups/protocols/UNICAST2.java
+
+[f480200bb] Bela Ban 2012-04-20 changed log level from ERROR to WARN
+2	2	src/org/jgroups/protocols/UNICAST.java
+2	2	src/org/jgroups/protocols/UNICAST2.java
+
+[061d89935] Bela Ban 2012-04-16 changed log level from warn to trace for STABLE conn-id mismatch
+1	1	src/org/jgroups/protocols/UNICAST2.java
+
+[5c9fa3211] Bela Ban 2012-04-16 changed log level from warn to trace for STABLE conn-id mismatch
+1	1	src/org/jgroups/protocols/UNICAST2.java
+
+[dba92c910] Bela Ban 2012-04-13 Merge pull request #36 from vblagoje/t_1426_m
+[ff4429c86] Vladimir Blagojevic 2012-03-27 JGRP-1426 Group unable to accept new members: FLUSH stuck after MERGE_RSP timed out
+52	49	src/org/jgroups/protocols/pbcast/GMS.java
+
+[bdc83664a] Bela Ban 2012-04-05 View is now passed to listeners correctly (https://issues.jboss.org/browse/JGRP-1446)
+1	5	src/org/jgroups/blocks/ReplicatedHashMap.java
+
+[8d97a9de4] Bela Ban 2012-04-05 Fixed NPE (https://issues.jboss.org/browse/JGRP-1445)
+2	0	src/org/jgroups/protocols/pbcast/FLUSH.java
+
+[d26185a04] Bela Ban 2012-04-02 - Fixed NPE (https://issues.jboss.org/browse/JGRP-1443)
+7	3	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+7	0	src/org/jgroups/protocols/pbcast/GMS.java
+4	0	src/org/jgroups/protocols/pbcast/JoinRsp.java
+
+[5c759df0c] Bela Ban 2012-04-04 Fixed NPE (https://issues.jboss.org/browse/JGRP-1445)
+2	0	src/org/jgroups/protocols/pbcast/FLUSH.java
+
+[bae57fb99] Bela Ban 2012-04-04 Changed version to 3.1.0.Beta1
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[42ed50fa4] Bela Ban 2012-04-04 RSVP now cancels pending tasks and unblocks AckCollectors in destroy() (https://issues.jboss.org/browse/JGRP-1444)
+12	0	src/org/jgroups/protocols/RSVP.java
+7	0	src/org/jgroups/util/AckCollector.java
+17	0	tests/junit-functional/org/jgroups/tests/AckCollectorTest.java
+26	0	tests/junit-functional/org/jgroups/tests/PromiseTest.java
+
+[332c1186e] Bela Ban 2012-04-04 RSVP now cancels pending tasks and unblocks AckCollectors in destroy() (https://issues.jboss.org/browse/JGRP-1444)
+12	0	src/org/jgroups/protocols/RSVP.java
+7	0	src/org/jgroups/util/AckCollector.java
+17	0	tests/junit-functional/org/jgroups/tests/AckCollectorTest.java
+26	0	tests/junit-functional/org/jgroups/tests/PromiseTest.java
+
+[964f692dd] Bela Ban 2012-04-02 - Fixed NPE (https://issues.jboss.org/browse/JGRP-1443)
+6	2	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+7	0	src/org/jgroups/protocols/pbcast/GMS.java
+4	0	src/org/jgroups/protocols/pbcast/JoinRsp.java
+
+[e9239c55a] Bela Ban 2012-04-02 - Fixed NPE (https://issues.jboss.org/browse/JGRP-1443)
+7	3	src/org/jgroups/protocols/pbcast/CoordGmsImpl.java
+7	0	src/org/jgroups/protocols/pbcast/GMS.java
+4	0	src/org/jgroups/protocols/pbcast/JoinRsp.java
+
+[9d1d01739] Bela Ban 2012-04-01 Merge pull request #35 from Sanne/JGRP-1440
+[288908636] Sanne Grinovero 2012-04-01 JGRP-1440 JDBC_PING java.sql.SQLException: ORA-00001: unique constraint violated
+13	6	src/org/jgroups/protocols/JDBC_PING.java
+
+[117a57684] Bela Ban 2012-03-30 Added num_messages_{sent,received} JMX attrs
+9	0	src/org/jgroups/protocols/pbcast/NAKACK.java
+
+[8a239795a] Bela Ban 2012-03-30 Added num_messages_{sent,received} JMX attrs
+8	14	src/org/jgroups/protocols/UNICAST2.java
+9	0	src/org/jgroups/protocols/pbcast/NAKACK.java
+7	0	src/org/jgroups/protocols/pbcast/NAKACK2.java
+
+[7f3215022] Bela Ban 2012-03-30 Added resetStatistics()
+5	0	src/org/jgroups/stack/Protocol.java
+
+[995526ff4] Bela Ban 2012-03-30 Added resetStatistics()
+5	0	src/org/jgroups/stack/Protocol.java
+
+[b4e467c0a] Bela Ban 2012-03-27 Switched to a simple arrray for magicMap; IDs are indices into the array. Uses less space and  - after initialization - access is read-only.
+32	17	src/org/jgroups/conf/ClassConfigurator.java
+
+[a47cc8e63] Bela Ban 2012-03-27 Added AnycastAddress to jg-magic-map.xml
+1	0	conf/jg-magic-map.xml
+
+[67a008403] Bela Ban 2012-03-26 Merge pull request #34 from pruivo/toa_tmp
+[7bf89bef4] Pedro Ruivo 2012-03-26  * the sender sends the message to itself if NO_TOTAL_ORDER flag is enabled
+5	5	src/org/jgroups/protocols/tom/TOA.java
+
+[9b8a8d0dc] Bela Ban 2012-03-26 Including package org.jgroups.protocols.tom now
+5	0	src/org/jgroups/util/XMLSchemaGenerator.java
+
+[96adb1adc] Bela Ban 2012-03-26 Added section on TOA to manual
+34	0	doc/manual/en/modules/protocols.xml
+1	1	tests/perf/org/jgroups/tests/perf/UUPerf.java
+
+[0a6daa871] Bela Ban 2012-03-26 - Moved AnycastAddress to org.jgroups - Added use_anycast_addrs to RequestOptions - Modified RequestCorrelator to check for use_anycast_addrs and create an AnycastAddress if set - Modified UPerf to use anycast_addrs ('a')
+1	3	src/org/jgroups/{protocols/tom => }/AnycastAddress.java
+11	2	src/org/jgroups/blocks/RequestCorrelator.java
+23	8	src/org/jgroups/blocks/RequestOptions.java
+6	9	src/org/jgroups/protocols/tom/TOA.java
+1	1	tests/other/org/jgroups/tests/TestToaOrder.java
+65	39	tests/perf/org/jgroups/tests/perf/UPerf.java
+
+[48b52e4dc] Bela Ban 2012-03-26 - Removed sendLock - Removed SenderThread
+0	103	src/org/jgroups/protocols/tom/SenderThread.java
+30	39	src/org/jgroups/protocols/tom/TOA.java
+
+[d8de5ae7f] Bela Ban 2012-03-26 - Moved TOA over RSVP in toa.xml - Renamed group-multicast.sh to toa-test.sh
+2	2	bin/{groupmulticast.sh => toa-test.sh}
+1	1	conf/toa.xml
+
+[99e586de1] Bela Ban 2012-03-26 Renamed GroupMulticast to Anycast, again
+1	1	src/org/jgroups/protocols/tom/AnycastAddress.java
+2	2	src/org/jgroups/protocols/tom/ToaHeader.java
+
+[f44ea2909] Bela Ban 2012-03-26 Renamed GroupMulticast to Anycast
+17	17	src/org/jgroups/protocols/tom/StatsCollector.java
+11	11	src/org/jgroups/protocols/tom/TOA.java
+
+[774305859] Bela Ban 2012-03-26 - Renamed GROUP_MULTICAST to TOA - Moved TOA to org.jgroups.protocols.tom - Moved classes out of sub-packages into "tom" - Further cleanup (https://issues.jboss.org/browse/JGRP-1442)
+0	73	conf/group-multicast.xml
+1	1	conf/jg-magic-map.xml
+1	1	conf/jg-protocol-ids.xml
+83	0	conf/toa.xml
+0	70	src/org/jgroups/protocols/pmcast/threading/DeliverThread.java
+35	17	src/org/jgroups/protocols/{pmcast/GroupAddress.java => tom/AnycastAddress.java}
+3	3	src/org/jgroups/protocols/{pmcast/manager/DeliverManager.java => tom/DeliveryManager.java}
+26	27	src/org/jgroups/protocols/{pmcast/manager/DeliverManagerImpl.java => tom/DeliveryManagerImpl.java}
+3	3	src/org/jgroups/protocols/{pmcast/DeliverProtocol.java => tom/DeliveryProtocol.java}
+68	0	src/org/jgroups/protocols/tom/DeliveryThread.java
+3	2	src/org/jgroups/protocols/{pmcast => tom}/MessageID.java
+13	14	src/org/jgroups/protocols/{pmcast/manager => tom}/SenderManager.java
+21	21	src/org/jgroups/protocols/{pmcast/threading => tom}/SenderThread.java
+1	1	src/org/jgroups/protocols/{pmcast/manager => tom}/SequenceNumberManager.java
+2	2	src/org/jgroups/protocols/{pmcast/stats => tom}/StatsCollector.java
+61	64	src/org/jgroups/protocols/{pmcast/GROUP_MULTICAST.java => tom/TOA.java}
+20	19	src/org/jgroups/protocols/{pmcast/header/GroupMulticastHeader.java => tom/ToaHeader.java}
+6	4	tests/other/org/jgroups/tests/{CheckGroupMulticastOrder.java => CheckToaOrder.java}
+26	25	tests/other/org/jgroups/tests/{TestGroupMulticastOrder.java => TestToaOrder.java}
+
+[f29751f58] Bela Ban 2012-03-23 First pull for TOM from Pedros GIT repo (https://issues.jboss.org/browse/JGRP-1442)
+60	0	bin/groupmulticast.sh
+73	0	conf/group-multicast.xml
+1	0	conf/jg-magic-map.xml
+1	0	conf/jg-protocol-ids.xml
+18	0	src/org/jgroups/protocols/pmcast/DeliverProtocol.java
+454	0	src/org/jgroups/protocols/pmcast/GROUP_MULTICAST.java
+117	0	src/org/jgroups/protocols/pmcast/GroupAddress.java
+113	0	src/org/jgroups/protocols/pmcast/MessageID.java
+126	0	src/org/jgroups/protocols/pmcast/header/GroupMulticastHeader.java
+23	0	src/org/jgroups/protocols/pmcast/manager/DeliverManager.java
+253	0	src/org/jgroups/protocols/pmcast/manager/DeliverManagerImpl.java
+137	0	src/org/jgroups/protocols/pmcast/manager/SenderManager.java
+43	0	src/org/jgroups/protocols/pmcast/manager/SequenceNumberManager.java
+215	0	src/org/jgroups/protocols/pmcast/stats/StatsCollector.java
+70	0	src/org/jgroups/protocols/pmcast/threading/DeliverThread.java
+103	0	src/org/jgroups/protocols/pmcast/threading/SenderThread.java
+290	0	tests/other/org/jgroups/tests/CheckGroupMulticastOrder.java
+569	0	tests/other/org/jgroups/tests/TestGroupMulticastOrder.java
+
+[fff281738] Bela Ban 2012-03-23 added external_port to TP, FD_SOCK and STATE_TRANSFER (https://issues.jboss.org/browse/JGRP-1441)
+2	0	src/org/jgroups/Global.java
+1	0	src/org/jgroups/blocks/BasicConnectionTable.java
+12	6	src/org/jgroups/blocks/ConnectionTableNIO.java
+11	4	src/org/jgroups/blocks/TCPConnectionMap.java
+15	9	src/org/jgroups/protocols/FD_SOCK.java
+4	1	src/org/jgroups/protocols/TCP.java
+4	4	src/org/jgroups/protocols/TCP_NIO.java
+6	0	src/org/jgroups/protocols/TP.java
+6	1	src/org/jgroups/protocols/UDP.java
+10	1	src/org/jgroups/protocols/pbcast/STATE_SOCK.java
+7	7	tests/junit-functional/org/jgroups/blocks/ConnectionMapTest.java
+2	2	tests/junit-functional/org/jgroups/tests/ConnectionMapUnitTest.java
+
+[1a9e1a410] Bela Ban 2012-03-23 Changed version to 3.0.9.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[144931816] Bela Ban 2012-03-23 added external_port to TP, FD_SOCK and STATE_TRANSFER (https://issues.jboss.org/browse/JGRP-1441)
+2	0	src/org/jgroups/Global.java
+1	0	src/org/jgroups/blocks/BasicConnectionTable.java
+12	6	src/org/jgroups/blocks/ConnectionTableNIO.java
+11	5	src/org/jgroups/blocks/TCPConnectionMap.java
+13	7	src/org/jgroups/protocols/FD_SOCK.java
+4	0	src/org/jgroups/protocols/TCP.java
+4	4	src/org/jgroups/protocols/TCP_NIO.java
+7	1	src/org/jgroups/protocols/TP.java
+6	1	src/org/jgroups/protocols/UDP.java
+10	1	src/org/jgroups/protocols/pbcast/STATE_SOCK.java
+6	6	tests/junit-functional/org/jgroups/blocks/ConnectionMapTest.java
+2	2	tests/junit-functional/org/jgroups/tests/ConnectionMapUnitTest.java
+
+[f67a0b930] Bela Ban 2012-03-15 Backported RSVP from 3.1 to 3.0.8 (https://issues.jboss.org/browse/JGRP-1439)
+1	0	conf/jg-magic-map.xml
+2	1	conf/jg-protocol-ids.xml
+5	0	src/org/jgroups/protocols/BasicTCP.java
+316	0	src/org/jgroups/protocols/RSVP.java
+3	2	src/org/jgroups/protocols/pbcast/GMS.java
+59	43	src/org/jgroups/util/AckCollector.java
+101	64	tests/junit-functional/org/jgroups/tests/AckCollectorTest.java
+200	0	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[f15bab61e] Bela Ban 2012-03-15 - Updated version to 3.0.8.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[49c801e26] Bela Ban 2012-03-14 added DefaultBundler2 and TransferQueueBundler2
+324	1	src/org/jgroups/protocols/TP.java
+
+[339ff6734] Bela Ban 2012-02-15 MPerf: we cannot check FIFO if multiple threads are used to send messages
+11	5	tests/perf/org/jgroups/tests/perf/MPerf.java
+
+[a15a0bd31] Bela Ban 2012-03-14 removed trace statament
+0	10	src/org/jgroups/blocks/UnicastRequest.java
+
+[9a3b8685b] Bela Ban 2012-03-14 Enhanced UnicastTestRpc
+73	216	tests/other/org/jgroups/tests/UnicastTestRpc.java
+1	1	tests/perf/org/jgroups/tests/perf/UdpPerf.java
+
+[b525bf956] Bela Ban 2012-03-13 Fixed typo in docu (JGRP-1437)
+2	2	doc/manual/en/modules/api.xml
+
+[070badeb0] Bela Ban 2012-03-13 added receive() back to BasicTCP (change broke compilation)
+5	0	src/org/jgroups/protocols/BasicTCP.java
+
+[7656caff4] Bela Ban 2012-03-13 Merge branch 'master' of github.com:belaban/JGroups
+[29ca4c586] Bela Ban 2012-03-13 disabling bundling in all RPCs
+4	0	tests/perf/org/jgroups/tests/perf/UPerf.java
+
+[34cc71e44] Bela Ban 2012-03-12 Merge pull request #32 from maniksurtani/t_tweaks_30
+[8dbafc8e8] Bela Ban 2012-03-12 Merge pull request #31 from maniksurtani/t_tweaks_master
+[23a7e07a6] Manik Surtani 2012-03-12 Remove unnecessary method overriding
+0	8	src/org/jgroups/protocols/BasicTCP.java
+
+[af280e999] Manik Surtani 2012-03-12 Remove unnecessary method overriding
+0	8	src/org/jgroups/protocols/BasicTCP.java
+
+[0878d4269] Bela Ban 2012-03-12 - Updated version to 3.0.7.Final - Moved view update after iteratuion (https://issues.jboss.org/browse/JGRP-1428)
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+1	1	src/org/jgroups/blocks/RequestCorrelator.java
+
+[1efc46c45] Bela Ban 2012-03-12 Moved view assignment to before the iteration (https://issues.jboss.org/browse/JGRP-1428)
+1	1	src/org/jgroups/blocks/RequestCorrelator.java
+
+[21c9249ff] Bela Ban 2012-03-08 New file RELAY2.txt
+27	0	doc/design/RELAY2.txt
+
+[d08cfa3b6] Bela Ban 2012-03-07 Correct timeout for suspected members - added VERIFY_SUSPECT_TEST as well (https://issues.jboss.org/browse/JGRP-1429)
+79	58	src/org/jgroups/protocols/VERIFY_SUSPECT.java
+126	0	tests/junit-functional/org/jgroups/protocols/VERIFY_SUSPECT_Test.java
+
+[12220e0e7] Bela Ban 2012-03-07 Merge branch 'JGRP-1429'
+[7dd8451c3] Bela Ban 2012-03-07 Correct timeout for suspected members - added VERIFY_SUSPECT_TEST as well (https://issues.jboss.org/browse/JGRP-1429)
+78	57	src/org/jgroups/protocols/VERIFY_SUSPECT.java
+126	0	tests/junit-functional/org/jgroups/protocols/VERIFY_SUSPECT_Test.java
+
+[4167d6879] Bela Ban 2012-03-07 Applied patch by Jay Guidos to prevent broken connections (https://issues.jboss.org/browse/JGRP-1427)
+21	17	src/org/jgroups/blocks/BasicConnectionTable.java
+
+[f0f2ffc84] Bela Ban 2012-03-07 Added return_entire_cache back (https://issues.jboss.org/browse/JGRP-1430)
+21	4	src/org/jgroups/protocols/Discovery.java
+
+[7b68b7580] Bela Ban 2012-03-07 Added return_entire_cache back (https://issues.jboss.org/browse/JGRP-1430)
+21	4	src/org/jgroups/protocols/Discovery.java
+
+[1eb107998] Bela Ban 2012-03-07 Changed port_range probing according to documentation (https://issues.jboss.org/browse/JGRP-1435)
+3	3	src/org/jgroups/protocols/BPING.java
+1	1	src/org/jgroups/protocols/FD_SOCK.java
+
+[5135e7eab] Bela Ban 2012-03-07 Made adding and removing entries from routingTable synchronized
+37	8	src/org/jgroups/stack/GossipRouter.java
+
+[cb5642532] Bela Ban 2012-03-06 Added timeout_check_interval (https://issues.jboss.org/browse/JGRP-1425)
+12	2	src/org/jgroups/protocols/FD_ALL.java
+
+[722e1b447] Bela Ban 2012-03-06 Added timeout_check_interval
+12	2	src/org/jgroups/protocols/FD_ALL.java
+
+[6d036d9e6] Bela Ban 2012-03-06 Updated ref to SEQUENCER design doc
+2	1	src/org/jgroups/protocols/SEQUENCER.java
+
+[51c3871f5] Bela Ban 2012-02-28 Changed version to 3.1.0.Alpha3
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[2ef6b4d7c] Bela Ban 2012-02-27 Updated version to 3.0.6.Final
+1	1	build.xml
+1	1	pom.xml
+2	2	src/org/jgroups/Version.java
+
+[0c689d3e7] Bela Ban 2012-02-27 View between creation of request and registration with view handler doesn't cause requests to hang or time out (https://issues.jboss.org/browse/JGRP-1428)
+4	3	src/org/jgroups/blocks/GroupRequest.java
+12	3	src/org/jgroups/blocks/RequestCorrelator.java
+3	6	tests/junit-functional/org/jgroups/blocks/GroupRequestTest.java
+
+[429ff8dfd] Bela Ban 2012-02-27 View between creation of request and registration with view handler doesn't cause requests to hang or time out (https://issues.jboss.org/browse/JGRP-1428)
+4	3	src/org/jgroups/blocks/GroupRequest.java
+12	3	src/org/jgroups/blocks/RequestCorrelator.java
+3	6	tests/junit-functional/org/jgroups/blocks/GroupRequestTest.java
+
+[dfc3aa34c] Bela Ban 2012-02-19 Merge pull request #27 from dimbleby/master
+[f5be61340] dch 2012-02-19 No need to sleep once you've already decided that a flush has failed
+3	2	src/org/jgroups/protocols/pbcast/GMS.java
+
+[5ec3fd731] dch 2012-02-19 Stick in some quotes, in case of JAVA_HOME being a path with spaces
+1	1	build.bat
+
+[f11856856] Bela Ban 2012-02-17 ns
+1	1	src/org/jgroups/protocols/RSVP.java
+
+[21857d6ff] Bela Ban 2012-02-16 Added first version of UUPerf (written by Dan Berindei)
+8	0	bin/uuperf.sh
+613	0	tests/perf/org/jgroups/tests/perf/UUPerf.java
+
+[d93043fc5] Bela Ban 2012-02-16 Moved RSVP on top of FRAG2
+1	1	conf/fast-local.xml
+1	1	conf/tcp.xml
+1	1	conf/udp-largecluster.xml
+1	1	conf/udp.xml
+
+[2da10ae81] Bela Ban 2012-02-16 Adde tracing to RSVP
+37	32	src/org/jgroups/protocols/RSVP.java
+
+[17ba6e2fc] Bela Ban 2012-02-16 Setting ProtocolStack in every Protocol correctly in both ProtocolStack.addProtocol() and ProtocolStack.init()
+3	1	src/org/jgroups/stack/ProtocolStack.java
+
+[e52575c0a] Bela Ban 2012-02-13 Preliminary code for delivering meg-lists
+3	1	src/org/jgroups/Event.java
+52	3	src/org/jgroups/protocols/TP.java
+157	49	src/org/jgroups/protocols/pbcast/NAKACK2.java
+49	17	src/org/jgroups/util/Table.java
+
+[696434b4f] Bela Ban 2012-02-13 Replaced some occurrences of currentTimeMillis() withnanoTime()
+16	30	src/org/jgroups/blocks/Request.java
+4	4	src/org/jgroups/protocols/TP.java
+39	57	src/org/jgroups/util/Promise.java
+3	4	src/org/jgroups/util/ResponseCollector.java
+19	8	src/org/jgroups/util/Table.java
+0	1	src/org/jgroups/util/Util.java
+1	1	tests/junit-functional/org/jgroups/tests/PromiseTest.java
+2	1	tests/junit-functional/org/jgroups/tests/ResponseCollectorTest.java
+2	2	tests/junit/org/jgroups/blocks/ExecutingServiceTest.java
+65	31	tests/junit/org/jgroups/tests/TCPGOSSIP_Test.java
+
+[3e57100f3] Bela Ban 2012-02-13 Fixed testsuite failures in MuxRpcDispatcherTest: @Test(sequential was false) !
+0	1	build.xml
+74	75	tests/junit/org/jgroups/blocks/MuxRpcDispatcherTest.java
+
+[2ffffaed4] Bela Ban 2012-02-10 fixed typo
+1	1	doc/ReleaseNotes-3.1.0.txt
+
+[0b4d0f80a] Bela Ban 2012-02-10 Updated release notes for 3.1.0
+0	161	doc/ReleaseNotes-3.0.0.txt
+191	0	doc/ReleaseNotes-3.1.0.txt
+
+[7f03250e1] Bela Ban 2012-02-10 Changed version to 3.1.0.Beta1
+1	1	build.xml
+1	1	pom.xml
+1	1	src/org/jgroups/Version.java
+
+[739cd50c8] Bela Ban 2012-02-10 ns
+1	1	tests/junit/org/jgroups/blocks/RpcDispatcherAnycastServerObject.java
+
+[92ef0cede] Bela Ban 2012-02-10 Adding the test suffix to the testname
+7	6	src/org/jgroups/util/JUnitXMLReporter.java
+
+[56ec29137] Bela Ban 2012-02-09 ns
+2	2	tests/junit-functional/org/jgroups/protocols/NAKACK_StressTest.java
+1	1	tests/junit-functional/org/jgroups/tests/AckCollectorTest.java
+4	4	tests/junit-functional/org/jgroups/tests/SeqnoComparatorTest.java
+3	3	tests/junit-functional/org/jgroups/tests/UtilTest.java
+1	1	tests/junit/org/jgroups/tests/ConcurrentFlushTest.java
+1	1	tests/junit/org/jgroups/tests/OverlappingUnicastMergeTest.java
+
+[6921978fe] Bela Ban 2012-02-09 Made methods with @DataProvider protected
+1	1	tests/junit-functional/org/jgroups/tests/UNICAST_Test.java
+1	1	tests/junit/org/jgroups/protocols/UNICAST_ContentionTest.java
+
+[64781f509] Bela Ban 2012-02-09 Made before and after methods protected or package private
+19	1	src/org/jgroups/util/CountTests.java
+1	1	tests/junit-functional/org/jgroups/protocols/ENCRYPTAsymmetricTest.java
+2	2	tests/junit-functional/org/jgroups/tests/BARRIERTest.java
+1	3	tests/junit-functional/org/jgroups/tests/BoundedListTest.java
+1	1	tests/junit-functional/org/jgroups/tests/IpAddressTest.java
+1	1	tests/junit-functional/org/jgroups/tests/MembershipTest.java
+2	2	tests/junit-functional/org/jgroups/tests/NakackTest.java
+2	2	tests/junit-functional/org/jgroups/tests/ReentrantLockTest.java
+1	1	tests/junit-functional/org/jgroups/tests/RspListTest.java
+1	1	tests/junit-functional/org/jgroups/tests/ViewIdTest.java
+1	1	tests/junit-functional/org/jgroups/tests/ViewTest.java
+1	1	tests/junit/org/jgroups/blocks/RpcDispatcherAnycastMultipleCallsTest.java
+2	2	tests/junit/org/jgroups/blocks/RpcDispatcherExceptionTest.java
+1	1	tests/junit/org/jgroups/protocols/S3_PINGTest.java
+1	1	tests/junit/org/jgroups/tests/ConcurrentFlushTest.java
+2	2	tests/junit/org/jgroups/tests/JoinTest.java
+2	2	tests/junit/org/jgroups/tests/NAKACK_Test.java
+2	2	tests/junit/org/jgroups/tests/OOBTest.java
+1	1	tests/junit/org/jgroups/tests/SendAndReceiveTest.java
+2	2	tests/junit/org/jgroups/tests/SequencerFailoverTest.java
+
+[66b820fb2] Bela Ban 2012-02-09 Added CountTests
+8	0	bin/count-tests.sh
+115	0	src/org/jgroups/util/CountTests.java
+27	11	src/org/jgroups/util/JUnitXMLReporter.java
+2	5	tests/junit-functional/org/jgroups/protocols/NAKACK_StressTest.java
+0	11	tests/junit-functional/org/jgroups/tests/UNICAST_Test.java
+2	1	tests/junit/org/jgroups/blocks/ExecutingServiceTest.java
+5	10	tests/junit/org/jgroups/blocks/RpcDispatcherUnicastMethodExceptionTest.java
+2	2	tests/junit/org/jgroups/tests/FlushTest.java
+2	2	tests/other/org/jgroups/tests/PingPongDatagram.java
+
+[b14c275f7] Bela Ban 2012-02-09 Added DumpData
+8	0	bin/dumpdata.sh
+63	0	src/org/jgroups/util/DumpData.java
+6	6	src/org/jgroups/util/JUnitXMLReporter.java
+0	5	tests/junit-functional/org/jgroups/tests/UNICAST_Test.java
+
+[21ccc5a66] Bela Ban 2012-02-09 ns
+70	40	src/org/jgroups/util/JUnitXMLReporter.java
+8	10	tests/junit/org/jgroups/tests/ChannelTestBase.java
+45	58	tests/junit/org/jgroups/tests/StateTransferTest2.java
+
+[d73fe880a] Bela Ban 2012-02-08 First impl of new JUnitXmlReporter
+400	306	src/org/jgroups/util/JUnitXMLReporter.java
+15	0	tests/junit-functional/org/jgroups/tests/UNICAST_Test.java
+0	5	tests/junit/org/jgroups/tests/ChannelTestBase.java
+
+[5530106ad] Bela Ban 2012-02-07 added @Test(groups="base") back
+1	1	tests/junit/org/jgroups/tests/ChannelTestBase.java
+2	3	tests/junit/org/jgroups/tests/FlushTest.java
+
+[740f5c209] Bela Ban 2012-02-07 ns
+36	11	src/org/jgroups/util/JUnitXMLReporter.java
+1	1	tests/junit/org/jgroups/tests/ChannelTestBase.java
+
+[cbe5116f8] Bela Ban 2012-02-07 ns
+1	1	tests/byteman/org/jgroups/tests/byteman/RingBufferTest.java
+6	2	tests/junit/org/jgroups/tests/OOBTest.java
+
+[c425accf9] Bela Ban 2012-02-07 Removed duplicate @Test
+0	9	tests/junit/org/jgroups/tests/CloseTest.java
+
+[970c63654] Bela Ban 2012-02-06 Removed obsolete test
+0	1	conf/testng/byteman.xml
+0	1	conf/testng/functional.xml
+0	2	conf/testng/stack-independent.xml
+0	1	conf/testng/testng-tcp-flush.xml
+0	1	conf/testng/testng-tcp.xml
+0	1	conf/testng/testng-udp-flush.xml
+1	2	conf/testng/testng-udp.xml
+0	1	conf/testng/time-sensitive.xml
+0	201	tests/junit/org/jgroups/tests/ChannelConcurrencyTest.java
+
+[06fa1b652] Bela Ban 2012-02-06 Fixed deadlock in RouterStubManager
+47	66	src/org/jgroups/stack/RouterStubManager.java
+2	2	tests/junit/org/jgroups/tests/TCPGOSSIP_Test.java
+
+[3fa4c9d64] Bela Ban 2012-02-06 Removed obsolete tests, increased timeout for all <test> instances to 30 mins
+1	1	conf/testng/byteman.xml
+1	1	conf/testng/functional.xml
+1	1	conf/testng/stack-independent.xml
+1	1	conf/testng/testng-tcp-flush.xml
+1	1	conf/testng/testng-tcp-stress.xml
+1	1	conf/testng/testng-tcp.xml
+1	1	conf/testng/testng-udp-flush.xml
+1	1	conf/testng/testng-udp.xml
+1	1	conf/testng/time-sensitive.xml
+0	319	tests/junit/org/jgroups/tests/EncryptMessageOrderTestCase.java
+48	79	tests/junit/org/jgroups/tests/SendAndReceiveTest.java
+0	346	tests/junit/org/jgroups/tests/TUNNEL_Test2.java
+
+[be2c5cb7c] Bela Ban 2012-02-06 Removed destroying of thread groups on TP.destroy()
+0	3	src/org/jgroups/protocols/TP.java
+
+[030244e4e] Bela Ban 2012-02-06 Improved JUnitXMLReporter
+73	58	src/org/jgroups/util/JUnitXMLReporter.java
+
+[3d1448f64] Bela Ban 2012-02-06 Fixed tests
+2	2	tests/junit-functional/org/jgroups/tests/AgeOutCacheTest.java
+21	26	tests/junit-functional/org/jgroups/tests/NakReceiverWindowTest2.java
+5	2	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[dc32ed16c] Bela Ban 2012-02-06 removed quotes
+1	1	src/org/jgroups/stack/ProtocolStack.java
+
+[67169599a] Bela Ban 2012-02-06 Fixed test
+3	1	tests/junit/org/jgroups/tests/NAKACK_Test.java
+
+[d08f17c17] Bela Ban 2012-02-06 Increased the TestNG timeout to 100 secs
+1	1	conf/testng/byteman.xml
+1	1	conf/testng/functional.xml
+1	1	conf/testng/stack-independent.xml
+1	1	conf/testng/testng-tcp-flush.xml
+1	1	conf/testng/testng-tcp-stress.xml
+1	1	conf/testng/testng-tcp.xml
+1	1	conf/testng/testng-udp-flush.xml
+1	1	conf/testng/testng-udp.xml
+1	1	conf/testng/time-sensitive.xml
+
+[f5e876fa2] Bela Ban 2012-02-06 - Moved global ThreadGroup from Util to a per-channel thread group (in TP) (https://issues.jboss.org/browse/JGRP-1410) - Changed members in NAKACK and NAKACK2 to be volatile
+2	2	src/org/jgroups/blocks/BasicConnectionTable.java
+13	7	src/org/jgroups/blocks/TCPConnectionMap.java
+1	1	src/org/jgroups/protocols/BPING.java
+1	1	src/org/jgroups/protocols/MPING.java
+8	5	src/org/jgroups/protocols/TCP.java
+21	4	src/org/jgroups/protocols/TP.java
+0	3	src/org/jgroups/protocols/pbcast/NAKACK.java
+8	14	src/org/jgroups/protocols/pbcast/NAKACK2.java
+1	1	src/org/jgroups/stack/GossipRouter.java
+4	0	src/org/jgroups/stack/Protocol.java
+1	16	src/org/jgroups/util/Util.java
+15	13	tests/junit-functional/org/jgroups/blocks/ConnectionMapTest.java
+5	6	tests/junit-functional/org/jgroups/tests/ConnectionMapUnitTest.java
+1	1	tests/junit-functional/org/jgroups/tests/LargeMergeTest.java
+1	1	tests/junit-functional/org/jgroups/tests/MergeTest2.java
+1	1	tests/junit-functional/org/jgroups/tests/MergeTest3.java
+1	1	tests/junit-functional/org/jgroups/tests/RSVPTest.java
+
+[9191194d0] Bela Ban 2012-02-06 Fixed NPE when printing empty MergeView (https://issues.jboss.org/browse/JGRP-1421)
+2	1	src/org/jgroups/View.java

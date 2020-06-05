@@ -1,0 +1,12 @@
+Index,Size,UnstableInterface
+UnstableInterface1,140,pmd-scala.src.main.java.net.sourceforge.pmd.lang.scala.ast.AbstractScalaNode_java
+UnstableInterface2,140,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTVariableDeclaratorId_java
+UnstableInterface3,135,pmd-scala.src.main.java.net.sourceforge.pmd.lang.scala.ast.ScalaParserVisitor_java
+UnstableInterface4,129,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTExpression_java
+UnstableInterface5,126,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.ASTType_java
+UnstableInterface6,107,pmd-java.src.main.java.net.sourceforge.pmd.lang.java.ast.AbstractJavaNode_java
+UnstableInterface7,90,pmd-apex.src.main.java.net.sourceforge.pmd.lang.apex.ast.ASTModifierNode_java
+UnstableInterface8,36,pmd-jsp.src.main.java.net.sourceforge.pmd.lang.jsp.ast.AbstractJspNode_java
+UnstableInterface9,25,pmd-core.src.main.java.net.sourceforge.pmd.lang.ast.AbstractNode_java
+UnstableInterface10,19,pmd-apex.src.main.java.net.sourceforge.pmd.lang.apex.ast.AbstractApexNode_java
+

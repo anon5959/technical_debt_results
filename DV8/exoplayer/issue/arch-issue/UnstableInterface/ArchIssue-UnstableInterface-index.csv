@@ -1,0 +1,11 @@
+Index,Size,UnstableInterface
+UnstableInterface1,50,library.core.src.main.java.com.google.android.exoplayer2.util.Util_java
+UnstableInterface2,38,library.core.src.main.java.com.google.android.exoplayer2.Player_java
+UnstableInterface3,32,library.core.src.main.java.com.google.android.exoplayer2.Timeline_java
+UnstableInterface4,26,library.core.src.main.java.com.google.android.exoplayer2.C_java
+UnstableInterface5,23,library.core.src.main.java.com.google.android.exoplayer2.BaseRenderer_java
+UnstableInterface6,20,library.core.src.main.java.com.google.android.exoplayer2.RendererCapabilities_java
+UnstableInterface7,17,library.core.src.main.java.com.google.android.exoplayer2.util.FlacStreamMetadata_java
+UnstableInterface8,17,library.core.src.main.java.com.google.android.exoplayer2.source.MediaSource_java
+UnstableInterface9,12,library.core.src.main.java.com.google.android.exoplayer2.Format_java
+

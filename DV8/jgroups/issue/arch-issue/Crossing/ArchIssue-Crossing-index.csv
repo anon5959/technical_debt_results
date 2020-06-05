@@ -1,0 +1,4 @@
+Index,Size,Fan-in,Fan-out,CrossingCenter
+Crossing1,20,11,11,src.org.jgroups.protocols.TP_java,
+Crossing2,18,16,10,src.org.jgroups.util.Util_java,
+

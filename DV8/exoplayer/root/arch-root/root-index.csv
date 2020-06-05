@@ -1,0 +1,8 @@
+RootIndex,LeadingFile,Size,Coverage,CoverUpto
+root 1, library.core.src.main.java.com.google.android.exoplayer2.Format_java, 178, 0.280899, 0.416667 
+root 2, library.core.src.main.java.com.google.android.exoplayer2.util.Log_java, 91, 0.406593, 0.600000 
+root 3, library.core.src.main.java.com.google.android.exoplayer2.Timeline_java, 60, 0.316667, 0.683333 
+root 4, library.core.src.main.java.com.google.android.exoplayer2.ParserException_java, 60, 0.316667, 0.725000 
+root 5, library.core.src.main.java.com.google.android.exoplayer2.drm.ExoMediaCrypto_java, 26, 0.307692, 0.758333 
+root 6, library.core.src.main.java.com.google.android.exoplayer2.audio.BaseAudioProcessor_java, 7, 1.000000, 0.791667 
+root 7, library.core.src.main.java.com.google.android.exoplayer2.upstream.DataSource_java, 72, 0.194444, 0.825000 

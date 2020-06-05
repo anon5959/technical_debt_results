@@ -1,0 +1,20 @@
+IssueType,Issue Size,#Changes,Tot Loc changed
+Crossing1,28.0,809.0,27284.0
+Crossing2,28.0,677.0,44362.0
+Crossing3,24.0,392.0,6807.0
+Crossing4,20.0,461.0,31528.0
+Crossing5,19.0,578.0,42610.0
+Crossing6,19.0,511.0,12611.0
+Crossing7,18.0,512.0,40970.0
+Crossing8,18.0,624.0,21597.0
+Crossing9,18.0,380.0,11547.0
+Crossing10,17.0,320.0,28557.0
+Crossing11,16.0,364.0,28867.0
+Crossing12,16.0,506.0,20294.0
+Crossing13,15.0,392.0,6668.0
+Crossing14,14.0,222.0,27543.0
+Crossing15,9.0,93.0,2445.0
+Crossing16,9.0,332.0,29646.0
+Crossing17,8.0,101.0,3771.0
+
+Crossing-All,123.0,1859.0,71112.0

@@ -1,0 +1,4 @@
+IssueType,Issue Size,#Bug Commits,Tot Loc bug changed,#Changes,Tot Loc changed
+UnstableInterface1,38.0,14.0,198.0,388.0,10668.0
+
+UnstableInterface-All,38.0,14.0,198.0,388.0,10668.0

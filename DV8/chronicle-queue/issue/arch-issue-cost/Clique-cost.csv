@@ -1,0 +1,8 @@
+IssueType,Issue Size,#Bug Commits,Tot Loc bug changed,#Changes,Tot Loc changed
+Clique1,10.0,3.0,33.0,116.0,2023.0
+Clique2,5.0,0.0,0.0,3.0,9.0
+Clique3,3.0,0.0,0.0,2.0,8.0
+Clique4,2.0,0.0,0.0,8.0,613.0
+Clique5,2.0,0.0,0.0,3.0,9.0
+
+Clique-All,22.0,3.0,33.0,132.0,2662.0

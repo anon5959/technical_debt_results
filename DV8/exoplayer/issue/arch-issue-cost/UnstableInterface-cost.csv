@@ -1,0 +1,12 @@
+IssueType,Issue Size,#Bug Commits,Tot Loc bug changed,#Changes,Tot Loc changed
+UnstableInterface1,50.0,120.0,2522.0,1378.0,46304.0
+UnstableInterface2,38.0,97.0,1720.0,1052.0,33114.0
+UnstableInterface3,32.0,54.0,1188.0,805.0,28311.0
+UnstableInterface4,26.0,76.0,1477.0,734.0,20653.0
+UnstableInterface5,23.0,51.0,1309.0,644.0,18299.0
+UnstableInterface6,20.0,46.0,965.0,573.0,16390.0
+UnstableInterface7,17.0,4.0,30.0,265.0,7986.0
+UnstableInterface8,17.0,32.0,591.0,527.0,20696.0
+UnstableInterface9,12.0,34.0,925.0,335.0,10460.0
+
+UnstableInterface-All,106.0,193.0,3903.0,2314.0,68566.0
