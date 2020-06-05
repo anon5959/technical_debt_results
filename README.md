@@ -1,4 +1,4 @@
-# Technical Dept Results
+# Technical Debt Results
 
 This is data collected during the writing of "On the Lack of Consensus Among Technical Debt Detection Tools."
 
