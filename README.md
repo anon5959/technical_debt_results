@@ -1,6 +1,6 @@
 # Technical Debt Results
 
-This repository contains the data associated with our ICSME submission titled "On the Lack of Consensus Among Technical Debt Detection Tools."
+This website contains the data associated with our ICSME submission titled "On the Lack of Consensus Among Technical Debt Detection Tools."
 
 ## Contents
 
